@@ -638,26 +638,26 @@ namespace controller_design.Schematic
         #endregion
         #region Methods
         /// <summary>
-        /// Simulate the Schematic of a specified time domain with a Simple Time.
+        /// Simulate the Schematic of a specified time domain with a Sample Time.
         /// </summary>
         /// <param name="Ts">Sample Time</param>
         /// <param name="Tend">The Time when the simulation will stop</param>
-        /// <returns>The first element will be an array of result values and the second element will be an array with the corresponding Time values</returns>
-        public LinkedList<float>[] simulate(float Ts, float Tend)
+        /// <returns>A Matrix with 2 rows. In the first row you will find the Values of the simulation, in the second row the corresponding time.</returns>
+        public float[,] simulate(float Ts, float Tend)
         {
-            LinkedList<float>[] result = new LinkedList<float>[2] { new LinkedList<float> { }, new LinkedList<float> { } };  //Value and Time
-            foreach (ISimulatable x in _Schematic)  //reset all old time domains
+            int iend = (int)(Tend / Ts);               //Calc how many steps to be done
+            float[,] result = new float[2, iend + 1];  //Value and Time
+            foreach (ISimulatable x in _Schematic)     //reset all old time domains
                 x.reset();
-                
-            for (int i = 0; (i * Ts) < Tend; ++i)
+            for (int i = 1; i <= iend; ++i)            //step simulation 
             {
                 _Schematic.First().set_input(1);
                 for (int j = 0; j < _Schematic.Count() - 1; ++j)
                 {
                     _Schematic[j].do_one_step(Ts);
                 }
-                result[0].AddLast(_Schematic[_Schematic.Count() - 1].do_one_step(Ts));
-                result[1].AddLast(i * Ts);
+                result[0, i] = _Schematic[_Schematic.Count() - 1].do_one_step(Ts);
+                result[1, i] = i * Ts;
             }
             return result;
         }
