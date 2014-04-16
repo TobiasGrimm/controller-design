@@ -682,11 +682,21 @@ namespace controller_design.Schematic
         /// <summary>
         /// Optimize a controller for a specific control loop
         /// </summary>
-        /// <param name="control_loop">The control loop in your Schematic</param>
-        /// <param name="controller">The controller you want to optimize</param>
+        /// <param name="control_loop">The PT1-control loop in your Schematic</param>
+        /// <param name="controller">The I-controller you want to optimize</param>
         public static void Controller(PT1 control_loop, Controller_I controller)
         {
             controller._Ti = 2 * control_loop._Vs * control_loop._T1;
+            controller.recalc_coefficients();
+        }
+        /// <summary>
+        /// Optimize a controller for a specific control loop
+        /// </summary>
+        /// <param name="control_loop">The PT1-control loop in your Schematic</param>
+        /// <param name="controller">The P-controller you want to optimize</param>
+        public static void Controller(IT1 control_loop, Controller_P controller)
+        {
+            controller._Vr = control_loop._Ti/(2*control_loop._T2);
             controller.recalc_coefficients();
         }
     }
