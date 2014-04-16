@@ -692,11 +692,72 @@ namespace controller_design.Schematic
         /// <summary>
         /// Optimize a controller for a specific control loop
         /// </summary>
-        /// <param name="control_loop">The PT1-control loop in your Schematic</param>
+        /// <param name="control_loop">The IT1-control loop in your Schematic</param>
         /// <param name="controller">The P-controller you want to optimize</param>
         public static void Controller(IT1 control_loop, Controller_P controller)
         {
             controller._Vr = control_loop._Ti/(2*control_loop._T2);
+            controller.recalc_coefficients();
+        }
+        /// <summary>
+        /// Optimize a controller for a specific control loop
+        /// </summary>
+        /// <param name="control_loop">The IT1-control loop in your Schematic</param>
+        /// <param name="controller">The PI-controller you want to optimize</param>
+        public static void Controller(IT1 control_loop, Controller_PI controller)
+        {
+            controller._Vr = control_loop._Ti / (2 * control_loop._T2);
+            controller._Tn = 4*control_loop._T2;
+            controller.recalc_coefficients();
+        }
+        /// <summary>
+        /// Optimize a controller for a specific control loop
+        /// </summary>
+        /// <param name="control_loop">The PT2-control (with damping bigger 1) loop in your Schematic</param>
+        /// <param name="controller">The P-controller you want to optimize</param>
+        public static void Controller(PT2_wdb1 control_loop, Controller_P controller)
+        {
+            controller._Vr = control_loop._T1 / (2 * control_loop._T2*control_loop._Vs);
+            controller.recalc_coefficients();
+        }
+        /// <summary>
+        /// Optimize a controller for a specific control loop
+        /// </summary>
+        /// <param name="control_loop">The PT2-control (with damping bigger 1) loop in your Schematic</param>
+        /// <param name="controller">The PI-controller you want to optimize</param>
+        public static void Controller(PT2_wdb1 control_loop, Controller_PI controller)
+        {
+            if((control_loop._T1 / control_loop._T2)<=4.0f)       //Absolute Optimum  (BO)
+            {
+                controller._Vr = control_loop._T1 / (2 * control_loop._T2 * control_loop._Vs);
+                controller._Tn = control_loop._T1;
+            }
+            else                                                  //Symmetry Optimum  (SO)
+            {
+                controller._Vr = control_loop._T1 / (2 * control_loop._T2 * control_loop._Vs);
+                controller._Tn = 4*control_loop._T2;
+            }
+            controller.recalc_coefficients();
+        }
+        /// <summary>
+        /// Optimize a controller for a specific control loop
+        /// </summary>
+        /// <param name="control_loop">The PT2-control (with damping smaller-equal 1) loop in your Schematic</param>
+        /// <param name="controller">The I-controller you want to optimize</param>
+        public static void Controller(PT2_wdse1 control_loop, Controller_I controller)
+        {
+            controller._Ti = 4*control_loop._d*control_loop._T*control_loop._Vs;
+            controller.recalc_coefficients();
+        }
+        /// <summary>
+        /// Optimize a controller for a specific control loop
+        /// </summary>
+        /// <param name="control_loop">The PT2-control (with damping smaller-equal 1) loop in your Schematic</param>
+        /// <param name="controller">The PI-controller you want to optimize</param>
+        public static void Controller(PT2_wdse1 control_loop, Controller_PI controller)
+        {
+            controller._Vr = (2*control_loop._d*control_loop._d-1)/control_loop._Vs;
+            controller._Tn = (control_loop._T / control_loop._d) * (2 - 1 / (control_loop._d * control_loop._d));
             controller.recalc_coefficients();
         }
     }
