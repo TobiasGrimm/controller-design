@@ -1,0 +1,7 @@
+c:\users\tobias\documents\visual studio 2013\Projects\controller_design\controller_design\bin\Debug\controller_design.exe.config
+c:\users\tobias\documents\visual studio 2013\Projects\controller_design\controller_design\bin\Debug\controller_design.exe
+c:\users\tobias\documents\visual studio 2013\Projects\controller_design\controller_design\bin\Debug\controller_design.pdb
+c:\users\tobias\documents\visual studio 2013\Projects\controller_design\controller_design\obj\Debug\controller_design.csprojResolveAssemblyReference.cache
+c:\users\tobias\documents\visual studio 2013\Projects\controller_design\controller_design\obj\Debug\controller_design.exe
+c:\users\tobias\documents\visual studio 2013\Projects\controller_design\controller_design\obj\Debug\controller_design.pdb
+c:\users\tobias\documents\visual studio 2013\Projects\controller_design\controller_design\bin\Debug\controller_design.XML
