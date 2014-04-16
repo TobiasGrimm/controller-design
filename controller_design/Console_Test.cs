@@ -14,16 +14,16 @@ namespace controller_design
             float Ts = 0.0002f;      //Sample Time
             float Vs = 2f;           //Gain Constant for Route
             float T1 = 0.005f;       //Time Constant for Route
-            ISimulatable[] Schematic1 = { new Adder(new string[] { "+1", "-1" }),new Controller_I(0f),new PT1(Vs,T1) };
-            Schematic1[1].connect_this_Input_with(Schematic1[0]);
-            Schematic1[2].connect_this_Input_with(Schematic1[1]);
-            Schematic1[0].connect_this_Input_with(Schematic1[2]);
-            Optimize.Controller((PT1)Schematic1[2], (Controller_I)Schematic1[1]);
-            Simulator Simulator1 = new Simulator(Schematic1);
-            LinkedList<float>[] result1 = Simulator1.simulate(Ts, 300 * Ts);
-            for (int i = 0; i < result1[1].Count(); ++i)
+            ISimulatable[] Schematic = { new Adder(new string[] { "+1", "-1" }),new Controller_I(0f),new PT1(Vs,T1) };
+            Schematic[1].connect_this_Input_with(Schematic[0]);
+            Schematic[2].connect_this_Input_with(Schematic[1]);
+            Schematic[0].connect_this_Input_with(Schematic[2]);
+            Optimize.Controller((PT1)Schematic[2], (Controller_I)Schematic[1]);
+            Simulator Simulator1 = new Simulator(Schematic);
+            float[,] result = Simulator1.simulate(Ts, 300 * Ts);
+            for (int i = 0; i < (result.Length/2); ++i)
             {
-                Console.WriteLine("[ " + result1[0].ElementAt(i) + " , " + result1[1].ElementAt(i) + " ]");
+                Console.WriteLine("[ " + result[0,i] + " , " + result[1,i] + " ]");
             }
             Console.Read();
         }
