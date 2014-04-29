@@ -10,6 +10,7 @@ using System.Windows.Forms;
 
 using System.Windows.Forms.DataVisualization.Charting;
 
+// Chart Namespace
 namespace Chart
 {
     public partial class Form1 : Form
@@ -138,6 +139,11 @@ namespace Chart
         {
             chart_y_label.Visible = false;
             chart_x_label.Visible = false;
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
         }
 
         
