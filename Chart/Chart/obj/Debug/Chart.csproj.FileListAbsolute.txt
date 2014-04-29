@@ -1,0 +1,12 @@
+c:\users\alex\documents\visual studio 2013\Projects\Chart\Chart\bin\Debug\Chart.exe.config
+c:\users\alex\documents\visual studio 2013\Projects\Chart\Chart\obj\Debug\Chart.Form1.resources
+c:\users\alex\documents\visual studio 2013\Projects\Chart\Chart\obj\Debug\Chart.Properties.Resources.resources
+c:\users\alex\documents\visual studio 2013\Projects\Chart\Chart\obj\Debug\Chart.csproj.GenerateResource.Cache
+c:\users\alex\documents\visual studio 2013\Projects\Chart\Chart\bin\Debug\Chart.exe
+c:\users\alex\documents\visual studio 2013\Projects\Chart\Chart\bin\Debug\Chart.pdb
+c:\users\alex\documents\visual studio 2013\Projects\Chart\Chart\obj\Debug\Chart.exe
+c:\users\alex\documents\visual studio 2013\Projects\Chart\Chart\obj\Debug\Chart.pdb
+c:\users\alex\documents\visual studio 2013\Projects\Chart\Chart\obj\Debug\Chart.csprojResolveAssemblyReference.cache
+C:\Users\Alex\Desktop\Chart\Chart\bin\Debug\Chart.exe.config
+C:\Users\Alex\Desktop\Chart\Chart\obj\Debug\Chart.exe
+C:\Users\Alex\Desktop\Chart\Chart\obj\Debug\Chart.pdb
