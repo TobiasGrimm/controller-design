@@ -81,7 +81,7 @@
             // calculate
             // 
             this.calculate.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.calculate.Location = new System.Drawing.Point(181, 578);
+            this.calculate.Location = new System.Drawing.Point(210, 578);
             this.calculate.Name = "calculate";
             this.calculate.Size = new System.Drawing.Size(75, 23);
             this.calculate.TabIndex = 0;
@@ -97,9 +97,9 @@
             this.chart1.ChartAreas.Add(chartArea1);
             legend1.Name = "Legend1";
             this.chart1.Legends.Add(legend1);
-            this.chart1.Location = new System.Drawing.Point(396, 41);
+            this.chart1.Location = new System.Drawing.Point(511, 41);
             this.chart1.Name = "chart1";
-            this.chart1.Size = new System.Drawing.Size(515, 560);
+            this.chart1.Size = new System.Drawing.Size(729, 560);
             this.chart1.TabIndex = 1;
             this.chart1.Text = "chart1";
             this.chart1.MouseLeave += new System.EventHandler(this.Mouse_Leave);
@@ -127,7 +127,7 @@
             // pdf_export
             // 
             this.pdf_export.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.pdf_export.Location = new System.Drawing.Point(263, 578);
+            this.pdf_export.Location = new System.Drawing.Point(291, 578);
             this.pdf_export.Name = "pdf_export";
             this.pdf_export.Size = new System.Drawing.Size(97, 23);
             this.pdf_export.TabIndex = 7;
@@ -482,7 +482,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(923, 613);
+            this.ClientSize = new System.Drawing.Size(1252, 613);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.Tn_label);
             this.Controls.Add(this.Tn_factor);
