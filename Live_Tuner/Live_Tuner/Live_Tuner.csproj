@@ -61,6 +61,12 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Compile Include="..\..\controller_design\Integrators_and_Registers.cs">
+      <Link>Integrators_and_Registers.cs</Link>
+    </Compile>
+    <Compile Include="..\..\controller_design\Schematic.cs">
+      <Link>Schematic.cs</Link>
+    </Compile>
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>

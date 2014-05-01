@@ -16,3 +16,18 @@ C:\Users\Tobias\Documents\Visual Studio 2013\Projects\ReglerTestWPF\ReglerTestWP
 C:\Users\Tobias\Documents\Visual Studio 2013\Projects\ReglerTestWPF\Live_Tuner\bin\Debug\ReglerTestWPF.exe.config
 C:\Users\Tobias\Documents\Visual Studio 2013\Projects\ReglerTestWPF\Live_Tuner\obj\Debug\ReglerTestWPF.exe
 C:\Users\Tobias\Documents\Visual Studio 2013\Projects\ReglerTestWPF\Live_Tuner\obj\Debug\ReglerTestWPF.pdb
+C:\Users\Tobias\Documents\GitHub\controller-design\Live_Tuner\Live_Tuner\bin\Debug\ReglerTestWPF.exe.config
+C:\Users\Tobias\Documents\GitHub\controller-design\Live_Tuner\Live_Tuner\obj\Debug\ReglerTestWPF.exe
+C:\Users\Tobias\Documents\GitHub\controller-design\Live_Tuner\Live_Tuner\obj\Debug\ReglerTestWPF.pdb
+C:\Users\Tobias\Documents\GitHub\controller-design\Live_Tuner\Live_Tuner\bin\Debug\ReglerTestWPF.exe
+C:\Users\Tobias\Documents\GitHub\controller-design\Live_Tuner\Live_Tuner\bin\Debug\ReglerTestWPF.pdb
+C:\Users\Tobias\Documents\GitHub\controller-design\Live_Tuner\Live_Tuner\bin\Debug\Base_Slider.dll
+C:\Users\Tobias\Documents\GitHub\controller-design\Live_Tuner\Live_Tuner\bin\Debug\Base_Slider.pdb
+C:\Users\Tobias\Documents\GitHub\controller-design\Live_Tuner\Live_Tuner\obj\Debug\Live_Tuner.csprojResolveAssemblyReference.cache
+C:\Users\Tobias\Documents\GitHub\controller-design\Live_Tuner\Live_Tuner\obj\Debug\MainWindow.baml
+C:\Users\Tobias\Documents\GitHub\controller-design\Live_Tuner\Live_Tuner\obj\Debug\MainWindow.g.cs
+C:\Users\Tobias\Documents\GitHub\controller-design\Live_Tuner\Live_Tuner\obj\Debug\App.g.cs
+C:\Users\Tobias\Documents\GitHub\controller-design\Live_Tuner\Live_Tuner\obj\Debug\ReglerTestWPF_MarkupCompile.cache
+C:\Users\Tobias\Documents\GitHub\controller-design\Live_Tuner\Live_Tuner\obj\Debug\ReglerTestWPF.g.resources
+C:\Users\Tobias\Documents\GitHub\controller-design\Live_Tuner\Live_Tuner\obj\Debug\ReglerTestWPF.Properties.Resources.resources
+C:\Users\Tobias\Documents\GitHub\controller-design\Live_Tuner\Live_Tuner\obj\Debug\Live_Tuner.csproj.GenerateResource.Cache

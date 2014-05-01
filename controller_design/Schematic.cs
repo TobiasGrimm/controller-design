@@ -36,6 +36,11 @@ namespace controller_design.Schematic
         /// </summary>
         /// <param name="Target_output">You want to connect with</param>
         void connect_this_Input_with(ISimulatable Target_output);
+        /// <summary>
+        /// Disconnect this Input from Target Output.
+        /// </summary>
+        /// <param name="Target_output">The Target Output you want to disconnect</param>
+        void disconnect_this_Input_from(ISimulatable Target_output);
     }
     /// <summary >
     /// Delegate for the Output Event when a step is done 
@@ -93,6 +98,14 @@ namespace controller_design.Schematic
         public void connect_this_Input_with(ISimulatable Target_output)
         {
             ((ISimulatable)Target_output).I_am_finish += ConnectEventHandler;
+        }
+        /// <summary>
+        /// Disconnect this Input from Target Output.
+        /// </summary>
+        /// <param name="Target_output">The Target Output you want to disconnect</param>
+        public void disconnect_this_Input_from(ISimulatable Target_output)
+        {
+            ((ISimulatable)Target_output).I_am_finish -= ConnectEventHandler;
         }
         /// <summary>
         /// This event handler will copy the output value of the firing object the the input value of this object.
@@ -231,6 +244,16 @@ namespace controller_design.Schematic
             recalc_coefficients();
             init_p();
         }
+        /// <summary>
+        /// Initializes a new instance of a PT1 control loop with Vs=0 and T1=0
+        /// </summary>
+        public PT1()
+        {
+            _Vs = 0.0f;
+            _T1 = 0.0f;
+            recalc_coefficients();
+            init_p();
+        }
         #endregion
     }
     /// <summary>
@@ -276,6 +299,16 @@ namespace controller_design.Schematic
         {
             _Ti = Ti;
             _T2 = T2;
+            recalc_coefficients();
+            init_p();
+        }
+        /// <summary>
+        /// Initializes a new instance of a IT1 control loop with Ti=0 and T2=0
+        /// </summary>
+        public IT1()
+        {
+            _Ti = 0.0f;
+            _T2 = 0.0f;
             recalc_coefficients();
             init_p();
         }
@@ -337,6 +370,17 @@ namespace controller_design.Schematic
             recalc_coefficients();
             init_p();
         }
+        /// <summary>
+        /// Initializes a new instance of a PT2 control loop with damping > 1 (Vs=0,T1=0,T2=0)
+        /// </summary>
+        public PT2_wdb1()
+        {
+            _Vs = 0.0f;
+            _T1 = 0.0f;
+            _T2 = 0.0f;
+            recalc_coefficients();
+            init_p();
+        }
         #endregion
     }
     /// <summary>
@@ -395,6 +439,17 @@ namespace controller_design.Schematic
             recalc_coefficients();
             init_p();
         }
+        /// <summary>
+        /// Initializes a new instance of a PT2 control loop with damping smaller-equal 1 (Vs=0, T=0, d=0)
+        /// </summary>
+        public PT2_wdse1()
+        {
+            _Vs = 0.0f;
+            _T = 0.0f;
+            _d = 0.0f;
+            recalc_coefficients();
+            init_p();
+        }
         #endregion
     }
     //***********************************************Controller************************************************************//
@@ -434,6 +489,15 @@ namespace controller_design.Schematic
             recalc_coefficients();
             init_p();
         }
+        /// <summary>
+        /// Initializes a new instance of a Integral Controller  (Ti=0)
+        /// </summary>
+        public Controller_I()
+        {
+            _Ti = 0.0f;
+            recalc_coefficients();
+            init_p();
+        }
         #endregion
     }
     /// <summary>
@@ -469,6 +533,15 @@ namespace controller_design.Schematic
         public Controller_P(float Vr)
         {
             _Vr = Vr;
+            recalc_coefficients();
+            init_p();
+        }
+        /// <summary>
+        /// Initializes a new instance of a Proportional Controller (Vr=0)
+        /// </summary>
+        public Controller_P()
+        {
+            _Vr = 0.0f;
             recalc_coefficients();
             init_p();
         }
@@ -517,6 +590,16 @@ namespace controller_design.Schematic
         {
             _Vr = Vr;
             _Tn = Tn;
+            recalc_coefficients();
+            init_p();
+        }
+        /// <summary>
+        /// Initializes a new instance of a Proportional Controller (Vr=0, Tn=0)
+        /// </summary>
+        public Controller_PI()
+        {
+            _Vr = 0.0f;
+            _Tn = 0.0f;
             recalc_coefficients();
             init_p();
         }
@@ -586,6 +669,14 @@ namespace controller_design.Schematic
         public void connect_this_Input_with(ISimulatable Target_output)
         {
             ((ISimulatable)Target_output).I_am_finish += ConnectEventHandler;
+        }
+        /// <summary>
+        /// Disconnect this Input from Target Output.
+        /// </summary>
+        /// <param name="Target_output">The Target Output you want to disconnect</param>
+        public void disconnect_this_Input_from(ISimulatable Target_output)
+        {
+            ((ISimulatable)Target_output).I_am_finish -= ConnectEventHandler;
         }
         /// <summary>
         /// This event handler will copy the output value of the firing object the the input value of this object.
@@ -661,6 +752,41 @@ namespace controller_design.Schematic
             }
             return result;
         }
+        public bool replace_in_Schematic_at_pos(int position, ISimulatable x)
+        {
+            int kdh = _Schematic.Length;
+            if ((_Schematic.Length - 1 > position) && position > 0)
+            {
+                //Step 1: Disconnect both old connections
+                _Schematic[position].disconnect_this_Input_from(_Schematic[position - 1]);
+                _Schematic[position + 1].disconnect_this_Input_from(_Schematic[position]);
+
+                //Step 2: Set new Object to the position
+                _Schematic[position] = x;
+
+                //Step 3: new connections
+                _Schematic[position].connect_this_Input_with(_Schematic[position - 1]);
+                _Schematic[position + 1].connect_this_Input_with(_Schematic[position]);
+                return true;
+            }
+            else if ((_Schematic.Length - 1 == position) && position > 0)                         //Last position in Schematic
+            {
+                //Step 1: Disconnect both old connections
+                _Schematic[position].disconnect_this_Input_from(_Schematic[position - 1]);
+                _Schematic[0].disconnect_this_Input_from(_Schematic[position]);
+
+                //Step 2: Set new Object to the position
+                _Schematic[position] = x;
+
+                //Step 3: new connections
+                _Schematic[position].connect_this_Input_with(_Schematic[position - 1]);
+                _Schematic[0].connect_this_Input_with(_Schematic[position]);
+                return true;
+            }
+            else
+                return false;
+
+        }
         #endregion
         #region Constructors
         /// <summary>
@@ -671,6 +797,19 @@ namespace controller_design.Schematic
         {
             _Schematic = x;
 
+        }
+
+        /// <summary>
+        /// Initializes a new instance of a Simulator like a "Regelkreis"
+        /// </summary>
+        /// <param name="Controller">The Controller of your Schematic</param>
+        /// <param name="Control_loop">The Control-Loop of your Schematic</param>
+        public Simulator(ISimulatable Controller, ISimulatable Control_loop)
+        {
+            _Schematic = new ISimulatable[] { new Adder(new string[] { "+1", "-1" }), Controller, Control_loop };
+            _Schematic[1].connect_this_Input_with(_Schematic[0]);
+            _Schematic[2].connect_this_Input_with(_Schematic[1]);
+            _Schematic[0].connect_this_Input_with(_Schematic[2]);
         }
         #endregion
     }
