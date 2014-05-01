@@ -1,0 +1,23 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:Base_Slider="clr-namespace:Base_Slider;assembly=Base_Slider" xmlns:Control_Tools="clr-namespace:Control_Tools;assembly=Base_Slider" x:Class="ReglerTestWPF.MainWindow"
+        Title="MainWindow" Height="467" Width="1139">
+    <Grid>
+        <TabControl Margin="10,10,614,226" ScrollViewer.CanContentScroll="True">
+            <TabItem Header="PT1" Margin="-2,-2,-5,-1">
+                <Grid HorizontalAlignment="Left" Height="176" Margin="0,-3,-4,-4" VerticalAlignment="Top" Width="501">
+                    <Control_Tools:Base_Slider x:Name="Base_Slider_PT1_T1" Height="Auto" Width="Auto" Margin="10,73,2,66" Label="T1 ="/>
+                    <Control_Tools:Base_Slider x:Name="Base_Slider_PT1_Vs" HorizontalAlignment="Left" Margin="10,21,0,0" VerticalAlignment="Top" Height="35" Width="481"/>
+                </Grid>
+            </TabItem>
+            <TabItem Header="IT1" Margin="-2,-2,-5,-1" Content=""/>
+            <TabItem Header="PT2 d&gt;1" Margin="-2,-2,-5,-1" Content=""/>
+            <TabItem Header="PT2 dkg1" Margin="-2,-2,-5,-1" Content=""/>
+        </TabControl>
+        <Button Content="Zeige Sprungantwort" Margin="977,365,19,39"/>
+        <TextBlock HorizontalAlignment="Left" Margin="869,403,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Language="de-de" Text="Zeige hier Bild von Mathematischer gleichung"/></TextBlock>
+
+
+    </Grid>
+</Window>

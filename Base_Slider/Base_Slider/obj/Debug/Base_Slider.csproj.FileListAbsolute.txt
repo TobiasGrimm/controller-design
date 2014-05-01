@@ -1,0 +1,11 @@
+c:\users\tobias\documents\visual studio 2013\Projects\Base_Slider\Base_Slider\obj\Debug\Base_Slider.csprojResolveAssemblyReference.cache
+c:\users\tobias\documents\visual studio 2013\Projects\Base_Slider\Base_Slider\obj\Debug\UserControl1.baml
+c:\users\tobias\documents\visual studio 2013\Projects\Base_Slider\Base_Slider\obj\Debug\UserControl1.g.cs
+c:\users\tobias\documents\visual studio 2013\Projects\Base_Slider\Base_Slider\obj\Debug\Base_Slider_MarkupCompile.cache
+c:\users\tobias\documents\visual studio 2013\Projects\Base_Slider\Base_Slider\obj\Debug\Base_Slider.g.resources
+c:\users\tobias\documents\visual studio 2013\Projects\Base_Slider\Base_Slider\obj\Debug\Base_Slider.Properties.Resources.resources
+c:\users\tobias\documents\visual studio 2013\Projects\Base_Slider\Base_Slider\obj\Debug\Base_Slider.csproj.GenerateResource.Cache
+C:\Users\Tobias\documents\visual studio 2013\Projects\Base_Slider\Base_Slider\bin\Debug\Base_Slider.dll
+C:\Users\Tobias\documents\visual studio 2013\Projects\Base_Slider\Base_Slider\bin\Debug\Base_Slider.pdb
+C:\Users\Tobias\documents\visual studio 2013\Projects\Base_Slider\Base_Slider\obj\Debug\Base_Slider.dll
+C:\Users\Tobias\documents\visual studio 2013\Projects\Base_Slider\Base_Slider\obj\Debug\Base_Slider.pdb

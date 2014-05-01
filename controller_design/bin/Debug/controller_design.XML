@@ -525,11 +525,11 @@
         </member>
         <member name="M:controller_design.Schematic.Simulator.simulate(System.Single,System.Single)">
             <summary>
-            Simulate the Schematic of a specified time domain with a Simple Time.
+            Simulate the Schematic of a specified time domain with a Sample Time.
             </summary>
             <param name="Ts">Sample Time</param>
             <param name="Tend">The Time when the simulation will stop</param>
-            <returns>The first element will be an array of result values and the second element will be an array with the corresponding Time values</returns>
+            <returns>A Matrix with 2 rows. In the first row you will find the Values of the simulation, in the second row the corresponding time.</returns>
         </member>
         <member name="M:controller_design.Schematic.Simulator.#ctor(controller_design.Schematic.ISimulatable[])">
             <summary>
@@ -546,8 +546,50 @@
             <summary>
             Optimize a controller for a specific control loop
             </summary>
-            <param name="control_loop">The control loop in your Schematic</param>
-            <param name="controller">The controller you want to optimize</param>
+            <param name="control_loop">The PT1-control loop in your Schematic</param>
+            <param name="controller">The I-controller you want to optimize</param>
+        </member>
+        <member name="M:controller_design.Schematic.Optimize.Controller(controller_design.Schematic.IT1,controller_design.Schematic.Controller_P)">
+            <summary>
+            Optimize a controller for a specific control loop
+            </summary>
+            <param name="control_loop">The IT1-control loop in your Schematic</param>
+            <param name="controller">The P-controller you want to optimize</param>
+        </member>
+        <member name="M:controller_design.Schematic.Optimize.Controller(controller_design.Schematic.IT1,controller_design.Schematic.Controller_PI)">
+            <summary>
+            Optimize a controller for a specific control loop
+            </summary>
+            <param name="control_loop">The IT1-control loop in your Schematic</param>
+            <param name="controller">The PI-controller you want to optimize</param>
+        </member>
+        <member name="M:controller_design.Schematic.Optimize.Controller(controller_design.Schematic.PT2_wdb1,controller_design.Schematic.Controller_P)">
+            <summary>
+            Optimize a controller for a specific control loop
+            </summary>
+            <param name="control_loop">The PT2-control (with damping bigger 1) loop in your Schematic</param>
+            <param name="controller">The P-controller you want to optimize</param>
+        </member>
+        <member name="M:controller_design.Schematic.Optimize.Controller(controller_design.Schematic.PT2_wdb1,controller_design.Schematic.Controller_PI)">
+            <summary>
+            Optimize a controller for a specific control loop
+            </summary>
+            <param name="control_loop">The PT2-control (with damping bigger 1) loop in your Schematic</param>
+            <param name="controller">The PI-controller you want to optimize</param>
+        </member>
+        <member name="M:controller_design.Schematic.Optimize.Controller(controller_design.Schematic.PT2_wdse1,controller_design.Schematic.Controller_I)">
+            <summary>
+            Optimize a controller for a specific control loop
+            </summary>
+            <param name="control_loop">The PT2-control (with damping smaller-equal 1) loop in your Schematic</param>
+            <param name="controller">The I-controller you want to optimize</param>
+        </member>
+        <member name="M:controller_design.Schematic.Optimize.Controller(controller_design.Schematic.PT2_wdse1,controller_design.Schematic.Controller_PI)">
+            <summary>
+            Optimize a controller for a specific control loop
+            </summary>
+            <param name="control_loop">The PT2-control (with damping smaller-equal 1) loop in your Schematic</param>
+            <param name="controller">The PI-controller you want to optimize</param>
         </member>
     </members>
 </doc>
