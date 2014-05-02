@@ -16,7 +16,7 @@ using System.Windows.Shapes;
 namespace Control_Tools
 {
     /// <summary>
-    /// Interaktionslogik für UserControl1.xaml
+    /// The Base Slider is a GUI Element for maximum precision and coolness
     /// </summary>
     public partial class Base_Slider : UserControl
     {
