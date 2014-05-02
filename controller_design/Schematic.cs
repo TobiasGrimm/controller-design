@@ -839,7 +839,11 @@ namespace controller_design.Schematic
         /// <returns>A Matrix with 2 rows. In the first row you will find the Values of the simulation, in the second row the corresponding time.</returns>
         public float[,] simulate(float Ts, float Tend)
         {
-            int iend = (int)(Tend / Ts);               //Calc how many steps to be done
+            int iend;
+            if (Ts != 0.0f)                            //Calc how many steps to be done
+                iend = (int)(Tend / Ts);
+            else
+                iend = (int)(Tend / 0.0002f);
             float[,] result = new float[2, iend + 1];  //Value and Time
             foreach (ISimulatable x in _Schematic)     //reset all old time domains
                 x.reset();

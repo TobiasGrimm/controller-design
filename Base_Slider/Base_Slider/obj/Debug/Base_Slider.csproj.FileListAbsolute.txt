@@ -9,3 +9,14 @@ C:\Users\Tobias\documents\visual studio 2013\Projects\Base_Slider\Base_Slider\bi
 C:\Users\Tobias\documents\visual studio 2013\Projects\Base_Slider\Base_Slider\bin\Debug\Base_Slider.pdb
 C:\Users\Tobias\documents\visual studio 2013\Projects\Base_Slider\Base_Slider\obj\Debug\Base_Slider.dll
 C:\Users\Tobias\documents\visual studio 2013\Projects\Base_Slider\Base_Slider\obj\Debug\Base_Slider.pdb
+C:\Users\Tobias\Documents\GitHub\controller-design\Base_Slider\Base_Slider\bin\Debug\Base_Slider.dll
+C:\Users\Tobias\Documents\GitHub\controller-design\Base_Slider\Base_Slider\bin\Debug\Base_Slider.pdb
+C:\Users\Tobias\Documents\GitHub\controller-design\Base_Slider\Base_Slider\obj\Debug\Base_Slider.csprojResolveAssemblyReference.cache
+C:\Users\Tobias\Documents\GitHub\controller-design\Base_Slider\Base_Slider\obj\Debug\UserControl1.baml
+C:\Users\Tobias\Documents\GitHub\controller-design\Base_Slider\Base_Slider\obj\Debug\UserControl1.g.cs
+C:\Users\Tobias\Documents\GitHub\controller-design\Base_Slider\Base_Slider\obj\Debug\Base_Slider_MarkupCompile.cache
+C:\Users\Tobias\Documents\GitHub\controller-design\Base_Slider\Base_Slider\obj\Debug\Base_Slider.g.resources
+C:\Users\Tobias\Documents\GitHub\controller-design\Base_Slider\Base_Slider\obj\Debug\Base_Slider.Properties.Resources.resources
+C:\Users\Tobias\Documents\GitHub\controller-design\Base_Slider\Base_Slider\obj\Debug\Base_Slider.csproj.GenerateResource.Cache
+C:\Users\Tobias\Documents\GitHub\controller-design\Base_Slider\Base_Slider\obj\Debug\Base_Slider.dll
+C:\Users\Tobias\Documents\GitHub\controller-design\Base_Slider\Base_Slider\obj\Debug\Base_Slider.pdb
