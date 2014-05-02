@@ -112,7 +112,11 @@
                     </ComboBox>
                 </Grid>
             </TabItem>
-            <TabItem Header="Sonstiges" Margin="-2,-2,-5,-1"/>
+            <TabItem Header="Quellen" Margin="-2,-2,-5,-1">
+                <Grid HorizontalAlignment="Left" Height="142" VerticalAlignment="Top" Width="489">
+                    <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="58" Width="438"><Run Language="de-de" Text="- Regelungstechnik Skript      Prof. Dr. Konstantin Meyl"/><LineBreak/><Run Language="de-de" Text="- Systemtheorie Skript           Prof. Dr. Peter Strobach"/></TextBlock>
+                </Grid>
+            </TabItem>
         </TabControl>
         <Label Content="Infos &amp; Einstellungen" HorizontalAlignment="Left" Margin="10,504,0,0" VerticalAlignment="Top" Width="142" FontStyle="Italic"/>
 

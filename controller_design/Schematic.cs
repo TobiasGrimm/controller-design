@@ -715,6 +715,109 @@ namespace controller_design.Schematic
         }
         #endregion
     }
+    /// <summary >
+    /// The Controller for a Schematic
+    /// </summary >
+    public class Step : ISimulatable
+    {
+        #region Variables
+        public float _step_Time
+        {
+            get;
+            set;
+        }
+        public float _step_Value
+        {
+            get;
+            set;
+        }
+        float _t_mom = 0.0f;
+        /// <summary>
+        /// The current input value for the next step
+        /// </summary>
+        float _input;
+        #endregion
+        #region Methods
+        public float do_one_step(float Ts)
+        {
+            float result;
+            _t_mom += Ts;
+            if(_t_mom>=_step_Time)
+                result = _input+_step_Value;
+            else
+                result = _input;
+            OnI_am_finish(result);
+            return result;
+        }
+        /// <summary>
+        /// Set the input value for the next step calculation
+        /// </summary>
+        /// <param name="x_in">The input value</param>
+        public void set_input(float x_in)
+        {
+            _input = x_in;
+        }
+        /// <summary>
+        /// Reset all old time domains, and input values to 0.
+        /// </summary>
+        public void reset()
+        {
+            _input = 0.0f;
+            _t_mom=0.0f;
+        }
+        /// <summary>
+        /// Connect this input with the output of another ISimulatable object in your Schematic.
+        /// </summary>
+        /// <param name="Target_output">You want to connect with</param>
+        public void connect_this_Input_with(ISimulatable Target_output)
+        {
+            ((ISimulatable)Target_output).I_am_finish += ConnectEventHandler;
+        }
+        /// <summary>
+        /// Disconnect this Input from Target Output.
+        /// </summary>
+        /// <param name="Target_output">The Target Output you want to disconnect</param>
+        public void disconnect_this_Input_from(ISimulatable Target_output)
+        {
+            ((ISimulatable)Target_output).I_am_finish -= ConnectEventHandler;
+        }
+        /// <summary>
+        /// This event handler will copy the output value of the firing object the the input value of this object.
+        /// </summary>
+        /// <param name="output">The result of a calculation</param>
+        void ConnectEventHandler(float output)
+        {
+            this._input = output;
+        }
+        #endregion
+        #region Events
+        /// <summary>
+        /// You can register here, if you want to know when a calculation of one step is done.
+        /// </summary>
+        public event OutputEventHandler I_am_finish;
+        /// <summary>
+        /// Will be fired when a calculation of one step is done.
+        /// </summary>
+        /// <param name="output">The result of the calculation of one step</param>
+        private void OnI_am_finish(float output)
+        {
+            if (I_am_finish != null)
+                I_am_finish(output);
+        }
+        #endregion
+        #region Constructors
+        public Step(float step_Time, float step_Value)
+        {
+            _step_Time = step_Time;
+            _step_Value = step_Value;
+        }
+        public Step()
+        {
+            _step_Time =0.0f;
+            _step_Value =0.0f;
+        }
+        #endregion
+    }
     //*************************************************Simulator and optimizer**********************************************//
     /// <summary >
     /// With this Simulator you can simulate the time domain of a Schematic
@@ -800,16 +903,18 @@ namespace controller_design.Schematic
         }
 
         /// <summary>
-        /// Initializes a new instance of a Simulator like a "Regelkreis"
+        /// Initializes a new instance of a Simulator of a standard Controller Schematic
         /// </summary>
         /// <param name="Controller">The Controller of your Schematic</param>
+        /// <param name="Jamming">The Jamming of your Schematic</param>
         /// <param name="Control_loop">The Control-Loop of your Schematic</param>
-        public Simulator(ISimulatable Controller, ISimulatable Control_loop)
+        public Simulator(ISimulatable Controller, Step Jamming, ISimulatable Control_loop)
         {
-            _Schematic = new ISimulatable[] { new Adder(new string[] { "+1", "-1" }), Controller, Control_loop };
+            _Schematic = new ISimulatable[] { new Adder(new string[] { "+1", "-1" }), Controller, Jamming ,Control_loop };
             _Schematic[1].connect_this_Input_with(_Schematic[0]);
             _Schematic[2].connect_this_Input_with(_Schematic[1]);
-            _Schematic[0].connect_this_Input_with(_Schematic[2]);
+            _Schematic[3].connect_this_Input_with(_Schematic[2]);
+            _Schematic[0].connect_this_Input_with(_Schematic[3]);
         }
         #endregion
     }

@@ -155,6 +155,12 @@
             </summary>
             <param name="Target_output">You want to connect with</param>
         </member>
+        <member name="M:controller_design.Schematic.ISimulatable.disconnect_this_Input_from(controller_design.Schematic.ISimulatable)">
+            <summary>
+            Disconnect this Input from Target Output.
+            </summary>
+            <param name="Target_output">The Target Output you want to disconnect</param>
+        </member>
         <member name="E:controller_design.Schematic.ISimulatable.I_am_finish">
             <summary>
             You can register here, if you want to know when a calculation of one step is done.
@@ -208,6 +214,12 @@
             Connect this input with the output of another ISimulatable object.
             </summary>
             <param name="Target_output">You want to connect with</param>
+        </member>
+        <member name="M:controller_design.Schematic.Transferfunction.disconnect_this_Input_from(controller_design.Schematic.ISimulatable)">
+            <summary>
+            Disconnect this Input from Target Output.
+            </summary>
+            <param name="Target_output">The Target Output you want to disconnect</param>
         </member>
         <member name="M:controller_design.Schematic.Transferfunction.ConnectEventHandler(System.Single)">
             <summary>
@@ -274,6 +286,11 @@
             <param name="Vs">Control loop gain</param>
             <param name="T1">Time Constant T1</param>
         </member>
+        <member name="M:controller_design.Schematic.PT1.#ctor">
+            <summary>
+            Initializes a new instance of a PT1 control loop with Vs=0 and T1=0
+            </summary>
+        </member>
         <member name="P:controller_design.Schematic.PT1._Vs">
             <summary>
             Control loop gain
@@ -300,6 +317,11 @@
             </summary>
             <param name="Ti">Time Constant Ti</param>
             <param name="T2">Time Constant T2</param>
+        </member>
+        <member name="M:controller_design.Schematic.IT1.#ctor">
+            <summary>
+            Initializes a new instance of a IT1 control loop with Ti=0 and T2=0
+            </summary>
         </member>
         <member name="P:controller_design.Schematic.IT1._Ti">
             <summary>
@@ -328,6 +350,11 @@
             <param name="Vs">Control loop gain</param>
             <param name="T1">Time Constant T1</param>
             <param name="T2">Time Constant T2</param>
+        </member>
+        <member name="M:controller_design.Schematic.PT2_wdb1.#ctor">
+            <summary>
+            Initializes a new instance of a PT2 control loop with damping > 1 (Vs=0,T1=0,T2=0)
+            </summary>
         </member>
         <member name="P:controller_design.Schematic.PT2_wdb1._Vs">
             <summary>
@@ -362,6 +389,11 @@
             <param name="T">Time Constant T</param>
             <param name="d">Damping</param>
         </member>
+        <member name="M:controller_design.Schematic.PT2_wdse1.#ctor">
+            <summary>
+            Initializes a new instance of a PT2 control loop with damping smaller-equal 1 (Vs=0, T=0, d=0)
+            </summary>
+        </member>
         <member name="P:controller_design.Schematic.PT2_wdse1._Vs">
             <summary>
             Control loop gain
@@ -393,6 +425,11 @@
             </summary>
             <param name="Ti">Integration time constant</param>
         </member>
+        <member name="M:controller_design.Schematic.Controller_I.#ctor">
+            <summary>
+            Initializes a new instance of a Integral Controller  (Ti=0)
+            </summary>
+        </member>
         <member name="P:controller_design.Schematic.Controller_I._Ti">
             <summary>
             Integration time constant
@@ -413,6 +450,11 @@
             Initializes a new instance of a Proportional Controller
             </summary>
             <param name="Vr">Proportional gain</param>
+        </member>
+        <member name="M:controller_design.Schematic.Controller_P.#ctor">
+            <summary>
+            Initializes a new instance of a Proportional Controller (Vr=0)
+            </summary>
         </member>
         <member name="P:controller_design.Schematic.Controller_P._Vr">
             <summary>
@@ -435,6 +477,11 @@
             </summary>
             <param name="Vr">Proportional gain</param>
             <param name="Tn">integral action time constant</param>
+        </member>
+        <member name="M:controller_design.Schematic.Controller_PI.#ctor">
+            <summary>
+            Initializes a new instance of a Proportional Controller (Vr=0, Tn=0)
+            </summary>
         </member>
         <member name="P:controller_design.Schematic.Controller_PI._Vr">
             <summary>
@@ -490,6 +537,12 @@
             </summary>
             <param name="Target_output">You want to connect with</param>
         </member>
+        <member name="M:controller_design.Schematic.Adder.disconnect_this_Input_from(controller_design.Schematic.ISimulatable)">
+            <summary>
+            Disconnect this Input from Target Output.
+            </summary>
+            <param name="Target_output">The Target Output you want to disconnect</param>
+        </member>
         <member name="M:controller_design.Schematic.Adder.ConnectEventHandler(System.Single)">
             <summary>
             This event handler will copy the output value of the firing object the the input value of this object.
@@ -509,6 +562,56 @@
             <param name="operatations">first and second element: "+1" for + operator and "-1" for - operator</param> 
         </member>
         <member name="E:controller_design.Schematic.Adder.I_am_finish">
+            <summary>
+            You can register here, if you want to know when a calculation of one step is done.
+            </summary>
+        </member>
+        <member name="T:controller_design.Schematic.Step">
+            <summary >
+            The Controller for a Schematic
+            </summary >
+        </member>
+        <member name="F:controller_design.Schematic.Step._input">
+            <summary>
+            The current input value for the next step
+            </summary>
+        </member>
+        <member name="M:controller_design.Schematic.Step.set_input(System.Single)">
+            <summary>
+            Set the input value for the next step calculation
+            </summary>
+            <param name="x_in">The input value</param>
+        </member>
+        <member name="M:controller_design.Schematic.Step.reset">
+            <summary>
+            Reset all old time domains, and input values to 0.
+            </summary>
+        </member>
+        <member name="M:controller_design.Schematic.Step.connect_this_Input_with(controller_design.Schematic.ISimulatable)">
+            <summary>
+            Connect this input with the output of another ISimulatable object in your Schematic.
+            </summary>
+            <param name="Target_output">You want to connect with</param>
+        </member>
+        <member name="M:controller_design.Schematic.Step.disconnect_this_Input_from(controller_design.Schematic.ISimulatable)">
+            <summary>
+            Disconnect this Input from Target Output.
+            </summary>
+            <param name="Target_output">The Target Output you want to disconnect</param>
+        </member>
+        <member name="M:controller_design.Schematic.Step.ConnectEventHandler(System.Single)">
+            <summary>
+            This event handler will copy the output value of the firing object the the input value of this object.
+            </summary>
+            <param name="output">The result of a calculation</param>
+        </member>
+        <member name="M:controller_design.Schematic.Step.OnI_am_finish(System.Single)">
+            <summary>
+            Will be fired when a calculation of one step is done.
+            </summary>
+            <param name="output">The result of the calculation of one step</param>
+        </member>
+        <member name="E:controller_design.Schematic.Step.I_am_finish">
             <summary>
             You can register here, if you want to know when a calculation of one step is done.
             </summary>
@@ -536,6 +639,14 @@
             Initializes a new instance of a Simulator
             </summary>
             <param name="x">The Schematic you want to simulate</param>
+        </member>
+        <member name="M:controller_design.Schematic.Simulator.#ctor(controller_design.Schematic.ISimulatable,controller_design.Schematic.Step,controller_design.Schematic.ISimulatable)">
+            <summary>
+            Initializes a new instance of a Simulator of a standard Controller Schematic
+            </summary>
+            <param name="Controller">The Controller of your Schematic</param>
+            <param name="Jamming">The Jamming of your Schematic</param>
+            <param name="Control_loop">The Control-Loop of your Schematic</param>
         </member>
         <member name="T:controller_design.Schematic.Optimize">
             <summary>

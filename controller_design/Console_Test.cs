@@ -14,12 +14,11 @@ namespace controller_design
             float Ts = 0.0002f;      //Sample Time
             float Vs = 2f;           //Gain Constant for Route
             float T1 = 0.005f;       //Time Constant for Route
-            ISimulatable[] Schematic = { new Adder(new string[] { "+1", "-1" }),new Controller_I(0f),new PT1(Vs,T1) };
-            Schematic[1].connect_this_Input_with(Schematic[0]);
-            Schematic[2].connect_this_Input_with(Schematic[1]);
-            Schematic[0].connect_this_Input_with(Schematic[2]);
-            Optimize.Controller((PT1)Schematic[2], (Controller_I)Schematic[1]);
-            Simulator Simulator1 = new Simulator(Schematic);
+            Controller_I I1= new Controller_I(0f);
+            Step Step1 = new Step(0.02f, 0.0f);
+            PT1 PT11 = new PT1(Vs, T1);
+            Simulator Simulator1 = new Simulator(I1,Step1,PT11);
+            Optimize.Controller(PT11, I1);
             float[,] result = Simulator1.simulate(Ts, 300 * Ts);
             for (int i = 0; i < (result.Length/2); ++i)
             {
