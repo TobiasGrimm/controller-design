@@ -606,7 +606,7 @@ namespace controller_design.Schematic
         #endregion
     }
     /// <summary >
-    /// The Controller for a Schematic
+    /// An Adder for a Schematic
     /// </summary >
     public class Adder : ISimulatable
     {
@@ -716,16 +716,22 @@ namespace controller_design.Schematic
         #endregion
     }
     /// <summary >
-    /// The Controller for a Schematic
+    /// A Step for a Schematic
     /// </summary >
     public class Step : ISimulatable
     {
         #region Variables
+        /// <summary>
+        /// The Time when the Step will be done
+        /// </summary>
         public float _step_Time
         {
             get;
             set;
         }
+        /// <summary>
+        /// The Value of the Step
+        /// </summary>
         public float _step_Value
         {
             get;
@@ -738,6 +744,11 @@ namespace controller_design.Schematic
         float _input;
         #endregion
         #region Methods
+        /// <summary>
+        /// Calculate one step with Sample-Time Ts
+        /// </summary>
+        /// <param name="Ts">Sample Time</param>
+        /// <returns>One step</returns>
         public float do_one_step(float Ts)
         {
             float result;
@@ -806,11 +817,19 @@ namespace controller_design.Schematic
         }
         #endregion
         #region Constructors
+        /// <summary>
+        /// Init a new instance of a Step
+        /// </summary>
+        /// <param name="step_Time">The Time, when the Step will happen</param>
+        /// <param name="step_Value">The Value of the Step</param>
         public Step(float step_Time, float step_Value)
         {
             _step_Time = step_Time;
             _step_Value = step_Value;
         }
+        /// <summary>
+        /// Init a new instance of a Step, with Step Time=0 and Step Value=0
+        /// </summary>
         public Step()
         {
             _step_Time =0.0f;
@@ -859,6 +878,12 @@ namespace controller_design.Schematic
             }
             return result;
         }
+        /// <summary>
+        /// Replaces the ISimulatable Object at the specified position in the Schematic
+        /// </summary>
+        /// <param name="position">The Position you want to replace</param>
+        /// <param name="x">The ISimulatable Object</param>
+        /// <returns></returns>
         public bool replace_in_Schematic_at_pos(int position, ISimulatable x)
         {
             int kdh = _Schematic.Length;

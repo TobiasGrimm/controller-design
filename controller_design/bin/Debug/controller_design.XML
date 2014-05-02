@@ -495,7 +495,7 @@
         </member>
         <member name="T:controller_design.Schematic.Adder">
             <summary >
-            The Controller for a Schematic
+            An Adder for a Schematic
             </summary >
         </member>
         <member name="F:controller_design.Schematic.Adder._input1">
@@ -568,7 +568,7 @@
         </member>
         <member name="T:controller_design.Schematic.Step">
             <summary >
-            The Controller for a Schematic
+            A Step for a Schematic
             </summary >
         </member>
         <member name="F:controller_design.Schematic.Step._input">
@@ -611,6 +611,16 @@
             </summary>
             <param name="output">The result of the calculation of one step</param>
         </member>
+        <member name="P:controller_design.Schematic.Step._step_Time">
+            <summary>
+            The Time when the Step will be done
+            </summary>
+        </member>
+        <member name="P:controller_design.Schematic.Step._step_Value">
+            <summary>
+            The Value of the Step
+            </summary>
+        </member>
         <member name="E:controller_design.Schematic.Step.I_am_finish">
             <summary>
             You can register here, if you want to know when a calculation of one step is done.
@@ -633,6 +643,14 @@
             <param name="Ts">Sample Time</param>
             <param name="Tend">The Time when the simulation will stop</param>
             <returns>A Matrix with 2 rows. In the first row you will find the Values of the simulation, in the second row the corresponding time.</returns>
+        </member>
+        <member name="M:controller_design.Schematic.Simulator.replace_in_Schematic_at_pos(System.Int32,controller_design.Schematic.ISimulatable)">
+            <summary>
+            Replaces the ISimulatable Object at the specified position in the Schematic
+            </summary>
+            <param name="position">The Position you want to replace</param>
+            <param name="x">The ISimulatable Object</param>
+            <returns></returns>
         </member>
         <member name="M:controller_design.Schematic.Simulator.#ctor(controller_design.Schematic.ISimulatable[])">
             <summary>

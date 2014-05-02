@@ -1,0 +1,262 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HelpTOC>
+
+  <HelpTOCNode Id="a0b42f66-f56d-4b36-860f-74fddf1f21d8" Title="Control_Tools Namespace" Url="html/8f126cf7-5376-1e0f-1b80-4d3759242393.htm">
+    <HelpTOCNode Id="3170ee22-0f7a-45e0-a2eb-c0383dfda80c" Title="Base_Slider Class" Url="html/99477253-2218-4ebc-c299-9fe32eda5fc8.htm">
+      <HelpTOCNode Title="Base_Slider Constructor " Url="html/47e0af0c-34ee-3a42-a592-8fffb8009c5b.htm" />
+      <HelpTOCNode Id="1010f78d-d757-40db-9adf-543e3b0d3ba8" Title="Base_Slider Methods" Url="html/7c81827f-c13a-75af-42ab-46a41a1978eb.htm">
+        <HelpTOCNode Title="InitializeComponent Method " Url="html/804badb7-ad06-d264-af42-472a6ee712a3.htm" />
+        <HelpTOCNode Title="set_Base Method " Url="html/f99da0e6-e8d2-4c2c-f675-ab953ed8e409.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="fd89112b-a4d1-4c42-9521-c563282020eb" Title="Base_Slider Properties" Url="html/3e96db3f-e3b4-c059-e4ac-19211980cfcd.htm">
+        <HelpTOCNode Title="Label Property " Url="html/1a97f7ae-f61d-7f47-40ce-d6c7678ea1f6.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="5097f0dd-4ab2-4a55-abe3-140a541f60e0" Title="Base_Slider Events" Url="html/6ec29bf1-636f-bfa6-054a-13748b09acb2.htm">
+        <HelpTOCNode Title="value_changed Event" Url="html/e6f4d912-a6d3-3335-1107-463ad765e475.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Title="OutputEventHandler Delegate" Url="html/2f572d74-d6b5-1fce-7b8b-3879b7f65564.htm" />
+  </HelpTOCNode>
+  <HelpTOCNode Id="52a03c5f-b2ce-4618-9beb-13415fd159e8" Title="controller_design.Integrators_and_Registers Namespace" Url="html/7a9be92c-8314-f8f9-6c09-4291680106ac.htm">
+    <HelpTOCNode Id="2b7e22e4-ccb2-4f7f-bd6c-7a58ec5f0918" Title="Integrator Class" Url="html/73dd952b-74ec-8a89-aeae-44bd8e0827dd.htm">
+      <HelpTOCNode Id="7957d3de-3b96-4045-9a88-0248ea28da96" Title="Integrator Methods" Url="html/1ebe094b-9954-742d-0764-239e8a90a98e.htm">
+        <HelpTOCNode Title="Backward_Euler Method " Url="html/d8e5a78e-ac3f-285c-f47e-5066cfbc7617.htm" />
+        <HelpTOCNode Title="Trapezoidal Method " Url="html/a9302e07-9133-e8b3-6d91-be307e77ac91.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="105b6e26-5a16-49da-b0c2-c02259e4df30" Title="Integrator_Register Class" Url="html/9c2ae2ef-6d3d-9e8d-2f8f-4ef0f1cbb176.htm">
+      <HelpTOCNode Title="Integrator_Register Constructor " Url="html/5929f8cc-e2d9-3a4d-45ba-de614856ffc7.htm" />
+      <HelpTOCNode Id="f4382dc8-3c52-4757-ae42-764faa75597d" Title="Integrator_Register Methods" Url="html/93806d8c-d03f-686a-6c3f-7427e3b23cd8.htm">
+        <HelpTOCNode Title="do_one_step Method " Url="html/737261cc-63a3-70d3-2407-00ba7c448f26.htm" />
+        <HelpTOCNode Title="reset Method " Url="html/be04f528-243d-9cd5-d8a8-8e8377b0c65f.htm" />
+        <HelpTOCNode Title="ToString Method " Url="html/b6da256a-ce49-69d7-6022-c67ee9d19231.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="e1d3091a-0f8b-4659-a44f-4e41361ef688" Title="Integrator_Register Properties" Url="html/8a83a27b-4cfc-98af-33ea-fea1ddc1c1ce.htm">
+        <HelpTOCNode Title="Item Property " Url="html/720a9414-0597-f24e-aef2-62028757b8e3.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="0ea70a7a-3c97-4829-bc60-ec65a0c8ed3e" Title="Shift_Register(T) Class" Url="html/878c69a1-206a-651b-d83a-ef106c6af40d.htm">
+      <HelpTOCNode Id="e4bea940-aa8c-4638-b579-d8addc759143" Title="Shift_Register(T) Constructor " Url="html/bbe8a4b8-db23-3ed0-2c30-d285ed660b39.htm">
+        <HelpTOCNode Title="Shift_Register(T) Constructor " Url="html/c3c35a98-793d-c50b-6005-ac8acfa41678.htm" />
+        <HelpTOCNode Title="Shift_Register(T) Constructor (T[])" Url="html/17c23db5-ac2a-616d-1d24-2a78ad24460a.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="401cd453-8b31-42c2-b912-af5feab4f9dc" Title="Shift_Register(T) Methods" Url="html/5a88c57c-6309-35a1-b933-6b4a1639b229.htm">
+        <HelpTOCNode Title="add_and_shift Method " Url="html/4833deae-6ea7-3f9f-eee9-bdbc34bc6b7a.htm" />
+        <HelpTOCNode Title="ToString Method " Url="html/560c8b98-32a0-ee51-ccf5-641204021370.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="6a2e64ff-12d9-4cbc-923b-733c196fa2e6" Title="Shift_Register(T) Properties" Url="html/1af9982c-0788-0dae-4320-2ae1aad9da88.htm">
+        <HelpTOCNode Title="Item Property " Url="html/7c0aff7e-ff26-ed55-5252-48ea99691711.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+  </HelpTOCNode>
+  <HelpTOCNode Id="03b0a246-7d3c-47b4-8de6-7f91fa3c6e74" Title="controller_design.Schematic Namespace" Url="html/af716cbf-613b-8c22-ab2a-fe87ea0f5988.htm">
+    <HelpTOCNode Id="e0582a9a-e28e-472d-8cce-bf09ab11079f" Title="Adder Class" Url="html/6a08b309-d04d-f9cc-3d13-f032cbc4586d.htm">
+      <HelpTOCNode Title="Adder Constructor " Url="html/a5e04b61-7f05-6829-b273-765179d79dce.htm" />
+      <HelpTOCNode Id="b5d21d0c-258f-4a94-a23b-33221d846bd4" Title="Adder Methods" Url="html/bbdc9e88-bf2a-1e81-cd93-d5a05e53fc20.htm">
+        <HelpTOCNode Title="connect_this_Input_with Method " Url="html/a974ac3e-a33f-9de9-d1e3-863f4f325f69.htm" />
+        <HelpTOCNode Title="disconnect_this_Input_from Method " Url="html/906c8b86-f8c4-4683-8cd0-5bdd43121bb7.htm" />
+        <HelpTOCNode Title="do_one_step Method " Url="html/980d40be-0f32-9cab-4c85-9d7b32f85c9b.htm" />
+        <HelpTOCNode Title="reset Method " Url="html/50de860a-0efc-9212-9445-6d421a517767.htm" />
+        <HelpTOCNode Title="set_input Method " Url="html/64775c42-637a-2f13-338d-fc841f3fd2ff.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="547982b4-28be-43f0-94fc-745ab139e540" Title="Adder Events" Url="html/35a99237-6534-4070-033f-fc1c686de072.htm">
+        <HelpTOCNode Title="I_am_finish Event" Url="html/b7127224-4c8b-169d-fd21-d6c7d5582b3e.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="c34392bd-6036-4a13-bb9b-be481cf5a33b" Title="Controller_I Class" Url="html/804022f4-9477-87e3-cec9-2619e8292eff.htm">
+      <HelpTOCNode Id="129f4924-e42b-46d1-80c5-f81c7e83dc01" Title="Controller_I Constructor " Url="html/9cf03ea8-5335-22ab-e6f7-1adf969e5ce6.htm">
+        <HelpTOCNode Title="Controller_I Constructor " Url="html/3ad81277-f179-3a7a-0326-cde97063dec6.htm" />
+        <HelpTOCNode Title="Controller_I Constructor (Single)" Url="html/7051e17f-494d-e3d4-be81-552289f3ef10.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="Controller_I Fields" Url="html/5588fa6d-0b8f-f349-4313-c8d319367474.htm" />
+      <HelpTOCNode Id="7c8d8b06-8671-4d13-aa5d-0d6e0f46da6e" Title="Controller_I Methods" Url="html/b898b65e-7f73-2b94-3516-80fcf950437e.htm">
+        <HelpTOCNode Title="recalc_coefficients Method " Url="html/9415f6bc-26b1-6439-a7bb-903ca3e78c7f.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="6233fd58-12e2-45f2-9e78-40de4f6af287" Title="Controller_I Properties" Url="html/e314d32f-6bfd-f0ab-32ba-a2cf2450ed45.htm">
+        <HelpTOCNode Title="_Ti Property " Url="html/b3657cad-715d-a917-d566-09defabc191b.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="Controller_I Events" Url="html/2ff21fc7-38e1-650d-acff-b34907480d39.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="86d014aa-90d3-4097-95de-4063c7eb6b6e" Title="Controller_P Class" Url="html/fdab0e31-b622-18ec-7742-d6fdcc02e34e.htm">
+      <HelpTOCNode Id="984c1d07-d9fa-438d-9ad2-ef04eb565324" Title="Controller_P Constructor " Url="html/7b084ab9-9cfe-153c-d044-7e8e9c2970ad.htm">
+        <HelpTOCNode Title="Controller_P Constructor " Url="html/005fe9f1-e1c7-00e2-1707-a789f21e25c5.htm" />
+        <HelpTOCNode Title="Controller_P Constructor (Single)" Url="html/2803fa23-5123-95d1-d4e3-61ab7e18e741.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="Controller_P Fields" Url="html/ae6573fa-77ee-7d13-1695-ed659b288f7f.htm" />
+      <HelpTOCNode Id="04e411c6-b3dc-42ec-bc39-896bc5242cd1" Title="Controller_P Methods" Url="html/7ab6d38a-1155-4527-341f-a94d536f1fad.htm">
+        <HelpTOCNode Title="recalc_coefficients Method " Url="html/b96ba9ba-e66c-699b-1684-a3bb95315e54.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="bbc7f677-9520-4645-aeda-92ba2b58146e" Title="Controller_P Properties" Url="html/6a33a7bd-7ac8-f6df-5a05-53e4e3634486.htm">
+        <HelpTOCNode Title="_Vr Property " Url="html/2f52dafd-811c-ac69-2b91-a4413a912fb8.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="Controller_P Events" Url="html/9d077264-3c2e-1d76-c1ad-438a1205bd12.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="f8d1f2e2-5c97-4cad-b20e-e32c0ebe298c" Title="Controller_PI Class" Url="html/5b650ed0-5a5b-ebc6-4cfc-83e14b0a4e3e.htm">
+      <HelpTOCNode Id="6b2a38b4-622d-4000-837a-4c584e13ce10" Title="Controller_PI Constructor " Url="html/02c25803-e911-b172-632d-747a92244fff.htm">
+        <HelpTOCNode Title="Controller_PI Constructor " Url="html/4cd97441-aa1f-4f49-97ef-9350545d8d0e.htm" />
+        <HelpTOCNode Title="Controller_PI Constructor (Single, Single)" Url="html/d8813b23-48de-1eba-3780-102da305d961.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="Controller_PI Fields" Url="html/f1e48d91-e6cc-599c-eaf2-cd46533a084e.htm" />
+      <HelpTOCNode Id="6acb6f2e-e8fe-4877-aeac-fedafd235161" Title="Controller_PI Methods" Url="html/31a6023a-0b10-bd2c-6496-cc09795dcfb8.htm">
+        <HelpTOCNode Title="recalc_coefficients Method " Url="html/218dfba2-9405-b875-2fd8-8ec4fac68551.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="447fa9c4-7bbb-4080-a877-c47fe5d6c3c8" Title="Controller_PI Properties" Url="html/e7474183-113b-43d2-893b-85348c93b285.htm">
+        <HelpTOCNode Title="_Tn Property " Url="html/6dc507fb-eb31-23d8-6c9f-7d1395d02fde.htm" />
+        <HelpTOCNode Title="_Vr Property " Url="html/d7a136d1-7147-6e90-1b48-e7c6db86231e.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="Controller_PI Events" Url="html/9bd97b92-cc46-0566-2e9d-5cb043724add.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="85365eea-e603-48f2-9275-f0a3e0c1b501" Title="ISimulatable Interface" Url="html/582ae21e-de34-2b1e-3c04-ba8e1fb12693.htm">
+      <HelpTOCNode Id="7a362362-0d5c-4e78-b1f4-e21bf24770e9" Title="ISimulatable Methods" Url="html/72c5aa01-70b1-106b-bf64-47cee461e216.htm">
+        <HelpTOCNode Title="connect_this_Input_with Method " Url="html/2ed7a5bd-18a8-5e9e-931b-64a9ff603b0b.htm" />
+        <HelpTOCNode Title="disconnect_this_Input_from Method " Url="html/48cc3bfc-615a-c1f1-9fdc-06d7c5199755.htm" />
+        <HelpTOCNode Title="do_one_step Method " Url="html/99be182e-b419-d836-8f9b-357eeb9ab2bc.htm" />
+        <HelpTOCNode Title="reset Method " Url="html/ee53a307-4023-75d5-9055-11193ddfeff0.htm" />
+        <HelpTOCNode Title="set_input Method " Url="html/35b4fada-439a-715b-9baa-76a482bfa8a9.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="93769749-b4df-4ff5-b481-16e8aa23ae74" Title="ISimulatable Events" Url="html/c20d623c-871b-4085-265e-d0233d8bd3d3.htm">
+        <HelpTOCNode Title="I_am_finish Event" Url="html/8398b58a-58d6-3535-9b5d-c8ff57c195ff.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="fc736e3c-b57a-4be0-a6b8-21c163b9a597" Title="IT1 Class" Url="html/c2e7c5d0-2762-873d-9606-8c3130317153.htm">
+      <HelpTOCNode Id="9ff6b11e-d2d3-4e75-b383-8f8871837d5a" Title="IT1 Constructor " Url="html/91fa2fd0-81cc-7993-df7a-c500d06143af.htm">
+        <HelpTOCNode Title="IT1 Constructor " Url="html/541b1787-2d8d-1e3e-543d-38401209478a.htm" />
+        <HelpTOCNode Title="IT1 Constructor (Single, Single)" Url="html/61321477-6627-8505-1421-d74b648cdfda.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="IT1 Fields" Url="html/673118f3-27f3-cc9f-e5b7-cee757e97815.htm" />
+      <HelpTOCNode Id="6a8b9abc-1672-403f-8f2e-c79cb7be7b3a" Title="IT1 Methods" Url="html/a8190d31-8dbe-c343-2326-51de098aabde.htm">
+        <HelpTOCNode Title="recalc_coefficients Method " Url="html/b0f0b130-e458-3935-1d12-e05ccbcb76b5.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="cab44417-5a29-41e9-b72e-7ae7e6f12825" Title="IT1 Properties" Url="html/37ddbff3-661c-8be7-0ee5-d247baf087b8.htm">
+        <HelpTOCNode Title="_T2 Property " Url="html/6d987a8c-0fd2-d4ed-f6a2-3935a4227820.htm" />
+        <HelpTOCNode Title="_Ti Property " Url="html/6123538c-624f-f600-67d4-1b0a21e66739.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="IT1 Events" Url="html/c52cdbd0-459e-4f8e-b028-8bf20094fcf4.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="670cd16e-4599-487a-aaf0-e9c158262723" Title="Optimize Class" Url="html/c3446f67-4dd2-c4db-b776-f191d17f6432.htm">
+      <HelpTOCNode Id="7d929ef3-53e2-436b-b934-4a2ca4382260" Title="Optimize Methods" Url="html/792a22ec-4749-0c94-d262-4824d8b0e9e1.htm">
+        <HelpTOCNode Id="600e9624-3fc9-4e07-8663-800f4cd8460a" Title="Controller Method " Url="html/72dcd9d1-4fd9-15f0-1f71-4fffd9d15cdc.htm">
+          <HelpTOCNode Title="Controller Method (IT1, Controller_P)" Url="html/04124b16-8866-cbf8-44e5-aac68df949c1.htm" />
+          <HelpTOCNode Title="Controller Method (IT1, Controller_PI)" Url="html/5c86c22c-7acd-a541-f746-f62470011d5d.htm" />
+          <HelpTOCNode Title="Controller Method (PT1, Controller_I)" Url="html/c427ec9f-ba2d-08fa-f7ff-32e76a9b90cf.htm" />
+          <HelpTOCNode Title="Controller Method (PT2_wdb1, Controller_P)" Url="html/fc11d375-6d68-1169-5ccd-405946eb1060.htm" />
+          <HelpTOCNode Title="Controller Method (PT2_wdb1, Controller_PI)" Url="html/dbc43bde-7012-e593-0f15-db5948a9675c.htm" />
+          <HelpTOCNode Title="Controller Method (PT2_wdse1, Controller_I)" Url="html/f6d389ef-a68b-8ae0-bd94-c471051f4c6a.htm" />
+          <HelpTOCNode Title="Controller Method (PT2_wdse1, Controller_PI)" Url="html/c662ed63-cbb8-92e5-7011-a7e4d0a4c235.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Title="OutputEventHandler Delegate" Url="html/f5b77905-36c3-2920-e926-1f15ac1d1029.htm" />
+    <HelpTOCNode Id="4a6730cb-2482-40b5-af9c-e03e1af9b641" Title="PT1 Class" Url="html/762fe325-11a2-ddf9-8b15-357aaa0d25ac.htm">
+      <HelpTOCNode Id="a26fdc4d-d598-4a5d-8758-30009a6b6e5e" Title="PT1 Constructor " Url="html/6dddb8ea-a95a-9844-4f75-24341dd2f74e.htm">
+        <HelpTOCNode Title="PT1 Constructor " Url="html/4cf4e1e2-7d54-c333-5f90-2e9b1fc7056c.htm" />
+        <HelpTOCNode Title="PT1 Constructor (Single, Single)" Url="html/5ac6e524-0e30-e76d-af53-321dbdb7f7ec.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="PT1 Fields" Url="html/a478a799-ba92-035b-dc58-85ac4b0d7a1d.htm" />
+      <HelpTOCNode Id="3f1319f0-e6fc-4d70-9cb0-f9ee148223bf" Title="PT1 Methods" Url="html/9378e875-554c-3207-111a-f397bdda05a4.htm">
+        <HelpTOCNode Title="recalc_coefficients Method " Url="html/ad9693e0-9b08-1412-ccda-6e4c5585e561.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="55fe0063-f408-4685-81cc-c6a1513a9929" Title="PT1 Properties" Url="html/103ca291-28fd-93fa-d189-aa1d0878ce3f.htm">
+        <HelpTOCNode Title="_T1 Property " Url="html/e22a5ac2-62dc-d4fc-fc71-ccb7ac3b1e4e.htm" />
+        <HelpTOCNode Title="_Vs Property " Url="html/a6cb5e86-61cc-4d73-5e0a-95c340cb6996.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="PT1 Events" Url="html/80db4649-6031-6c47-0277-1e29b7548533.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="d58a671e-3915-4c9d-b612-02954ade37a2" Title="PT2_wdb1 Class" Url="html/1a02ca4b-1863-160d-5054-a81222e900d0.htm">
+      <HelpTOCNode Id="8307d169-7a59-4f5f-ad97-27a67cc5732f" Title="PT2_wdb1 Constructor " Url="html/e3e4e424-2c14-34c4-96c7-d265cb178542.htm">
+        <HelpTOCNode Title="PT2_wdb1 Constructor " Url="html/94dec6ed-e3bc-3ad3-e323-a2d70aa77ed0.htm" />
+        <HelpTOCNode Title="PT2_wdb1 Constructor (Single, Single, Single)" Url="html/30ca0eb4-a35b-b455-ad44-7f6ec766ec96.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="PT2_wdb1 Fields" Url="html/f96c2d40-5e60-0c23-5d83-154cba053069.htm" />
+      <HelpTOCNode Id="368abb75-8e2b-4b6f-b0a9-8f0455447b71" Title="PT2_wdb1 Methods" Url="html/62898181-b387-90aa-4a80-e1de2bffedb5.htm">
+        <HelpTOCNode Title="recalc_coefficients Method " Url="html/595714b8-16f8-0caa-d98c-3167a28b0e54.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="31a766c2-d1fa-4fbf-9548-07e1310dd9de" Title="PT2_wdb1 Properties" Url="html/8b00e837-703b-36d1-5ec3-4c3827e01cb3.htm">
+        <HelpTOCNode Title="_T1 Property " Url="html/20417d65-9715-b325-f918-a5f53574fdf1.htm" />
+        <HelpTOCNode Title="_T2 Property " Url="html/9e99bc7a-bc3e-e8cb-bb67-3d2b7dbef508.htm" />
+        <HelpTOCNode Title="_Vs Property " Url="html/7d352b39-7e78-70c2-c8c5-677fa2ad8f87.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="PT2_wdb1 Events" Url="html/2d7e3d5b-77fb-85e9-92fc-a78e456299f1.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="40448791-8af7-48b8-ba17-085c287c0e4d" Title="PT2_wdse1 Class" Url="html/088cd218-63fe-06b6-c77d-a77bd88c555f.htm">
+      <HelpTOCNode Id="72a680ce-56d1-41d1-88a3-09b4a51dbb3e" Title="PT2_wdse1 Constructor " Url="html/8d89ebd3-4e49-7534-b9f5-b43dd3447591.htm">
+        <HelpTOCNode Title="PT2_wdse1 Constructor " Url="html/f3142662-0296-085d-5317-f715e603d2ac.htm" />
+        <HelpTOCNode Title="PT2_wdse1 Constructor (Single, Single, Single)" Url="html/363d7c7f-b5bc-3a95-5423-222b50cd7f85.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="PT2_wdse1 Fields" Url="html/517aa18f-7942-bf85-ed08-3a843e580094.htm" />
+      <HelpTOCNode Id="1e1345ee-bf82-4b76-884f-ede7555033c0" Title="PT2_wdse1 Methods" Url="html/fbadac75-c231-fcbe-4970-22e602087f5e.htm">
+        <HelpTOCNode Title="recalc_coefficients Method " Url="html/97d09e47-a488-a8e6-10b3-bc2327b2d77a.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="bfc27a78-75bc-423e-9277-f2d1edfd6307" Title="PT2_wdse1 Properties" Url="html/15a4b1f2-33ed-405c-58b3-1551b971b586.htm">
+        <HelpTOCNode Title="_d Property " Url="html/f974375a-7150-042d-0bba-6b47e53d85b0.htm" />
+        <HelpTOCNode Title="_T Property " Url="html/53c7a543-6bf9-bacd-25a4-eed887610776.htm" />
+        <HelpTOCNode Title="_Vs Property " Url="html/7d8d005b-ae6b-64e0-6ed0-d877d363b3d5.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="PT2_wdse1 Events" Url="html/cf70e209-6843-579b-6ac1-6e5102b1103e.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="6c445d21-4936-4ae3-8732-acc6710d7b5e" Title="Simulator Class" Url="html/25efb38c-53dc-5def-8679-0e55c5d7382b.htm">
+      <HelpTOCNode Id="d7fb5fe0-208c-4000-bfb6-8c8b5c3c34ee" Title="Simulator Constructor " Url="html/a4f50a78-22a8-feaa-1aec-7a9afda585e5.htm">
+        <HelpTOCNode Title="Simulator Constructor (ISimulatable[])" Url="html/ddb44621-c886-5734-4d1a-527dc33144b9.htm" />
+        <HelpTOCNode Title="Simulator Constructor (ISimulatable, Step, ISimulatable)" Url="html/84229512-d742-1705-69f3-f5ec16f2bacf.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="9c828bf6-1a13-48eb-8259-af304431aee2" Title="Simulator Methods" Url="html/e0d8913b-b683-e778-f284-bebeafbc4d2e.htm">
+        <HelpTOCNode Title="replace_in_Schematic_at_pos Method " Url="html/db7c77da-fbfe-523e-d93d-96dd6c5ebeb8.htm" />
+        <HelpTOCNode Title="simulate Method " Url="html/b259172d-d38b-e645-0987-3bb2cd07c35b.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="df76a455-c86b-4087-a3f4-8209df9ddd87" Title="Step Class" Url="html/44c57a78-c34c-a0f5-7915-d7217a84c0ad.htm">
+      <HelpTOCNode Id="0ee0ee74-da05-4c60-9aeb-9337b0ef15eb" Title="Step Constructor " Url="html/e7b423ac-46e9-53f9-3d29-e2226e64cee8.htm">
+        <HelpTOCNode Title="Step Constructor " Url="html/5bbedd96-3a9f-f992-d76a-05d14fb64930.htm" />
+        <HelpTOCNode Title="Step Constructor (Single, Single)" Url="html/9a6389eb-6a0a-9ea7-f8cb-5169ec31f689.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="41312794-149e-4962-b355-6c3fd6efff21" Title="Step Methods" Url="html/0f87bb4d-b9c2-6250-cf77-3fcf9d019d3b.htm">
+        <HelpTOCNode Title="connect_this_Input_with Method " Url="html/1d6f486b-f066-f904-0e0b-d840cf1958ac.htm" />
+        <HelpTOCNode Title="disconnect_this_Input_from Method " Url="html/32108fee-cc80-314f-a10f-b8bf2b3d6bb4.htm" />
+        <HelpTOCNode Title="do_one_step Method " Url="html/29b7d00b-d540-9719-da18-a40fc6433ecd.htm" />
+        <HelpTOCNode Title="reset Method " Url="html/658194f4-ef1d-639b-5391-9b78ca4c6d38.htm" />
+        <HelpTOCNode Title="set_input Method " Url="html/57d8ffb5-79e1-6b5d-0677-8ad8fcf8a696.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="412bfa4e-3845-45fa-9fca-43a8f269aaab" Title="Step Properties" Url="html/1b2544fc-68cd-8687-c8de-b443f5c27fe0.htm">
+        <HelpTOCNode Title="_step_Time Property " Url="html/f7b6f698-0f34-6002-3459-d1b211f73fa3.htm" />
+        <HelpTOCNode Title="_step_Value Property " Url="html/2e9f2f85-5718-323e-8d41-4829c5387533.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="fb3c65b7-73e4-4951-9065-9a7db3af2bad" Title="Step Events" Url="html/35a2d3fb-9e7d-331f-838d-9b620e4e83ff.htm">
+        <HelpTOCNode Title="I_am_finish Event" Url="html/5156f500-a906-6e42-ff50-65c7d53af1ac.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="56bdbb0f-790a-474c-af63-f90fbf985cb2" Title="Transferfunction Class" Url="html/8861fe2e-5b3c-c045-b7b1-ea36aa06b8f0.htm">
+      <HelpTOCNode Id="117490c2-bca8-4ea8-9610-13e7b4f1cc60" Title="Transferfunction Constructor " Url="html/4fb284dc-e944-1b53-89e3-fc152d355496.htm">
+        <HelpTOCNode Title="Transferfunction Constructor " Url="html/eaee061e-0383-f304-1cff-6dc7df892b07.htm" />
+        <HelpTOCNode Title="Transferfunction Constructor (Single[], Single[])" Url="html/5d553d9a-17d8-411c-61a7-2a650007f9e8.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="6754497d-8d4d-457d-9278-de1637e7b0ea" Title="Transferfunction Fields" Url="html/c98bc0ee-514e-cddf-187e-5ac8e072386d.htm">
+        <HelpTOCNode Title="_a Field" Url="html/f15f71f5-d1dc-9ac3-ffaf-b5cc18126330.htm" />
+        <HelpTOCNode Title="_b Field" Url="html/872e67a9-144d-81b2-0ef5-2daa5d24cced.htm" />
+        <HelpTOCNode Title="_input Field" Url="html/11aefc14-1574-41fb-8a78-f4eb44a68180.htm" />
+        <HelpTOCNode Title="_p Field" Url="html/f5f94cf0-729f-cb20-3a31-01df748f89fb.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="3ca18a20-9e66-432a-af65-0096b8d52734" Title="Transferfunction Methods" Url="html/75c0c4d9-310f-d8dc-daf7-a2e144424471.htm">
+        <HelpTOCNode Title="connect_this_Input_with Method " Url="html/93203fcd-93bb-569c-2f38-d1b9d97c17de.htm" />
+        <HelpTOCNode Title="disconnect_this_Input_from Method " Url="html/a50a00f4-6761-8165-79ac-11a17c804489.htm" />
+        <HelpTOCNode Title="do_one_step Method " Url="html/f5b48515-d955-496e-3e6a-f382a341e47a.htm" />
+        <HelpTOCNode Title="init_p Method " Url="html/73a9b015-b0a1-616b-5240-6a4dca425f41.htm" />
+        <HelpTOCNode Title="reset Method " Url="html/60f2b793-63fa-9064-bcba-38d153141842.htm" />
+        <HelpTOCNode Title="set_input Method " Url="html/1d63ca6e-139f-cd34-2a3f-81010d395f46.htm" />
+        <HelpTOCNode Title="ToString Method " Url="html/09470130-7406-cca6-e52d-84286e39600d.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="066c5154-235b-4944-8e34-2345bd8e6171" Title="Transferfunction Events" Url="html/dafe6299-4a24-8eac-107a-e862a4058054.htm">
+        <HelpTOCNode Title="I_am_finish Event" Url="html/b768d803-0fdd-320a-39d1-f976ab689666.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+  </HelpTOCNode>
+  <HelpTOCNode Id="980abf82-4730-4373-bee7-f7873eb3692c" Title="controller_design.WPF Namespace" Url="html/e9eaa5b9-6e55-b17f-8662-ed64e26a9822.htm">
+    <HelpTOCNode Id="ea6d707f-615f-42bc-8923-eaec780da44d" Title="MainWindow Class" Url="html/585ce96d-5477-99c1-4921-71ff3984f918.htm">
+      <HelpTOCNode Title="MainWindow Constructor " Url="html/b0080afe-3b31-5ffc-5780-de3b9b5f996e.htm" />
+      <HelpTOCNode Id="317b86fe-b899-4282-b4d0-549fed3e31a3" Title="MainWindow Methods" Url="html/cbd87335-04f8-5c48-79e3-5ee7a5182600.htm">
+        <HelpTOCNode Title="InitializeComponent Method " Url="html/08370433-60a9-9239-97ce-66950c90d98e.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="MainWindow Properties" Url="html/b818fef1-a0f5-3b7c-3ec9-07de461d7ba0.htm" />
+      <HelpTOCNode Title="MainWindow Events" Url="html/01442282-98e7-93d8-c9ba-e2f04e2b6397.htm" />
+    </HelpTOCNode>
+  </HelpTOCNode>
+</HelpTOC>

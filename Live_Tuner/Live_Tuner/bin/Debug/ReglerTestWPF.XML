@@ -1,0 +1,1043 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ReglerTestWPF</name>
+    </assembly>
+    <members>
+        <member name="T:controller_design.Integrators_and_Registers.Integrator">
+            <summary>
+            A collection of different integration methods
+            </summary>
+        </member>
+        <member name="M:controller_design.Integrators_and_Registers.Integrator.Backward_Euler(System.Single,System.Single,System.Single)">
+            <summary>
+            The integration method "Backward Euler"
+            </summary>
+            <param name="x_mom">The current input value (Time=0)</param>
+            <param name="x_old">The last input value (Time=-Ts)</param>
+            <param name="Ts">The sample time between x_mom and x_old</param>
+            <returns>The integrated input</returns>
+        </member>
+        <member name="M:controller_design.Integrators_and_Registers.Integrator.Trapezoidal(System.Single,System.Single,System.Single,System.Single)">
+            <summary>
+            The integration method "Trapezoidal"
+            </summary>
+            <param name="x_mom">The current value (Time=0)</param>
+            <param name="x_old">The last input value (Time=-Ts)</param>
+            <param name="y_old">The last output value (Time=-Ts)</param>
+            <param name="Ts">The sample time between x_mom and x_old</param>
+            <returns>The integrated input</returns>
+        </member>
+        <member name="T:controller_design.Integrators_and_Registers.Shift_Register`1">
+            <summary >
+            A Shifting Register with a fixed length
+            </summary >
+        </member>
+        <member name="F:controller_design.Integrators_and_Registers.Shift_Register`1._Register">
+            <summary>
+            A array which represents the Register
+            </summary>
+        </member>
+        <member name="M:controller_design.Integrators_and_Registers.Shift_Register`1.add_and_shift(`0)">
+            <summary>
+            Adds at first, and delete the last.
+            </summary>
+            <param name="x_in">The object you want to add</param>
+        </member>
+        <member name="M:controller_design.Integrators_and_Registers.Shift_Register`1.ToString">
+            <summary>
+            Builds a string information about the Register.
+            </summary>
+            <returns>A string with all information about all objects in the Register.</returns>
+        </member>
+        <member name="M:controller_design.Integrators_and_Registers.Shift_Register`1.#ctor(`0[])">
+            <summary >
+            Initializes a new instance of the Shift_Register
+            type using the specified Array.
+            (The length of the Array is the length of the Register)
+            </summary >
+            <param name ="x">An array</param >
+        </member>
+        <member name="M:controller_design.Integrators_and_Registers.Shift_Register`1.#ctor">
+            <summary>
+            Initializes a new instance of the Shift_Register
+            type with an array of two empty elements.
+            </summary>
+        </member>
+        <member name="P:controller_design.Integrators_and_Registers.Shift_Register`1.Item(System.Int32)">
+            <summary>
+            Get access to internal Register
+            </summary>
+            <param name="index">The index of the array</param>
+            <returns>The object of the Register at the index</returns>
+        </member>
+        <member name="T:controller_design.Integrators_and_Registers.Integrator_Register">
+            <summary >
+            A Integrator Register with a fixed length.
+            The value at Register-Index=0 is not integrated,
+            at Register-Index=1 it is one time integrated,
+            at Register-Index=2 it es two times integrated, ...
+            (Register[i]==x_in*p^-i)
+            </summary >
+        </member>
+        <member name="F:controller_design.Integrators_and_Registers.Integrator_Register._Register">
+            <summary>
+            The value at Register-Index=0 is not integrated,
+            at Register-Index=1 it is one time integrated,
+            at Register-Index=2 it es two times integrated, ...
+            (Register[i]==x_in*p^-i)
+            </summary>
+        </member>
+        <member name="M:controller_design.Integrators_and_Registers.Integrator_Register.do_one_step(System.Single)">
+            <summary>
+            Calculate one time step in the Register
+            (internal integration)
+            </summary>
+            <param name="Ts">The sample Time for one step</param>
+        </member>
+        <member name="M:controller_design.Integrators_and_Registers.Integrator_Register.reset">
+            <summary>
+            Resets each element of the Register to 0
+            </summary>
+        </member>
+        <member name="M:controller_design.Integrators_and_Registers.Integrator_Register.ToString">
+            <summary>
+            Gives an information about each Register Value.
+            </summary>
+            <returns>An information about the Registers</returns>
+        </member>
+        <member name="M:controller_design.Integrators_and_Registers.Integrator_Register.#ctor(System.Single[])">
+            <summary>
+            Initializes a new instance of the Integrator_Register
+            type using the specified Array.
+            (The length of the Array is the length of the Register)
+            </summary>
+            <param name="x">An array with time=0 elements</param>
+        </member>
+        <member name="P:controller_design.Integrators_and_Registers.Integrator_Register.Item(System.Int32)">
+            <summary>
+            Get access to the Register at a specified index
+            </summary>
+            <param name="index">The index of the Register (array)</param>
+            <returns>The information of the Register</returns>
+        </member>
+        <member name="T:controller_design.Schematic.ISimulatable">
+            <summary >
+            Interface for the Simulation of a Schematic
+            </summary >
+        </member>
+        <member name="M:controller_design.Schematic.ISimulatable.do_one_step(System.Single)">
+            <summary>
+            Calculate one time step.
+            </summary>
+            <param name="Ts">Sample Time</param>
+            <returns>Result of one time step calculation</returns>
+        </member>
+        <member name="M:controller_design.Schematic.ISimulatable.set_input(System.Single)">
+            <summary>
+            Set the input value for the next step calculation
+            </summary>
+            <param name="x_in">The input value</param>
+        </member>
+        <member name="M:controller_design.Schematic.ISimulatable.reset">
+            <summary>
+            Reset all old time domains, and input values to 0.
+            </summary>
+        </member>
+        <member name="M:controller_design.Schematic.ISimulatable.connect_this_Input_with(controller_design.Schematic.ISimulatable)">
+            <summary>
+            Connect this input with the output of another ISimulatable object in your Schematic.
+            </summary>
+            <param name="Target_output">You want to connect with</param>
+        </member>
+        <member name="M:controller_design.Schematic.ISimulatable.disconnect_this_Input_from(controller_design.Schematic.ISimulatable)">
+            <summary>
+            Disconnect this Input from Target Output.
+            </summary>
+            <param name="Target_output">The Target Output you want to disconnect</param>
+        </member>
+        <member name="E:controller_design.Schematic.ISimulatable.I_am_finish">
+            <summary>
+            You can register here, if you want to know when a calculation of one step is done.
+            </summary>
+        </member>
+        <member name="T:controller_design.Schematic.OutputEventHandler">
+            <summary >
+            Delegate for the Output Event when a step is done 
+            </summary >
+        </member>
+        <member name="T:controller_design.Schematic.Transferfunction">
+            <summary >
+            A form of an Digital Filter.
+            </summary >
+        </member>
+        <member name="F:controller_design.Schematic.Transferfunction._a">
+            <summary>
+            Filter Coefficients a (backward) and b (forward)
+            </summary>
+        </member>
+        <member name="F:controller_design.Schematic.Transferfunction._b">
+            <summary>
+            Filter Coefficients a (backward) and b (forward)
+            </summary>
+        </member>
+        <member name="F:controller_design.Schematic.Transferfunction._p">
+            <summary>
+            A Register for the internal integration
+            </summary>
+        </member>
+        <member name="F:controller_design.Schematic.Transferfunction._input">
+            <summary>
+            The current input value for the next step
+            </summary>
+        </member>
+        <member name="M:controller_design.Schematic.Transferfunction.do_one_step(System.Single)">
+            <summary>
+            Calculate one step with Sample-Time Ts
+            </summary>
+            <param name="Ts">Sample Time</param>
+            <returns>One step</returns>
+        </member>
+        <member name="M:controller_design.Schematic.Transferfunction.set_input(System.Single)">
+            <summary>
+            Set the input value for the next calculation.
+            </summary>
+            <param name="x_in">current input value</param>
+        </member>
+        <member name="M:controller_design.Schematic.Transferfunction.connect_this_Input_with(controller_design.Schematic.ISimulatable)">
+            <summary>
+            Connect this input with the output of another ISimulatable object.
+            </summary>
+            <param name="Target_output">You want to connect with</param>
+        </member>
+        <member name="M:controller_design.Schematic.Transferfunction.disconnect_this_Input_from(controller_design.Schematic.ISimulatable)">
+            <summary>
+            Disconnect this Input from Target Output.
+            </summary>
+            <param name="Target_output">The Target Output you want to disconnect</param>
+        </member>
+        <member name="M:controller_design.Schematic.Transferfunction.ConnectEventHandler(System.Single)">
+            <summary>
+            This event handler will copy the output value of the firing object the the input value of this object.
+            </summary>
+            <param name="output">The result of a calculation</param>
+        </member>
+        <member name="M:controller_design.Schematic.Transferfunction.ToString">
+            <summary>
+            Will give an information about the Filter Coefficients (a and b) and the Register for the internal integration.
+            </summary>
+            <returns>A string with the informations</returns>
+        </member>
+        <member name="M:controller_design.Schematic.Transferfunction.init_p">
+            <summary>
+            Will initialize the integrators of the filter.
+            </summary>
+        </member>
+        <member name="M:controller_design.Schematic.Transferfunction.reset">
+            <summary>
+            Will reset the integrators of the filter (all stages are 0).
+            </summary>
+        </member>
+        <member name="M:controller_design.Schematic.Transferfunction.OnI_am_finish(System.Single)">
+            <summary>
+            Will be fired when a calculation of one step is done.
+            </summary>
+            <param name="output">The result of the calculation of one step</param>
+        </member>
+        <member name="M:controller_design.Schematic.Transferfunction.#ctor(System.Single[],System.Single[])">
+            <summary>
+            Initializes a new instance of an Transferfunktion
+            (It's like an digital Filter)
+            </summary>
+            <param name="a">Filter Coefficients a (backward)</param>
+            <param name="b">Filter Coefficients b (forward)</param>
+        </member>
+        <member name="M:controller_design.Schematic.Transferfunction.#ctor">
+            <summary>
+            Initializes a new instance of an Transferfunktion
+            (It's like an digital Filter)
+            The filter Coefficients a and b will be 0.
+            </summary>
+        </member>
+        <member name="E:controller_design.Schematic.Transferfunction.I_am_finish">
+            <summary>
+            You can register here, if you want to know when a calculation of one step is done.
+            </summary>
+        </member>
+        <member name="T:controller_design.Schematic.PT1">
+            <summary>
+            Control loop PT1
+            </summary>
+        </member>
+        <member name="M:controller_design.Schematic.PT1.recalc_coefficients">
+            <summary>
+            Recalculates the filter coefficients a and b
+            </summary>
+        </member>
+        <member name="M:controller_design.Schematic.PT1.#ctor(System.Single,System.Single)">
+            <summary>
+            Initializes a new instance of a PT1 control loop
+            </summary>
+            <param name="Vs">Control loop gain</param>
+            <param name="T1">Time Constant T1</param>
+        </member>
+        <member name="M:controller_design.Schematic.PT1.#ctor">
+            <summary>
+            Initializes a new instance of a PT1 control loop with Vs=0 and T1=0
+            </summary>
+        </member>
+        <member name="P:controller_design.Schematic.PT1._Vs">
+            <summary>
+            Control loop gain
+            </summary>
+        </member>
+        <member name="P:controller_design.Schematic.PT1._T1">
+            <summary>
+            Control loop time constant
+            </summary>
+        </member>
+        <member name="T:controller_design.Schematic.IT1">
+            <summary>
+            Control loop IT1
+            </summary>
+        </member>
+        <member name="M:controller_design.Schematic.IT1.recalc_coefficients">
+            <summary>
+            Recalculates the filter coefficients a and b
+            </summary>
+        </member>
+        <member name="M:controller_design.Schematic.IT1.#ctor(System.Single,System.Single)">
+            <summary>
+            Initializes a new instance of a IT1 control loop
+            </summary>
+            <param name="Ti">Time Constant Ti</param>
+            <param name="T2">Time Constant T2</param>
+        </member>
+        <member name="M:controller_design.Schematic.IT1.#ctor">
+            <summary>
+            Initializes a new instance of a IT1 control loop with Ti=0 and T2=0
+            </summary>
+        </member>
+        <member name="P:controller_design.Schematic.IT1._Ti">
+            <summary>
+            time constant for integral gain
+            </summary>
+        </member>
+        <member name="P:controller_design.Schematic.IT1._T2">
+            <summary>
+            time constant T2
+            </summary>
+        </member>
+        <member name="T:controller_design.Schematic.PT2_wdb1">
+            <summary>
+            Control loop PT2 with damping > 1
+            </summary>
+        </member>
+        <member name="M:controller_design.Schematic.PT2_wdb1.recalc_coefficients">
+            <summary>
+            Recalculates the filter coefficients a and b
+            </summary>
+        </member>
+        <member name="M:controller_design.Schematic.PT2_wdb1.#ctor(System.Single,System.Single,System.Single)">
+            <summary>
+            Initializes a new instance of a PT2 control loop with damping > 1
+            </summary>
+            <param name="Vs">Control loop gain</param>
+            <param name="T1">Time Constant T1</param>
+            <param name="T2">Time Constant T2</param>
+        </member>
+        <member name="M:controller_design.Schematic.PT2_wdb1.#ctor">
+            <summary>
+            Initializes a new instance of a PT2 control loop with damping > 1 (Vs=0,T1=0,T2=0)
+            </summary>
+        </member>
+        <member name="P:controller_design.Schematic.PT2_wdb1._Vs">
+            <summary>
+            control loop gain
+            </summary>
+        </member>
+        <member name="P:controller_design.Schematic.PT2_wdb1._T1">
+            <summary>
+            time constant T1
+            </summary>
+        </member>
+        <member name="P:controller_design.Schematic.PT2_wdb1._T2">
+            <summary>
+            time constant T2
+            </summary>
+        </member>
+        <member name="T:controller_design.Schematic.PT2_wdse1">
+            <summary>
+            Control loop PT2 with damping smaller-equal 1
+            </summary>
+        </member>
+        <member name="M:controller_design.Schematic.PT2_wdse1.recalc_coefficients">
+            <summary>
+            Recalculates the filter coefficients a and b
+            </summary>
+        </member>
+        <member name="M:controller_design.Schematic.PT2_wdse1.#ctor(System.Single,System.Single,System.Single)">
+            <summary>
+            Initializes a new instance of a PT2 control loop with damping smaller-equal 1
+            </summary>
+            <param name="Vs">Control loop gain</param>
+            <param name="T">Time Constant T</param>
+            <param name="d">Damping</param>
+        </member>
+        <member name="M:controller_design.Schematic.PT2_wdse1.#ctor">
+            <summary>
+            Initializes a new instance of a PT2 control loop with damping smaller-equal 1 (Vs=0, T=0, d=0)
+            </summary>
+        </member>
+        <member name="P:controller_design.Schematic.PT2_wdse1._Vs">
+            <summary>
+            Control loop gain
+            </summary>
+        </member>
+        <member name="P:controller_design.Schematic.PT2_wdse1._T">
+            <summary>
+            Time constant T
+            </summary>
+        </member>
+        <member name="P:controller_design.Schematic.PT2_wdse1._d">
+            <summary>
+            Damping
+            </summary>
+        </member>
+        <member name="T:controller_design.Schematic.Controller_I">
+            <summary>
+            Integral Controller
+            </summary>
+        </member>
+        <member name="M:controller_design.Schematic.Controller_I.recalc_coefficients">
+            <summary>
+            Recalculates the filter coefficients a and b
+            </summary>
+        </member>
+        <member name="M:controller_design.Schematic.Controller_I.#ctor(System.Single)">
+            <summary>
+            Initializes a new instance of a Integral Controller 
+            </summary>
+            <param name="Ti">Integration time constant</param>
+        </member>
+        <member name="M:controller_design.Schematic.Controller_I.#ctor">
+            <summary>
+            Initializes a new instance of a Integral Controller  (Ti=0)
+            </summary>
+        </member>
+        <member name="P:controller_design.Schematic.Controller_I._Ti">
+            <summary>
+            Integration time constant
+            </summary>
+        </member>
+        <member name="T:controller_design.Schematic.Controller_P">
+            <summary>
+            Proportional Controller
+            </summary>
+        </member>
+        <member name="M:controller_design.Schematic.Controller_P.recalc_coefficients">
+            <summary>
+            Recalculates the filter coefficients a and b
+            </summary>
+        </member>
+        <member name="M:controller_design.Schematic.Controller_P.#ctor(System.Single)">
+            <summary>
+            Initializes a new instance of a Proportional Controller
+            </summary>
+            <param name="Vr">Proportional gain</param>
+        </member>
+        <member name="M:controller_design.Schematic.Controller_P.#ctor">
+            <summary>
+            Initializes a new instance of a Proportional Controller (Vr=0)
+            </summary>
+        </member>
+        <member name="P:controller_design.Schematic.Controller_P._Vr">
+            <summary>
+            Proportional gain
+            </summary>
+        </member>
+        <member name="T:controller_design.Schematic.Controller_PI">
+            <summary>
+            Proportional/Integral Controller
+            </summary>
+        </member>
+        <member name="M:controller_design.Schematic.Controller_PI.recalc_coefficients">
+            <summary>
+            Recalculates the filter coefficients a and b
+            </summary>
+        </member>
+        <member name="M:controller_design.Schematic.Controller_PI.#ctor(System.Single,System.Single)">
+            <summary>
+            Initializes a new instance of a Proportional Controller
+            </summary>
+            <param name="Vr">Proportional gain</param>
+            <param name="Tn">integral action time constant</param>
+        </member>
+        <member name="M:controller_design.Schematic.Controller_PI.#ctor">
+            <summary>
+            Initializes a new instance of a Proportional Controller (Vr=0, Tn=0)
+            </summary>
+        </member>
+        <member name="P:controller_design.Schematic.Controller_PI._Vr">
+            <summary>
+            Proportional gain
+            </summary>
+        </member>
+        <member name="P:controller_design.Schematic.Controller_PI._Tn">
+            <summary>
+            integral action time constant
+            </summary>
+        </member>
+        <member name="T:controller_design.Schematic.Adder">
+            <summary >
+            An Adder for a Schematic
+            </summary >
+        </member>
+        <member name="F:controller_design.Schematic.Adder._input1">
+            <summary>
+            current Input Values 1
+            </summary>
+        </member>
+        <member name="F:controller_design.Schematic.Adder._input2">
+            <summary>
+            current Input Values 2
+            </summary>
+        </member>
+        <member name="F:controller_design.Schematic.Adder._operator">
+            <summary>
+            first and second element: "+1" for + operator and "-1" for - operator
+            </summary>
+        </member>
+        <member name="M:controller_design.Schematic.Adder.do_one_step(System.Single)">
+            <summary>
+            Calculate one time step.
+            </summary>
+            <param name="Ts">Sample Time</param>
+            <returns>Result of one time step calculation</returns>
+        </member>
+        <member name="M:controller_design.Schematic.Adder.set_input(System.Single)">
+            <summary>
+            Set the input value for the next step calculation
+            </summary>
+            <param name="x_in">The input value</param>
+        </member>
+        <member name="M:controller_design.Schematic.Adder.reset">
+            <summary>
+            Reset all old time domains, and input values to 0.
+            </summary>
+        </member>
+        <member name="M:controller_design.Schematic.Adder.connect_this_Input_with(controller_design.Schematic.ISimulatable)">
+            <summary>
+            Connect this input with the output of another ISimulatable object in your Schematic.
+            </summary>
+            <param name="Target_output">You want to connect with</param>
+        </member>
+        <member name="M:controller_design.Schematic.Adder.disconnect_this_Input_from(controller_design.Schematic.ISimulatable)">
+            <summary>
+            Disconnect this Input from Target Output.
+            </summary>
+            <param name="Target_output">The Target Output you want to disconnect</param>
+        </member>
+        <member name="M:controller_design.Schematic.Adder.ConnectEventHandler(System.Single)">
+            <summary>
+            This event handler will copy the output value of the firing object the the input value of this object.
+            </summary>
+            <param name="output">The result of a calculation</param>
+        </member>
+        <member name="M:controller_design.Schematic.Adder.OnI_am_finish(System.Single)">
+            <summary>
+            Will be fired when a calculation of one step is done.
+            </summary>
+            <param name="output">The result of the calculation of one step</param>
+        </member>
+        <member name="M:controller_design.Schematic.Adder.#ctor(System.String[])">
+            <summary>
+            Initializes a new instance of an Adder
+            </summary>
+            <param name="operatations">first and second element: "+1" for + operator and "-1" for - operator</param> 
+        </member>
+        <member name="E:controller_design.Schematic.Adder.I_am_finish">
+            <summary>
+            You can register here, if you want to know when a calculation of one step is done.
+            </summary>
+        </member>
+        <member name="T:controller_design.Schematic.Step">
+            <summary >
+            A Step for a Schematic
+            </summary >
+        </member>
+        <member name="F:controller_design.Schematic.Step._input">
+            <summary>
+            The current input value for the next step
+            </summary>
+        </member>
+        <member name="M:controller_design.Schematic.Step.do_one_step(System.Single)">
+            <summary>
+            Calculate one step with Sample-Time Ts
+            </summary>
+            <param name="Ts">Sample Time</param>
+            <returns>One step</returns>
+        </member>
+        <member name="M:controller_design.Schematic.Step.set_input(System.Single)">
+            <summary>
+            Set the input value for the next step calculation
+            </summary>
+            <param name="x_in">The input value</param>
+        </member>
+        <member name="M:controller_design.Schematic.Step.reset">
+            <summary>
+            Reset all old time domains, and input values to 0.
+            </summary>
+        </member>
+        <member name="M:controller_design.Schematic.Step.connect_this_Input_with(controller_design.Schematic.ISimulatable)">
+            <summary>
+            Connect this input with the output of another ISimulatable object in your Schematic.
+            </summary>
+            <param name="Target_output">You want to connect with</param>
+        </member>
+        <member name="M:controller_design.Schematic.Step.disconnect_this_Input_from(controller_design.Schematic.ISimulatable)">
+            <summary>
+            Disconnect this Input from Target Output.
+            </summary>
+            <param name="Target_output">The Target Output you want to disconnect</param>
+        </member>
+        <member name="M:controller_design.Schematic.Step.ConnectEventHandler(System.Single)">
+            <summary>
+            This event handler will copy the output value of the firing object the the input value of this object.
+            </summary>
+            <param name="output">The result of a calculation</param>
+        </member>
+        <member name="M:controller_design.Schematic.Step.OnI_am_finish(System.Single)">
+            <summary>
+            Will be fired when a calculation of one step is done.
+            </summary>
+            <param name="output">The result of the calculation of one step</param>
+        </member>
+        <member name="M:controller_design.Schematic.Step.#ctor(System.Single,System.Single)">
+            <summary>
+            Init a new instance of a Step
+            </summary>
+            <param name="step_Time">The Time, when the Step will happen</param>
+            <param name="step_Value">The Value of the Step</param>
+        </member>
+        <member name="M:controller_design.Schematic.Step.#ctor">
+            <summary>
+            Init a new instance of a Step, with Step Time=0 and Step Value=0
+            </summary>
+        </member>
+        <member name="P:controller_design.Schematic.Step._step_Time">
+            <summary>
+            The Time when the Step will be done
+            </summary>
+        </member>
+        <member name="P:controller_design.Schematic.Step._step_Value">
+            <summary>
+            The Value of the Step
+            </summary>
+        </member>
+        <member name="E:controller_design.Schematic.Step.I_am_finish">
+            <summary>
+            You can register here, if you want to know when a calculation of one step is done.
+            </summary>
+        </member>
+        <member name="T:controller_design.Schematic.Simulator">
+            <summary >
+            With this Simulator you can simulate the time domain of a Schematic
+            </summary >
+        </member>
+        <member name="F:controller_design.Schematic.Simulator._Schematic">
+            <summary>
+            The Schematic will be represented as an array of simulatable objects.
+            </summary>
+        </member>
+        <member name="M:controller_design.Schematic.Simulator.simulate(System.Single,System.Single)">
+            <summary>
+            Simulate the Schematic of a specified time domain with a Sample Time.
+            </summary>
+            <param name="Ts">Sample Time</param>
+            <param name="Tend">The Time when the simulation will stop</param>
+            <returns>A Matrix with 2 rows. In the first row you will find the Values of the simulation, in the second row the corresponding time.</returns>
+        </member>
+        <member name="M:controller_design.Schematic.Simulator.replace_in_Schematic_at_pos(System.Int32,controller_design.Schematic.ISimulatable)">
+            <summary>
+            Replaces the ISimulatable Object at the specified position in the Schematic
+            </summary>
+            <param name="position">The Position you want to replace</param>
+            <param name="x">The ISimulatable Object</param>
+            <returns></returns>
+        </member>
+        <member name="M:controller_design.Schematic.Simulator.#ctor(controller_design.Schematic.ISimulatable[])">
+            <summary>
+            Initializes a new instance of a Simulator
+            </summary>
+            <param name="x">The Schematic you want to simulate</param>
+        </member>
+        <member name="M:controller_design.Schematic.Simulator.#ctor(controller_design.Schematic.ISimulatable,controller_design.Schematic.Step,controller_design.Schematic.ISimulatable)">
+            <summary>
+            Initializes a new instance of a Simulator of a standard Controller Schematic
+            </summary>
+            <param name="Controller">The Controller of your Schematic</param>
+            <param name="Jamming">The Jamming of your Schematic</param>
+            <param name="Control_loop">The Control-Loop of your Schematic</param>
+        </member>
+        <member name="T:controller_design.Schematic.Optimize">
+            <summary>
+            Optimization Methods
+            </summary>
+        </member>
+        <member name="M:controller_design.Schematic.Optimize.Controller(controller_design.Schematic.PT1,controller_design.Schematic.Controller_I)">
+            <summary>
+            Optimize a controller for a specific control loop
+            </summary>
+            <param name="control_loop">The PT1-control loop in your Schematic</param>
+            <param name="controller">The I-controller you want to optimize</param>
+        </member>
+        <member name="M:controller_design.Schematic.Optimize.Controller(controller_design.Schematic.IT1,controller_design.Schematic.Controller_P)">
+            <summary>
+            Optimize a controller for a specific control loop
+            </summary>
+            <param name="control_loop">The IT1-control loop in your Schematic</param>
+            <param name="controller">The P-controller you want to optimize</param>
+        </member>
+        <member name="M:controller_design.Schematic.Optimize.Controller(controller_design.Schematic.IT1,controller_design.Schematic.Controller_PI)">
+            <summary>
+            Optimize a controller for a specific control loop
+            </summary>
+            <param name="control_loop">The IT1-control loop in your Schematic</param>
+            <param name="controller">The PI-controller you want to optimize</param>
+        </member>
+        <member name="M:controller_design.Schematic.Optimize.Controller(controller_design.Schematic.PT2_wdb1,controller_design.Schematic.Controller_P)">
+            <summary>
+            Optimize a controller for a specific control loop
+            </summary>
+            <param name="control_loop">The PT2-control (with damping bigger 1) loop in your Schematic</param>
+            <param name="controller">The P-controller you want to optimize</param>
+        </member>
+        <member name="M:controller_design.Schematic.Optimize.Controller(controller_design.Schematic.PT2_wdb1,controller_design.Schematic.Controller_PI)">
+            <summary>
+            Optimize a controller for a specific control loop
+            </summary>
+            <param name="control_loop">The PT2-control (with damping bigger 1) loop in your Schematic</param>
+            <param name="controller">The PI-controller you want to optimize</param>
+        </member>
+        <member name="M:controller_design.Schematic.Optimize.Controller(controller_design.Schematic.PT2_wdse1,controller_design.Schematic.Controller_I)">
+            <summary>
+            Optimize a controller for a specific control loop
+            </summary>
+            <param name="control_loop">The PT2-control (with damping smaller-equal 1) loop in your Schematic</param>
+            <param name="controller">The I-controller you want to optimize</param>
+        </member>
+        <member name="M:controller_design.Schematic.Optimize.Controller(controller_design.Schematic.PT2_wdse1,controller_design.Schematic.Controller_PI)">
+            <summary>
+            Optimize a controller for a specific control loop
+            </summary>
+            <param name="control_loop">The PT2-control (with damping smaller-equal 1) loop in your Schematic</param>
+            <param name="controller">The PI-controller you want to optimize</param>
+        </member>
+        <member name="T:ReglerTestWPF.App">
+            <summary>
+            Interaktionslogik für "App.xaml"
+            </summary>
+            <summary>
+            App
+            </summary>
+        </member>
+        <member name="M:ReglerTestWPF.App.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="M:ReglerTestWPF.App.Main">
+            <summary>
+            Application Entry Point.
+            </summary>
+        </member>
+        <member name="T:controller_design.WPF.MainWindow">
+            <summary>
+            Interaktionslogik für MainWindow.xaml
+            </summary>
+            <summary>
+            MainWindow
+            </summary>
+        </member>
+        <member name="F:controller_design.WPF.MainWindow._PT1">
+            <summary>
+            PT1 Control Loop
+            </summary>
+        </member>
+        <member name="F:controller_design.WPF.MainWindow._IT1">
+            <summary>
+            IT1 Control Loop
+            </summary>
+        </member>
+        <member name="F:controller_design.WPF.MainWindow._PT2_wdb1">
+            <summary>
+            PT2 Control Loop with damping bigger 1
+            </summary>
+        </member>
+        <member name="F:controller_design.WPF.MainWindow._PT2_wdse1">
+            <summary>
+            PT2 Control Loop with damping smaler equal 1
+            </summary>
+        </member>
+        <member name="F:controller_design.WPF.MainWindow._I">
+            <summary>
+            I-Controller
+            </summary>
+        </member>
+        <member name="F:controller_design.WPF.MainWindow._P">
+            <summary>
+            P-Controller
+            </summary>
+        </member>
+        <member name="F:controller_design.WPF.MainWindow._PI">
+            <summary>
+            PI-Controller
+            </summary>
+        </member>
+        <member name="F:controller_design.WPF.MainWindow._Jamming">
+            <summary>
+            Jamming
+            </summary>
+        </member>
+        <member name="M:controller_design.WPF.MainWindow.#ctor">
+            <summary>
+            Init Main Window
+            </summary>
+        </member>
+        <member name="M:controller_design.WPF.MainWindow.Base_Slider_PT1_Vs_value_changed(System.Single)">
+            <summary>
+            Update Vs of PT1 Control Loop and plot graph
+            </summary>
+            <param name="output">The new Vs-Value for the PT1 Loop</param>
+        </member>
+        <member name="M:controller_design.WPF.MainWindow.Base_Slider_PT1_T1_value_changed(System.Single)">
+            <summary>
+            Update T1 of PT1 Control Loop and plot graph
+            </summary>
+            <param name="output">The new T1-Value for the PT1 Loop</param>
+        </member>
+        <member name="M:controller_design.WPF.MainWindow.Base_Slider_IT1_Ti_value_changed(System.Single)">
+            <summary>
+            Update Ti of IT1 Control Loop and plot graph
+            </summary>
+            <param name="output">The new Ti-Value for the IT1 Loop</param>
+        </member>
+        <member name="M:controller_design.WPF.MainWindow.Base_Slider_IT1_T2_value_changed(System.Single)">
+            <summary>
+            Update T2 of IT1 Control Loop and plot graph
+            </summary>
+            <param name="output">The new Ti-Value for the IT2 Loop</param>
+        </member>
+        <member name="M:controller_design.WPF.MainWindow.Base_Slider_PT2wdb1_value_changed(System.Single)">
+            <summary>
+            Update Vs of PT2 with damping bigger 1 Control Loop and plot graph
+            </summary>
+            <param name="output">The new Vs-Value for the PT2 Loop</param>
+        </member>
+        <member name="M:controller_design.WPF.MainWindow.Base_Slider_PT2wdb1_T1_value_changed(System.Single)">
+            <summary>
+            Update T1 of PT2 with damping bigger 1 Control Loop and plot graph
+            </summary>
+            <param name="output">The new T1-Value for the PT2 Loop</param>
+        </member>
+        <member name="M:controller_design.WPF.MainWindow.Base_Slider_PT2wdb1_T2_value_changed(System.Single)">
+            <summary>
+            Update T2 of PT2 with damping bigger 1 Control Loop and plot graph
+            </summary>
+            <param name="output">The new T2-Value for the PT2 Loop</param>
+        </member>
+        <member name="M:controller_design.WPF.MainWindow.Base_Slider_PT2_wdse1_Vs_value_changed(System.Single)">
+            <summary>
+            Update Vs of PT2 with damping smaller equal 1 Control Loop and plot graph
+            </summary>
+            <param name="output">The new Vs-Value for the PT2 Loop</param>
+        </member>
+        <member name="M:controller_design.WPF.MainWindow.Base_Slider_PT2_wdse1_d_value_changed(System.Single)">
+            <summary>
+            Update damping of PT2 with damping smaller equal 1 Control Loop and plot graph
+            </summary>
+            <param name="output">The new d-Value for the PT2 Loop</param>
+        </member>
+        <member name="M:controller_design.WPF.MainWindow.Base_Slider_PT2_wdse1_T_value_changed(System.Single)">
+            <summary>
+            Update T of PT2 with damping smaller equal 1 Control Loop and plot graph
+            </summary>
+            <param name="output">The new T-Value for the PT2 Loop</param>
+        </member>
+        <member name="M:controller_design.WPF.MainWindow.Base_Slider_I_Ti_value_changed(System.Single)">
+            <summary>
+            Update Ti of I-Controller and plot graph
+            </summary>
+            <param name="output">The new Ti-Value for the Controller</param>
+        </member>
+        <member name="M:controller_design.WPF.MainWindow.Base_Slider_P_Vr_value_changed(System.Single)">
+            <summary>
+            Update Vr of P-Controller and plot graph
+            </summary>
+            <param name="output">The new Vr-Value for the Controller</param>
+        </member>
+        <member name="M:controller_design.WPF.MainWindow.Base_Slider_PI_Vr_value_changed(System.Single)">
+            <summary>
+            Update Vr of PI-Controller and plot graph
+            </summary>
+            <param name="output">The new Vr-Value for the Controller</param>
+        </member>
+        <member name="M:controller_design.WPF.MainWindow.Base_Slider_PI_Tn_value_changed(System.Single)">
+            <summary>
+            Update Tn of PI-Controller and plot graph
+            </summary>
+            <param name="output">The new Tn-Value for the Controller</param>
+        </member>
+        <member name="M:controller_design.WPF.MainWindow.Base_Slider_St_Vz_value_changed(System.Single)">
+            <summary>
+            Update Vz Gain of the Jamming and plot graph
+            </summary>
+            <param name="output">The new Vz-Value for the Jamming</param>
+        </member>
+        <member name="M:controller_design.WPF.MainWindow.Base_Slider_St_Tz_value_changed(System.Single)">
+            <summary>
+            Update Tz Timestep of the Jamming and plot graph
+            </summary>
+            <param name="output">The new Tz-Value for the Jamming</param>
+        </member>
+        <member name="M:controller_design.WPF.MainWindow.tab_Strecke_PT1_MouseLeftButtonUp(System.Object,System.Windows.Input.MouseButtonEventArgs)">
+            <summary>
+            Hide all Controllers who are bad for this Loop. Select this Loop and plot the graph;
+            </summary>
+            <param name="sender">sender</param>
+            <param name="e">arguments</param>
+        </member>
+        <member name="M:controller_design.WPF.MainWindow.tab_Strecke_IT1_MouseLeftButtonUp(System.Object,System.Windows.Input.MouseButtonEventArgs)">
+            <summary>
+            Hide all Controllers who are bad for this Loop. Select this Loop and plot the graph;
+            </summary>
+            <param name="sender">sender</param>
+            <param name="e">arguments</param>
+        </member>
+        <member name="M:controller_design.WPF.MainWindow.tab_Strecke_PT2_wdse1_MouseLeftButtonUp(System.Object,System.Windows.Input.MouseButtonEventArgs)">
+            <summary>
+            Hide all Controllers who are bad for this Loop. Select this Loop and plot the graph;
+            </summary>
+            <param name="sender">sender</param>
+            <param name="e">arguments</param>
+        </member>
+        <member name="M:controller_design.WPF.MainWindow.tab_Strecke_PT2_wdb1_MouseLeftButtonUp(System.Object,System.Windows.Input.MouseButtonEventArgs)">
+            <summary>
+            Hide all Controllers who are bad for this Loop. Select this Loop and plot the graph;
+            </summary>
+            <param name="sender">sender</param>
+            <param name="e">arguments</param>
+        </member>
+        <member name="M:controller_design.WPF.MainWindow.tab_Strecke_Beliebig_MouseLeftButtonUp(System.Object,System.Windows.Input.MouseButtonEventArgs)">
+            <summary>
+            Hide all Controllers who are bad for this Loop. Select this Loop and plot the graph;
+            </summary>
+            <param name="sender">sender</param>
+            <param name="e">arguments</param>
+        </member>
+        <member name="M:controller_design.WPF.MainWindow.tab_Regler_I_MouseLeftButtonUp(System.Object,System.Windows.Input.MouseButtonEventArgs)">
+            <summary>
+            Select this Controller and plot the graph.
+            </summary>
+            <param name="sender">sender</param>
+            <param name="e">arguments</param>
+        </member>
+        <member name="M:controller_design.WPF.MainWindow.tab_Regler_P_MouseLeftButtonUp(System.Object,System.Windows.Input.MouseButtonEventArgs)">
+            <summary>
+            Select this Controller and plot the graph.
+            </summary>
+            <param name="sender">sender</param>
+            <param name="e">arguments</param>
+        </member>
+        <member name="M:controller_design.WPF.MainWindow.tab_Regler_PI_MouseLeftButtonUp(System.Object,System.Windows.Input.MouseButtonEventArgs)">
+            <summary>
+            Select this Controller and plot the graph.
+            </summary>
+            <param name="sender">sender</param>
+            <param name="e">arguments</param>
+        </member>
+        <member name="M:controller_design.WPF.MainWindow.plot_graph">
+            <summary>
+            Start the simulation and plot the graph
+            </summary>
+        </member>
+        <member name="M:controller_design.WPF.MainWindow.butten_Auslegen_I_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Optimize Controller-I and plot the graph
+            </summary>
+            <param name="sender">sender</param>
+            <param name="e">arguments</param>
+        </member>
+        <member name="M:controller_design.WPF.MainWindow.butten_auslegen_P_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Optimize Controller-P and plot the graph
+            </summary>
+            <param name="sender">sender</param>
+            <param name="e">arguments</param>
+        </member>
+        <member name="M:controller_design.WPF.MainWindow.butten_auslegen_PI_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Optimize Controller-PI and plot the graph
+            </summary>
+            <param name="sender">sender</param>
+            <param name="e">arguments</param>
+        </member>
+        <member name="M:controller_design.WPF.MainWindow.textBox_Ts_TextChanged(System.Object,System.Windows.Controls.TextChangedEventArgs)">
+            <summary>
+            Update Sample Time Base Ts and plot the graph
+            </summary>
+            <param name="sender">sender</param>
+            <param name="e">exponent</param>
+        </member>
+        <member name="M:controller_design.WPF.MainWindow.comboBox_s_Selected(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Set exponent for the Sample Time to 10^0 and plot the graph
+            </summary>
+            <param name="sender">sender</param>
+            <param name="e">arguments</param>
+        </member>
+        <member name="M:controller_design.WPF.MainWindow.comboBox_ms_Selected(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Set exponent for the Sample Time to 10^-3 and plot the graph
+            </summary>
+            <param name="sender">sender</param>
+            <param name="e">arguments</param>
+        </member>
+        <member name="M:controller_design.WPF.MainWindow.comboBox_µs_Selected(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Set exponent for the Sample Time to 10^-6 and plot the graph
+            </summary>
+            <param name="sender">sender</param>
+            <param name="e">arguments</param>
+        </member>
+        <member name="M:controller_design.WPF.MainWindow.comboBox_ns_Selected(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Set exponent for the Sample Time to 10^-9 and plot the graph
+            </summary>
+            <param name="sender">sender</param>
+            <param name="e">arguments</param>
+        </member>
+        <member name="M:controller_design.WPF.MainWindow.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:ReglerTestWPF.Properties.Resources">
+            <summary>
+              Eine stark typisierte Ressourcenklasse zum Suchen von lokalisierten Zeichenfolgen usw.
+            </summary>
+        </member>
+        <member name="P:ReglerTestWPF.Properties.Resources.ResourceManager">
+            <summary>
+              Gibt die zwischengespeicherte ResourceManager-Instanz zurück, die von dieser Klasse verwendet wird.
+            </summary>
+        </member>
+        <member name="P:ReglerTestWPF.Properties.Resources.Culture">
+            <summary>
+              Überschreibt die CurrentUICulture-Eigenschaft des aktuellen Threads für alle
+              Ressourcenlookups, die diese stark typisierte Ressourcenklasse verwenden.
+            </summary>
+        </member>
+    </members>
+</doc>

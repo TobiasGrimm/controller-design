@@ -1,0 +1,366 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HelpKI>
+  <HelpKINode Title="Adder class">
+    <HelpKINode Title="Adder Class" Url="html/6a08b309-d04d-f9cc-3d13-f032cbc4586d.htm" />
+    <HelpKINode Title="about Adder class" Url="html/6a08b309-d04d-f9cc-3d13-f032cbc4586d.htm" />
+    <HelpKINode Title="constructor" Url="html/a5e04b61-7f05-6829-b273-765179d79dce.htm" />
+    <HelpKINode Title="events" Url="html/35a99237-6534-4070-033f-fc1c686de072.htm" />
+    <HelpKINode Title="methods" Url="html/bbdc9e88-bf2a-1e81-cd93-d5a05e53fc20.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Adder.Adder constructor" Url="html/a5e04b61-7f05-6829-b273-765179d79dce.htm" />
+  <HelpKINode Title="Adder.connect_this_Input_with method" Url="html/a974ac3e-a33f-9de9-d1e3-863f4f325f69.htm" />
+  <HelpKINode Title="Adder.disconnect_this_Input_from method" Url="html/906c8b86-f8c4-4683-8cd0-5bdd43121bb7.htm" />
+  <HelpKINode Title="Adder.do_one_step method" Url="html/980d40be-0f32-9cab-4c85-9d7b32f85c9b.htm" />
+  <HelpKINode Title="Adder.I_am_finish event" Url="html/b7127224-4c8b-169d-fd21-d6c7d5582b3e.htm" />
+  <HelpKINode Title="Adder.reset method" Url="html/50de860a-0efc-9212-9445-6d421a517767.htm" />
+  <HelpKINode Title="Adder.set_input method" Url="html/64775c42-637a-2f13-338d-fc841f3fd2ff.htm" />
+  <HelpKINode Title="add_and_shift method" Url="html/4833deae-6ea7-3f9f-eee9-bdbc34bc6b7a.htm" />
+  <HelpKINode Title="Backward_Euler method" Url="html/d8e5a78e-ac3f-285c-f47e-5066cfbc7617.htm" />
+  <HelpKINode Title="Base_Slider class">
+    <HelpKINode Title="Base_Slider Class" Url="html/99477253-2218-4ebc-c299-9fe32eda5fc8.htm" />
+    <HelpKINode Title="about Base_Slider class" Url="html/99477253-2218-4ebc-c299-9fe32eda5fc8.htm" />
+    <HelpKINode Title="constructor" Url="html/47e0af0c-34ee-3a42-a592-8fffb8009c5b.htm" />
+    <HelpKINode Title="events" Url="html/6ec29bf1-636f-bfa6-054a-13748b09acb2.htm" />
+    <HelpKINode Title="methods" Url="html/7c81827f-c13a-75af-42ab-46a41a1978eb.htm" />
+    <HelpKINode Title="properties" Url="html/3e96db3f-e3b4-c059-e4ac-19211980cfcd.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Base_Slider.Base_Slider constructor" Url="html/47e0af0c-34ee-3a42-a592-8fffb8009c5b.htm" />
+  <HelpKINode Title="Base_Slider.InitializeComponent method" Url="html/804badb7-ad06-d264-af42-472a6ee712a3.htm" />
+  <HelpKINode Title="Base_Slider.Label property" Url="html/1a97f7ae-f61d-7f47-40ce-d6c7678ea1f6.htm" />
+  <HelpKINode Title="Base_Slider.set_Base method" Url="html/f99da0e6-e8d2-4c2c-f675-ab953ed8e409.htm" />
+  <HelpKINode Title="Base_Slider.value_changed event" Url="html/e6f4d912-a6d3-3335-1107-463ad765e475.htm" />
+  <HelpKINode Title="connect_this_Input_with method">
+    <HelpKINode Title="Adder.connect_this_Input_with Method " Url="html/a974ac3e-a33f-9de9-d1e3-863f4f325f69.htm" />
+    <HelpKINode Title="ISimulatable.connect_this_Input_with Method " Url="html/2ed7a5bd-18a8-5e9e-931b-64a9ff603b0b.htm" />
+    <HelpKINode Title="Step.connect_this_Input_with Method " Url="html/1d6f486b-f066-f904-0e0b-d840cf1958ac.htm" />
+    <HelpKINode Title="Transferfunction.connect_this_Input_with Method " Url="html/93203fcd-93bb-569c-2f38-d1b9d97c17de.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Controller method" Url="html/72dcd9d1-4fd9-15f0-1f71-4fffd9d15cdc.htm" />
+  <HelpKINode Title="controller_design.Integrators_and_Registers namespace" Url="html/7a9be92c-8314-f8f9-6c09-4291680106ac.htm" />
+  <HelpKINode Title="controller_design.Integrators_and_Registers.Integrator class" Url="html/73dd952b-74ec-8a89-aeae-44bd8e0827dd.htm" />
+  <HelpKINode Title="controller_design.Integrators_and_Registers.Integrator_Register class" Url="html/9c2ae2ef-6d3d-9e8d-2f8f-4ef0f1cbb176.htm" />
+  <HelpKINode Title="controller_design.Integrators_and_Registers.Shift_Register(Of T) class" Url="html/878c69a1-206a-651b-d83a-ef106c6af40d.htm" />
+  <HelpKINode Title="controller_design.Integrators_and_Registers.Shift_Register&lt;T&gt; class" Url="html/878c69a1-206a-651b-d83a-ef106c6af40d.htm" />
+  <HelpKINode Title="controller_design.Schematic namespace" Url="html/af716cbf-613b-8c22-ab2a-fe87ea0f5988.htm" />
+  <HelpKINode Title="controller_design.Schematic.Adder class" Url="html/6a08b309-d04d-f9cc-3d13-f032cbc4586d.htm" />
+  <HelpKINode Title="controller_design.Schematic.Controller_I class" Url="html/804022f4-9477-87e3-cec9-2619e8292eff.htm" />
+  <HelpKINode Title="controller_design.Schematic.Controller_P class" Url="html/fdab0e31-b622-18ec-7742-d6fdcc02e34e.htm" />
+  <HelpKINode Title="controller_design.Schematic.Controller_PI class" Url="html/5b650ed0-5a5b-ebc6-4cfc-83e14b0a4e3e.htm" />
+  <HelpKINode Title="controller_design.Schematic.ISimulatable interface" Url="html/582ae21e-de34-2b1e-3c04-ba8e1fb12693.htm" />
+  <HelpKINode Title="controller_design.Schematic.IT1 class" Url="html/c2e7c5d0-2762-873d-9606-8c3130317153.htm" />
+  <HelpKINode Title="controller_design.Schematic.Optimize class" Url="html/c3446f67-4dd2-c4db-b776-f191d17f6432.htm" />
+  <HelpKINode Title="controller_design.Schematic.OutputEventHandler delegate" Url="html/f5b77905-36c3-2920-e926-1f15ac1d1029.htm" />
+  <HelpKINode Title="controller_design.Schematic.PT1 class" Url="html/762fe325-11a2-ddf9-8b15-357aaa0d25ac.htm" />
+  <HelpKINode Title="controller_design.Schematic.PT2_wdb1 class" Url="html/1a02ca4b-1863-160d-5054-a81222e900d0.htm" />
+  <HelpKINode Title="controller_design.Schematic.PT2_wdse1 class" Url="html/088cd218-63fe-06b6-c77d-a77bd88c555f.htm" />
+  <HelpKINode Title="controller_design.Schematic.Simulator class" Url="html/25efb38c-53dc-5def-8679-0e55c5d7382b.htm" />
+  <HelpKINode Title="controller_design.Schematic.Step class" Url="html/44c57a78-c34c-a0f5-7915-d7217a84c0ad.htm" />
+  <HelpKINode Title="controller_design.Schematic.Transferfunction class" Url="html/8861fe2e-5b3c-c045-b7b1-ea36aa06b8f0.htm" />
+  <HelpKINode Title="controller_design.WPF namespace" Url="html/e9eaa5b9-6e55-b17f-8662-ed64e26a9822.htm" />
+  <HelpKINode Title="controller_design.WPF.MainWindow class" Url="html/585ce96d-5477-99c1-4921-71ff3984f918.htm" />
+  <HelpKINode Title="Controller_I class">
+    <HelpKINode Title="Controller_I Class" Url="html/804022f4-9477-87e3-cec9-2619e8292eff.htm" />
+    <HelpKINode Title="about Controller_I class" Url="html/804022f4-9477-87e3-cec9-2619e8292eff.htm" />
+    <HelpKINode Title="constructor" Url="html/9cf03ea8-5335-22ab-e6f7-1adf969e5ce6.htm" />
+    <HelpKINode Title="events" Url="html/2ff21fc7-38e1-650d-acff-b34907480d39.htm" />
+    <HelpKINode Title="fields" Url="html/5588fa6d-0b8f-f349-4313-c8d319367474.htm" />
+    <HelpKINode Title="methods" Url="html/b898b65e-7f73-2b94-3516-80fcf950437e.htm" />
+    <HelpKINode Title="properties" Url="html/e314d32f-6bfd-f0ab-32ba-a2cf2450ed45.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Controller_I.Controller_I constructor" Url="html/9cf03ea8-5335-22ab-e6f7-1adf969e5ce6.htm" />
+  <HelpKINode Title="Controller_I.recalc_coefficients method" Url="html/9415f6bc-26b1-6439-a7bb-903ca3e78c7f.htm" />
+  <HelpKINode Title="Controller_I._Ti property" Url="html/b3657cad-715d-a917-d566-09defabc191b.htm" />
+  <HelpKINode Title="Controller_P class">
+    <HelpKINode Title="Controller_P Class" Url="html/fdab0e31-b622-18ec-7742-d6fdcc02e34e.htm" />
+    <HelpKINode Title="about Controller_P class" Url="html/fdab0e31-b622-18ec-7742-d6fdcc02e34e.htm" />
+    <HelpKINode Title="constructor" Url="html/7b084ab9-9cfe-153c-d044-7e8e9c2970ad.htm" />
+    <HelpKINode Title="events" Url="html/9d077264-3c2e-1d76-c1ad-438a1205bd12.htm" />
+    <HelpKINode Title="fields" Url="html/ae6573fa-77ee-7d13-1695-ed659b288f7f.htm" />
+    <HelpKINode Title="methods" Url="html/7ab6d38a-1155-4527-341f-a94d536f1fad.htm" />
+    <HelpKINode Title="properties" Url="html/6a33a7bd-7ac8-f6df-5a05-53e4e3634486.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Controller_P.Controller_P constructor" Url="html/7b084ab9-9cfe-153c-d044-7e8e9c2970ad.htm" />
+  <HelpKINode Title="Controller_P.recalc_coefficients method" Url="html/b96ba9ba-e66c-699b-1684-a3bb95315e54.htm" />
+  <HelpKINode Title="Controller_P._Vr property" Url="html/2f52dafd-811c-ac69-2b91-a4413a912fb8.htm" />
+  <HelpKINode Title="Controller_PI class">
+    <HelpKINode Title="Controller_PI Class" Url="html/5b650ed0-5a5b-ebc6-4cfc-83e14b0a4e3e.htm" />
+    <HelpKINode Title="about Controller_PI class" Url="html/5b650ed0-5a5b-ebc6-4cfc-83e14b0a4e3e.htm" />
+    <HelpKINode Title="constructor" Url="html/02c25803-e911-b172-632d-747a92244fff.htm" />
+    <HelpKINode Title="events" Url="html/9bd97b92-cc46-0566-2e9d-5cb043724add.htm" />
+    <HelpKINode Title="fields" Url="html/f1e48d91-e6cc-599c-eaf2-cd46533a084e.htm" />
+    <HelpKINode Title="methods" Url="html/31a6023a-0b10-bd2c-6496-cc09795dcfb8.htm" />
+    <HelpKINode Title="properties" Url="html/e7474183-113b-43d2-893b-85348c93b285.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Controller_PI.Controller_PI constructor" Url="html/02c25803-e911-b172-632d-747a92244fff.htm" />
+  <HelpKINode Title="Controller_PI.recalc_coefficients method" Url="html/218dfba2-9405-b875-2fd8-8ec4fac68551.htm" />
+  <HelpKINode Title="Controller_PI._Tn property" Url="html/6dc507fb-eb31-23d8-6c9f-7d1395d02fde.htm" />
+  <HelpKINode Title="Controller_PI._Vr property" Url="html/d7a136d1-7147-6e90-1b48-e7c6db86231e.htm" />
+  <HelpKINode Title="Control_Tools namespace" Url="html/8f126cf7-5376-1e0f-1b80-4d3759242393.htm" />
+  <HelpKINode Title="Control_Tools.Base_Slider class" Url="html/99477253-2218-4ebc-c299-9fe32eda5fc8.htm" />
+  <HelpKINode Title="Control_Tools.OutputEventHandler delegate" Url="html/2f572d74-d6b5-1fce-7b8b-3879b7f65564.htm" />
+  <HelpKINode Title="disconnect_this_Input_from method">
+    <HelpKINode Title="Adder.disconnect_this_Input_from Method " Url="html/906c8b86-f8c4-4683-8cd0-5bdd43121bb7.htm" />
+    <HelpKINode Title="ISimulatable.disconnect_this_Input_from Method " Url="html/48cc3bfc-615a-c1f1-9fdc-06d7c5199755.htm" />
+    <HelpKINode Title="Step.disconnect_this_Input_from Method " Url="html/32108fee-cc80-314f-a10f-b8bf2b3d6bb4.htm" />
+    <HelpKINode Title="Transferfunction.disconnect_this_Input_from Method " Url="html/a50a00f4-6761-8165-79ac-11a17c804489.htm" />
+  </HelpKINode>
+  <HelpKINode Title="do_one_step method">
+    <HelpKINode Title="Adder.do_one_step Method " Url="html/980d40be-0f32-9cab-4c85-9d7b32f85c9b.htm" />
+    <HelpKINode Title="Integrator_Register.do_one_step Method " Url="html/737261cc-63a3-70d3-2407-00ba7c448f26.htm" />
+    <HelpKINode Title="ISimulatable.do_one_step Method " Url="html/99be182e-b419-d836-8f9b-357eeb9ab2bc.htm" />
+    <HelpKINode Title="Step.do_one_step Method " Url="html/29b7d00b-d540-9719-da18-a40fc6433ecd.htm" />
+    <HelpKINode Title="Transferfunction.do_one_step Method " Url="html/f5b48515-d955-496e-3e6a-f382a341e47a.htm" />
+  </HelpKINode>
+  <HelpKINode Title="InitializeComponent method">
+    <HelpKINode Title="Base_Slider.InitializeComponent Method " Url="html/804badb7-ad06-d264-af42-472a6ee712a3.htm" />
+    <HelpKINode Title="MainWindow.InitializeComponent Method " Url="html/08370433-60a9-9239-97ce-66950c90d98e.htm" />
+  </HelpKINode>
+  <HelpKINode Title="init_p method" Url="html/73a9b015-b0a1-616b-5240-6a4dca425f41.htm" />
+  <HelpKINode Title="Integrator class">
+    <HelpKINode Title="Integrator Class" Url="html/73dd952b-74ec-8a89-aeae-44bd8e0827dd.htm" />
+    <HelpKINode Title="about Integrator class" Url="html/73dd952b-74ec-8a89-aeae-44bd8e0827dd.htm" />
+    <HelpKINode Title="methods" Url="html/1ebe094b-9954-742d-0764-239e8a90a98e.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Integrator.Backward_Euler method" Url="html/d8e5a78e-ac3f-285c-f47e-5066cfbc7617.htm" />
+  <HelpKINode Title="Integrator.Trapezoidal method" Url="html/a9302e07-9133-e8b3-6d91-be307e77ac91.htm" />
+  <HelpKINode Title="Integrator_Register class">
+    <HelpKINode Title="Integrator_Register Class" Url="html/9c2ae2ef-6d3d-9e8d-2f8f-4ef0f1cbb176.htm" />
+    <HelpKINode Title="about Integrator_Register class" Url="html/9c2ae2ef-6d3d-9e8d-2f8f-4ef0f1cbb176.htm" />
+    <HelpKINode Title="constructor" Url="html/5929f8cc-e2d9-3a4d-45ba-de614856ffc7.htm" />
+    <HelpKINode Title="methods" Url="html/93806d8c-d03f-686a-6c3f-7427e3b23cd8.htm" />
+    <HelpKINode Title="properties" Url="html/8a83a27b-4cfc-98af-33ea-fea1ddc1c1ce.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Integrator_Register.do_one_step method" Url="html/737261cc-63a3-70d3-2407-00ba7c448f26.htm" />
+  <HelpKINode Title="Integrator_Register.Integrator_Register constructor" Url="html/5929f8cc-e2d9-3a4d-45ba-de614856ffc7.htm" />
+  <HelpKINode Title="Integrator_Register.Item property" Url="html/720a9414-0597-f24e-aef2-62028757b8e3.htm" />
+  <HelpKINode Title="Integrator_Register.reset method" Url="html/be04f528-243d-9cd5-d8a8-8e8377b0c65f.htm" />
+  <HelpKINode Title="Integrator_Register.ToString method" Url="html/b6da256a-ce49-69d7-6022-c67ee9d19231.htm" />
+  <HelpKINode Title="ISimulatable interface">
+    <HelpKINode Title="ISimulatable Interface" Url="html/582ae21e-de34-2b1e-3c04-ba8e1fb12693.htm" />
+    <HelpKINode Title="about ISimulatable interface" Url="html/582ae21e-de34-2b1e-3c04-ba8e1fb12693.htm" />
+    <HelpKINode Title="events" Url="html/c20d623c-871b-4085-265e-d0233d8bd3d3.htm" />
+    <HelpKINode Title="methods" Url="html/72c5aa01-70b1-106b-bf64-47cee461e216.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ISimulatable.connect_this_Input_with method" Url="html/2ed7a5bd-18a8-5e9e-931b-64a9ff603b0b.htm" />
+  <HelpKINode Title="ISimulatable.disconnect_this_Input_from method" Url="html/48cc3bfc-615a-c1f1-9fdc-06d7c5199755.htm" />
+  <HelpKINode Title="ISimulatable.do_one_step method" Url="html/99be182e-b419-d836-8f9b-357eeb9ab2bc.htm" />
+  <HelpKINode Title="ISimulatable.I_am_finish event" Url="html/8398b58a-58d6-3535-9b5d-c8ff57c195ff.htm" />
+  <HelpKINode Title="ISimulatable.reset method" Url="html/ee53a307-4023-75d5-9055-11193ddfeff0.htm" />
+  <HelpKINode Title="ISimulatable.set_input method" Url="html/35b4fada-439a-715b-9baa-76a482bfa8a9.htm" />
+  <HelpKINode Title="IT1 class">
+    <HelpKINode Title="IT1 Class" Url="html/c2e7c5d0-2762-873d-9606-8c3130317153.htm" />
+    <HelpKINode Title="about IT1 class" Url="html/c2e7c5d0-2762-873d-9606-8c3130317153.htm" />
+    <HelpKINode Title="constructor" Url="html/91fa2fd0-81cc-7993-df7a-c500d06143af.htm" />
+    <HelpKINode Title="events" Url="html/c52cdbd0-459e-4f8e-b028-8bf20094fcf4.htm" />
+    <HelpKINode Title="fields" Url="html/673118f3-27f3-cc9f-e5b7-cee757e97815.htm" />
+    <HelpKINode Title="methods" Url="html/a8190d31-8dbe-c343-2326-51de098aabde.htm" />
+    <HelpKINode Title="properties" Url="html/37ddbff3-661c-8be7-0ee5-d247baf087b8.htm" />
+  </HelpKINode>
+  <HelpKINode Title="IT1.IT1 constructor" Url="html/91fa2fd0-81cc-7993-df7a-c500d06143af.htm" />
+  <HelpKINode Title="IT1.recalc_coefficients method" Url="html/b0f0b130-e458-3935-1d12-e05ccbcb76b5.htm" />
+  <HelpKINode Title="IT1._T2 property" Url="html/6d987a8c-0fd2-d4ed-f6a2-3935a4227820.htm" />
+  <HelpKINode Title="IT1._Ti property" Url="html/6123538c-624f-f600-67d4-1b0a21e66739.htm" />
+  <HelpKINode Title="Item property">
+    <HelpKINode Title="Integrator_Register.Item Property " Url="html/720a9414-0597-f24e-aef2-62028757b8e3.htm" />
+    <HelpKINode Title="Shift_Register(T).Item Property " Url="html/7c0aff7e-ff26-ed55-5252-48ea99691711.htm" />
+  </HelpKINode>
+  <HelpKINode Title="I_am_finish event">
+    <HelpKINode Title="Adder.I_am_finish Event" Url="html/b7127224-4c8b-169d-fd21-d6c7d5582b3e.htm" />
+    <HelpKINode Title="ISimulatable.I_am_finish Event" Url="html/8398b58a-58d6-3535-9b5d-c8ff57c195ff.htm" />
+    <HelpKINode Title="Step.I_am_finish Event" Url="html/5156f500-a906-6e42-ff50-65c7d53af1ac.htm" />
+    <HelpKINode Title="Transferfunction.I_am_finish Event" Url="html/b768d803-0fdd-320a-39d1-f976ab689666.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Label property" Url="html/1a97f7ae-f61d-7f47-40ce-d6c7678ea1f6.htm" />
+  <HelpKINode Title="MainWindow class">
+    <HelpKINode Title="MainWindow Class" Url="html/585ce96d-5477-99c1-4921-71ff3984f918.htm" />
+    <HelpKINode Title="about MainWindow class" Url="html/585ce96d-5477-99c1-4921-71ff3984f918.htm" />
+    <HelpKINode Title="constructor" Url="html/b0080afe-3b31-5ffc-5780-de3b9b5f996e.htm" />
+    <HelpKINode Title="events" Url="html/01442282-98e7-93d8-c9ba-e2f04e2b6397.htm" />
+    <HelpKINode Title="methods" Url="html/cbd87335-04f8-5c48-79e3-5ee7a5182600.htm" />
+    <HelpKINode Title="properties" Url="html/b818fef1-a0f5-3b7c-3ec9-07de461d7ba0.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MainWindow.InitializeComponent method" Url="html/08370433-60a9-9239-97ce-66950c90d98e.htm" />
+  <HelpKINode Title="MainWindow.MainWindow constructor" Url="html/b0080afe-3b31-5ffc-5780-de3b9b5f996e.htm" />
+  <HelpKINode Title="Optimize class">
+    <HelpKINode Title="Optimize Class" Url="html/c3446f67-4dd2-c4db-b776-f191d17f6432.htm" />
+    <HelpKINode Title="about Optimize class" Url="html/c3446f67-4dd2-c4db-b776-f191d17f6432.htm" />
+    <HelpKINode Title="methods" Url="html/792a22ec-4749-0c94-d262-4824d8b0e9e1.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Optimize.Controller method" Url="html/72dcd9d1-4fd9-15f0-1f71-4fffd9d15cdc.htm" />
+  <HelpKINode Title="OutputEventHandler delegate">
+    <HelpKINode Title="OutputEventHandler Delegate" Url="html/f5b77905-36c3-2920-e926-1f15ac1d1029.htm" />
+    <HelpKINode Title="OutputEventHandler Delegate" Url="html/2f572d74-d6b5-1fce-7b8b-3879b7f65564.htm" />
+  </HelpKINode>
+  <HelpKINode Title="PT1 class">
+    <HelpKINode Title="PT1 Class" Url="html/762fe325-11a2-ddf9-8b15-357aaa0d25ac.htm" />
+    <HelpKINode Title="about PT1 class" Url="html/762fe325-11a2-ddf9-8b15-357aaa0d25ac.htm" />
+    <HelpKINode Title="constructor" Url="html/6dddb8ea-a95a-9844-4f75-24341dd2f74e.htm" />
+    <HelpKINode Title="events" Url="html/80db4649-6031-6c47-0277-1e29b7548533.htm" />
+    <HelpKINode Title="fields" Url="html/a478a799-ba92-035b-dc58-85ac4b0d7a1d.htm" />
+    <HelpKINode Title="methods" Url="html/9378e875-554c-3207-111a-f397bdda05a4.htm" />
+    <HelpKINode Title="properties" Url="html/103ca291-28fd-93fa-d189-aa1d0878ce3f.htm" />
+  </HelpKINode>
+  <HelpKINode Title="PT1.PT1 constructor" Url="html/6dddb8ea-a95a-9844-4f75-24341dd2f74e.htm" />
+  <HelpKINode Title="PT1.recalc_coefficients method" Url="html/ad9693e0-9b08-1412-ccda-6e4c5585e561.htm" />
+  <HelpKINode Title="PT1._T1 property" Url="html/e22a5ac2-62dc-d4fc-fc71-ccb7ac3b1e4e.htm" />
+  <HelpKINode Title="PT1._Vs property" Url="html/a6cb5e86-61cc-4d73-5e0a-95c340cb6996.htm" />
+  <HelpKINode Title="PT2_wdb1 class">
+    <HelpKINode Title="PT2_wdb1 Class" Url="html/1a02ca4b-1863-160d-5054-a81222e900d0.htm" />
+    <HelpKINode Title="about PT2_wdb1 class" Url="html/1a02ca4b-1863-160d-5054-a81222e900d0.htm" />
+    <HelpKINode Title="constructor" Url="html/e3e4e424-2c14-34c4-96c7-d265cb178542.htm" />
+    <HelpKINode Title="events" Url="html/2d7e3d5b-77fb-85e9-92fc-a78e456299f1.htm" />
+    <HelpKINode Title="fields" Url="html/f96c2d40-5e60-0c23-5d83-154cba053069.htm" />
+    <HelpKINode Title="methods" Url="html/62898181-b387-90aa-4a80-e1de2bffedb5.htm" />
+    <HelpKINode Title="properties" Url="html/8b00e837-703b-36d1-5ec3-4c3827e01cb3.htm" />
+  </HelpKINode>
+  <HelpKINode Title="PT2_wdb1.PT2_wdb1 constructor" Url="html/e3e4e424-2c14-34c4-96c7-d265cb178542.htm" />
+  <HelpKINode Title="PT2_wdb1.recalc_coefficients method" Url="html/595714b8-16f8-0caa-d98c-3167a28b0e54.htm" />
+  <HelpKINode Title="PT2_wdb1._T1 property" Url="html/20417d65-9715-b325-f918-a5f53574fdf1.htm" />
+  <HelpKINode Title="PT2_wdb1._T2 property" Url="html/9e99bc7a-bc3e-e8cb-bb67-3d2b7dbef508.htm" />
+  <HelpKINode Title="PT2_wdb1._Vs property" Url="html/7d352b39-7e78-70c2-c8c5-677fa2ad8f87.htm" />
+  <HelpKINode Title="PT2_wdse1 class">
+    <HelpKINode Title="PT2_wdse1 Class" Url="html/088cd218-63fe-06b6-c77d-a77bd88c555f.htm" />
+    <HelpKINode Title="about PT2_wdse1 class" Url="html/088cd218-63fe-06b6-c77d-a77bd88c555f.htm" />
+    <HelpKINode Title="constructor" Url="html/8d89ebd3-4e49-7534-b9f5-b43dd3447591.htm" />
+    <HelpKINode Title="events" Url="html/cf70e209-6843-579b-6ac1-6e5102b1103e.htm" />
+    <HelpKINode Title="fields" Url="html/517aa18f-7942-bf85-ed08-3a843e580094.htm" />
+    <HelpKINode Title="methods" Url="html/fbadac75-c231-fcbe-4970-22e602087f5e.htm" />
+    <HelpKINode Title="properties" Url="html/15a4b1f2-33ed-405c-58b3-1551b971b586.htm" />
+  </HelpKINode>
+  <HelpKINode Title="PT2_wdse1.PT2_wdse1 constructor" Url="html/8d89ebd3-4e49-7534-b9f5-b43dd3447591.htm" />
+  <HelpKINode Title="PT2_wdse1.recalc_coefficients method" Url="html/97d09e47-a488-a8e6-10b3-bc2327b2d77a.htm" />
+  <HelpKINode Title="PT2_wdse1._d property" Url="html/f974375a-7150-042d-0bba-6b47e53d85b0.htm" />
+  <HelpKINode Title="PT2_wdse1._T property" Url="html/53c7a543-6bf9-bacd-25a4-eed887610776.htm" />
+  <HelpKINode Title="PT2_wdse1._Vs property" Url="html/7d8d005b-ae6b-64e0-6ed0-d877d363b3d5.htm" />
+  <HelpKINode Title="recalc_coefficients method">
+    <HelpKINode Title="Controller_I.recalc_coefficients Method " Url="html/9415f6bc-26b1-6439-a7bb-903ca3e78c7f.htm" />
+    <HelpKINode Title="Controller_P.recalc_coefficients Method " Url="html/b96ba9ba-e66c-699b-1684-a3bb95315e54.htm" />
+    <HelpKINode Title="Controller_PI.recalc_coefficients Method " Url="html/218dfba2-9405-b875-2fd8-8ec4fac68551.htm" />
+    <HelpKINode Title="IT1.recalc_coefficients Method " Url="html/b0f0b130-e458-3935-1d12-e05ccbcb76b5.htm" />
+    <HelpKINode Title="PT1.recalc_coefficients Method " Url="html/ad9693e0-9b08-1412-ccda-6e4c5585e561.htm" />
+    <HelpKINode Title="PT2_wdb1.recalc_coefficients Method " Url="html/595714b8-16f8-0caa-d98c-3167a28b0e54.htm" />
+    <HelpKINode Title="PT2_wdse1.recalc_coefficients Method " Url="html/97d09e47-a488-a8e6-10b3-bc2327b2d77a.htm" />
+  </HelpKINode>
+  <HelpKINode Title="replace_in_Schematic_at_pos method" Url="html/db7c77da-fbfe-523e-d93d-96dd6c5ebeb8.htm" />
+  <HelpKINode Title="reset method">
+    <HelpKINode Title="Adder.reset Method " Url="html/50de860a-0efc-9212-9445-6d421a517767.htm" />
+    <HelpKINode Title="Integrator_Register.reset Method " Url="html/be04f528-243d-9cd5-d8a8-8e8377b0c65f.htm" />
+    <HelpKINode Title="ISimulatable.reset Method " Url="html/ee53a307-4023-75d5-9055-11193ddfeff0.htm" />
+    <HelpKINode Title="Step.reset Method " Url="html/658194f4-ef1d-639b-5391-9b78ca4c6d38.htm" />
+    <HelpKINode Title="Transferfunction.reset Method " Url="html/60f2b793-63fa-9064-bcba-38d153141842.htm" />
+  </HelpKINode>
+  <HelpKINode Title="set_Base method" Url="html/f99da0e6-e8d2-4c2c-f675-ab953ed8e409.htm" />
+  <HelpKINode Title="set_input method">
+    <HelpKINode Title="Adder.set_input Method " Url="html/64775c42-637a-2f13-338d-fc841f3fd2ff.htm" />
+    <HelpKINode Title="ISimulatable.set_input Method " Url="html/35b4fada-439a-715b-9baa-76a482bfa8a9.htm" />
+    <HelpKINode Title="Step.set_input Method " Url="html/57d8ffb5-79e1-6b5d-0677-8ad8fcf8a696.htm" />
+    <HelpKINode Title="Transferfunction.set_input Method " Url="html/1d63ca6e-139f-cd34-2a3f-81010d395f46.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Shift_Register(Of T) class">
+    <HelpKINode Title="Shift_Register(T) Class" Url="html/878c69a1-206a-651b-d83a-ef106c6af40d.htm" />
+    <HelpKINode Title="about Shift_Register(Of T) class" Url="html/878c69a1-206a-651b-d83a-ef106c6af40d.htm" />
+    <HelpKINode Title="constructor" Url="html/bbe8a4b8-db23-3ed0-2c30-d285ed660b39.htm" />
+    <HelpKINode Title="methods" Url="html/5a88c57c-6309-35a1-b933-6b4a1639b229.htm" />
+    <HelpKINode Title="properties" Url="html/1af9982c-0788-0dae-4320-2ae1aad9da88.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Shift_Register(Of T).add_and_shift method" Url="html/4833deae-6ea7-3f9f-eee9-bdbc34bc6b7a.htm" />
+  <HelpKINode Title="Shift_Register(Of T).Item property" Url="html/7c0aff7e-ff26-ed55-5252-48ea99691711.htm" />
+  <HelpKINode Title="Shift_Register(Of T).Shift_Register constructor" Url="html/bbe8a4b8-db23-3ed0-2c30-d285ed660b39.htm" />
+  <HelpKINode Title="Shift_Register(Of T).ToString method" Url="html/560c8b98-32a0-ee51-ccf5-641204021370.htm" />
+  <HelpKINode Title="Shift_Register&lt;T&gt; class">
+    <HelpKINode Title="Shift_Register(T) Class" Url="html/878c69a1-206a-651b-d83a-ef106c6af40d.htm" />
+    <HelpKINode Title="about Shift_Register&lt;T&gt; class" Url="html/878c69a1-206a-651b-d83a-ef106c6af40d.htm" />
+    <HelpKINode Title="constructor" Url="html/bbe8a4b8-db23-3ed0-2c30-d285ed660b39.htm" />
+    <HelpKINode Title="methods" Url="html/5a88c57c-6309-35a1-b933-6b4a1639b229.htm" />
+    <HelpKINode Title="properties" Url="html/1af9982c-0788-0dae-4320-2ae1aad9da88.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Shift_Register&lt;T&gt;.add_and_shift method" Url="html/4833deae-6ea7-3f9f-eee9-bdbc34bc6b7a.htm" />
+  <HelpKINode Title="Shift_Register&lt;T&gt;.Item property" Url="html/7c0aff7e-ff26-ed55-5252-48ea99691711.htm" />
+  <HelpKINode Title="Shift_Register&lt;T&gt;.Shift_Register constructor" Url="html/bbe8a4b8-db23-3ed0-2c30-d285ed660b39.htm" />
+  <HelpKINode Title="Shift_Register&lt;T&gt;.ToString method" Url="html/560c8b98-32a0-ee51-ccf5-641204021370.htm" />
+  <HelpKINode Title="simulate method" Url="html/b259172d-d38b-e645-0987-3bb2cd07c35b.htm" />
+  <HelpKINode Title="Simulator class">
+    <HelpKINode Title="Simulator Class" Url="html/25efb38c-53dc-5def-8679-0e55c5d7382b.htm" />
+    <HelpKINode Title="about Simulator class" Url="html/25efb38c-53dc-5def-8679-0e55c5d7382b.htm" />
+    <HelpKINode Title="constructor" Url="html/a4f50a78-22a8-feaa-1aec-7a9afda585e5.htm" />
+    <HelpKINode Title="methods" Url="html/e0d8913b-b683-e778-f284-bebeafbc4d2e.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Simulator.replace_in_Schematic_at_pos method" Url="html/db7c77da-fbfe-523e-d93d-96dd6c5ebeb8.htm" />
+  <HelpKINode Title="Simulator.simulate method" Url="html/b259172d-d38b-e645-0987-3bb2cd07c35b.htm" />
+  <HelpKINode Title="Simulator.Simulator constructor" Url="html/a4f50a78-22a8-feaa-1aec-7a9afda585e5.htm" />
+  <HelpKINode Title="Step class">
+    <HelpKINode Title="Step Class" Url="html/44c57a78-c34c-a0f5-7915-d7217a84c0ad.htm" />
+    <HelpKINode Title="about Step class" Url="html/44c57a78-c34c-a0f5-7915-d7217a84c0ad.htm" />
+    <HelpKINode Title="constructor" Url="html/e7b423ac-46e9-53f9-3d29-e2226e64cee8.htm" />
+    <HelpKINode Title="events" Url="html/35a2d3fb-9e7d-331f-838d-9b620e4e83ff.htm" />
+    <HelpKINode Title="methods" Url="html/0f87bb4d-b9c2-6250-cf77-3fcf9d019d3b.htm" />
+    <HelpKINode Title="properties" Url="html/1b2544fc-68cd-8687-c8de-b443f5c27fe0.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Step.connect_this_Input_with method" Url="html/1d6f486b-f066-f904-0e0b-d840cf1958ac.htm" />
+  <HelpKINode Title="Step.disconnect_this_Input_from method" Url="html/32108fee-cc80-314f-a10f-b8bf2b3d6bb4.htm" />
+  <HelpKINode Title="Step.do_one_step method" Url="html/29b7d00b-d540-9719-da18-a40fc6433ecd.htm" />
+  <HelpKINode Title="Step.I_am_finish event" Url="html/5156f500-a906-6e42-ff50-65c7d53af1ac.htm" />
+  <HelpKINode Title="Step.reset method" Url="html/658194f4-ef1d-639b-5391-9b78ca4c6d38.htm" />
+  <HelpKINode Title="Step.set_input method" Url="html/57d8ffb5-79e1-6b5d-0677-8ad8fcf8a696.htm" />
+  <HelpKINode Title="Step.Step constructor" Url="html/e7b423ac-46e9-53f9-3d29-e2226e64cee8.htm" />
+  <HelpKINode Title="Step._step_Time property" Url="html/f7b6f698-0f34-6002-3459-d1b211f73fa3.htm" />
+  <HelpKINode Title="Step._step_Value property" Url="html/2e9f2f85-5718-323e-8d41-4829c5387533.htm" />
+  <HelpKINode Title="ToString method">
+    <HelpKINode Title="Integrator_Register.ToString Method " Url="html/b6da256a-ce49-69d7-6022-c67ee9d19231.htm" />
+    <HelpKINode Title="Shift_Register(T).ToString Method " Url="html/560c8b98-32a0-ee51-ccf5-641204021370.htm" />
+    <HelpKINode Title="Transferfunction.ToString Method " Url="html/09470130-7406-cca6-e52d-84286e39600d.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Transferfunction class">
+    <HelpKINode Title="Transferfunction Class" Url="html/8861fe2e-5b3c-c045-b7b1-ea36aa06b8f0.htm" />
+    <HelpKINode Title="about Transferfunction class" Url="html/8861fe2e-5b3c-c045-b7b1-ea36aa06b8f0.htm" />
+    <HelpKINode Title="constructor" Url="html/4fb284dc-e944-1b53-89e3-fc152d355496.htm" />
+    <HelpKINode Title="events" Url="html/dafe6299-4a24-8eac-107a-e862a4058054.htm" />
+    <HelpKINode Title="fields" Url="html/c98bc0ee-514e-cddf-187e-5ac8e072386d.htm" />
+    <HelpKINode Title="methods" Url="html/75c0c4d9-310f-d8dc-daf7-a2e144424471.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Transferfunction.connect_this_Input_with method" Url="html/93203fcd-93bb-569c-2f38-d1b9d97c17de.htm" />
+  <HelpKINode Title="Transferfunction.disconnect_this_Input_from method" Url="html/a50a00f4-6761-8165-79ac-11a17c804489.htm" />
+  <HelpKINode Title="Transferfunction.do_one_step method" Url="html/f5b48515-d955-496e-3e6a-f382a341e47a.htm" />
+  <HelpKINode Title="Transferfunction.init_p method" Url="html/73a9b015-b0a1-616b-5240-6a4dca425f41.htm" />
+  <HelpKINode Title="Transferfunction.I_am_finish event" Url="html/b768d803-0fdd-320a-39d1-f976ab689666.htm" />
+  <HelpKINode Title="Transferfunction.reset method" Url="html/60f2b793-63fa-9064-bcba-38d153141842.htm" />
+  <HelpKINode Title="Transferfunction.set_input method" Url="html/1d63ca6e-139f-cd34-2a3f-81010d395f46.htm" />
+  <HelpKINode Title="Transferfunction.ToString method" Url="html/09470130-7406-cca6-e52d-84286e39600d.htm" />
+  <HelpKINode Title="Transferfunction.Transferfunction constructor" Url="html/4fb284dc-e944-1b53-89e3-fc152d355496.htm" />
+  <HelpKINode Title="Transferfunction._a field" Url="html/f15f71f5-d1dc-9ac3-ffaf-b5cc18126330.htm" />
+  <HelpKINode Title="Transferfunction._b field" Url="html/872e67a9-144d-81b2-0ef5-2daa5d24cced.htm" />
+  <HelpKINode Title="Transferfunction._input field" Url="html/11aefc14-1574-41fb-8a78-f4eb44a68180.htm" />
+  <HelpKINode Title="Transferfunction._p field" Url="html/f5f94cf0-729f-cb20-3a31-01df748f89fb.htm" />
+  <HelpKINode Title="Trapezoidal method" Url="html/a9302e07-9133-e8b3-6d91-be307e77ac91.htm" />
+  <HelpKINode Title="value_changed event" Url="html/e6f4d912-a6d3-3335-1107-463ad765e475.htm" />
+  <HelpKINode Title="_a field" Url="html/f15f71f5-d1dc-9ac3-ffaf-b5cc18126330.htm" />
+  <HelpKINode Title="_b field" Url="html/872e67a9-144d-81b2-0ef5-2daa5d24cced.htm" />
+  <HelpKINode Title="_d property" Url="html/f974375a-7150-042d-0bba-6b47e53d85b0.htm" />
+  <HelpKINode Title="_input field" Url="html/11aefc14-1574-41fb-8a78-f4eb44a68180.htm" />
+  <HelpKINode Title="_p field" Url="html/f5f94cf0-729f-cb20-3a31-01df748f89fb.htm" />
+  <HelpKINode Title="_step_Time property" Url="html/f7b6f698-0f34-6002-3459-d1b211f73fa3.htm" />
+  <HelpKINode Title="_step_Value property" Url="html/2e9f2f85-5718-323e-8d41-4829c5387533.htm" />
+  <HelpKINode Title="_T property" Url="html/53c7a543-6bf9-bacd-25a4-eed887610776.htm" />
+  <HelpKINode Title="_T1 property">
+    <HelpKINode Title="PT1._T1 Property " Url="html/e22a5ac2-62dc-d4fc-fc71-ccb7ac3b1e4e.htm" />
+    <HelpKINode Title="PT2_wdb1._T1 Property " Url="html/20417d65-9715-b325-f918-a5f53574fdf1.htm" />
+  </HelpKINode>
+  <HelpKINode Title="_T2 property">
+    <HelpKINode Title="IT1._T2 Property " Url="html/6d987a8c-0fd2-d4ed-f6a2-3935a4227820.htm" />
+    <HelpKINode Title="PT2_wdb1._T2 Property " Url="html/9e99bc7a-bc3e-e8cb-bb67-3d2b7dbef508.htm" />
+  </HelpKINode>
+  <HelpKINode Title="_Ti property">
+    <HelpKINode Title="Controller_I._Ti Property " Url="html/b3657cad-715d-a917-d566-09defabc191b.htm" />
+    <HelpKINode Title="IT1._Ti Property " Url="html/6123538c-624f-f600-67d4-1b0a21e66739.htm" />
+  </HelpKINode>
+  <HelpKINode Title="_Tn property" Url="html/6dc507fb-eb31-23d8-6c9f-7d1395d02fde.htm" />
+  <HelpKINode Title="_Vr property">
+    <HelpKINode Title="Controller_P._Vr Property " Url="html/2f52dafd-811c-ac69-2b91-a4413a912fb8.htm" />
+    <HelpKINode Title="Controller_PI._Vr Property " Url="html/d7a136d1-7147-6e90-1b48-e7c6db86231e.htm" />
+  </HelpKINode>
+  <HelpKINode Title="_Vs property">
+    <HelpKINode Title="PT1._Vs Property " Url="html/a6cb5e86-61cc-4d73-5e0a-95c340cb6996.htm" />
+    <HelpKINode Title="PT2_wdb1._Vs Property " Url="html/7d352b39-7e78-70c2-c8c5-677fa2ad8f87.htm" />
+    <HelpKINode Title="PT2_wdse1._Vs Property " Url="html/7d8d005b-ae6b-64e0-6ed0-d877d363b3d5.htm" />
+  </HelpKINode>
+</HelpKI>

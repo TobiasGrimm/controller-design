@@ -31,3 +31,4 @@ C:\Users\Tobias\Documents\GitHub\controller-design\Live_Tuner\Live_Tuner\obj\Deb
 C:\Users\Tobias\Documents\GitHub\controller-design\Live_Tuner\Live_Tuner\obj\Debug\ReglerTestWPF.g.resources
 C:\Users\Tobias\Documents\GitHub\controller-design\Live_Tuner\Live_Tuner\obj\Debug\ReglerTestWPF.Properties.Resources.resources
 C:\Users\Tobias\Documents\GitHub\controller-design\Live_Tuner\Live_Tuner\obj\Debug\Live_Tuner.csproj.GenerateResource.Cache
+C:\Users\Tobias\Documents\GitHub\controller-design\Live_Tuner\Live_Tuner\bin\Debug\ReglerTestWPF.XML
