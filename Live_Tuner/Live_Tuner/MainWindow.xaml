@@ -1,7 +1,7 @@
 ﻿<Window
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:Base_Slider="clr-namespace:Base_Slider;assembly=Base_Slider" xmlns:Control_Tools="clr-namespace:Control_Tools;assembly=Base_Slider" x:Class="controller_design.WPF.MainWindow"
+        xmlns:Base_Slider="clr-namespace:Base_Slider;assembly=Base_Slider" xmlns:Control_Tools="clr-namespace:Control_Tools;assembly=Base_Slider" xmlns:Plott_o_mat="clr-namespace:Plott_o_mat;assembly=Plott_o_mat" x:Class="controller_design.WPF.MainWindow"
         Title="MainWindow" Height="755" Width="1134">
     <Grid Margin="0,0,2,2">
         <TabControl Margin="10,32,0,0" ScrollViewer.CanContentScroll="True" HorizontalAlignment="Left" VerticalAlignment="Top" Height="216" Width="494">
@@ -135,6 +135,9 @@
         </TabControl>
         <Label Content="Infos &amp; Einstellungen" HorizontalAlignment="Left" Margin="10,504,0,0" VerticalAlignment="Top" Width="142" FontStyle="Italic"/>
         <TextBlock HorizontalAlignment="Left" Margin="725,416,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="146" Width="350"><Run Language="de-de" Text="ToDo:   "/><LineBreak/><Run Language="de-de"/><LineBreak/><Run Language="de-de" Text="- Graph Implementieren"/><LineBreak/><Run Language="de-de" Text="- exponenten Darstellung bei Felder verbessern"/><LineBreak/><Run Language="de-de" Text="- Regelkreis Image wird nicht angezeigt."/><LineBreak/><Run Language="de-de" Text="- Trapezförmiger Solver verwenden"/><LineBreak/><Run Language="de-de" Text="- Bugs-Suchen"/></TextBlock>
+
+
+        <Plott_o_mat:UserControl1 x:Name="Graph" HorizontalAlignment="Left" Margin="526,37,0,0" VerticalAlignment="Top" Width="588"/>
 
 
     </Grid>
