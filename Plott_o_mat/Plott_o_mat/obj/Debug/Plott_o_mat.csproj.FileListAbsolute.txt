@@ -13,3 +13,17 @@ C:\Users\Alex\Documents\GitHub\controller-design\Plott_o_mat\Plott_o_mat\obj\Deb
 C:\Users\Alex\Documents\GitHub\controller-design\Plott_o_mat\Plott_o_mat\obj\Debug\Plott_o_mat.csproj.GenerateResource.Cache
 C:\Users\Alex\Documents\GitHub\controller-design\Plott_o_mat\Plott_o_mat\obj\Debug\Plott_o_mat.dll
 C:\Users\Alex\Documents\GitHub\controller-design\Plott_o_mat\Plott_o_mat\obj\Debug\Plott_o_mat.pdb
+C:\Users\Tobias\Documents\GitHub\controller-design\Plott_o_mat\Plott_o_mat\bin\Debug\Plott_o_mat.dll
+C:\Users\Tobias\Documents\GitHub\controller-design\Plott_o_mat\Plott_o_mat\bin\Debug\Plott_o_mat.pdb
+C:\Users\Tobias\Documents\GitHub\controller-design\Plott_o_mat\Plott_o_mat\bin\Debug\WPFToolkit.dll
+C:\Users\Tobias\Documents\GitHub\controller-design\Plott_o_mat\Plott_o_mat\bin\Debug\System.Windows.Controls.DataVisualization.Toolkit.pdb
+C:\Users\Tobias\Documents\GitHub\controller-design\Plott_o_mat\Plott_o_mat\bin\Debug\WPFToolkit.pdb
+C:\Users\Tobias\Documents\GitHub\controller-design\Plott_o_mat\Plott_o_mat\obj\Debug\Plott_o_mat.csprojResolveAssemblyReference.cache
+C:\Users\Tobias\Documents\GitHub\controller-design\Plott_o_mat\Plott_o_mat\obj\Debug\UserControl1.baml
+C:\Users\Tobias\Documents\GitHub\controller-design\Plott_o_mat\Plott_o_mat\obj\Debug\UserControl1.g.cs
+C:\Users\Tobias\Documents\GitHub\controller-design\Plott_o_mat\Plott_o_mat\obj\Debug\Plott_o_mat_MarkupCompile.cache
+C:\Users\Tobias\Documents\GitHub\controller-design\Plott_o_mat\Plott_o_mat\obj\Debug\Plott_o_mat.g.resources
+C:\Users\Tobias\Documents\GitHub\controller-design\Plott_o_mat\Plott_o_mat\obj\Debug\Plott_o_mat.Properties.Resources.resources
+C:\Users\Tobias\Documents\GitHub\controller-design\Plott_o_mat\Plott_o_mat\obj\Debug\Plott_o_mat.csproj.GenerateResource.Cache
+C:\Users\Tobias\Documents\GitHub\controller-design\Plott_o_mat\Plott_o_mat\obj\Debug\Plott_o_mat.dll
+C:\Users\Tobias\Documents\GitHub\controller-design\Plott_o_mat\Plott_o_mat\obj\Debug\Plott_o_mat.pdb

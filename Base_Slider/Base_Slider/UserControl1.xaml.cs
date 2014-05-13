@@ -53,7 +53,7 @@ namespace Control_Tools
         {
             textBox_Base.Text = base_value.ToString("e1");
             Slider_Mult.Value = 0.0f;
-            textBox_Mult.Text = (base_value / 20).ToString("e1");
+            textBox_Mult.Text = (base_value / 2).ToString("e1");
             calc_and_fire();
         }
         #endregion

@@ -2,7 +2,7 @@
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:Base_Slider="clr-namespace:Base_Slider;assembly=Base_Slider" xmlns:Control_Tools="clr-namespace:Control_Tools;assembly=Base_Slider" xmlns:Plott_o_mat="clr-namespace:Plott_o_mat;assembly=Plott_o_mat" x:Class="controller_design.WPF.MainWindow"
-        Title="MainWindow" Height="755" Width="1134">
+        Title="MainWindow" Height="755" Width="1140">
     <Grid Margin="0,0,2,2">
         <TabControl Margin="10,32,0,0" ScrollViewer.CanContentScroll="True" HorizontalAlignment="Left" VerticalAlignment="Top" Height="216" Width="494">
             <TabItem x:Name="tab_Strecke_PT1" Header="PT1" Margin="-2,-2,-5,-1" MouseLeftButtonUp="tab_Strecke_PT1_MouseLeftButtonUp">
@@ -98,7 +98,6 @@
             </TabItem>
         </TabControl>
         <Label Content="Regler" HorizontalAlignment="Left" Margin="10,280,0,0" VerticalAlignment="Top" Width="89" FontStyle="Italic"/>
-        <TextBlock x:Name="TextBlock1" HorizontalAlignment="Left" Margin="798,293,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="24" Width="136"><Run Language="de-de" Text="Zeige Plot hier"/></TextBlock>
         <TabControl Margin="10,530,0,0" ScrollViewer.CanContentScroll="True" HorizontalAlignment="Left" VerticalAlignment="Top" Height="167" Width="494">
             <TabItem Header="Regelkreis" Margin="-2,-2,-5,-1">
                 <Grid HorizontalAlignment="Left" Height="142" VerticalAlignment="Top" Width="489" Margin="0,0,-5,0">
@@ -134,11 +133,9 @@
             </TabItem>
         </TabControl>
         <Label Content="Infos &amp; Einstellungen" HorizontalAlignment="Left" Margin="10,504,0,0" VerticalAlignment="Top" Width="142" FontStyle="Italic"/>
-        <TextBlock HorizontalAlignment="Left" Margin="725,416,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="146" Width="350"><Run Language="de-de" Text="ToDo:   "/><LineBreak/><Run Language="de-de"/><LineBreak/><Run Language="de-de" Text="- Graph Implementieren"/><LineBreak/><Run Language="de-de" Text="- exponenten Darstellung bei Felder verbessern"/><LineBreak/><Run Language="de-de" Text="- Regelkreis Image wird nicht angezeigt."/><LineBreak/><Run Language="de-de" Text="- Trapezförmiger Solver verwenden"/><LineBreak/><Run Language="de-de" Text="- Bugs-Suchen"/></TextBlock>
 
 
         <Plott_o_mat:UserControl1 x:Name="Graph" HorizontalAlignment="Left" Margin="526,37,0,0" VerticalAlignment="Top" Width="588"/>
-        <TextBox x:Name="TextBox_Counter" HorizontalAlignment="Left" Height="23" Margin="384,502,0,0" TextWrapping="Wrap" Text="Anzahl Aufrufe" VerticalAlignment="Top" Width="120"/>
 
 
     </Grid>

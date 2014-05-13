@@ -27,7 +27,7 @@ namespace controller_design.WPF
         /// <summary>
         /// PT1 Control Loop
         /// </summary>
-        PT1 _PT1 = new PT1(2f, 0.005f);
+        PT1 _PT1 = new PT1();
         /// <summary>
         /// IT1 Control Loop
         /// </summary>
@@ -65,7 +65,7 @@ namespace controller_design.WPF
         Simulator _Simulator;
         float _Ts_Base = 200.0f;
         float _Ts_exponent = (float)Math.Pow(10, -6);
-        float _T_end = 300.0f * 0.0002f;
+        float _T_end = 600.0f * 0.0002f;
         #endregion
         /// <summary>
         /// Init Main Window
@@ -81,12 +81,15 @@ namespace controller_design.WPF
             tab_Regler_I.IsEnabled = true;
             tab_Regler_PI.IsEnabled = false;
             tab_Regler_PID.IsEnabled = false;
+            Base_Slider_PT1_Vs.set_Base(2.0f);
+            Base_Slider_PT1_T1.set_Base(0.005f);
 
             //init Simulator
             combmBox_Zeit.SelectedItem = combmBox_Zeit.Items[2];
             Optimize.Controller(_PT1, _I);
+            Base_Slider_I_Ti.set_Base(_I._Ti);
             _Simulator = new Simulator (_I,_Jamming,_PT1);
-
+            plot_graph();
             
         }
         #region helpFunctions
@@ -103,7 +106,7 @@ namespace controller_design.WPF
  
                 }
 
-                return returnNum;
+                return "";
             }
         #endregion
         #region Slider
@@ -398,9 +401,9 @@ namespace controller_design.WPF
                 //List<KeyValuePair<float, float>> list = new List<KeyValuePair<float, float>>();
 
                 //Plott_o_mat.UserControl1 x = new Plott_o_mat.UserControl1();
+                if(result != null)
+                Graph.plot(result,5);
 
-                Graph.plot(result,40);
-                TextBlock1.Text = result[0, result.Length / 2 - 1].ToString();
             }
         }
         #endregion
