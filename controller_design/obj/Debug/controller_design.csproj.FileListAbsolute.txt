@@ -12,3 +12,7 @@ C:\Users\Tobias\Documents\GitHub\controller-design\controller_design\obj\Debug\c
 C:\Users\Tobias\Documents\GitHub\controller-design\controller_design\bin\Debug\controller_design.exe
 C:\Users\Tobias\Documents\GitHub\controller-design\controller_design\bin\Debug\controller_design.pdb
 C:\Users\Tobias\Documents\GitHub\controller-design\controller_design\obj\Debug\controller_design.csprojResolveAssemblyReference.cache
+C:\Users\Alex\Documents\GitHub\controller-design\controller_design\bin\Debug\controller_design.exe.config
+C:\Users\Alex\Documents\GitHub\controller-design\controller_design\bin\Debug\controller_design.XML
+C:\Users\Alex\Documents\GitHub\controller-design\controller_design\obj\Debug\controller_design.exe
+C:\Users\Alex\Documents\GitHub\controller-design\controller_design\obj\Debug\controller_design.pdb

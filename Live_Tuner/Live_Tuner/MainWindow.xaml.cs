@@ -89,6 +89,23 @@ namespace controller_design.WPF
 
             
         }
+        #region helpFunctions
+            public String numToString(float x)
+            {
+                String returnNum;
+
+                if(x<1)
+                {
+                    
+                }
+                else
+                {
+ 
+                }
+
+                return returnNum;
+            }
+        #endregion
         #region Slider
         /// <summary>
         /// Update Vs of PT1 Control Loop and plot graph
