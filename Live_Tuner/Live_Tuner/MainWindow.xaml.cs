@@ -21,7 +21,7 @@ namespace controller_design.WPF
     /// </summary>
     public partial class MainWindow : Window
     {
-        int help_counter = new int() {};   // muss wieder raus
+        int help_counter;   // muss wieder raus
         #region Variables
         //Control Loops
         /// <summary>
@@ -74,6 +74,8 @@ namespace controller_design.WPF
         {
             InitializeComponent();
 
+            help_counter = 0;
+
             //Set default Controller
             tab_Regler_P.IsEnabled = false;
             tab_Regler_I.IsEnabled = true;
@@ -84,6 +86,8 @@ namespace controller_design.WPF
             combmBox_Zeit.SelectedItem = combmBox_Zeit.Items[2];
             Optimize.Controller(_PT1, _I);
             _Simulator = new Simulator (_I,_Jamming,_PT1);
+
+            
         }
         #region Slider
         /// <summary>
@@ -369,8 +373,7 @@ namespace controller_design.WPF
         /// </summary>
         void plot_graph()
         {
-            help_counter++;
-            TextBox_Counter.Text = help_counter.ToString() ;
+                       
             if (_Simulator != null)
             {
                 float[,] result = _Simulator.simulate(_Ts_Base * _Ts_exponent, _T_end);
