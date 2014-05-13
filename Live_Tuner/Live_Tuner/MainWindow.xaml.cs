@@ -376,7 +376,7 @@ namespace controller_design.WPF
 
                 //Plott_o_mat.UserControl1 x = new Plott_o_mat.UserControl1();
 
-                Graph.plot(result);
+                Graph.plot(result,40);
                 TextBlock1.Text = result[0, result.Length / 2 - 1].ToString();
             }
         }

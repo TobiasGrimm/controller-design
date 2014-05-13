@@ -28,23 +28,21 @@ namespace Plott_o_mat
             InitializeComponent();            
         }
 
-        public void plot(float [,] x)
+        public void plot(float [,] x, int schrittWeite)
         {
-            
-            List<KeyValuePair<float, float>> list = new List<KeyValuePair<float, float>>();
+            LinkedList<KeyValuePair<float, float>> list = new LinkedList<KeyValuePair<float, float>>();
 
-            for(int i = 0; i<(x.Length/2); i++)
+            for(int i = 0; i<(x.Length/2); i=i+schrittWeite)
             {
-                list.Insert(0, new KeyValuePair<float, float>(x[1,i], x[0,i]));      
+                if(i<x.Length/2)
+                    list.AddLast(new KeyValuePair<float, float>(x[1, i], x[0, i]));  
+                else
+                    list.AddLast(new KeyValuePair<float, float>(x[1, (x.Length/2)-1], x[0, (x.Length/2)-1]));
             }
 
             ((LineSeries)Plot_Chart.Series[0]).ItemsSource = list;
         }
 
-        private void Plot_Chart_Loaded(object sender, RoutedEventArgs e)
-        {
-            
-
-        }
+        private void Plot_Chart_Loaded(object sender, RoutedEventArgs e){}
     }
 }
