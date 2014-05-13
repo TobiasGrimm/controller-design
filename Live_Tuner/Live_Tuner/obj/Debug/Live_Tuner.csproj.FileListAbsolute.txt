@@ -55,3 +55,9 @@ C:\Users\Alex\Documents\GitHub\controller-design\Live_Tuner\Live_Tuner\obj\Debug
 C:\Users\Alex\Documents\GitHub\controller-design\Live_Tuner\Live_Tuner\obj\Debug\ReglerTestWPF.g.resources
 C:\Users\Alex\Documents\GitHub\controller-design\Live_Tuner\Live_Tuner\obj\Debug\ReglerTestWPF.Properties.Resources.resources
 C:\Users\Alex\Documents\GitHub\controller-design\Live_Tuner\Live_Tuner\obj\Debug\Live_Tuner.csproj.GenerateResource.Cache
+C:\Users\Tobias\Documents\GitHub\controller-design\Live_Tuner\Live_Tuner\bin\Debug\Plott_o_mat.dll
+C:\Users\Tobias\Documents\GitHub\controller-design\Live_Tuner\Live_Tuner\bin\Debug\WPFToolkit.dll
+C:\Users\Tobias\Documents\GitHub\controller-design\Live_Tuner\Live_Tuner\bin\Debug\Base_Slider.xml
+C:\Users\Tobias\Documents\GitHub\controller-design\Live_Tuner\Live_Tuner\bin\Debug\Plott_o_mat.pdb
+C:\Users\Tobias\Documents\GitHub\controller-design\Live_Tuner\Live_Tuner\bin\Debug\System.Windows.Controls.DataVisualization.Toolkit.pdb
+C:\Users\Tobias\Documents\GitHub\controller-design\Live_Tuner\Live_Tuner\bin\Debug\WPFToolkit.pdb

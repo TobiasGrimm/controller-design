@@ -21,6 +21,7 @@ namespace controller_design.WPF
     /// </summary>
     public partial class MainWindow : Window
     {
+        int help_counter = new int() {};   // muss wieder raus
         #region Variables
         //Control Loops
         /// <summary>
@@ -368,6 +369,8 @@ namespace controller_design.WPF
         /// </summary>
         void plot_graph()
         {
+            help_counter++;
+            TextBox_Counter.Text = help_counter.ToString() ;
             if (_Simulator != null)
             {
                 float[,] result = _Simulator.simulate(_Ts_Base * _Ts_exponent, _T_end);

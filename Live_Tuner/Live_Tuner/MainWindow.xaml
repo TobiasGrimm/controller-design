@@ -138,6 +138,7 @@
 
 
         <Plott_o_mat:UserControl1 x:Name="Graph" HorizontalAlignment="Left" Margin="526,37,0,0" VerticalAlignment="Top" Width="588"/>
+        <TextBox x:Name="TextBox_Counter" HorizontalAlignment="Left" Height="23" Margin="384,502,0,0" TextWrapping="Wrap" Text="Anzahl Aufrufe" VerticalAlignment="Top" Width="120"/>
 
 
     </Grid>
