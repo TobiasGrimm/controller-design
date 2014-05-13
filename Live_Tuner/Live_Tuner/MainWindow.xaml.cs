@@ -372,11 +372,11 @@ namespace controller_design.WPF
             {
                 float[,] result = _Simulator.simulate(_Ts_Base * _Ts_exponent, _T_end);
 
-                List<KeyValuePair<float, float>> list = new List<KeyValuePair<float, float>>();
+                //List<KeyValuePair<float, float>> list = new List<KeyValuePair<float, float>>();
 
-                Plott_o_mat.UserControl1 x = new Plott_o_mat.UserControl1();
+                //Plott_o_mat.UserControl1 x = new Plott_o_mat.UserControl1();
 
-                //Graph.plot(x);
+                Graph.plot(result);
                 TextBlock1.Text = result[0, result.Length / 2 - 1].ToString();
             }
         }

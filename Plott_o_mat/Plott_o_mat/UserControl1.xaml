@@ -11,7 +11,7 @@
         <DVC:Chart Width="570" Height="660" Name="Plot_Chart" Loaded="Plot_Chart_Loaded">
             
             <DVC:Chart.Series>
-                <DVC:LineSeries 
+                <DVC:LineSeries x:Name="Graph" 
                                 IndependentValueBinding="{Binding Path=Key}"
                                 DependentValueBinding="{Binding Path=Value}"
                                 >
