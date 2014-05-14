@@ -116,14 +116,24 @@
             <TabItem Header="Solver" Margin="-2,-2,-5,-1">
                 <Grid HorizontalAlignment="Left" Height="142" VerticalAlignment="Top" Width="489">
                     <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="58" Width="438"><Run Language="de-de" Text="Der Solver besitzt eine diskrete, feste Schrittweite Ts."/><LineBreak/><Run Language="de-de" Text="Es wird das Backward-Euler-Verfahren zum simulieren der DGLs eingesetzt. "/></TextBlock>
-                    <TextBlock HorizontalAlignment="Left" Margin="10,84,0,0" TextWrapping="Wrap" VerticalAlignment="Top" ToolTip="Sample Time"><Run Language="de-de" Text="Ts = "/></TextBlock>
-                    <TextBox x:Name="textBox_Ts" HorizontalAlignment="Left" Height="23" Margin="36,81,0,0" TextWrapping="Wrap" Text="200" VerticalAlignment="Top" Width="59" TextChanged="textBox_Ts_TextChanged"/>
-                    <ComboBox x:Name="combmBox_Zeit" HorizontalAlignment="Left" Margin="99,81,0,0" VerticalAlignment="Top" Width="47" Height="23">
+                    <TextBlock HorizontalAlignment="Left" Margin="10,73,0,0" TextWrapping="Wrap" VerticalAlignment="Top" ToolTip="Sample Zeit"><Run Language="de-de" Text="Ts = "/></TextBlock>
+                    <TextBox x:Name="textBox_Ts" HorizontalAlignment="Left" Height="23" Margin="36,70,0,0" TextWrapping="Wrap" Text="200" VerticalAlignment="Top" Width="59" TextChanged="textBox_Ts_TextChanged"/>
+                    <ComboBox x:Name="combmBox_Zeit" HorizontalAlignment="Left" Margin="99,70,0,0" VerticalAlignment="Top" Width="47" Height="23">
                         <ComboBoxItem x:Name="comboBox_s" Content="s" Selected="comboBox_s_Selected"/>
                         <ComboBoxItem x:Name="comboBox_ms" Content="ms" Selected="comboBox_ms_Selected"/>
-                        <ComboBoxItem x:Name="comboBox_µs" Content="µs" Selected="comboBox_µs_Selected"/>
+                        <ComboBoxItem x:Name="comboBox_µs" Content="µs" Selected="comboBox_µs_Selected" IsSelected="True"/>
                         <ComboBoxItem x:Name="comboBox_ns" Content="ns" Selected="comboBox_ns_Selected"/>
                     </ComboBox>
+                    <TextBlock HorizontalAlignment="Left" Margin="10,101,0,0" TextWrapping="Wrap" VerticalAlignment="Top" ToolTip="Endzeitpunkt der Simulation"><Run Language="de-de" Text="T  = "/></TextBlock>
+                    <TextBox x:Name="textBox_Tend" HorizontalAlignment="Left" Height="23" Margin="36,98,0,0" TextWrapping="Wrap" Text="200" VerticalAlignment="Top" Width="59" TextChanged="textBox_Tend_TextChanged"/>
+                    <ComboBox x:Name="combmBox_Zeit_Tend" HorizontalAlignment="Left" Margin="99,98,0,0" VerticalAlignment="Top" Width="47" Height="23">
+                        <ComboBoxItem x:Name="comboBox_Tend_s" Content="s" Selected="comboBox_Tend_s_Selected"/>
+                        <ComboBoxItem x:Name="comboBox_Tend_ms" Content="ms" Selected="comboBox_Tend_ms_Selected" IsSelected="True"/>
+                        <ComboBoxItem x:Name="comboBox_Tend_µs" Content="µs" Selected="comboBox_Tend_µs_Selected"/>
+                        <ComboBoxItem x:Name="comboBox_Tend_ns" Content="ns" Selected="comboBox_Tend_ns_Selected"/>
+                    </ComboBox>
+                    <TextBlock HorizontalAlignment="Left" Margin="14,111,0,0" TextWrapping="Wrap" VerticalAlignment="Top" ToolTip="" FontSize="7" Height="12" Width="15"><Run Language="de-de" Text="end"/></TextBlock>
+                    <TextBlock HorizontalAlignment="Left" Margin="187,76,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="17" Width="223"><Run Language="de-de" Text="Es wird jeder ... Ausgegeben."/></TextBlock>
                 </Grid>
             </TabItem>
             <TabItem Header="Quellen" Margin="-2,-2,-5,-1">
@@ -135,7 +145,7 @@
         <Label Content="Infos &amp; Einstellungen" HorizontalAlignment="Left" Margin="10,504,0,0" VerticalAlignment="Top" Width="142" FontStyle="Italic"/>
 
 
-        <Plott_o_mat:UserControl1 x:Name="Graph" HorizontalAlignment="Left" Margin="526,37,0,0" VerticalAlignment="Top" Width="588"/>
+        <Plott_o_mat:UserControl1 x:Name="Graph" Margin="526,37,0,0" VerticalAlignment="Top" Width="588" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Left"/>
 
 
     </Grid>

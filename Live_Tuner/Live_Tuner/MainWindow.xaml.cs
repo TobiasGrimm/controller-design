@@ -21,7 +21,6 @@ namespace controller_design.WPF
     /// </summary>
     public partial class MainWindow : Window
     {
-        int help_counter;   // muss wieder raus
         #region Variables
         //Control Loops
         /// <summary>
@@ -65,7 +64,8 @@ namespace controller_design.WPF
         Simulator _Simulator;
         float _Ts_Base = 200.0f;
         float _Ts_exponent = (float)Math.Pow(10, -6);
-        float _T_end = 600.0f * 0.0002f;
+        float _Tend_Base = 600.0f;
+        float _Tend_exponent = (float)Math.Pow(10, -3);
         #endregion
         /// <summary>
         /// Init Main Window
@@ -73,8 +73,6 @@ namespace controller_design.WPF
         public MainWindow()
         {
             InitializeComponent();
-
-            help_counter = 0;
 
             //Set default Controller
             tab_Regler_P.IsEnabled = false;
@@ -85,7 +83,6 @@ namespace controller_design.WPF
             Base_Slider_PT1_T1.set_Base(0.005f);
 
             //init Simulator
-            combmBox_Zeit.SelectedItem = combmBox_Zeit.Items[2];
             Optimize.Controller(_PT1, _I);
             Base_Slider_I_Ti.set_Base(_I._Ti);
             _Simulator = new Simulator (_I,_Jamming,_PT1);
@@ -396,14 +393,9 @@ namespace controller_design.WPF
                        
             if (_Simulator != null)
             {
-                float[,] result = _Simulator.simulate(_Ts_Base * _Ts_exponent, _T_end);
-
-                //List<KeyValuePair<float, float>> list = new List<KeyValuePair<float, float>>();
-
-                //Plott_o_mat.UserControl1 x = new Plott_o_mat.UserControl1();
-                if(result != null)
-                Graph.plot(result,5);
-
+                float[,] result = _Simulator.simulate(_Ts_Base * _Ts_exponent, _Tend_Base*_Tend_exponent);
+                if (result[0,result.Length/2-1]==result[0,result.Length/2-1])            // is the simulation korrekt? (NaN problem)
+                  Graph.plot(result, 5);
             }
         }
         #endregion
@@ -451,7 +443,7 @@ namespace controller_design.WPF
             Base_Slider_PI_Tn.set_Base(_PI._Tn);
         }
         #endregion
-        #region Sample_Time
+        #region Time
         /// <summary>
         /// Update Sample Time Base Ts and plot the graph
         /// </summary>
@@ -500,6 +492,56 @@ namespace controller_design.WPF
         private void comboBox_ns_Selected(object sender, RoutedEventArgs e)
         {
             _Ts_exponent = (float)Math.Pow(10, -9);
+            plot_graph();
+        }
+        /// <summary>
+        /// Set exponent for the End Time to 10^-0 and plot the graph
+        /// </summary>
+        /// <param name="sender">sender</param>
+        /// <param name="e">arguments</param>
+        private void comboBox_Tend_s_Selected(object sender, RoutedEventArgs e)
+        {
+            _Tend_exponent = (float)Math.Pow(10, 0);
+            plot_graph();
+        }
+        /// <summary>
+        /// Set exponent for the End Time to 10^-3 and plot the graph
+        /// </summary>
+        /// <param name="sender">sender</param>
+        /// <param name="e">arguments</param>
+        private void comboBox_Tend_ms_Selected(object sender, RoutedEventArgs e)
+        {
+            _Tend_exponent = (float)Math.Pow(10, -3);
+            plot_graph();
+        }
+        /// <summary>
+        /// Set exponent for the End Time to 10^-6 and plot the graph
+        /// </summary>
+        /// <param name="sender">sender</param>
+        /// <param name="e">arguments</param>
+        private void comboBox_Tend_µs_Selected(object sender, RoutedEventArgs e)
+        {
+            _Tend_exponent = (float)Math.Pow(10, -6);
+            plot_graph();
+        }
+        /// <summary>
+        /// Set exponent for the End Time to 10^-9 and plot the graph
+        /// </summary>
+        /// <param name="sender">sender</param>
+        /// <param name="e">arguments</param>
+        private void comboBox_Tend_ns_Selected(object sender, RoutedEventArgs e)
+        {
+            _Tend_exponent = (float)Math.Pow(10, -9);
+            plot_graph();
+        }
+        /// <summary>
+        /// Update End Time Base Tend and plot the graph
+        /// </summary>
+        /// <param name="sender">sender</param>
+        /// <param name="e">exponent</param>
+        private void textBox_Tend_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            float.TryParse(textBox_Tend.Text, out _Tend_Base);
             plot_graph();
         }
         #endregion
