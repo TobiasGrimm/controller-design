@@ -29,9 +29,9 @@
             </TabItem>
             <TabItem x:Name="tab_Strecke_PT2_wdb1" Header="PT2 d&gt;1" Margin="-2,-2,-5,-1" MouseLeftButtonUp="tab_Strecke_PT2_wdb1_MouseLeftButtonUp">
                 <Grid HorizontalAlignment="Left" Height="191" VerticalAlignment="Top" Width="489">
-                    <Control_Tools:Base_Slider x:Name="Base_Slider_PT2wdb1" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="35" Width="486" Label="Vs =" value_changed="Base_Slider_PT2wdb1_value_changed"/>
-                    <Control_Tools:Base_Slider x:Name="Base_Slider_PT2wdb1_T1" HorizontalAlignment="Left" Margin="10,59,0,0" VerticalAlignment="Top" Height="35" Width="486" Label="T1 =" value_changed="Base_Slider_PT2wdb1_T1_value_changed"/>
-                    <Control_Tools:Base_Slider x:Name="Base_Slider_PT2wdb1_T2" HorizontalAlignment="Left" Margin="10,108,0,0" VerticalAlignment="Top" Height="35" Width="486" Label="T2 =" value_changed="Base_Slider_PT2wdb1_T2_value_changed"/>
+                    <Control_Tools:Base_Slider x:Name="Base_Slider_PT2_wdb1_Vs" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="35" Width="486" Label="Vs =" value_changed="Base_Slider_PT2_wdb1_Vs_value_changed"/>
+                    <Control_Tools:Base_Slider x:Name="Base_Slider_PT2_wdb1_T1" HorizontalAlignment="Left" Margin="10,59,0,0" VerticalAlignment="Top" Height="35" Width="486" Label="T1 =" value_changed="Base_Slider_PT2_wdb1_T1_value_changed"/>
+                    <Control_Tools:Base_Slider x:Name="Base_Slider_PT2_wdb1_T2" HorizontalAlignment="Left" Margin="10,108,0,0" VerticalAlignment="Top" Height="35" Width="486" Label="T2 =" value_changed="Base_Slider_PT2_wdb1_T2_value_changed"/>
                     <TextBlock HorizontalAlignment="Left" Margin="13,157,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="114" ToolTip="Laplace Übertragungsfunktion"><Run Language="de-de" Text="Fs = ------------------"/></TextBlock>
                     <TextBlock HorizontalAlignment="Left" Margin="76,148,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="20" Height="13"><Run Language="de-de" Text="Vs"/></TextBlock>
                     <TextBlock HorizontalAlignment="Left" Margin="40,168,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="87" Height="23"><Run Language="de-de" Text="(1+pT1)(1+pT2)"/></TextBlock>
@@ -53,14 +53,34 @@
                     <TextBlock HorizontalAlignment="Left" Margin="10,108,0,0" TextWrapping="Wrap" VerticalAlignment="Top" ToolTip="Zeitkonstante" Height="35" Width="17"><Run Language="de-de" Text="   "/></TextBlock>
                 </Grid>
             </TabItem>
-            <TabItem x:Name="tab_Strecke_Beliebig" Header="Beliebig" Margin="-2,-2,-5,-1" MouseLeftButtonUp="tab_Strecke_Beliebig_MouseLeftButtonUp"/>
+            <TabItem x:Name="tab_Strecke_Beliebig" Header="Beliebig" Margin="-2,-2,-5,-1" MouseLeftButtonUp="tab_Strecke_Beliebig_MouseLeftButtonUp">
+                <Grid HorizontalAlignment="Left" Height="191" VerticalAlignment="Top" Width="489">
+                    <TextBlock HorizontalAlignment="Left" Margin="13,157,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="172" ToolTip="Laplace Übertragungsfunktion"><Run Language="de-de" Text="Fs = ------------------------"/></TextBlock>
+                    <TextBlock HorizontalAlignment="Left" Margin="40,148,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="169" Height="20" ToolTip="Nichtrekursive Filter Koeffizienten"><Run Language="de-de" Text="b"/><Run FontSize="8" Language="de-de" Text="0"/><Run Language="de-de" Text="+b"/><Run FontSize="8" Language="de-de" Text="1*"/><Run Language="de-de" Text="p   +b"/><Run FontSize="8" Language="de-de" Text="2*"/><Run Language="de-de" Text="p   + ..."/></TextBlock>
+                    <TextBlock HorizontalAlignment="Left" Margin="40,168,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="158" Height="23" ToolTip="Rekursive Filter Koeffizienten"><Run Language="de-de" Text="1 - a"/><Run FontSize="8" Language="de-de" Text="1*"/><Run Language="de-de" Text="p    - a"/><Run FontSize="8" Language="de-de" Text="2*"/><Run Language="de-de" Text="p    - ..."/><LineBreak/><Run Language="de-de" Text=""/></TextBlock>
+                    <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" ToolTip="Streckenverstärkung" Height="35" Width="17"><Run Language="de-de" Text="   "/></TextBlock>
+                    <TextBlock HorizontalAlignment="Left" Margin="10,59,0,0" TextWrapping="Wrap" VerticalAlignment="Top" ToolTip="Zeitkonstante T1" Height="35" Width="17"><Run Language="de-de" Text="   "/></TextBlock>
+                    <TextBlock HorizontalAlignment="Left" Margin="82,146,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="8"><Run Language="de-de" Text="-1"/></TextBlock>
+                    <TextBlock HorizontalAlignment="Left" Margin="122,146,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="8"><Run Language="de-de" Text="-1"/></TextBlock>
+                    <TextBlock HorizontalAlignment="Left" Margin="82,168,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="8"><Run Language="de-de" Text="-1"/></TextBlock>
+                    <TextBlock HorizontalAlignment="Left" Margin="122,168,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="8"><Run Language="de-de" Text="-1"/></TextBlock>
+                    <TextBox x:Name="textbox_b" HorizontalAlignment="Left" Height="23" Margin="51,16,0,0" TextWrapping="Wrap" Text="0;400" VerticalAlignment="Top" Width="246" TextChanged="textbox_b_TextChanged"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="16,18,0,0" TextWrapping="Wrap" VerticalAlignment="Top" ToolTip="Nichtrekursive Filter Koeffizienten"><Run Language="de-de" Text="b ="/></TextBlock>
+                    <TextBlock HorizontalAlignment="Left" Margin="40,8,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="47" Width="27" FontSize="24"><Run Language="de-de" Text="["/></TextBlock>
+                    <TextBlock HorizontalAlignment="Left" Margin="302,8,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="47" Width="27" FontSize="24"><Run Language="de-de" Text="]"/></TextBlock>
+                    <TextBox x:Name="textbox_a" HorizontalAlignment="Left" Height="23" Margin="51,67,0,0" TextWrapping="Wrap" Text="1;-200" VerticalAlignment="Top" Width="246" TextChanged="textbox_a_TextChanged"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="17,67,0,0" TextWrapping="Wrap" VerticalAlignment="Top" ToolTip="Rekursive Filter Koeffizienten"><Run Language="de-de" Text="a ="/></TextBlock>
+                    <TextBlock HorizontalAlignment="Left" Margin="40,59,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="47" Width="27" FontSize="24"><Run Language="de-de" Text="["/></TextBlock>
+                    <TextBlock HorizontalAlignment="Left" Margin="302,59,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="47" Width="27" FontSize="24"><Run Language="de-de" Text="]"/></TextBlock>
+                </Grid>
+            </TabItem>
         </TabControl>
         <Label Content="Strecke" HorizontalAlignment="Left" Margin="10,6,0,0" VerticalAlignment="Top" Width="89" FontStyle="Italic"/>
         <TabControl Margin="10,306,0,0" ScrollViewer.CanContentScroll="True" HorizontalAlignment="Left" VerticalAlignment="Top" Height="167" Width="494">
             <TabItem x:Name="tab_Regler_I" Header=" I " Margin="-2,-2,-5,-1" MouseLeftButtonUp="tab_Regler_I_MouseLeftButtonUp">
                 <Grid HorizontalAlignment="Left" Height="142" VerticalAlignment="Top" Width="489" Margin="0,0,-5,0">
                     <Control_Tools:Base_Slider x:Name="Base_Slider_I_Ti" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="35" Width="486" Label="Ti =" value_changed="Base_Slider_I_Ti_value_changed"/>
-                    <Button x:Name="butten_Auslegen_I" Content="Auslegen" HorizontalAlignment="Left" Margin="404,108,0,0" VerticalAlignment="Top" Width="75" Click="butten_Auslegen_I_Click"/>
+                    <Button x:Name="butten_auslegen_I" Content="Auslegen" HorizontalAlignment="Left" Margin="404,108,0,0" VerticalAlignment="Top" Width="75" Click="butten_auslegen_I_Click"/>
                     <TextBlock HorizontalAlignment="Left" Margin="13,108,0,18" TextWrapping="Wrap" Width="82" ToolTip="Laplace Übertragungsfunktion"><Run Language="de-de" Text="Fs = ----"/></TextBlock>
                     <TextBlock HorizontalAlignment="Left" Margin="44,99,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="32" Height="13"><Run Language="de-de" Text="1"/></TextBlock>
                     <TextBlock HorizontalAlignment="Left" Margin="40,119,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="45" Height="23"><Run Language="de-de" Text="pTi"/></TextBlock>

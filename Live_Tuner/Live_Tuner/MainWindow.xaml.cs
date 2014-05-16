@@ -39,6 +39,8 @@ namespace controller_design.WPF
         /// PT2 Control Loop with damping smaler equal 1
         /// </summary>
         PT2_wdse1 _PT2_wdse1 = new PT2_wdse1();
+        float[] _a = {1.0f,-200f};
+        float[] _b = {0f, 400f};
 
         //Controller
         /// <summary>
@@ -64,7 +66,7 @@ namespace controller_design.WPF
         Simulator _Simulator;
         float _Ts_Base = 200.0f;
         float _Ts_exponent = (float)Math.Pow(10, -6);
-        float _Tend_Base = 600.0f;
+        float _Tend_Base = 400.0f;
         float _Tend_exponent = (float)Math.Pow(10, -3);
         #endregion
         /// <summary>
@@ -79,8 +81,25 @@ namespace controller_design.WPF
             tab_Regler_I.IsEnabled = true;
             tab_Regler_PI.IsEnabled = false;
             tab_Regler_PID.IsEnabled = false;
-            Base_Slider_PT1_Vs.set_Base(2.0f);
-            Base_Slider_PT1_T1.set_Base(0.005f);
+
+            //init The Sliders
+            Base_Slider_PT1_Vs.set_Base(2.0f);         //PT1 Vs
+            Base_Slider_PT1_T1.set_Base(0.005f);       //PT1 T1
+            Base_Slider_IT1_Ti.set_Base(2.0f);         //IT1 Ti
+            Base_Slider_IT1_T2.set_Base(0.005f);       //IT1 T2
+            Base_Slider_PT2_wdb1_Vs.set_Base(2.0f);    //PT2 Vs
+            Base_Slider_PT2_wdb1_T1.set_Base(0.005f);  //PT2 T1
+            Base_Slider_PT2_wdb1_T2.set_Base(0.001f);  //PT2 T2
+
+            Base_Slider_PT2_wdse1_Vs.set_Base(2.0f);   //PT2 Vs
+            Base_Slider_PT2_wdse1_d.set_Base(0.8f);    //PT2 d
+            Base_Slider_PT2_wdse1_T.set_Base(0.005f);  //PT2 T
+
+            Optimize.Controller(_IT1, _P);
+            Base_Slider_P_Vr.set_Base(_P._Vr);     //P   Vr
+            Optimize.Controller(_PT2_wdb1, _PI);
+            Base_Slider_PI_Vr.set_Base(_PI._Vr);   //PI   Vr
+            Base_Slider_PI_Tn.set_Base(_PI._Tn);   //PI   Tn
 
             //init Simulator
             Optimize.Controller(_PT1, _I);
@@ -135,6 +154,7 @@ namespace controller_design.WPF
         {
             _IT1._Ti = output;
             _IT1.recalc_coefficients();
+            check_optimization_for_IT1();
             plot_graph();
         }
         /// <summary>
@@ -145,13 +165,14 @@ namespace controller_design.WPF
         {
             _IT1._T2 = output;
             _IT1.recalc_coefficients();
+            check_optimization_for_IT1();
             plot_graph();
         }
         /// <summary>
         /// Update Vs of PT2 with damping bigger 1 Control Loop and plot graph
         /// </summary>
         /// <param name="output">The new Vs-Value for the PT2 Loop</param>
-        private void Base_Slider_PT2wdb1_value_changed(float output)
+        private void Base_Slider_PT2_wdb1_Vs_value_changed(float output)
         {
             _PT2_wdb1._Vs = output;
             _PT2_wdb1.recalc_coefficients();
@@ -161,20 +182,22 @@ namespace controller_design.WPF
         /// Update T1 of PT2 with damping bigger 1 Control Loop and plot graph
         /// </summary>
         /// <param name="output">The new T1-Value for the PT2 Loop</param>
-        private void Base_Slider_PT2wdb1_T1_value_changed(float output)
+        private void Base_Slider_PT2_wdb1_T1_value_changed(float output)
         {
             _PT2_wdb1._T1 = output;
             _PT2_wdb1.recalc_coefficients();
+            check_optimization_for_PT2_wdb1();
             plot_graph();
         }
         /// <summary>
         /// Update T2 of PT2 with damping bigger 1 Control Loop and plot graph
         /// </summary>
         /// <param name="output">The new T2-Value for the PT2 Loop</param>
-        private void Base_Slider_PT2wdb1_T2_value_changed(float output)
+        private void Base_Slider_PT2_wdb1_T2_value_changed(float output)
         {
             _PT2_wdb1._T2 = output;
             _PT2_wdb1.recalc_coefficients();
+            check_optimization_for_PT2_wdb1();
             plot_graph();
         }
         /// <summary>
@@ -195,6 +218,7 @@ namespace controller_design.WPF
         {
             _PT2_wdse1._d = output;
             _PT2_wdse1.recalc_coefficients();
+            check_optimization_for_PT2_wdse1();
             plot_graph();
         }
         /// <summary>
@@ -279,6 +303,8 @@ namespace controller_design.WPF
             tab_Regler_PI.IsEnabled = false;
             tab_Regler_PID.IsEnabled = false;
             tab_Regler_I.Focus();
+            enable_all_optimizations();
+
             _Simulator.replace_in_Schematic_at_pos(1, _I);
             _Simulator.replace_in_Schematic_at_pos(3, _PT1);
             plot_graph();
@@ -294,6 +320,9 @@ namespace controller_design.WPF
             tab_Regler_I.IsEnabled = false;
             tab_Regler_PI.IsEnabled = true;
             tab_Regler_PID.IsEnabled = false;
+            enable_all_optimizations();
+            check_optimization_for_IT1();
+
             if (tab_Regler_PI.IsSelected == false)
             {
                 tab_Regler_P.Focus();
@@ -313,6 +342,9 @@ namespace controller_design.WPF
             tab_Regler_I.IsEnabled = true;
             tab_Regler_PI.IsEnabled = true;
             tab_Regler_PID.IsEnabled = false;
+            enable_all_optimizations();
+            check_optimization_for_PT2_wdse1();
+
             if (tab_Regler_PI.IsSelected == false)
             {
                 tab_Regler_I.Focus();
@@ -332,6 +364,9 @@ namespace controller_design.WPF
             tab_Regler_I.IsEnabled = false;
             tab_Regler_PI.IsEnabled = true;
             tab_Regler_PID.IsEnabled = false;
+            enable_all_optimizations();
+            check_optimization_for_PT2_wdb1();
+
             if (tab_Regler_PI.IsSelected == false)
             {
                 tab_Regler_P.Focus();
@@ -351,6 +386,12 @@ namespace controller_design.WPF
             tab_Regler_I.IsEnabled = true;
             tab_Regler_PI.IsEnabled = true;
             tab_Regler_PID.IsEnabled = true;
+            butten_auslegen_I.IsEnabled = false;
+            butten_auslegen_P.IsEnabled = false;
+            butten_auslegen_PI.IsEnabled = false;
+
+            Transferfunction _Tf = new Transferfunction(_a,_b);
+            _Simulator.replace_in_Schematic_at_pos(3, _Tf);
             plot_graph();
         }
         /// <summary>
@@ -405,7 +446,7 @@ namespace controller_design.WPF
         /// </summary>
         /// <param name="sender">sender</param>
         /// <param name="e">arguments</param>
-        private void butten_Auslegen_I_Click(object sender, RoutedEventArgs e)
+        private void butten_auslegen_I_Click(object sender, RoutedEventArgs e)
         {
             if(tab_Strecke_PT1.IsSelected)
                 Optimize.Controller(_PT1, _I);
@@ -545,5 +586,90 @@ namespace controller_design.WPF
             plot_graph();
         }
         #endregion
+        #region Methods
+        void enable_all_optimizations()
+        {
+            butten_auslegen_I.IsEnabled = true;
+            butten_auslegen_P.IsEnabled = true;
+            butten_auslegen_PI.IsEnabled = true;
+        }
+        void check_optimization_for_IT1()
+        {
+            if (_IT1._Ti / _IT1._T2 > 1)
+                butten_auslegen_P.IsEnabled = true;
+            else
+                butten_auslegen_P.IsEnabled = false;
+            if(_IT1._Ti / _IT1._T2 > 0)
+                butten_auslegen_PI.IsEnabled = true;
+            else
+                butten_auslegen_PI.IsEnabled = false;
+        }
+        void check_optimization_for_PT2_wdb1()
+        {
+            if (_PT2_wdb1._T1 / _PT2_wdb1._T2 > 8)
+                butten_auslegen_P.IsEnabled = true;
+            else
+                butten_auslegen_P.IsEnabled = false;
+            if (_PT2_wdb1._T1 / _PT2_wdb1._T2 > 1)
+                butten_auslegen_PI.IsEnabled = true;
+            else
+                butten_auslegen_PI.IsEnabled = false;
+        }
+        void check_optimization_for_PT2_wdse1()
+        {
+            if (_PT2_wdse1._d >= 0.5 && _PT2_wdse1._d <= 1)
+                butten_auslegen_I.IsEnabled = true;
+            else
+                butten_auslegen_I.IsEnabled = false;
+            if (_PT2_wdse1._d > 1 / Math.Sqrt(2) && _PT2_wdse1._d <= 1)
+                butten_auslegen_PI.IsEnabled = true;
+            else
+                butten_auslegen_PI.IsEnabled = false;
+        }
+        bool split_text2float(string input, ref float[] output)
+        {
+            string[] help_split;
+            float temp;
+            bool all_ok = true;
+            LinkedList<float> result = new LinkedList<float>();
+
+            help_split = input.Split(';');
+            foreach (string s in help_split)
+            {
+                if (!float.TryParse(s, out temp))
+                    all_ok = false;
+
+                result.AddLast(temp);
+            }
+            output = result.ToArray();
+            return all_ok;
+        }
+        #endregion
+
+        private void textbox_b_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            float[] help = new float[] {};
+            if (split_text2float(textbox_b.Text, ref help))
+            {
+                _b = help;
+                Transferfunction _Tf = new Transferfunction(_a, _b);
+                if (_Simulator != null)
+                    _Simulator.replace_in_Schematic_at_pos(3, _Tf);
+                plot_graph();
+            }
+
+        }
+        private void textbox_a_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            float[] help = new float[] { };
+            if (split_text2float(textbox_a.Text, ref help))
+            {
+                _a = help;
+                Transferfunction _Tf = new Transferfunction(_a, _b);
+                if (_Simulator != null)
+                    _Simulator.replace_in_Schematic_at_pos(3, _Tf);
+                plot_graph();
+            }
+        }
     }
 }

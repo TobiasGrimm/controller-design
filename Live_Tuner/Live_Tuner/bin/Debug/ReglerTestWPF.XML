@@ -829,19 +829,19 @@
             </summary>
             <param name="output">The new Ti-Value for the IT2 Loop</param>
         </member>
-        <member name="M:controller_design.WPF.MainWindow.Base_Slider_PT2wdb1_value_changed(System.Single)">
+        <member name="M:controller_design.WPF.MainWindow.Base_Slider_PT2_wdb1_Vs_value_changed(System.Single)">
             <summary>
             Update Vs of PT2 with damping bigger 1 Control Loop and plot graph
             </summary>
             <param name="output">The new Vs-Value for the PT2 Loop</param>
         </member>
-        <member name="M:controller_design.WPF.MainWindow.Base_Slider_PT2wdb1_T1_value_changed(System.Single)">
+        <member name="M:controller_design.WPF.MainWindow.Base_Slider_PT2_wdb1_T1_value_changed(System.Single)">
             <summary>
             Update T1 of PT2 with damping bigger 1 Control Loop and plot graph
             </summary>
             <param name="output">The new T1-Value for the PT2 Loop</param>
         </member>
-        <member name="M:controller_design.WPF.MainWindow.Base_Slider_PT2wdb1_T2_value_changed(System.Single)">
+        <member name="M:controller_design.WPF.MainWindow.Base_Slider_PT2_wdb1_T2_value_changed(System.Single)">
             <summary>
             Update T2 of PT2 with damping bigger 1 Control Loop and plot graph
             </summary>
@@ -962,7 +962,7 @@
             Start the simulation and plot the graph
             </summary>
         </member>
-        <member name="M:controller_design.WPF.MainWindow.butten_Auslegen_I_Click(System.Object,System.Windows.RoutedEventArgs)">
+        <member name="M:controller_design.WPF.MainWindow.butten_auslegen_I_Click(System.Object,System.Windows.RoutedEventArgs)">
             <summary>
             Optimize Controller-I and plot the graph
             </summary>
