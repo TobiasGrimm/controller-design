@@ -632,8 +632,7 @@ namespace controller_design.WPF
             float temp;
             bool all_ok = true;
             LinkedList<float> result = new LinkedList<float>();
-
-            help_split = input.Split(';');
+            help_split = (input.Trim()).Split(';');
             foreach (string s in help_split)
             {
                 if (!float.TryParse(s, out temp))
@@ -662,7 +661,7 @@ namespace controller_design.WPF
         private void textbox_a_TextChanged(object sender, TextChangedEventArgs e)
         {
             float[] help = new float[] { };
-            if (split_text2float(textbox_a.Text, ref help))
+            if (split_text2float("1;"+textbox_a.Text, ref help))
             {
                 _a = help;
                 Transferfunction _Tf = new Transferfunction(_a, _b);
