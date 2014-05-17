@@ -1,0 +1,12 @@
+c:\users\tobias\documents\visual studio 2013\Projects\Save_Manager\Save_Manager\bin\Debug\Save_Manager.exe.config
+c:\users\tobias\documents\visual studio 2013\Projects\Save_Manager\Save_Manager\obj\Debug\Save_Manager.csprojResolveAssemblyReference.cache
+c:\users\tobias\documents\visual studio 2013\Projects\Save_Manager\Save_Manager\bin\Debug\Save_Manager.exe
+c:\users\tobias\documents\visual studio 2013\Projects\Save_Manager\Save_Manager\bin\Debug\Save_Manager.pdb
+c:\users\tobias\documents\visual studio 2013\Projects\Save_Manager\Save_Manager\obj\Debug\Save_Manager.exe
+c:\users\tobias\documents\visual studio 2013\Projects\Save_Manager\Save_Manager\obj\Debug\Save_Manager.pdb
+C:\Users\Tobias\Documents\GitHub\controller-design\Save_Manager\Save_Manager\obj\Debug\Save_Manager.pdb
+C:\Users\Tobias\Documents\GitHub\controller-design\Save_Manager\Save_Manager\bin\Debug\Save_Manager.pdb
+C:\Users\Tobias\Documents\GitHub\controller-design\Save_Manager\Save_Manager\obj\Debug\Save_Manager.csprojResolveAssemblyReference.cache
+C:\Users\Tobias\Documents\GitHub\controller-design\Save_Manager\Save_Manager\bin\Debug\Save_Manager.dll.config
+C:\Users\Tobias\Documents\GitHub\controller-design\Save_Manager\Save_Manager\bin\Debug\Save_Manager.dll
+C:\Users\Tobias\Documents\GitHub\controller-design\Save_Manager\Save_Manager\obj\Debug\Save_Manager.dll

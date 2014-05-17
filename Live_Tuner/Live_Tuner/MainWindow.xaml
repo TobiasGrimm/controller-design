@@ -3,7 +3,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:Base_Slider="clr-namespace:Base_Slider;assembly=Base_Slider" xmlns:Control_Tools="clr-namespace:Control_Tools;assembly=Base_Slider" xmlns:Plott_o_mat="clr-namespace:Plott_o_mat;assembly=Plott_o_mat" x:Class="controller_design.WPF.MainWindow"
         Title="MainWindow" Height="755" Width="1140">
-    <Grid Margin="0,0,2,2">
+    <Grid x:Name="grid_parant" Margin="0,0,2,2">
         <TabControl Margin="10,32,0,0" ScrollViewer.CanContentScroll="True" HorizontalAlignment="Left" VerticalAlignment="Top" Height="216" Width="494">
             <TabItem x:Name="tab_Strecke_PT1" Header="PT1" Margin="-2,-2,-5,-1" MouseLeftButtonUp="tab_Strecke_PT1_MouseLeftButtonUp">
                 <Grid HorizontalAlignment="Left" Height="191" VerticalAlignment="Top" Width="489" Margin="0,0,-5,0">
@@ -167,6 +167,8 @@
 
 
         <Plott_o_mat:UserControl1 x:Name="Graph" Margin="526,37,0,0" VerticalAlignment="Top" Width="588" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Left"/>
+        <Button x:Name="butten_load" Content="Load" HorizontalAlignment="Left" Margin="429,530,0,0" VerticalAlignment="Top" Width="75" Click="butten_load_Click"/>
+        <Button x:Name="butten_save" Content="Save" HorizontalAlignment="Left" Margin="354,530,0,0" VerticalAlignment="Top" Width="75" Click="butten_save_Click"/>
 
 
     </Grid>

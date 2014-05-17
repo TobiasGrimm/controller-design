@@ -13,6 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using controller_design.Schematic;
+using Basics;
 
 namespace controller_design.WPF
 {
@@ -22,6 +23,7 @@ namespace controller_design.WPF
     public partial class MainWindow : Window
     {
         #region Variables
+        Isavable[] _base_slider_array;
         //Control Loops
         /// <summary>
         /// PT1 Control Loop
@@ -75,6 +77,8 @@ namespace controller_design.WPF
         public MainWindow()
         {
             InitializeComponent();
+
+
 
             //Set default Controller
             tab_Regler_P.IsEnabled = false;
@@ -668,6 +672,42 @@ namespace controller_design.WPF
                 if (_Simulator != null)
                     _Simulator.replace_in_Schematic_at_pos(3, _Tf);
                 plot_graph();
+            }
+        }
+
+        private void butten_save_Click(object sender, RoutedEventArgs e)
+        {
+            Microsoft.Win32.SaveFileDialog dialog = new Microsoft.Win32.SaveFileDialog();
+            bool? result = dialog.ShowDialog();
+            if (result.HasValue && result.Value)
+            {
+                List<Isavable> help = new List<Isavable>();
+                foreach (object o in LogicalTreeHelper.GetChildren((DependencyObject)grid_parant))
+                {
+                  if (o.GetType().GetInterfaces().Contains(typeof(Isavable)))
+                  {
+                      help.Add((Isavable)o);
+                  }
+                }
+                File_Manager.save2file(dialog.FileName,help);
+            }
+        }
+
+        private void butten_load_Click(object sender, RoutedEventArgs e)
+        {
+            Microsoft.Win32.OpenFileDialog dialog = new Microsoft.Win32.OpenFileDialog();
+            bool? result = dialog.ShowDialog();
+            if (result.HasValue && result.Value)
+            {
+                List<Isavable> help = new List<Isavable>();
+                foreach (object o in LogicalTreeHelper.GetChildren(this))
+                {
+                  if (o is Isavable)
+                  {
+                      help.Add((Isavable)o);
+                  }
+                }
+                File_Manager.load_from_file(dialog.FileName,help);
             }
         }
     }

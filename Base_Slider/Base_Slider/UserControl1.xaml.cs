@@ -12,13 +12,14 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Basics;
 
 namespace Control_Tools
 {
     /// <summary>
     /// The Base Slider is a GUI Element for maximum precision and coolness
     /// </summary>
-    public partial class Base_Slider : UserControl
+    public partial class Base_Slider : UserControl, Isavable
     {
         #region Variables
         /// <summary>
@@ -55,6 +56,20 @@ namespace Control_Tools
             Slider_Mult.Value = 0.0f;
             textBox_Mult.Text = (base_value / 2).ToString("e1");
             calc_and_fire();
+        }
+        public string parameters2string()
+        {
+            return textBox_Base.Text + "$" + Slider_Mult.Value.ToString() + "$" + textBox_Mult.Text + "$";
+        }
+
+        public void restorefromstring(string s)
+        {
+            string[] splitted = s.Split('$');
+            textBox_Base.Text = splitted[0];
+            float help;
+            float.TryParse(splitted[1],out help);
+            Slider_Mult.Value = help;
+            textBox_Mult.Text = splitted[2];
         }
         #endregion
         #region Constructors
