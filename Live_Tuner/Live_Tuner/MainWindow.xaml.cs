@@ -23,7 +23,8 @@ namespace controller_design.WPF
     public partial class MainWindow : Window
     {
         #region Variables
-        Isavable[] _base_slider_array;
+        List<Isavable> _savable_array;
+        bool _plot_on = false;
         //Control Loops
         /// <summary>
         /// PT1 Control Loop
@@ -77,8 +78,10 @@ namespace controller_design.WPF
         public MainWindow()
         {
             InitializeComponent();
-
-
+//            combmBox_Zeit.SelectedIndex = 0;
+            Save_Combo_Boxes _savable_comboboxes = new Save_Combo_Boxes(new List<ComboBox>() { combmBox_Zeit, combmBox_Zeit_Tend });
+            Save_Text_Boxes _savable_textboxes = new Save_Text_Boxes(new List<TextBox>() { textBox_Ts, textBox_Tend, textbox_b, textbox_a });
+            _savable_array = new List<Isavable>() { Base_Slider_PT1_Vs, Base_Slider_PT1_T1, Base_Slider_IT1_Ti, Base_Slider_IT1_T2, Base_Slider_PT2_wdb1_Vs, Base_Slider_PT2_wdb1_T1, Base_Slider_PT2_wdb1_T2, Base_Slider_PT2_wdse1_Vs, Base_Slider_PT2_wdb1_T1, Base_Slider_PT2_wdb1_T2, Base_Slider_PT2_wdse1_Vs, Base_Slider_PT2_wdse1_d, Base_Slider_PT2_wdse1_T, Base_Slider_P_Vr, Base_Slider_PI_Vr, Base_Slider_PI_Tn, Base_Slider_I_Ti, Base_Slider_St_Vz, Base_Slider_St_Tz, _savable_textboxes, _savable_comboboxes };
 
             //Set default Controller
             tab_Regler_P.IsEnabled = false;
@@ -109,6 +112,7 @@ namespace controller_design.WPF
             Optimize.Controller(_PT1, _I);
             Base_Slider_I_Ti.set_Base(_I._Ti);
             _Simulator = new Simulator (_I,_Jamming,_PT1);
+            _plot_on = true;
             plot_graph();
             
         }
@@ -293,6 +297,31 @@ namespace controller_design.WPF
             _Jamming._step_Time = output;
             plot_graph();
         }
+        private void textbox_b_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            float[] help = new float[] { };
+            if (split_text2float(textbox_b.Text, ref help))
+            {
+                _b = help;
+                Transferfunction _Tf = new Transferfunction(_a, _b);
+                if (_Simulator != null)
+                    _Simulator.replace_in_Schematic_at_pos(3, _Tf);
+                plot_graph();
+            }
+
+        }
+        private void textbox_a_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            float[] help = new float[] { };
+            if (split_text2float("1;" + textbox_a.Text, ref help))
+            {
+                _a = help;
+                Transferfunction _Tf = new Transferfunction(_a, _b);
+                if (_Simulator != null)
+                    _Simulator.replace_in_Schematic_at_pos(3, _Tf);
+                plot_graph();
+            }
+        }
         #endregion
         #region select_Controller_and_Loop
         /// <summary>
@@ -435,13 +464,13 @@ namespace controller_design.WPF
         /// </summary>
         void plot_graph()
         {
-                       
-            if (_Simulator != null)
-            {
-                float[,] result = _Simulator.simulate(_Ts_Base * _Ts_exponent, _Tend_Base*_Tend_exponent);
-                if (result[0,result.Length/2-1]==result[0,result.Length/2-1])            // is the simulation korrekt? (NaN problem)
-                  Graph.plot(result, 5);
-            }
+            if (_plot_on)                       
+                if (_Simulator != null)
+                {
+                    float[,] result = _Simulator.simulate(_Ts_Base * _Ts_exponent, _Tend_Base*_Tend_exponent);
+                    if (result[0,result.Length/2-1]==result[0,result.Length/2-1])            // is the simulation korrekt? (NaN problem)
+                      Graph.plot(result, 5);
+                }
         }
         #endregion
         #region Optimize_Controller
@@ -486,6 +515,45 @@ namespace controller_design.WPF
                 Optimize.Controller(_PT2_wdse1, _PI);
             Base_Slider_PI_Vr.set_Base(_PI._Vr);
             Base_Slider_PI_Tn.set_Base(_PI._Tn);
+        }
+        void enable_all_optimizations()
+        {
+            butten_auslegen_I.IsEnabled = true;
+            butten_auslegen_P.IsEnabled = true;
+            butten_auslegen_PI.IsEnabled = true;
+        }
+        void check_optimization_for_IT1()
+        {
+            if (_IT1._Ti / _IT1._T2 > 1)
+                butten_auslegen_P.IsEnabled = true;
+            else
+                butten_auslegen_P.IsEnabled = false;
+            if (_IT1._Ti / _IT1._T2 > 0)
+                butten_auslegen_PI.IsEnabled = true;
+            else
+                butten_auslegen_PI.IsEnabled = false;
+        }
+        void check_optimization_for_PT2_wdb1()
+        {
+            if (_PT2_wdb1._T1 / _PT2_wdb1._T2 > 8)
+                butten_auslegen_P.IsEnabled = true;
+            else
+                butten_auslegen_P.IsEnabled = false;
+            if (_PT2_wdb1._T1 / _PT2_wdb1._T2 > 1)
+                butten_auslegen_PI.IsEnabled = true;
+            else
+                butten_auslegen_PI.IsEnabled = false;
+        }
+        void check_optimization_for_PT2_wdse1()
+        {
+            if (_PT2_wdse1._d >= 0.5 && _PT2_wdse1._d <= 1)
+                butten_auslegen_I.IsEnabled = true;
+            else
+                butten_auslegen_I.IsEnabled = false;
+            if (_PT2_wdse1._d > 1 / Math.Sqrt(2) && _PT2_wdse1._d <= 1)
+                butten_auslegen_PI.IsEnabled = true;
+            else
+                butten_auslegen_PI.IsEnabled = false;
         }
         #endregion
         #region Time
@@ -591,45 +659,7 @@ namespace controller_design.WPF
         }
         #endregion
         #region Methods
-        void enable_all_optimizations()
-        {
-            butten_auslegen_I.IsEnabled = true;
-            butten_auslegen_P.IsEnabled = true;
-            butten_auslegen_PI.IsEnabled = true;
-        }
-        void check_optimization_for_IT1()
-        {
-            if (_IT1._Ti / _IT1._T2 > 1)
-                butten_auslegen_P.IsEnabled = true;
-            else
-                butten_auslegen_P.IsEnabled = false;
-            if(_IT1._Ti / _IT1._T2 > 0)
-                butten_auslegen_PI.IsEnabled = true;
-            else
-                butten_auslegen_PI.IsEnabled = false;
-        }
-        void check_optimization_for_PT2_wdb1()
-        {
-            if (_PT2_wdb1._T1 / _PT2_wdb1._T2 > 8)
-                butten_auslegen_P.IsEnabled = true;
-            else
-                butten_auslegen_P.IsEnabled = false;
-            if (_PT2_wdb1._T1 / _PT2_wdb1._T2 > 1)
-                butten_auslegen_PI.IsEnabled = true;
-            else
-                butten_auslegen_PI.IsEnabled = false;
-        }
-        void check_optimization_for_PT2_wdse1()
-        {
-            if (_PT2_wdse1._d >= 0.5 && _PT2_wdse1._d <= 1)
-                butten_auslegen_I.IsEnabled = true;
-            else
-                butten_auslegen_I.IsEnabled = false;
-            if (_PT2_wdse1._d > 1 / Math.Sqrt(2) && _PT2_wdse1._d <= 1)
-                butten_auslegen_PI.IsEnabled = true;
-            else
-                butten_auslegen_PI.IsEnabled = false;
-        }
+
         bool split_text2float(string input, ref float[] output)
         {
             string[] help_split;
@@ -648,48 +678,14 @@ namespace controller_design.WPF
             return all_ok;
         }
         #endregion
-
-        private void textbox_b_TextChanged(object sender, TextChangedEventArgs e)
-        {
-            float[] help = new float[] {};
-            if (split_text2float(textbox_b.Text, ref help))
-            {
-                _b = help;
-                Transferfunction _Tf = new Transferfunction(_a, _b);
-                if (_Simulator != null)
-                    _Simulator.replace_in_Schematic_at_pos(3, _Tf);
-                plot_graph();
-            }
-
-        }
-        private void textbox_a_TextChanged(object sender, TextChangedEventArgs e)
-        {
-            float[] help = new float[] { };
-            if (split_text2float("1;"+textbox_a.Text, ref help))
-            {
-                _a = help;
-                Transferfunction _Tf = new Transferfunction(_a, _b);
-                if (_Simulator != null)
-                    _Simulator.replace_in_Schematic_at_pos(3, _Tf);
-                plot_graph();
-            }
-        }
-
+        #region save&load
         private void butten_save_Click(object sender, RoutedEventArgs e)
         {
             Microsoft.Win32.SaveFileDialog dialog = new Microsoft.Win32.SaveFileDialog();
             bool? result = dialog.ShowDialog();
             if (result.HasValue && result.Value)
             {
-                List<Isavable> help = new List<Isavable>();
-                foreach (object o in LogicalTreeHelper.GetChildren((DependencyObject)grid_parant))
-                {
-                  if (o.GetType().GetInterfaces().Contains(typeof(Isavable)))
-                  {
-                      help.Add((Isavable)o);
-                  }
-                }
-                File_Manager.save2file(dialog.FileName,help);
+                File_Manager.save2file(dialog.FileName, _savable_array);
             }
         }
 
@@ -697,18 +693,14 @@ namespace controller_design.WPF
         {
             Microsoft.Win32.OpenFileDialog dialog = new Microsoft.Win32.OpenFileDialog();
             bool? result = dialog.ShowDialog();
+            _plot_on = false;
             if (result.HasValue && result.Value)
             {
-                List<Isavable> help = new List<Isavable>();
-                foreach (object o in LogicalTreeHelper.GetChildren(this))
-                {
-                  if (o is Isavable)
-                  {
-                      help.Add((Isavable)o);
-                  }
-                }
-                File_Manager.load_from_file(dialog.FileName,help);
+                File_Manager.load_from_file(dialog.FileName,_savable_array);
             }
+            _plot_on = true;
+            plot_graph();
         }
+        #endregion
     }
 }
