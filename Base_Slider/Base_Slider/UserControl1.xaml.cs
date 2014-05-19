@@ -59,7 +59,7 @@ namespace Control_Tools
         }
         public string parameters2string()
         {
-            return textBox_Base.Text + "$" + Slider_Mult.Value.ToString() + "$" + textBox_Mult.Text + "$";
+            return textBox_Base.Text.Replace("§", "").Replace("$", "") + "$" + Slider_Mult.Value.ToString() + "$" + textBox_Mult.Text.Replace("§", "").Replace("$", "") + "$";
         }
         bool trimtext2float(string input, ref float output)
         {

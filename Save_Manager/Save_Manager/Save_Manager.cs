@@ -72,7 +72,7 @@ namespace Basics
         {
             string result = "";
             foreach (TextBox tb in _tb_list)
-                result += tb.Text + "$";
+                result += tb.Text.Replace("§", "").Replace("$", "") + "$";
             return result;
         }
         string tabControl2string()
