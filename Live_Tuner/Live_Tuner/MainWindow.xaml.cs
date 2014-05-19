@@ -78,10 +78,8 @@ namespace controller_design.WPF
         public MainWindow()
         {
             InitializeComponent();
-//            combmBox_Zeit.SelectedIndex = 0;
-            Save_Combo_Boxes _savable_comboboxes = new Save_Combo_Boxes(new List<ComboBox>() { combmBox_Zeit, combmBox_Zeit_Tend });
-            Save_Text_Boxes _savable_textboxes = new Save_Text_Boxes(new List<TextBox>() { textBox_Ts, textBox_Tend, textbox_b, textbox_a });
-            _savable_array = new List<Isavable>() { Base_Slider_PT1_Vs, Base_Slider_PT1_T1, Base_Slider_IT1_Ti, Base_Slider_IT1_T2, Base_Slider_PT2_wdb1_Vs, Base_Slider_PT2_wdb1_T1, Base_Slider_PT2_wdb1_T2, Base_Slider_PT2_wdse1_Vs, Base_Slider_PT2_wdb1_T1, Base_Slider_PT2_wdb1_T2, Base_Slider_PT2_wdse1_Vs, Base_Slider_PT2_wdse1_d, Base_Slider_PT2_wdse1_T, Base_Slider_P_Vr, Base_Slider_PI_Vr, Base_Slider_PI_Tn, Base_Slider_I_Ti, Base_Slider_St_Vz, Base_Slider_St_Tz, _savable_textboxes, _savable_comboboxes };
+            Savable_WPF_Obj _savable_WPF_objects = new Savable_WPF_Obj(new List<ComboBox>() { combmBox_Zeit, combmBox_Zeit_Tend }, new List<TextBox>() { textBox_Ts, textBox_Tend, textbox_b, textbox_a });
+            _savable_array = new List<Isavable>() { Base_Slider_PT1_Vs, Base_Slider_PT1_T1, Base_Slider_IT1_Ti, Base_Slider_IT1_T2, Base_Slider_PT2_wdb1_Vs, Base_Slider_PT2_wdb1_T1, Base_Slider_PT2_wdb1_T2, Base_Slider_PT2_wdse1_Vs, Base_Slider_PT2_wdb1_T1, Base_Slider_PT2_wdb1_T2, Base_Slider_PT2_wdse1_Vs, Base_Slider_PT2_wdse1_d, Base_Slider_PT2_wdse1_T, Base_Slider_P_Vr, Base_Slider_PI_Vr, Base_Slider_PI_Tn, Base_Slider_I_Ti, Base_Slider_St_Vz, Base_Slider_St_Tz, _savable_WPF_objects };
 
             //Set default Controller
             tab_Regler_P.IsEnabled = false;
@@ -564,8 +562,8 @@ namespace controller_design.WPF
         /// <param name="e">exponent</param>
         private void textBox_Ts_TextChanged(object sender, TextChangedEventArgs e)
         {
-            float.TryParse(textBox_Ts.Text, out _Ts_Base);
-            plot_graph();
+            if (trimtext2float(textBox_Ts.Text, ref _Ts_Base))
+                plot_graph();
         }
         /// <summary>
         /// Set exponent for the Sample Time to 10^0 and plot the graph
@@ -654,12 +652,21 @@ namespace controller_design.WPF
         /// <param name="e">exponent</param>
         private void textBox_Tend_TextChanged(object sender, TextChangedEventArgs e)
         {
-            float.TryParse(textBox_Tend.Text, out _Tend_Base);
-            plot_graph();
+            if (trimtext2float(textBox_Tend.Text, ref _Tend_Base))
+                plot_graph();
         }
         #endregion
         #region Methods
-
+        bool trimtext2float(string input, ref float output)
+        {
+            float temp;
+            bool all_ok = true;
+            string help = input.Replace(".", ",").Replace(" ","");
+            if (!float.TryParse(help, out temp))
+                all_ok = false;
+            output = temp;
+            return all_ok;
+        }
         bool split_text2float(string input, ref float[] output)
         {
             string[] help_split;

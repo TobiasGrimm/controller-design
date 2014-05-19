@@ -44,58 +44,84 @@ namespace Basics
             }
         }
     }
-    public class Save_Text_Boxes : Isavable
+    public class Savable_WPF_Obj : Isavable
     {
-        List<TextBox> _tb_list;
-        public Save_Text_Boxes(List<TextBox> tb_list)
+        List<ComboBox> _cb_list;
+        List<TextBox>  _tb_list;
+        List<TabControl> _tc_list;
+        public Savable_WPF_Obj(List<ComboBox> cb_list, List<TextBox> tb_list, List<TabControl> tc_list)
         {
+            _cb_list = cb_list;
             _tb_list = tb_list;
+            _tc_list = tc_list;
         }
-
-        public string parameters2string()
+        public Savable_WPF_Obj(List<ComboBox> cb_list, List<TextBox> tb_list)
+        {
+            _cb_list = cb_list;
+            _tb_list = tb_list;
+            _tc_list = new List<TabControl>() { };
+        }
+        string comboBoxes2string()
+        {
+            string result = "";
+            foreach (ComboBox cb in _cb_list)
+                result += cb.SelectedIndex + "$";
+            return result;
+        }
+        string textBoxes2string()
         {
             string result = "";
             foreach (TextBox tb in _tb_list)
                 result += tb.Text + "$";
             return result;
         }
-
-        public void restorefromstring(string s)
+        string tabControl2string()
         {
-
+            string result = "";
+            foreach (TabControl tc in _tc_list)
+                result += tc.SelectedIndex + "$";
+            return result;
+        }
+        void restoreComboBoxes(string s)
+        {
+            string[] splitted = s.Split('$');
+            int help = 0;
+            for (int i = 0; i < _cb_list.Count; ++i)
+            {
+                int.TryParse(splitted[i], out help);
+                _cb_list[i].SelectedIndex = help;
+            }
+        }
+        void restoreTextBoxes(string s)
+        {
             string[] splitted = s.Split('$');
             for (int i = 0; i < _tb_list.Count; ++i)
             {
                 _tb_list[i].Text = splitted[i];
             }
         }
-    }
-    public class Save_Combo_Boxes : Isavable
-    {
-        List<ComboBox> _cb_list = new List<ComboBox>() { };
-        public Save_Combo_Boxes(List<ComboBox> cb_list)
+        void restoreTabControls(string s)
         {
-            _cb_list = cb_list;
+            string[] splitted = s.Split('$');
+            int help = 0;
+            for (int i = 0; i < _tc_list.Count; ++i)
+            {
+                int.TryParse(splitted[i], out help);
+                _tc_list[i].SelectedIndex = help;
+            }
         }
-
         public string parameters2string()
         {
-            string result = "";
-            foreach (ComboBox cb in _cb_list)
-                result += cb.SelectedIndex+ "$";
-            return result;
+            return comboBoxes2string()+"§"+textBoxes2string()+"§"+tabControl2string();
         }
 
         public void restorefromstring(string s)
         {
 
-            string[] splitted = s.Split('$');
-            int help = 0;
-            for (int i = 0; i < _cb_list.Count; ++i)
-            {
-                int.TryParse(splitted[i],out help);
-                _cb_list[i].SelectedIndex=help;
-            }
+            string[] splitted = s.Split('§');
+            restoreComboBoxes(splitted[0]);
+            restoreTextBoxes(splitted[1]);
+            restoreTabControls(splitted[2]);
         }
     }
 }

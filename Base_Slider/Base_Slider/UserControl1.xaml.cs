@@ -61,7 +61,16 @@ namespace Control_Tools
         {
             return textBox_Base.Text + "$" + Slider_Mult.Value.ToString() + "$" + textBox_Mult.Text + "$";
         }
-
+        bool trimtext2float(string input, ref float output)
+        {
+            float temp;
+            bool all_ok = true;
+            string help = input.Replace(".", ",").Replace(" ", "");
+            if (!float.TryParse(help, out temp))
+                all_ok = false;
+            output = temp;
+            return all_ok;
+        }
         public void restorefromstring(string s)
         {
             string[] splitted = s.Split('$');
@@ -107,8 +116,8 @@ namespace Control_Tools
         /// <param name="e">arguments</param>
         private void textBox_Base_TextChanged(object sender, TextChangedEventArgs e)
         {
-            float.TryParse(textBox_Base.Text, out base_value);
-            calc_and_fire();
+            if(trimtext2float(textBox_Base.Text, ref base_value))
+               calc_and_fire();
         }
         /// <summary>
         /// Read Text Box for the Slider Value, calc and fire event "value_changed"
@@ -127,8 +136,8 @@ namespace Control_Tools
         /// <param name="e">arguments</param>
         private void textBox_PT1_VS_Skale_TextChanged(object sender, TextChangedEventArgs e)
         {
-            float.TryParse(textBox_Mult.Text, out mult_value);
-            calc_and_fire();
+            if (trimtext2float(textBox_Mult.Text, ref mult_value))
+                calc_and_fire();
         }
         #endregion
     }
