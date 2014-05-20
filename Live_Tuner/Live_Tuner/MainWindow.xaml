@@ -61,9 +61,9 @@
                     <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" ToolTip="Streckenverstärkung" Height="35" Width="17"><Run Language="de-de" Text="   "/></TextBlock>
                     <TextBlock HorizontalAlignment="Left" Margin="10,59,0,0" TextWrapping="Wrap" VerticalAlignment="Top" ToolTip="Zeitkonstante T1" Height="35" Width="17"><Run Language="de-de" Text="   "/></TextBlock>
                     <TextBlock HorizontalAlignment="Left" Margin="82,146,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="8"><Run Language="de-de" Text="-1"/></TextBlock>
-                    <TextBlock HorizontalAlignment="Left" Margin="122,146,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="8"><Run Language="de-de" Text="-1"/></TextBlock>
+                    <TextBlock HorizontalAlignment="Left" Margin="122,146,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="8"><Run Language="de-de" Text="-2"/></TextBlock>
                     <TextBlock HorizontalAlignment="Left" Margin="82,168,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="8"><Run Language="de-de" Text="-1"/></TextBlock>
-                    <TextBlock HorizontalAlignment="Left" Margin="122,168,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="8"><Run Language="de-de" Text="-1"/></TextBlock>
+                    <TextBlock HorizontalAlignment="Left" Margin="122,168,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="8"><Run Language="de-de" Text="-2"/></TextBlock>
                     <TextBox x:Name="textbox_b" HorizontalAlignment="Left" Height="23" Margin="51,16,0,0" TextWrapping="Wrap" Text="0 ; 400" VerticalAlignment="Top" Width="246" TextChanged="textbox_b_TextChanged"/>
                     <TextBlock HorizontalAlignment="Left" Margin="16,18,0,0" TextWrapping="Wrap" VerticalAlignment="Top" ToolTip="Nichtrekursive Filter Koeffizienten"><Run Language="de-de" Text="b ="/></TextBlock>
                     <TextBlock HorizontalAlignment="Left" Margin="40,8,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="47" Width="11" FontSize="24"><Run Language="de-de" Text="["/></TextBlock>
@@ -154,7 +154,7 @@
                         <ComboBoxItem x:Name="comboBox_Tend_ns" Content="ns" Selected="comboBox_Tend_ns_Selected"/>
                     </ComboBox>
                     <TextBlock HorizontalAlignment="Left" Margin="14,111,0,0" TextWrapping="Wrap" VerticalAlignment="Top" ToolTip="" FontSize="7" Height="12" Width="15"><Run Language="de-de" Text="end"/></TextBlock>
-                    <TextBlock HorizontalAlignment="Left" Margin="256,101,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="17" Width="223"><Run Language="de-de" Text="Es wird jeder ... Ausgegeben."/></TextBlock>
+                    <TextBlock HorizontalAlignment="Left" Margin="309,115,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="17" Width="170"><Run Language="de-de" Text="Es wird jeder ... Ausgegeben."/></TextBlock>
                 </Grid>
             </TabItem>
             <TabItem Header="Quellen" Margin="-2,-2,-5,-1">
@@ -178,6 +178,7 @@
                 </LinearGradientBrush>
             </Button.Background>
         </Button>
+        <CheckBox x:Name="CheckBox_LivePlotOn" Content="Live Plot on" HorizontalAlignment="Left" Margin="328,534,0,0" VerticalAlignment="Top" Checked="CheckBox_LivePlotOn_Checked" Unchecked="CheckBox_LivePlotOn_Unchecked" IsChecked="True"/>
 
 
     </Grid>

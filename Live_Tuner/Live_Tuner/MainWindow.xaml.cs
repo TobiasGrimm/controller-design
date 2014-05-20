@@ -78,7 +78,7 @@ namespace controller_design.WPF
         public MainWindow()
         {
             InitializeComponent();
-            Savable_WPF_Obj _savable_WPF_objects = new Savable_WPF_Obj(new List<ComboBox>() { combmBox_Zeit, combmBox_Zeit_Tend }, new List<TextBox>() { textBox_Ts, textBox_Tend, textbox_b, textbox_a });
+            Savable_WPF_Obj _savable_WPF_objects = new Savable_WPF_Obj(new List<ComboBox>() { combmBox_Zeit, combmBox_Zeit_Tend }, new List<TextBox>() { textBox_Ts, textBox_Tend, textbox_b, textbox_a }, new List<TabControl>() { },new List<CheckBox>(){CheckBox_LivePlotOn});
             _savable_array = new List<Isavable>() { Base_Slider_PT1_Vs, Base_Slider_PT1_T1, Base_Slider_IT1_Ti, Base_Slider_IT1_T2, Base_Slider_PT2_wdb1_Vs, Base_Slider_PT2_wdb1_T1, Base_Slider_PT2_wdb1_T2, Base_Slider_PT2_wdse1_Vs, Base_Slider_PT2_wdb1_T1, Base_Slider_PT2_wdb1_T2, Base_Slider_PT2_wdse1_Vs, Base_Slider_PT2_wdse1_d, Base_Slider_PT2_wdse1_T, Base_Slider_P_Vr, Base_Slider_PI_Vr, Base_Slider_PI_Tn, Base_Slider_I_Ti, Base_Slider_St_Vz, Base_Slider_St_Tz, _savable_WPF_objects };
 
             //Set default Controller
@@ -114,23 +114,6 @@ namespace controller_design.WPF
             plot_graph();
             
         }
-        #region helpFunctions
-            public String numToString(float x)
-            {
-                String returnNum;
-
-                if(x<1)
-                {
-                    
-                }
-                else
-                {
- 
-                }
-
-                return "";
-            }
-        #endregion
         #region Slider
         /// <summary>
         /// Update Vs of PT1 Control Loop and plot graph
@@ -705,9 +688,21 @@ namespace controller_design.WPF
             {
                 File_Manager.load_from_file(dialog.FileName,_savable_array);
             }
-            _plot_on = true;
+            _plot_on = (bool)CheckBox_LivePlotOn.IsChecked;
             plot_graph();
         }
         #endregion
+
+        private void CheckBox_LivePlotOn_Unchecked(object sender, RoutedEventArgs e)
+        {
+            _plot_on = false;
+        }
+
+        private void CheckBox_LivePlotOn_Checked(object sender, RoutedEventArgs e)
+        {
+            _plot_on = true;
+            plot_graph();
+        }
+
     }
 }

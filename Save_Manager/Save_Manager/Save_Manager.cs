@@ -49,6 +49,14 @@ namespace Basics
         List<ComboBox> _cb_list;
         List<TextBox>  _tb_list;
         List<TabControl> _tc_list;
+        List<CheckBox> _checkb_list;
+        public Savable_WPF_Obj(List<ComboBox> cb_list, List<TextBox> tb_list, List<TabControl> tc_list, List<CheckBox> checkb_list)
+        {
+            _cb_list = cb_list;
+            _tb_list = tb_list;
+            _tc_list = tc_list;
+            _checkb_list = checkb_list;
+        }
         public Savable_WPF_Obj(List<ComboBox> cb_list, List<TextBox> tb_list, List<TabControl> tc_list)
         {
             _cb_list = cb_list;
@@ -73,6 +81,13 @@ namespace Basics
             string result = "";
             foreach (TextBox tb in _tb_list)
                 result += tb.Text.Replace("§", "").Replace("$", "") + "$";
+            return result;
+        }
+        string checkBoxes2string()
+        {
+            string result = "";
+            foreach (CheckBox cb in _checkb_list)
+                result += cb.IsChecked + "$";
             return result;
         }
         string tabControl2string()
@@ -100,6 +115,16 @@ namespace Basics
                 _tb_list[i].Text = splitted[i];
             }
         }
+        void restoreCheckBoxes(string s)
+        {
+            bool help = false;
+            string[] splitted = s.Split('$');
+            for (int i = 0; i < _checkb_list.Count; ++i)
+            {
+                bool.TryParse(splitted[i], out help);
+                _checkb_list[i].IsChecked = help;
+            }
+        }
         void restoreTabControls(string s)
         {
             string[] splitted = s.Split('$');
@@ -112,7 +137,7 @@ namespace Basics
         }
         public string parameters2string()
         {
-            return comboBoxes2string()+"§"+textBoxes2string()+"§"+tabControl2string();
+            return comboBoxes2string()+"§"+textBoxes2string()+"§"+tabControl2string()+"§"+checkBoxes2string();
         }
 
         public void restorefromstring(string s)
@@ -122,6 +147,7 @@ namespace Basics
             restoreComboBoxes(splitted[0]);
             restoreTextBoxes(splitted[1]);
             restoreTabControls(splitted[2]);
+            restoreCheckBoxes(splitted[3]);
         }
     }
 }

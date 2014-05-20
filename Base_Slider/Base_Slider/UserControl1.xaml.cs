@@ -43,7 +43,7 @@ namespace Control_Tools
         {
             float result = base_value + slider_value * mult_value;
             if (textBox_result != null)
-                textBox_result.Text = result.ToString();
+                textBox_result.Text = result.ToString("#.##e+0");
             On_value_changed(result);
         }
         /// <summary>
@@ -52,9 +52,9 @@ namespace Control_Tools
         /// <param name="base_value">The Value for the new Base</param>
         public void set_Base(float base_value)
         {
-            textBox_Base.Text = base_value.ToString("e1");
+            textBox_Base.Text = base_value.ToString("#.##e+0");
             Slider_Mult.Value = 0.0f;
-            textBox_Mult.Text = (base_value / 2).ToString("e1");
+            textBox_Mult.Text = (base_value / 2).ToString("#.##e+0");
             calc_and_fire();
         }
         public string parameters2string()
