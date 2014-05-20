@@ -154,7 +154,8 @@
                         <ComboBoxItem x:Name="comboBox_Tend_ns" Content="ns" Selected="comboBox_Tend_ns_Selected"/>
                     </ComboBox>
                     <TextBlock HorizontalAlignment="Left" Margin="14,111,0,0" TextWrapping="Wrap" VerticalAlignment="Top" ToolTip="" FontSize="7" Height="12" Width="15"><Run Language="de-de" Text="end"/></TextBlock>
-                    <TextBlock HorizontalAlignment="Left" Margin="309,115,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="17" Width="170"><Run Language="de-de" Text="Es wird jeder ... Ausgegeben."/></TextBlock>
+                    <TextBlock HorizontalAlignment="Left" Margin="196,86,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="31" Width="266"><Run Language="de-de" Text="Es wird jeder             te Wert geplottet."/><LineBreak/><Run Language="de-de" Text="(Rechenaufw. Plot &gt;&gt; Rechenaufw. Simulation)"/></TextBlock>
+                    <TextBox x:Name="textBox_plot_count" HorizontalAlignment="Left" Height="23" Margin="268,79,0,0" TextWrapping="Wrap" Text="5" VerticalAlignment="Top" Width="33" TextChanged="textBox_plot_count_TextChanged"/>
                 </Grid>
             </TabItem>
             <TabItem Header="Quellen" Margin="-2,-2,-5,-1">

@@ -25,6 +25,7 @@ namespace controller_design.WPF
         #region Variables
         List<Isavable> _savable_array;
         bool _plot_on = false;
+        bool _ignore_warnings = false;
         //Control Loops
         /// <summary>
         /// PT1 Control Loop
@@ -71,6 +72,7 @@ namespace controller_design.WPF
         float _Ts_exponent = (float)Math.Pow(10, -6);
         float _Tend_Base = 400.0f;
         float _Tend_exponent = (float)Math.Pow(10, -3);
+        int _plot_count = 5;
         #endregion
         /// <summary>
         /// Init Main Window
@@ -78,7 +80,7 @@ namespace controller_design.WPF
         public MainWindow()
         {
             InitializeComponent();
-            Savable_WPF_Obj _savable_WPF_objects = new Savable_WPF_Obj(new List<ComboBox>() { combmBox_Zeit, combmBox_Zeit_Tend }, new List<TextBox>() { textBox_Ts, textBox_Tend, textbox_b, textbox_a }, new List<TabControl>() { },new List<CheckBox>(){CheckBox_LivePlotOn});
+            Savable_WPF_Obj _savable_WPF_objects = new Savable_WPF_Obj(new List<ComboBox>() { combmBox_Zeit, combmBox_Zeit_Tend }, new List<TextBox>() { textBox_Ts, textBox_Tend, textbox_b, textbox_a, textBox_plot_count }, new List<TabControl>() { }, new List<CheckBox>() { CheckBox_LivePlotOn });
             _savable_array = new List<Isavable>() { Base_Slider_PT1_Vs, Base_Slider_PT1_T1, Base_Slider_IT1_Ti, Base_Slider_IT1_T2, Base_Slider_PT2_wdb1_Vs, Base_Slider_PT2_wdb1_T1, Base_Slider_PT2_wdb1_T2, Base_Slider_PT2_wdse1_Vs, Base_Slider_PT2_wdb1_T1, Base_Slider_PT2_wdb1_T2, Base_Slider_PT2_wdse1_Vs, Base_Slider_PT2_wdse1_d, Base_Slider_PT2_wdse1_T, Base_Slider_P_Vr, Base_Slider_PI_Vr, Base_Slider_PI_Tn, Base_Slider_I_Ti, Base_Slider_St_Vz, Base_Slider_St_Tz, _savable_WPF_objects };
 
             //Set default Controller
@@ -445,12 +447,41 @@ namespace controller_design.WPF
         /// </summary>
         void plot_graph()
         {
+            MessageBoxButton b1 = MessageBoxButton.YesNo;
+            MessageBoxImage i1 = MessageBoxImage.Warning;
+            float Ts =  _Ts_Base * _Ts_exponent;
+            float Tend = _Tend_Base * _Tend_exponent;
             if (_plot_on)                       
                 if (_Simulator != null)
                 {
-                    float[,] result = _Simulator.simulate(_Ts_Base * _Ts_exponent, _Tend_Base*_Tend_exponent);
-                    if (result[0,result.Length/2-1]==result[0,result.Length/2-1])            // is the simulation korrekt? (NaN problem)
-                      Graph.plot(result, 5);
+                    if ((Tend/Ts)/_plot_count >= 1000 && !_ignore_warnings)
+                    {
+                        MessageBoxResult mbr1 = MessageBox.Show("ACHTUNG: Für die Erstellung des Plots mit den Aktuellen Solver-Parametern werden " + (int)((Tend / Ts) / _plot_count) + " Werte geplottet. Dies kann sehr Zeitintensiv sein, oder zum Absturz führen! \n Sind Sie sicher, dass sie dies durchführen wollen? \n (wenn nicht -> Live Plot wird abgeschaltet)", "Warnung", b1, i1);
+                        switch(mbr1)
+                        {
+                            case MessageBoxResult.Yes:
+                                MessageBoxResult mbr2 = MessageBox.Show("Wollen Sie diese Warnung dauerhaft ignorieren?", "Warnung", b1, i1);
+                                switch(mbr2)
+                                {
+                                    case MessageBoxResult.Yes:
+                                        _ignore_warnings = true;
+                                        break;
+                                    case MessageBoxResult.No:
+                                        _ignore_warnings = false;
+                                        break;
+                                }
+                                break;
+                            case MessageBoxResult.No:
+                                CheckBox_LivePlotOn.IsChecked = false;
+
+                                break;
+                        }
+                    }
+                    if (_plot_on) {
+                        float[,] result = _Simulator.simulate(Ts, Tend);
+                        if (result[0,result.Length/2-1]==result[0,result.Length/2-1])            // is the simulation korrekt? (NaN problem)
+                          Graph.plot(result, _plot_count);
+                    } 
                 }
         }
         #endregion
@@ -638,6 +669,31 @@ namespace controller_design.WPF
             if (trimtext2float(textBox_Tend.Text, ref _Tend_Base))
                 plot_graph();
         }
+        private void CheckBox_LivePlotOn_Unchecked(object sender, RoutedEventArgs e)
+        {
+            _plot_on = false;
+        }
+        private void CheckBox_LivePlotOn_Checked(object sender, RoutedEventArgs e)
+        {
+            _plot_on = true;
+            plot_graph();
+        }
+        private void textBox_plot_count_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            int help;
+            if (int.TryParse(textBox_plot_count.Text, out help))
+            {
+                if (help > 0)
+                {
+                    _plot_count = help;
+                    plot_graph();
+                }
+            }
+            else
+            {
+                textBox_plot_count.Text = "5";
+            }
+        }
         #endregion
         #region Methods
         bool trimtext2float(string input, ref float output)
@@ -692,17 +748,6 @@ namespace controller_design.WPF
             plot_graph();
         }
         #endregion
-
-        private void CheckBox_LivePlotOn_Unchecked(object sender, RoutedEventArgs e)
-        {
-            _plot_on = false;
-        }
-
-        private void CheckBox_LivePlotOn_Checked(object sender, RoutedEventArgs e)
-        {
-            _plot_on = true;
-            plot_graph();
-        }
 
     }
 }
