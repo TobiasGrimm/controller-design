@@ -14,7 +14,7 @@
             The integration method "Backward Euler"
             </summary>
             <param name="x_mom">The current input value (Time=0)</param>
-            <param name="x_old">The last input value (Time=-Ts)</param>
+            <param name="y_old">The last output value (Time=-Ts)</param>
             <param name="Ts">The sample time between x_mom and x_old</param>
             <returns>The integrated input</returns>
         </member>
@@ -86,6 +86,11 @@
             at Register-Index=1 it is one time integrated,
             at Register-Index=2 it es two times integrated, ...
             (Register[i]==x_in*p^-i)
+            </summary>
+        </member>
+        <member name="F:controller_design.Integrators_and_Registers.Integrator_Register._Register_old">
+            <summary>
+            The Old Values in the Register
             </summary>
         </member>
         <member name="M:controller_design.Integrators_and_Registers.Integrator_Register.do_one_step(System.Single)">

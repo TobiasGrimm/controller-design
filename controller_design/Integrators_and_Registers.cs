@@ -15,12 +15,12 @@ namespace controller_design.Integrators_and_Registers
         /// The integration method "Backward Euler"
         /// </summary>
         /// <param name="x_mom">The current input value (Time=0)</param>
-        /// <param name="x_old">The last input value (Time=-Ts)</param>
+        /// <param name="y_old">The last output value (Time=-Ts)</param>
         /// <param name="Ts">The sample time between x_mom and x_old</param>
         /// <returns>The integrated input</returns>
-        static public float Backward_Euler(float x_mom, float x_old, float Ts)
+        static public float Backward_Euler(float x_mom, float y_old, float Ts)
         {
-            return x_mom * Ts + x_old;
+            return x_mom * Ts + y_old;
         }
         /// <summary>
         /// The integration method "Trapezoidal"
@@ -114,6 +114,10 @@ namespace controller_design.Integrators_and_Registers
         /// </summary>
         float[] _Register;
         /// <summary>
+        /// The Old Values in the Register
+        /// </summary>
+        float[] _Register_old;
+        /// <summary>
         /// Get access to the Register at a specified index
         /// </summary>
         /// <param name="index">The index of the Register (array)</param>
@@ -127,9 +131,10 @@ namespace controller_design.Integrators_and_Registers
         /// </summary>
         /// <param name="Ts">The sample Time for one step</param>
         public void do_one_step(float Ts)
-        {
+        {            
             for (int i = 1; i < _Register.Count(); ++i)
-                _Register[i] = Integrator.Backward_Euler(_Register[i - 1], _Register[i], Ts);
+                _Register[i] = Integrator.Trapezoidal(_Register[i - 1], _Register_old[i-1], _Register[i], Ts);
+            _Register_old = _Register;
         }
         /// <summary>
         /// Resets each element of the Register to 0
@@ -162,6 +167,9 @@ namespace controller_design.Integrators_and_Registers
         public Integrator_Register(float[] x)
         {
             _Register = x;
+            _Register_old = x;
+            for (int i = 0; i < x.Length; ++i)
+                _Register_old[i] = 0;
         }
         #endregion
     }

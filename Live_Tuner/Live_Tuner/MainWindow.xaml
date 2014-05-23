@@ -136,7 +136,7 @@
             </TabItem>
             <TabItem Header="Solver" Margin="-2,-2,-5,-1">
                 <Grid HorizontalAlignment="Left" Height="142" VerticalAlignment="Top" Width="489">
-                    <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="58" Width="438"><Run Language="de-de" Text="Der Solver besitzt eine diskrete, feste Schrittweite Ts."/><LineBreak/><Run Language="de-de" Text="Es wird das Backward-Euler-Verfahren zum simulieren der DGLs eingesetzt. "/></TextBlock>
+                    <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="58" Width="438"><Run Language="de-de" Text="Der Solver besitzt eine diskrete, feste Schrittweite Ts."/><LineBreak/><Run Language="de-de" Text="Es wird das Trapezoidal-Verfahren zum simulieren der DGLs eingesetzt. "/></TextBlock>
                     <TextBlock HorizontalAlignment="Left" Margin="10,73,0,0" TextWrapping="Wrap" VerticalAlignment="Top" ToolTip="Sample Zeit"><Run Language="de-de" Text="Ts = "/></TextBlock>
                     <TextBox x:Name="textBox_Ts" HorizontalAlignment="Left" Height="23" Margin="36,70,0,0" TextWrapping="Wrap" Text="200" VerticalAlignment="Top" Width="59" TextChanged="textBox_Ts_TextChanged"/>
                     <ComboBox x:Name="combmBox_Zeit" HorizontalAlignment="Left" Margin="99,70,0,0" VerticalAlignment="Top" Width="47" Height="23">
