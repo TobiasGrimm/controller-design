@@ -1,0 +1,154 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Save_Manager</name>
+    </assembly>
+    <members>
+        <member name="T:controller_design.Save_and_load.Isavable">
+            <summary>
+            Implement this Interface and your Objs. can be saved with the File_Manager
+            </summary>
+        </member>
+        <member name="M:controller_design.Save_and_load.Isavable.parameters2string">
+            <summary>
+            Transform all Information you want to save into a String
+            </summary>
+            <returns>The Informations as a string</returns>
+        </member>
+        <member name="M:controller_design.Save_and_load.Isavable.restorefromstring(System.String)">
+            <summary>
+            Restore all Informations from the String you created with "parameters2string()"
+            </summary>
+            <param name="s">The String you created</param>
+        </member>
+        <member name="T:controller_design.Save_and_load.File_Manager">
+            <summary>
+            With the File_Manager you can save and restore Obj to File, which implements the Isavable Interface
+            </summary>
+        </member>
+        <member name="M:controller_design.Save_and_load.File_Manager.save2file(System.String,System.Collections.Generic.IEnumerable{controller_design.Save_and_load.Isavable})">
+            <summary>
+            Save to a File
+            </summary>
+            <param name="path">The path where you want to save it</param>
+            <param name="x">The Enumerable Objs you want to save</param>
+        </member>
+        <member name="M:controller_design.Save_and_load.File_Manager.load_from_file(System.String,System.Collections.Generic.IEnumerable{controller_design.Save_and_load.Isavable})">
+            <summary>
+            Loaf from a File
+            </summary>
+            <param name="path">The path where you want to load from</param>
+            <param name="x">The Enumerable Objs you want to restore</param>
+        </member>
+        <member name="T:controller_design.Save_and_load.Savable_WPF_Obj">
+            <summary>
+            With the Savable Windows Presentation Foundation Objects you can Save and Load WPFs.
+            At the moment you can save: TextBoxes, ComboBoxes, TabControlles, CheckBoxes
+            </summary>
+        </member>
+        <member name="F:controller_design.Save_and_load.Savable_WPF_Obj._cb_list">
+            <summary>
+            remember the ComboBox list, that it can be saved and restored
+            </summary>
+        </member>
+        <member name="F:controller_design.Save_and_load.Savable_WPF_Obj._tb_list">
+            <summary>
+            remember the TextBox list, that it can be saved and restored
+            </summary>
+        </member>
+        <member name="F:controller_design.Save_and_load.Savable_WPF_Obj._tc_list">
+            <summary>
+            remember the TabControl list, that it can be saved and restored
+            </summary>
+        </member>
+        <member name="F:controller_design.Save_and_load.Savable_WPF_Obj._checkb_list">
+            <summary>
+            remember the CheckBox list, that it can be saved and restored
+            </summary>
+        </member>
+        <member name="M:controller_design.Save_and_load.Savable_WPF_Obj.comboBoxes2string">
+            <summary>
+            Transform The relevant ComboBox Information into a string
+            </summary>
+            <returns>the transformed Informations</returns>
+        </member>
+        <member name="M:controller_design.Save_and_load.Savable_WPF_Obj.textBoxes2string">
+            <summary>
+            Transform The relevant TextBox Information into a string
+            </summary>
+            <returns>the transformed Informations</returns>
+        </member>
+        <member name="M:controller_design.Save_and_load.Savable_WPF_Obj.checkBoxes2string">
+            <summary>
+            Transform The relevant CheckBox Information into a string
+            </summary>
+            <returns>the transformed Informations</returns>
+        </member>
+        <member name="M:controller_design.Save_and_load.Savable_WPF_Obj.tabControl2string">
+            <summary>
+            Transform The relevant tabControl Information into a string
+            </summary>
+            <returns>the transformed Informations</returns>
+        </member>
+        <member name="M:controller_design.Save_and_load.Savable_WPF_Obj.restoreComboBoxes(System.String)">
+            <summary>
+            Restore the ComboBox from the String
+            </summary>
+            <param name="s">Information in form of a string</param>
+        </member>
+        <member name="M:controller_design.Save_and_load.Savable_WPF_Obj.restoreTextBoxes(System.String)">
+            <summary>
+            Restore the TextBox from the String
+            </summary>
+            <param name="s">Information in form of a string</param>
+        </member>
+        <member name="M:controller_design.Save_and_load.Savable_WPF_Obj.restoreCheckBoxes(System.String)">
+            <summary>
+            Restore the CheckBox from the String
+            </summary>
+            <param name="s">Information in form of a string</param>
+        </member>
+        <member name="M:controller_design.Save_and_load.Savable_WPF_Obj.restoreTabControls(System.String)">
+            <summary>
+            Restore the TabControl from the String
+            </summary>
+            <param name="s">Information in form of a string</param>
+        </member>
+        <member name="M:controller_design.Save_and_load.Savable_WPF_Obj.parameters2string">
+            <summary>
+            Transform all Information you want to save into a String
+            </summary>
+            <returns>The Informations as a string</returns>
+        </member>
+        <member name="M:controller_design.Save_and_load.Savable_WPF_Obj.restorefromstring(System.String)">
+            <summary>
+            Restore all Informations from the String you created with "parameters2string()"
+            </summary>
+            <param name="s">The String you created</param>
+        </member>
+        <member name="M:controller_design.Save_and_load.Savable_WPF_Obj.#ctor(System.Collections.Generic.List{System.Windows.Controls.ComboBox},System.Collections.Generic.List{System.Windows.Controls.TextBox},System.Collections.Generic.List{System.Windows.Controls.TabControl},System.Collections.Generic.List{System.Windows.Controls.CheckBox})">
+            <summary>
+            Initializes a new instance of a Savable_WPF_Obj
+            </summary>
+            <param name="cb_list">The List of ComboBoxes you want to save</param>
+            <param name="tb_list">The List of TextBoxes you want to save</param>
+            <param name="tc_list">The List of TabControlls you want to save</param>
+            <param name="checkb_list">The List of CheckBoxes you want to save</param>
+        </member>
+        <member name="M:controller_design.Save_and_load.Savable_WPF_Obj.#ctor(System.Collections.Generic.List{System.Windows.Controls.ComboBox},System.Collections.Generic.List{System.Windows.Controls.TextBox},System.Collections.Generic.List{System.Windows.Controls.TabControl})">
+            <summary>
+            Initializes a new instance of a Savable_WPF_Obj
+            </summary>
+            <param name="cb_list">The List of ComboBoxes you want to save</param>
+            <param name="tb_list">The List of TextBoxes you want to save</param>
+            <param name="tc_list">The List of TabControlls you want to save</param>
+        </member>
+        <member name="M:controller_design.Save_and_load.Savable_WPF_Obj.#ctor(System.Collections.Generic.List{System.Windows.Controls.ComboBox},System.Collections.Generic.List{System.Windows.Controls.TextBox})">
+            <summary>
+            Initializes a new instance of a Savable_WPF_Obj
+            </summary>
+            <param name="cb_list">The List of ComboBoxes you want to save</param>
+            <param name="tb_list">The List of TextBoxes you want to save</param>
+        </member>
+    </members>
+</doc>

@@ -23,3 +23,4 @@ C:\Users\Tobias\Documents\GitHub\controller-design\Base_Slider\Base_Slider\obj\D
 C:\Users\Tobias\Documents\GitHub\controller-design\Base_Slider\Base_Slider\bin\Debug\Base_Slider.XML
 C:\Users\Tobias\Documents\GitHub\controller-design\Base_Slider\Base_Slider\bin\Debug\Save_Manager.dll
 C:\Users\Tobias\Documents\GitHub\controller-design\Base_Slider\Base_Slider\bin\Debug\Save_Manager.pdb
+C:\Users\Tobias\Documents\GitHub\controller-design\Base_Slider\Base_Slider\bin\Debug\Save_Manager.xml

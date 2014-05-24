@@ -10,3 +10,4 @@ C:\Users\Tobias\Documents\GitHub\controller-design\Save_Manager\Save_Manager\obj
 C:\Users\Tobias\Documents\GitHub\controller-design\Save_Manager\Save_Manager\bin\Debug\Save_Manager.dll.config
 C:\Users\Tobias\Documents\GitHub\controller-design\Save_Manager\Save_Manager\bin\Debug\Save_Manager.dll
 C:\Users\Tobias\Documents\GitHub\controller-design\Save_Manager\Save_Manager\obj\Debug\Save_Manager.dll
+C:\Users\Tobias\Documents\GitHub\controller-design\Save_Manager\Save_Manager\bin\Debug\Save_Manager.XML

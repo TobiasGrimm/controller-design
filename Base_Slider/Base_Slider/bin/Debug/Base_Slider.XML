@@ -38,6 +38,18 @@
             </summary>
             <param name="base_value">The Value for the new Base</param>
         </member>
+        <member name="M:Control_Tools.Base_Slider.parameters2string">
+            <summary>
+            Transform all Information you want to save into a String
+            </summary>
+            <returns>The Informations as a string</returns>
+        </member>
+        <member name="M:Control_Tools.Base_Slider.restorefromstring(System.String)">
+            <summary>
+            Restore all Informations from the String you created with "parameters2string()"
+            </summary>
+            <param name="s">The String you created</param>
+        </member>
         <member name="M:Control_Tools.Base_Slider.#ctor">
             <summary>
             Init Base Slider
@@ -87,7 +99,7 @@
         </member>
         <member name="T:Control_Tools.OutputEventHandler">
             <summary >
-            Delegate for the Output Event when a step is done 
+            Delegate for the Output Event when something has changed
             </summary >
         </member>
         <member name="T:Base_Slider.Properties.Resources">

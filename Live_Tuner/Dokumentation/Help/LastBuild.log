@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<shfbBuild product="Sandcastle Help File Builder" version="2014.2.15.0 Beta" projectFile="C:\Users\Tobias\Documents\GitHub\controller-design\Live_Tuner\Dokumentation\Live_Tuner_Doc.shfbproj" started="02.05.2014 15:45:18">
+<shfbBuild product="Sandcastle Help File Builder" version="2014.2.15.0 Beta" projectFile="C:\Users\Tobias\Documents\GitHub\controller-design\Live_Tuner\Dokumentation\Live_Tuner_Doc.shfbproj" started="24.05.2014 20:04:44">
 <buildStep step="Initializing">
 Finding tools...
 The Sandcastle tools are located in &#39;C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\&#39;
@@ -16,23 +16,27 @@ Source: C:\Users\Tobias\Documents\GitHub\controller-design\Base_Slider\Base_Slid
 Source: C:\Users\Tobias\Documents\GitHub\controller-design\Live_Tuner\Live_Tuner\bin\Debug\ReglerTestWPF.exe
     Found assembly &#39;C:\Users\Tobias\Documents\GitHub\controller-design\Live_Tuner\Live_Tuner\bin\Debug\ReglerTestWPF.exe&#39;
 Source: C:\Users\Tobias\Documents\GitHub\controller-design\Live_Tuner\Live_Tuner\bin\Debug\ReglerTestWPF.xml
+Source: C:\Users\Tobias\Documents\GitHub\controller-design\Save_Manager\Save_Manager\bin\Debug\Save_Manager.dll
+    Found assembly &#39;C:\Users\Tobias\Documents\GitHub\controller-design\Save_Manager\Save_Manager\bin\Debug\Save_Manager.dll&#39;
+Source: C:\Users\Tobias\Documents\GitHub\controller-design\Save_Manager\Save_Manager\bin\Debug\Save_Manager.XML
 
 Copying XML comments files
     C:\Users\Tobias\Documents\GitHub\controller-design\Base_Slider\Base_Slider\bin\Debug\Base_Slider.XML -&gt; C:\Users\Tobias\Documents\GitHub\controller-design\Live_Tuner\Dokumentation\Help\Working\Base_Slider.XML
     C:\Users\Tobias\Documents\GitHub\controller-design\Live_Tuner\Live_Tuner\bin\Debug\ReglerTestWPF.XML -&gt; C:\Users\Tobias\Documents\GitHub\controller-design\Live_Tuner\Dokumentation\Help\Working\ReglerTestWPF.XML
+    C:\Users\Tobias\Documents\GitHub\controller-design\Save_Manager\Save_Manager\bin\Debug\Save_Manager.XML -&gt; C:\Users\Tobias\Documents\GitHub\controller-design\Live_Tuner\Dokumentation\Help\Working\Save_Manager.XML
 </buildStep>
 <buildStep step="GenerateSharedContent">
 Generating shared content files (en-US, Englisch (USA))...
-    Last step completed in 00:00:00.0050
+    Last step completed in 00:00:00.0070
 </buildStep>
 <buildStep step="GenerateApiFilter">
 Generating API filter for MRefBuilder...
-    Last step completed in 00:00:00.0080
+    Last step completed in 00:00:00.0180
 </buildStep>
 <buildStep step="GenerateReflectionInfo">
 Generating reflection information...
 [C:\Windows\Microsoft.NET\Framework64\v4.0.30319\MSBuild.exe]
-Der Buildvorgang wurde am 02.05.2014 15:45:19 gestartet.
+Der Buildvorgang wurde am 24.05.2014 20:04:45 gestartet.
 Projekt &quot;C:\Users\Tobias\Documents\GitHub\controller-design\Live_Tuner\Dokumentation\Help\Working\GenerateRefInfo.proj&quot; auf Knoten &quot;1&quot; (Standardziele).
 PrepareForBuild:
   Das Verzeichnis &quot;obj\MCD\Debug\&quot; wird erstellt.
@@ -40,8 +44,8 @@ GenerateRefInfo:
   MRefBuilder (v2014.1.26.0)
   Copyright &#184; 2006-2014, Microsoft Corporation, All Rights Reserved.
   Portions Copyright &#184; 2006-2014, Eric Woodruff, All Rights Reserved.
-  Loaded 2 assemblies for reflection and 1 dependency assemblies.
-  Wrote information on 4 namespaces, 20 types, and 102 members
+  Loaded 3 assemblies for reflection and 1 dependency assemblies.
+  Wrote information on 5 namespaces, 23 types, and 113 members
   Die Datei wird von &quot;reflection.org&quot; in &quot;reflection.all&quot; kopiert.
   XslTransform (v2014.1.26.0)
   Copyright &#184; 2006-2014, Microsoft Corporation, All Rights Reserved.
@@ -51,13 +55,13 @@ Die Erstellung von Projekt &quot;C:\Users\Tobias\Documents\GitHub\controller-des
 
 Der Buildvorgang wurde erfolgreich ausgefhrt.
 
-Verstrichene Zeit 00:00:02.65
-    Last step completed in 00:00:03.1822
+Verstrichene Zeit 00:00:03.03
+    Last step completed in 00:00:03.6072
 </buildStep>
 <buildStep step="TransformReflectionInfo">
 Transforming reflection output...
 [C:\Windows\Microsoft.NET\Framework64\v4.0.30319\MSBuild.exe]
-Der Buildvorgang wurde am 02.05.2014 15:45:22 gestartet.
+Der Buildvorgang wurde am 24.05.2014 20:04:48 gestartet.
 Projekt &quot;C:\Users\Tobias\Documents\GitHub\controller-design\Live_Tuner\Dokumentation\Help\Working\TransformManifest.proj&quot; auf Knoten &quot;1&quot; (Standardziele).
 TransformManifest:
   XslTransform (v2014.1.26.0)
@@ -77,26 +81,26 @@ Die Erstellung von Projekt &quot;C:\Users\Tobias\Documents\GitHub\controller-des
 
 Der Buildvorgang wurde erfolgreich ausgefhrt.
 
-Verstrichene Zeit 00:00:02.47
-    Last step completed in 00:00:03.0402
+Verstrichene Zeit 00:00:02.77
+    Last step completed in 00:00:03.3882
 </buildStep>
 <buildStep step="GenerateNamespaceSummaries">
 Generating namespace summary information...
-    Last step completed in 00:00:00.0350
+    Last step completed in 00:00:00.0470
 </buildStep>
 <buildStep step="CopyAdditionalContent">
 Copying additional content files...
 No additional content to copy
-    Last step completed in 00:00:00.0020
+    Last step completed in 00:00:00.0040
 </buildStep>
 <buildStep step="MergeTablesOfContents">
 Merging conceptual and additional tables of contents...
-    Last step completed in 00:00:00.0010
+    Last step completed in 00:00:00.0020
 </buildStep>
 <buildStep step="GenerateIntermediateTableOfContents">
 Generating intermediate table of contents file...
 [C:\Windows\Microsoft.NET\Framework64\v4.0.30319\MSBuild.exe]
-Der Buildvorgang wurde am 02.05.2014 15:45:26 gestartet.
+Der Buildvorgang wurde am 24.05.2014 20:04:52 gestartet.
 Projekt &quot;C:\Users\Tobias\Documents\GitHub\controller-design\Live_Tuner\Dokumentation\Help\Working\GenerateIntermediateTOC.proj&quot; auf Knoten &quot;1&quot; (Standardziele).
 GenerateIntermediateTOC:
   XslTransform (v2014.1.26.0)
@@ -107,24 +111,24 @@ Die Erstellung von Projekt &quot;C:\Users\Tobias\Documents\GitHub\controller-des
 
 Der Buildvorgang wurde erfolgreich ausgefhrt.
 
-Verstrichene Zeit 00:00:01.24
+Verstrichene Zeit 00:00:01.52
 Generating conceptual content intermediate TOC file...
-    Last step completed in 00:00:01.7571
+    Last step completed in 00:00:02.1881
 </buildStep>
 <buildStep step="CreateBuildAssemblerConfigs">
 Creating Sandcastle configuration files...
     sandcastle.config
-    Last step completed in 00:00:00.0710
+    Last step completed in 00:00:00.0860
 </buildStep>
 <buildStep step="MergeCustomConfigs">
 Merging custom build component configurations
 C:\Users\Tobias\Documents\GitHub\controller-design\Live_Tuner\Dokumentation\Help\Working\sandcastle.config
-    Last step completed in 00:00:00.0280
+    Last step completed in 00:00:00.0400
 </buildStep>
 <buildStep step="BuildReferenceTopics">
 Building reference help topics...
 [C:\Windows\Microsoft.NET\Framework64\v4.0.30319\MSBuild.exe]
-Der Buildvorgang wurde am 02.05.2014 15:45:27 gestartet.
+Der Buildvorgang wurde am 24.05.2014 20:04:54 gestartet.
 Projekt &quot;C:\Users\Tobias\Documents\GitHub\controller-design\Live_Tuner\Dokumentation\Help\Working\BuildReferenceTopics.proj&quot; auf Knoten &quot;1&quot; (Standardziele).
 BuildReferenceTopics:
   BuildAssembler (v2014.1.26.0)
@@ -134,22 +138,22 @@ BuildReferenceTopics:
   Processing topics...
 BuildAssembler : warning : ShowMissingComponent: [T:controller_design.Integrators_and_Registers.Shift_Register`1] Missing &lt;typeparam name=&quot;T&quot;/&gt; documentation [C:\Users\Tobias\Documents\GitHub\controller-design\Live_Tuner\Dokumentation\Help\Working\BuildReferenceTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [M:controller_design.Schematic.Simulator.replace_in_Schematic_at_pos(System.Int32,controller_design.Schematic.ISimulatable)] Missing &lt;returns&gt; documentation [C:\Users\Tobias\Documents\GitHub\controller-design\Live_Tuner\Dokumentation\Help\Working\BuildReferenceTopics.proj]
-  Processed 189 topic(s)
+  Processed 208 topic(s)
   2 warning(s)
-  CopyFromIndexComponent: &quot;reflection&quot; in-memory cache entries used: 3 of 15.
-  CopyFromIndexComponent: &quot;comments&quot; in-memory cache entries used: 3 of 30.
+  CopyFromIndexComponent: &quot;reflection&quot; in-memory cache entries used: 5 of 15.
+  CopyFromIndexComponent: &quot;comments&quot; in-memory cache entries used: 4 of 30.
 Die Erstellung von Projekt &quot;C:\Users\Tobias\Documents\GitHub\controller-design\Live_Tuner\Dokumentation\Help\Working\BuildReferenceTopics.proj&quot; ist abgeschlossen (Standardziele).
 
 Der Buildvorgang wurde erfolgreich ausgefhrt.
 
-Verstrichene Zeit 00:00:13.34
-    Last step completed in 00:00:13.8838
+Verstrichene Zeit 00:00:17.05
+    Last step completed in 00:00:17.6550
 </buildStep>
 <buildStep step="CombiningIntermediateTocFiles">
 Combining conceptual and API intermediate TOC files...
 
 Clearing any prior web output
-    Last step completed in 00:00:00.0910
+    Last step completed in 00:00:00.1460
 </buildStep>
 <buildStep step="ExtractingHtmlInfo">
 Extracting HTML info for HTML Help 1 and/or website...
@@ -161,17 +165,17 @@ E-Mail: Eric@EWoodruff.us
 Using LCID &#39;1033&#39;, code page &#39;65001&#39;, encoding charset &#39;UTF-8&#39;.
 
 Processing Help 1 files in C:\Users\Tobias\Documents\GitHub\controller-design\Live_Tuner\Dokumentation\Help\Working\Output\HtmlHelp1
-Processed 189 HTML files
+Processed 208 HTML files
 Sorting keywords and generating See Also indices
 Saving HTML Help 1 keyword index to C:\Users\Tobias\Documents\GitHub\controller-design\Live_Tuner\Dokumentation\Help\Working\Documentation.hhk
 Saving HTML Help 1 table of contents to C:\Users\Tobias\Documents\GitHub\controller-design\Live_Tuner\Dokumentation\Help\Working\Documentation.hhc
 
 Processing website files in C:\Users\Tobias\Documents\GitHub\controller-design\Live_Tuner\Dokumentation\Help\Working\Output\Website
-Processed 189 HTML files
+Processed 208 HTML files
 Sorting keywords and generating See Also indices
 Saving website keyword index to C:\Users\Tobias\Documents\GitHub\controller-design\Live_Tuner\Dokumentation\Help\Working\WebKI.xml
 Saving website table of contents to C:\Users\Tobias\Documents\GitHub\controller-design\Live_Tuner\Dokumentation\Help\Working\WebTOC.xml
-    Last step completed in 00:00:02.0001
+    Last step completed in 00:00:02.2501
 </buildStep>
 <buildStep step="CopyStandardHelpContent">
 Copying standard help content...
@@ -342,11 +346,11 @@ C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\\Web\SyncTOC.gif 
 C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\\Web\TOC.css -&gt; C:\Users\Tobias\Documents\GitHub\controller-design\Live_Tuner\Dokumentation\Help\Working\Output\Website\.\TOC.css
 C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\\Web\TOC.js -&gt; C:\Users\Tobias\Documents\GitHub\controller-design\Live_Tuner\Dokumentation\Help\Working\Output\Website\.\TOC.js
 C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\\Web\Web.Config -&gt; C:\Users\Tobias\Documents\GitHub\controller-design\Live_Tuner\Dokumentation\Help\Working\Output\Website\.\Web.Config
-    Last step completed in 00:00:00.3580
+    Last step completed in 00:00:00.4950
 </buildStep>
 <buildStep step="GenerateHelpFormatTableOfContents">
 Generating HTML Help 1 table of contents file...
-    Last step completed in 00:00:00.0010
+    Last step completed in 00:00:00.0020
 </buildStep>
 <buildStep step="GenerateHelpFileIndex">
 Generating HTML Help 1 index file...
@@ -354,7 +358,7 @@ Generating HTML Help 1 index file...
 </buildStep>
 <buildStep step="GenerateHelpProject">
 Generating HTML Help 1 project file...
-    Last step completed in 00:00:00.0050
+    Last step completed in 00:00:00.0070
 </buildStep>
 <buildStep step="CompilingHelpFile">
 Compiling HTML Help 1 file...
@@ -371,11 +375,11 @@ Compiling HTML Help 1 file...
   
   Compile time: 0 minutes, 2 seconds
   
-  191	Topics
+  210	Topics
   
-  2,146	Local links
+  2,330	Local links
   
-  4,145	Internet links
+  4,199	Internet links
   
   0	Graphics
   
@@ -383,20 +387,20 @@ Compiling HTML Help 1 file...
   
   
   
-  Created c:\Users\Tobias\Documents\GitHub\controller-design\Live_Tuner\Dokumentation\Help\Working\Output\HtmlHelp1\Documentation.chm, 318,614 bytes
+  Created c:\Users\Tobias\Documents\GitHub\controller-design\Live_Tuner\Dokumentation\Help\Working\Output\HtmlHelp1\Documentation.chm, 347,294 bytes
   
-  Compression decreased file by 2,110,268 bytes.
+  Compression decreased file by 2,263,816 bytes.
   
-    Last step completed in 00:00:03.9262
+    Last step completed in 00:00:04.2802
 </buildStep>
 <buildStep step="GenerateHelpFormatTableOfContents">
 Generating website table of contents file...
-    Last step completed in 00:00:00.0030
+    Last step completed in 00:00:00.0020
 </buildStep>
 <buildStep step="GenerateFullTextIndex">
 Generating full-text index for the website...
 
-    Last step completed in 00:00:01.1431
+    Last step completed in 00:00:00.9321
 </buildStep>
 <buildStep step="CopyingWebsiteFiles">
 Copying website files to output folder...
@@ -404,16 +408,16 @@ Copying website files to output folder...
 Copied 100 files
 Copied 200 files
 Copied 300 files
-Copied 311 files for the website content
-    Last step completed in 00:00:00.2930
+Copied 330 files for the website content
+    Last step completed in 00:00:00.4790
 </buildStep>
 <buildStep step="CleanIntermediates">
 Removing intermediate files...
-    Last step completed in 00:00:00.1110
+    Last step completed in 00:00:00.2330
 </buildStep>
 <buildStep step="Completed">
 
-Build completed successfully at 05.02.2014 03:45 .  Total time: 00:00:30,4757
+Build completed successfully at 05.24.2014 08:05 .  Total time: 00:00:36,4161
 
 </buildStep>
 </shfbBuild>

@@ -9,7 +9,7 @@ using System.Windows.Media;
 using System.Windows.Controls;
 using System.Xaml;
 
-namespace Basics
+namespace controller_design.Save_and_load
 {
     /// <summary>
     /// Implement this Interface and your Objs. can be saved with the File_Manager

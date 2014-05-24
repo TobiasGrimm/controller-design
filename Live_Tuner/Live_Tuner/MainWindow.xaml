@@ -40,7 +40,7 @@
                     <TextBlock HorizontalAlignment="Left" Margin="10,108,0,0" TextWrapping="Wrap" VerticalAlignment="Top" ToolTip="Zeitkonstante T2" Height="35" Width="17"><Run Language="de-de" Text="   "/></TextBlock>
                 </Grid>
             </TabItem>
-            <TabItem x:Name="tab_Strecke_PT2_wdse1" Header="PT2 dkg1" Margin="-2,-2,-5,-1">
+            <TabItem x:Name="tab_Strecke_PT2_wdse1" Header="PT2 d&lt;=1" Margin="-2,-2,-6,-1">
                 <Grid HorizontalAlignment="Left" Height="191" VerticalAlignment="Top" Width="489">
                     <Control_Tools:Base_Slider x:Name="Base_Slider_PT2_wdse1_Vs" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="35" Width="486" Label="Vs =" value_changed="Base_Slider_PT2_wdse1_Vs_value_changed"/>
                     <Control_Tools:Base_Slider x:Name="Base_Slider_PT2_wdse1_d" HorizontalAlignment="Left" Margin="10,59,0,0" VerticalAlignment="Top" Height="35" Width="486" Label="d  =" value_changed="Base_Slider_PT2_wdse1_d_value_changed"/>

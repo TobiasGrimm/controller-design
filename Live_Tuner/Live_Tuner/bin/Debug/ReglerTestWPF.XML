@@ -765,6 +765,11 @@
             MainWindow
             </summary>
         </member>
+        <member name="F:controller_design.WPF.MainWindow._PT1">
+            <summary>
+            PT1 Control Loop
+            </summary>
+        </member>
         <member name="F:controller_design.WPF.MainWindow._IT1">
             <summary>
             IT1 Control Loop

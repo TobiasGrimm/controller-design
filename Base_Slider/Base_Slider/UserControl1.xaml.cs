@@ -12,7 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using Basics;
+using controller_design.Save_and_load;
 
 namespace Control_Tools
 {
@@ -57,6 +57,10 @@ namespace Control_Tools
             textBox_Mult.Text = (base_value / 2).ToString("#.##e+0");
             calc_and_fire();
         }
+        /// <summary>
+        /// Transform all Information you want to save into a String
+        /// </summary>
+        /// <returns>The Informations as a string</returns>
         public string parameters2string()
         {
             return textBox_Base.Text.Replace("§", "").Replace("$", "") + "$" + Slider_Mult.Value.ToString() + "$" + textBox_Mult.Text.Replace("§", "").Replace("$", "") + "$";
@@ -71,6 +75,10 @@ namespace Control_Tools
             output = temp;
             return all_ok;
         }
+        /// <summary>
+        /// Restore all Informations from the String you created with "parameters2string()"
+        /// </summary>
+        /// <param name="s">The String you created</param>
         public void restorefromstring(string s)
         {
             string[] splitted = s.Split('$');
@@ -142,7 +150,7 @@ namespace Control_Tools
         #endregion
     }
     /// <summary >
-    /// Delegate for the Output Event when a step is done 
+    /// Delegate for the Output Event when something has changed
     /// </summary >
     public delegate void OutputEventHandler(float output);
 }

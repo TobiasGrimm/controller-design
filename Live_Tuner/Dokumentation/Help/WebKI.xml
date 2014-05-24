@@ -27,6 +27,8 @@
   <HelpKINode Title="Base_Slider.Base_Slider constructor" Url="html/47e0af0c-34ee-3a42-a592-8fffb8009c5b.htm" />
   <HelpKINode Title="Base_Slider.InitializeComponent method" Url="html/804badb7-ad06-d264-af42-472a6ee712a3.htm" />
   <HelpKINode Title="Base_Slider.Label property" Url="html/1a97f7ae-f61d-7f47-40ce-d6c7678ea1f6.htm" />
+  <HelpKINode Title="Base_Slider.parameters2string method" Url="html/3b3e81e2-8f32-7002-d645-e7890175f50c.htm" />
+  <HelpKINode Title="Base_Slider.restorefromstring method" Url="html/233cf14a-177e-441a-eca2-45672a34acd9.htm" />
   <HelpKINode Title="Base_Slider.set_Base method" Url="html/f99da0e6-e8d2-4c2c-f675-ab953ed8e409.htm" />
   <HelpKINode Title="Base_Slider.value_changed event" Url="html/e6f4d912-a6d3-3335-1107-463ad765e475.htm" />
   <HelpKINode Title="connect_this_Input_with method">
@@ -41,6 +43,10 @@
   <HelpKINode Title="controller_design.Integrators_and_Registers.Integrator_Register class" Url="html/9c2ae2ef-6d3d-9e8d-2f8f-4ef0f1cbb176.htm" />
   <HelpKINode Title="controller_design.Integrators_and_Registers.Shift_Register(Of T) class" Url="html/878c69a1-206a-651b-d83a-ef106c6af40d.htm" />
   <HelpKINode Title="controller_design.Integrators_and_Registers.Shift_Register&lt;T&gt; class" Url="html/878c69a1-206a-651b-d83a-ef106c6af40d.htm" />
+  <HelpKINode Title="controller_design.Save_and_load namespace" Url="html/1bba6084-577f-4593-e646-7661baeda937.htm" />
+  <HelpKINode Title="controller_design.Save_and_load.File_Manager class" Url="html/9ccdece0-550a-0c6a-cbd4-c0437c13211b.htm" />
+  <HelpKINode Title="controller_design.Save_and_load.Isavable interface" Url="html/c3c66670-44a6-9206-c155-c6fc7574a4fb.htm" />
+  <HelpKINode Title="controller_design.Save_and_load.Savable_WPF_Obj class" Url="html/931b6ae9-f968-bd2c-dfaa-26b96d22328e.htm" />
   <HelpKINode Title="controller_design.Schematic namespace" Url="html/af716cbf-613b-8c22-ab2a-fe87ea0f5988.htm" />
   <HelpKINode Title="controller_design.Schematic.Adder class" Url="html/6a08b309-d04d-f9cc-3d13-f032cbc4586d.htm" />
   <HelpKINode Title="controller_design.Schematic.Controller_I class" Url="html/804022f4-9477-87e3-cec9-2619e8292eff.htm" />
@@ -111,6 +117,13 @@
     <HelpKINode Title="Step.do_one_step Method " Url="html/29b7d00b-d540-9719-da18-a40fc6433ecd.htm" />
     <HelpKINode Title="Transferfunction.do_one_step Method " Url="html/f5b48515-d955-496e-3e6a-f382a341e47a.htm" />
   </HelpKINode>
+  <HelpKINode Title="File_Manager class">
+    <HelpKINode Title="File_Manager Class" Url="html/9ccdece0-550a-0c6a-cbd4-c0437c13211b.htm" />
+    <HelpKINode Title="about File_Manager class" Url="html/9ccdece0-550a-0c6a-cbd4-c0437c13211b.htm" />
+    <HelpKINode Title="methods" Url="html/5d8c4c06-983b-8cbd-91c4-751661145d39.htm" />
+  </HelpKINode>
+  <HelpKINode Title="File_Manager.load_from_file method" Url="html/3ea21cb6-16eb-8798-8af0-f7b73ac58bd9.htm" />
+  <HelpKINode Title="File_Manager.save2file method" Url="html/d92f7803-9447-c345-5ae3-0cc6237504ef.htm" />
   <HelpKINode Title="InitializeComponent method">
     <HelpKINode Title="Base_Slider.InitializeComponent Method " Url="html/804badb7-ad06-d264-af42-472a6ee712a3.htm" />
     <HelpKINode Title="MainWindow.InitializeComponent Method " Url="html/08370433-60a9-9239-97ce-66950c90d98e.htm" />
@@ -135,6 +148,13 @@
   <HelpKINode Title="Integrator_Register.Item property" Url="html/720a9414-0597-f24e-aef2-62028757b8e3.htm" />
   <HelpKINode Title="Integrator_Register.reset method" Url="html/be04f528-243d-9cd5-d8a8-8e8377b0c65f.htm" />
   <HelpKINode Title="Integrator_Register.ToString method" Url="html/b6da256a-ce49-69d7-6022-c67ee9d19231.htm" />
+  <HelpKINode Title="Isavable interface">
+    <HelpKINode Title="Isavable Interface" Url="html/c3c66670-44a6-9206-c155-c6fc7574a4fb.htm" />
+    <HelpKINode Title="about Isavable interface" Url="html/c3c66670-44a6-9206-c155-c6fc7574a4fb.htm" />
+    <HelpKINode Title="methods" Url="html/a88f7d82-87e1-88a2-fb68-0edc58310d4a.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Isavable.parameters2string method" Url="html/37ad1342-09ef-46b0-153d-0dad0ebf09c2.htm" />
+  <HelpKINode Title="Isavable.restorefromstring method" Url="html/8eb41ce0-d7b7-abd5-0c84-7ac02bb6b220.htm" />
   <HelpKINode Title="ISimulatable interface">
     <HelpKINode Title="ISimulatable Interface" Url="html/582ae21e-de34-2b1e-3c04-ba8e1fb12693.htm" />
     <HelpKINode Title="about ISimulatable interface" Url="html/582ae21e-de34-2b1e-3c04-ba8e1fb12693.htm" />
@@ -171,6 +191,7 @@
     <HelpKINode Title="Transferfunction.I_am_finish Event" Url="html/b768d803-0fdd-320a-39d1-f976ab689666.htm" />
   </HelpKINode>
   <HelpKINode Title="Label property" Url="html/1a97f7ae-f61d-7f47-40ce-d6c7678ea1f6.htm" />
+  <HelpKINode Title="load_from_file method" Url="html/3ea21cb6-16eb-8798-8af0-f7b73ac58bd9.htm" />
   <HelpKINode Title="MainWindow class">
     <HelpKINode Title="MainWindow Class" Url="html/585ce96d-5477-99c1-4921-71ff3984f918.htm" />
     <HelpKINode Title="about MainWindow class" Url="html/585ce96d-5477-99c1-4921-71ff3984f918.htm" />
@@ -190,6 +211,11 @@
   <HelpKINode Title="OutputEventHandler delegate">
     <HelpKINode Title="OutputEventHandler Delegate" Url="html/f5b77905-36c3-2920-e926-1f15ac1d1029.htm" />
     <HelpKINode Title="OutputEventHandler Delegate" Url="html/2f572d74-d6b5-1fce-7b8b-3879b7f65564.htm" />
+  </HelpKINode>
+  <HelpKINode Title="parameters2string method">
+    <HelpKINode Title="Base_Slider.parameters2string Method " Url="html/3b3e81e2-8f32-7002-d645-e7890175f50c.htm" />
+    <HelpKINode Title="Isavable.parameters2string Method " Url="html/37ad1342-09ef-46b0-153d-0dad0ebf09c2.htm" />
+    <HelpKINode Title="Savable_WPF_Obj.parameters2string Method " Url="html/0eeb951e-8c78-fb30-867e-0de04bc0d9f1.htm" />
   </HelpKINode>
   <HelpKINode Title="PT1 class">
     <HelpKINode Title="PT1 Class" Url="html/762fe325-11a2-ddf9-8b15-357aaa0d25ac.htm" />
@@ -249,6 +275,21 @@
     <HelpKINode Title="Step.reset Method " Url="html/658194f4-ef1d-639b-5391-9b78ca4c6d38.htm" />
     <HelpKINode Title="Transferfunction.reset Method " Url="html/60f2b793-63fa-9064-bcba-38d153141842.htm" />
   </HelpKINode>
+  <HelpKINode Title="restorefromstring method">
+    <HelpKINode Title="Base_Slider.restorefromstring Method " Url="html/233cf14a-177e-441a-eca2-45672a34acd9.htm" />
+    <HelpKINode Title="Isavable.restorefromstring Method " Url="html/8eb41ce0-d7b7-abd5-0c84-7ac02bb6b220.htm" />
+    <HelpKINode Title="Savable_WPF_Obj.restorefromstring Method " Url="html/8b4080cc-6f46-99c2-26e5-51ce2a57cc6b.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Savable_WPF_Obj class">
+    <HelpKINode Title="Savable_WPF_Obj Class" Url="html/931b6ae9-f968-bd2c-dfaa-26b96d22328e.htm" />
+    <HelpKINode Title="about Savable_WPF_Obj class" Url="html/931b6ae9-f968-bd2c-dfaa-26b96d22328e.htm" />
+    <HelpKINode Title="constructor" Url="html/058dd39a-ad0b-cccc-a62c-3983482f0c16.htm" />
+    <HelpKINode Title="methods" Url="html/e588e876-1081-cb3b-44d3-d6ceb4c8b1d8.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Savable_WPF_Obj.parameters2string method" Url="html/0eeb951e-8c78-fb30-867e-0de04bc0d9f1.htm" />
+  <HelpKINode Title="Savable_WPF_Obj.restorefromstring method" Url="html/8b4080cc-6f46-99c2-26e5-51ce2a57cc6b.htm" />
+  <HelpKINode Title="Savable_WPF_Obj.Savable_WPF_Obj constructor" Url="html/058dd39a-ad0b-cccc-a62c-3983482f0c16.htm" />
+  <HelpKINode Title="save2file method" Url="html/d92f7803-9447-c345-5ae3-0cc6237504ef.htm" />
   <HelpKINode Title="set_Base method" Url="html/f99da0e6-e8d2-4c2c-f675-ab953ed8e409.htm" />
   <HelpKINode Title="set_input method">
     <HelpKINode Title="Adder.set_input Method " Url="html/64775c42-637a-2f13-338d-fc841f3fd2ff.htm" />

@@ -21,7 +21,9 @@
       <DocumentationSource sourceFile="..\..\Base_Slider\Base_Slider\bin\Debug\Base_Slider.dll" />
 <DocumentationSource sourceFile="..\..\Base_Slider\Base_Slider\bin\Debug\Base_Slider.xml" />
 <DocumentationSource sourceFile="..\Live_Tuner\bin\Debug\ReglerTestWPF.exe" />
-<DocumentationSource sourceFile="..\Live_Tuner\bin\Debug\ReglerTestWPF.xml" /></DocumentationSources>
+<DocumentationSource sourceFile="..\Live_Tuner\bin\Debug\ReglerTestWPF.xml" />
+<DocumentationSource sourceFile="..\..\Save_Manager\Save_Manager\bin\Debug\Save_Manager.dll" />
+<DocumentationSource sourceFile="..\..\Save_Manager\Save_Manager\bin\Debug\Save_Manager.XML" /></DocumentationSources>
     <BuildAssemblerVerbosity>OnlyWarningsAndErrors</BuildAssemblerVerbosity>
     <HelpFileFormat>HtmlHelp1, Website</HelpFileFormat>
     <IndentHtml>False</IndentHtml>
@@ -44,7 +46,8 @@
 <NamespaceSummaryItem name="controller_design.Schematic" isDocumented="True">With the controller_design.Schematic tool, you can simulate Schematics with Transferfunktions and basic math-operations.</NamespaceSummaryItem>
 <NamespaceSummaryItem name="controller_design.WPF" isDocumented="True">GUI Elements of the controller design</NamespaceSummaryItem>
 <NamespaceSummaryItem name="ReglerTestWPF" isDocumented="False">With the controller design tool, you can optimice controllers and simulate Schematics.</NamespaceSummaryItem>
-<NamespaceSummaryItem name="Control_Tools" isDocumented="True">Control Tools for a WPF projekt.</NamespaceSummaryItem></NamespaceSummaries>
+<NamespaceSummaryItem name="Control_Tools" isDocumented="True">Control Tools for a WPF projekt.</NamespaceSummaryItem>
+<NamespaceSummaryItem name="controller_design.Save_and_load" isDocumented="True">Here you can find all you need to save and load Stuff</NamespaceSummaryItem></NamespaceSummaries>
   </PropertyGroup>
   <!-- There are no properties for these groups.  AnyCPU needs to appear in order for Visual Studio to perform
 			 the build.  The others are optional common platform types that may appear. -->

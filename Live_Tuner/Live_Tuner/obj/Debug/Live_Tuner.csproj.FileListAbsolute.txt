@@ -63,3 +63,4 @@ C:\Users\Tobias\Documents\GitHub\controller-design\Live_Tuner\Live_Tuner\bin\Deb
 C:\Users\Tobias\Documents\GitHub\controller-design\Live_Tuner\Live_Tuner\bin\Debug\WPFToolkit.pdb
 C:\Users\Tobias\Documents\GitHub\controller-design\Live_Tuner\Live_Tuner\bin\Debug\Save_Manager.dll
 C:\Users\Tobias\Documents\GitHub\controller-design\Live_Tuner\Live_Tuner\bin\Debug\Save_Manager.pdb
+C:\Users\Tobias\Documents\GitHub\controller-design\Live_Tuner\Live_Tuner\bin\Debug\Save_Manager.xml
