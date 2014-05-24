@@ -765,11 +765,6 @@
             MainWindow
             </summary>
         </member>
-        <member name="F:controller_design.WPF.MainWindow._PT1">
-            <summary>
-            PT1 Control Loop
-            </summary>
-        </member>
         <member name="F:controller_design.WPF.MainWindow._IT1">
             <summary>
             IT1 Control Loop
@@ -783,6 +778,16 @@
         <member name="F:controller_design.WPF.MainWindow._PT2_wdse1">
             <summary>
             PT2 Control Loop with damping smaler equal 1
+            </summary>
+        </member>
+        <member name="F:controller_design.WPF.MainWindow._a">
+            <summary>
+            Filter Coefficients a (backward)
+            </summary>
+        </member>
+        <member name="F:controller_design.WPF.MainWindow._b">
+            <summary>
+            Filter Coefficients b (forward)
             </summary>
         </member>
         <member name="F:controller_design.WPF.MainWindow._I">
@@ -803,6 +808,51 @@
         <member name="F:controller_design.WPF.MainWindow._Jamming">
             <summary>
             Jamming
+            </summary>
+        </member>
+        <member name="F:controller_design.WPF.MainWindow._Simulator">
+            <summary>
+            The Simulator
+            </summary>
+        </member>
+        <member name="F:controller_design.WPF.MainWindow._Ts_Base">
+            <summary>
+            Base Value for the Sample Time of the simulation
+            </summary>
+        </member>
+        <member name="F:controller_design.WPF.MainWindow._Ts_exponent">
+            <summary>
+            exponent for the Sample Time of the simulation
+            </summary>
+        </member>
+        <member name="F:controller_design.WPF.MainWindow._Tend_Base">
+            <summary>
+            Base Value for the end Time of the simulation
+            </summary>
+        </member>
+        <member name="F:controller_design.WPF.MainWindow._Tend_exponent">
+            <summary>
+            exponent value for the end Time of the simulation
+            </summary>
+        </member>
+        <member name="F:controller_design.WPF.MainWindow._plot_on">
+            <summary>
+            flag for the plot (if false -> plot is off)
+            </summary>
+        </member>
+        <member name="F:controller_design.WPF.MainWindow._plot_count">
+            <summary>
+            every x value from the Simulation will be plotted
+            </summary>
+        </member>
+        <member name="F:controller_design.WPF.MainWindow._ignore_warnings">
+            <summary>
+            flag for the warning (if true -> the warning will be disabled)
+            </summary>
+        </member>
+        <member name="F:controller_design.WPF.MainWindow._savable_array">
+            <summary>
+            The list of savable obj for the FileManager
             </summary>
         </member>
         <member name="M:controller_design.WPF.MainWindow.#ctor">
@@ -906,6 +956,22 @@
             </summary>
             <param name="output">The new Tz-Value for the Jamming</param>
         </member>
+        <member name="M:controller_design.WPF.MainWindow.textbox_b_TextChanged(System.Object,System.Windows.Controls.TextChangedEventArgs)">
+            <summary>
+            Transform Text to Filter Coefficients b
+            replace in Schematic and plot the graph
+            </summary>
+            <param name="sender">sender</param>
+            <param name="e">Arguments</param>
+        </member>
+        <member name="M:controller_design.WPF.MainWindow.textbox_a_TextChanged(System.Object,System.Windows.Controls.TextChangedEventArgs)">
+            <summary>
+            Transform Text to Filter Coefficients a
+            replace in Schematic and plot the graph
+            </summary>
+            <param name="sender">sender</param>
+            <param name="e">Arguments</param>
+        </member>
         <member name="M:controller_design.WPF.MainWindow.plot_graph">
             <summary>
             Start the simulation and plot the graph
@@ -932,6 +998,26 @@
             <param name="sender">sender</param>
             <param name="e">arguments</param>
         </member>
+        <member name="M:controller_design.WPF.MainWindow.enable_all_optimizations">
+            <summary>
+            Enable all Optimizations (for all Controllers)
+            </summary>
+        </member>
+        <member name="M:controller_design.WPF.MainWindow.check_optimization_for_IT1">
+            <summary>
+            Check if the IT1 Control Loop can be optimized and enable if so
+            </summary>
+        </member>
+        <member name="M:controller_design.WPF.MainWindow.check_optimization_for_PT2_wdb1">
+            <summary>
+            Check if the PT2 with damping bigger 1 Control Loop can be optimized and enable if so
+            </summary>
+        </member>
+        <member name="M:controller_design.WPF.MainWindow.check_optimization_for_PT2_wdse1">
+            <summary>
+            Check if the PT2 Control Loop with damping smaller equal 1 can be optimized and enable if so
+            </summary>
+        </member>
         <member name="M:controller_design.WPF.MainWindow.TabControl_Strecke_SelectionChanged(System.Object,System.Windows.Controls.SelectionChangedEventArgs)">
             <summary>
             When the Selection Changed, it will calculate the new possible loops.
@@ -942,7 +1028,7 @@
         </member>
         <member name="M:controller_design.WPF.MainWindow.TabControl_Regler_SelectionChanged(System.Object,System.Windows.Controls.SelectionChangedEventArgs)">
             <summary>
-            It will replace the Controler in the Schematic
+            It will replace the Controller in the Schematic
             </summary>
             <param name="sender">sender</param>
             <param name="e">arguments</param>
@@ -1016,6 +1102,60 @@
             </summary>
             <param name="sender">sender</param>
             <param name="e">exponent</param>
+        </member>
+        <member name="M:controller_design.WPF.MainWindow.CheckBox_LivePlotOn_Unchecked(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            disable Live Plot
+            </summary>
+            <param name="sender">sender</param>
+            <param name="e">Arguments</param>
+        </member>
+        <member name="M:controller_design.WPF.MainWindow.CheckBox_LivePlotOn_Checked(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            enable Live Plot
+            </summary>
+            <param name="sender">sender</param>
+            <param name="e">Arguments</param>
+        </member>
+        <member name="M:controller_design.WPF.MainWindow.textBox_plot_count_TextChanged(System.Object,System.Windows.Controls.TextChangedEventArgs)">
+            <summary>
+            every x value from the Simulation will be plotted.
+            Where x is an Integer in the TextBox
+            </summary>
+            <param name="sender">sender</param>
+            <param name="e">Arguments</param>
+        </member>
+        <member name="M:controller_design.WPF.MainWindow.trimtext2float(System.String,System.Single@)">
+            <summary>
+            replace all . with , in the Text
+            remove all spaces in the Text
+            Try to Parse the text to float
+            </summary>
+            <param name="input">The string you want to parse</param>
+            <param name="output">The parsed string (in float)</param>
+            <returns>true if all was successful</returns>
+        </member>
+        <member name="M:controller_design.WPF.MainWindow.split_text2float(System.String,System.Single[]@)">
+            <summary>
+            Split a Text at ';' and try to parse each to float
+            </summary>
+            <param name="input">The text you want to split</param>
+            <param name="output">The parsed float array</param>
+            <returns>true if all was successful</returns>
+        </member>
+        <member name="M:controller_design.WPF.MainWindow.butten_save_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Save the all relevant Obj to a .LiveTuner File
+            </summary>
+            <param name="sender">sender</param>
+            <param name="e">Arguments</param>
+        </member>
+        <member name="M:controller_design.WPF.MainWindow.butten_load_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Load all the relevant Objs from a .LiveTuner File
+            </summary>
+            <param name="sender">sender</param>
+            <param name="e">Arguments</param>
         </member>
         <member name="M:controller_design.WPF.MainWindow.InitializeComponent">
             <summary>

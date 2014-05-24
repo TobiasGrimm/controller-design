@@ -23,9 +23,6 @@ namespace controller_design.WPF
     public partial class MainWindow : Window
     {
         #region Variables
-        List<Isavable> _savable_array;
-        bool _plot_on = false;
-        bool _ignore_warnings = false;
         //Control Loops
         /// <summary>
         /// PT1 Control Loop
@@ -43,7 +40,13 @@ namespace controller_design.WPF
         /// PT2 Control Loop with damping smaler equal 1
         /// </summary>
         PT2_wdse1 _PT2_wdse1 = new PT2_wdse1();
+        /// <summary>
+        /// Filter Coefficients a (backward)
+        /// </summary>
         float[] _a = {1.0f,-200f};
+        /// <summary>
+        /// Filter Coefficients b (forward)
+        /// </summary>
         float[] _b = {0f, 400f};
 
         //Controller
@@ -67,12 +70,42 @@ namespace controller_design.WPF
         Step _Jamming = new Step();
 
         //Simulator
+        /// <summary>
+        /// The Simulator
+        /// </summary>
         Simulator _Simulator;
+        /// <summary>
+        /// Base Value for the Sample Time of the simulation
+        /// </summary>
         float _Ts_Base = 200.0f;
+        /// <summary>
+        /// exponent for the Sample Time of the simulation
+        /// </summary>
         float _Ts_exponent = (float)Math.Pow(10, -6);
+        /// <summary>
+        /// Base Value for the end Time of the simulation
+        /// </summary>
         float _Tend_Base = 400.0f;
+        /// <summary>
+        /// exponent value for the end Time of the simulation
+        /// </summary>
         float _Tend_exponent = (float)Math.Pow(10, -3);
-        int _plot_count = 5;
+        /// <summary>
+        /// flag for the plot (if false -> plot is off)
+        /// </summary>
+        bool _plot_on = false;
+        /// <summary>
+        /// every x value from the Simulation will be plotted
+        /// </summary>
+        int  _plot_count = 5;
+        /// <summary>
+        /// flag for the warning (if true -> the warning will be disabled)
+        /// </summary>
+        bool _ignore_warnings = false;
+        /// <summary>
+        /// The list of savable obj for the FileManager
+        /// </summary>
+        List<Isavable> _savable_array;
         #endregion
         /// <summary>
         /// Init Main Window
@@ -80,12 +113,10 @@ namespace controller_design.WPF
         public MainWindow()
         {
             InitializeComponent();
-            Savable_WPF_Obj _savable_WPF_objects = new Savable_WPF_Obj(new List<ComboBox>() { combmBox_Zeit, combmBox_Zeit_Tend }, new List<TextBox>() { textBox_Ts, textBox_Tend, textbox_b, textbox_a, textBox_plot_count }, new List<TabControl>() { TabControl_Strecke, TabControl_Regler, TabControl_Infos }, new List<CheckBox>() { CheckBox_LivePlotOn });
-            _savable_array = new List<Isavable>() { Base_Slider_PT1_Vs, Base_Slider_PT1_T1, Base_Slider_IT1_Ti, Base_Slider_IT1_T2, Base_Slider_PT2_wdb1_Vs, Base_Slider_PT2_wdb1_T1, Base_Slider_PT2_wdb1_T2, Base_Slider_PT2_wdse1_Vs, Base_Slider_PT2_wdb1_T1, Base_Slider_PT2_wdb1_T2, Base_Slider_PT2_wdse1_Vs, Base_Slider_PT2_wdse1_d, Base_Slider_PT2_wdse1_T, Base_Slider_P_Vr, Base_Slider_PI_Vr, Base_Slider_PI_Tn, Base_Slider_I_Ti, Base_Slider_St_Vz, Base_Slider_St_Tz, _savable_WPF_objects };
 
             //Set default Controller
-            tab_Regler_P.IsEnabled = false;
             tab_Regler_I.IsEnabled = true;
+            tab_Regler_P.IsEnabled = false;
             tab_Regler_PI.IsEnabled = false;
             tab_Regler_PID.IsEnabled = false;
 
@@ -103,10 +134,10 @@ namespace controller_design.WPF
             Base_Slider_PT2_wdse1_T.set_Base(0.005f);  //PT2 T
 
             Optimize.Controller(_IT1, _P);
-            Base_Slider_P_Vr.set_Base(_P._Vr);     //P   Vr
+            Base_Slider_P_Vr.set_Base(_P._Vr);         //P   Vr
             Optimize.Controller(_PT2_wdb1, _PI);
-            Base_Slider_PI_Vr.set_Base(_PI._Vr);   //PI   Vr
-            Base_Slider_PI_Tn.set_Base(_PI._Tn);   //PI   Tn
+            Base_Slider_PI_Vr.set_Base(_PI._Vr);       //PI  Vr
+            Base_Slider_PI_Tn.set_Base(_PI._Tn);       //PI  Tn
 
             //init Simulator
             Optimize.Controller(_PT1, _I);
@@ -114,6 +145,11 @@ namespace controller_design.WPF
             _Simulator = new Simulator (_I,_Jamming,_PT1);
             _plot_on = true;
             plot_graph();
+
+            //init Obj for FileManager
+            Savable_WPF_Obj _savable_WPF_objects = new Savable_WPF_Obj(new List<ComboBox>() { combmBox_Zeit, combmBox_Zeit_Tend }, new List<TextBox>() { textBox_Ts, textBox_Tend, textbox_b, textbox_a, textBox_plot_count }, new List<TabControl>() { TabControl_Strecke, TabControl_Regler, TabControl_Infos }, new List<CheckBox>() { CheckBox_LivePlotOn });
+            _savable_array = new List<Isavable>() { Base_Slider_PT1_Vs, Base_Slider_PT1_T1, Base_Slider_IT1_Ti, Base_Slider_IT1_T2, Base_Slider_PT2_wdb1_Vs, Base_Slider_PT2_wdb1_T1, Base_Slider_PT2_wdb1_T2, Base_Slider_PT2_wdse1_Vs, Base_Slider_PT2_wdb1_T1, Base_Slider_PT2_wdb1_T2, Base_Slider_PT2_wdse1_Vs, Base_Slider_PT2_wdse1_d, Base_Slider_PT2_wdse1_T, Base_Slider_P_Vr, Base_Slider_PI_Vr, Base_Slider_PI_Tn, Base_Slider_I_Ti, Base_Slider_St_Vz, Base_Slider_St_Tz, _savable_WPF_objects };
+
         }
         #region Slider
         /// <summary>
@@ -279,6 +315,12 @@ namespace controller_design.WPF
             _Jamming._step_Time = output;
             plot_graph();
         }
+        /// <summary>
+        /// Transform Text to Filter Coefficients b
+        /// replace in Schematic and plot the graph
+        /// </summary>
+        /// <param name="sender">sender</param>
+        /// <param name="e">Arguments</param>
         private void textbox_b_TextChanged(object sender, TextChangedEventArgs e)
         {
             float[] help = new float[] { };
@@ -292,6 +334,12 @@ namespace controller_design.WPF
             }
 
         }
+        /// <summary>
+        /// Transform Text to Filter Coefficients a
+        /// replace in Schematic and plot the graph
+        /// </summary>
+        /// <param name="sender">sender</param>
+        /// <param name="e">Arguments</param>
         private void textbox_a_TextChanged(object sender, TextChangedEventArgs e)
         {
             float[] help = new float[] { };
@@ -304,8 +352,6 @@ namespace controller_design.WPF
                 plot_graph();
             }
         }
-        #endregion
-        #region select_Controller_and_Loop
         #endregion
         #region Plot
         /// <summary>
@@ -394,12 +440,18 @@ namespace controller_design.WPF
             Base_Slider_PI_Vr.set_Base(_PI._Vr);
             Base_Slider_PI_Tn.set_Base(_PI._Tn);
         }
+        /// <summary>
+        /// Enable all Optimizations (for all Controllers)
+        /// </summary>
         void enable_all_optimizations()
         {
             butten_auslegen_I.IsEnabled = true;
             butten_auslegen_P.IsEnabled = true;
             butten_auslegen_PI.IsEnabled = true;
         }
+        /// <summary>
+        /// Check if the IT1 Control Loop can be optimized and enable if so
+        /// </summary>
         void check_optimization_for_IT1()
         {
             if (_IT1._Ti / _IT1._T2 > 1)
@@ -411,6 +463,9 @@ namespace controller_design.WPF
             else
                 butten_auslegen_PI.IsEnabled = false;
         }
+        /// <summary>
+        /// Check if the PT2 with damping bigger 1 Control Loop can be optimized and enable if so
+        /// </summary>
         void check_optimization_for_PT2_wdb1()
         {
             if (_PT2_wdb1._T1 / _PT2_wdb1._T2 > 8)
@@ -422,6 +477,9 @@ namespace controller_design.WPF
             else
                 butten_auslegen_PI.IsEnabled = false;
         }
+        /// <summary>
+        /// Check if the PT2 Control Loop with damping smaller equal 1 can be optimized and enable if so
+        /// </summary>
         void check_optimization_for_PT2_wdse1()
         {
             if (_PT2_wdse1._d >= 0.5 && _PT2_wdse1._d <= 1)
@@ -518,7 +576,7 @@ namespace controller_design.WPF
             plot_graph();
         }
         /// <summary>
-        /// It will replace the Controler in the Schematic
+        /// It will replace the Controller in the Schematic
         /// </summary>
         /// <param name="sender">sender</param>
         /// <param name="e">arguments</param>
@@ -641,15 +699,31 @@ namespace controller_design.WPF
             if (trimtext2float(textBox_Tend.Text, ref _Tend_Base))
                 plot_graph();
         }
+        /// <summary>
+        /// disable Live Plot
+        /// </summary>
+        /// <param name="sender">sender</param>
+        /// <param name="e">Arguments</param>
         private void CheckBox_LivePlotOn_Unchecked(object sender, RoutedEventArgs e)
         {
             _plot_on = false;
         }
+        /// <summary>
+        /// enable Live Plot
+        /// </summary>
+        /// <param name="sender">sender</param>
+        /// <param name="e">Arguments</param>
         private void CheckBox_LivePlotOn_Checked(object sender, RoutedEventArgs e)
         {
             _plot_on = true;
             plot_graph();
         }
+        /// <summary>
+        /// every x value from the Simulation will be plotted.
+        /// Where x is an Integer in the TextBox
+        /// </summary>
+        /// <param name="sender">sender</param>
+        /// <param name="e">Arguments</param>
         private void textBox_plot_count_TextChanged(object sender, TextChangedEventArgs e)
         {
             int help;
@@ -668,6 +742,14 @@ namespace controller_design.WPF
         }
         #endregion
         #region Methods
+        /// <summary>
+        /// replace all . with , in the Text
+        /// remove all spaces in the Text
+        /// Try to Parse the text to float
+        /// </summary>
+        /// <param name="input">The string you want to parse</param>
+        /// <param name="output">The parsed string (in float)</param>
+        /// <returns>true if all was successful</returns>
         bool trimtext2float(string input, ref float output)
         {
             float temp;
@@ -678,6 +760,12 @@ namespace controller_design.WPF
             output = temp;
             return all_ok;
         }
+        /// <summary>
+        /// Split a Text at ';' and try to parse each to float
+        /// </summary>
+        /// <param name="input">The text you want to split</param>
+        /// <param name="output">The parsed float array</param>
+        /// <returns>true if all was successful</returns>
         bool split_text2float(string input, ref float[] output)
         {
             string[] help_split;
@@ -696,6 +784,11 @@ namespace controller_design.WPF
         }
         #endregion
         #region save&load
+        /// <summary>
+        /// Save the all relevant Obj to a .LiveTuner File
+        /// </summary>
+        /// <param name="sender">sender</param>
+        /// <param name="e">Arguments</param>
         private void butten_save_Click(object sender, RoutedEventArgs e)
         {
             Microsoft.Win32.SaveFileDialog dialog = new Microsoft.Win32.SaveFileDialog();
@@ -708,7 +801,11 @@ namespace controller_design.WPF
                 File_Manager.save2file(dialog.FileName, _savable_array);
             }
         }
-
+        /// <summary>
+        /// Load all the relevant Objs from a .LiveTuner File
+        /// </summary>
+        /// <param name="sender">sender</param>
+        /// <param name="e">Arguments</param>
         private void butten_load_Click(object sender, RoutedEventArgs e)
         {
             Microsoft.Win32.OpenFileDialog dialog = new Microsoft.Win32.OpenFileDialog();
