@@ -699,6 +699,9 @@ namespace controller_design.WPF
         private void butten_save_Click(object sender, RoutedEventArgs e)
         {
             Microsoft.Win32.SaveFileDialog dialog = new Microsoft.Win32.SaveFileDialog();
+            dialog.FileName = "Optimization1"; // Default file name
+            dialog.DefaultExt = ".LiveTuner"; // Default file extension
+            dialog.Filter = "LiveTuner files (*.LiveTuner)|*.LiveTuner"; // Filter files by extension
             bool? result = dialog.ShowDialog();
             if (result.HasValue && result.Value)
             {
@@ -709,6 +712,7 @@ namespace controller_design.WPF
         private void butten_load_Click(object sender, RoutedEventArgs e)
         {
             Microsoft.Win32.OpenFileDialog dialog = new Microsoft.Win32.OpenFileDialog();
+            dialog.Filter = "LiveTuner files (*.LiveTuner)|*.LiveTuner";
             bool? result = dialog.ShowDialog();
             _plot_on = false;
             if (result.HasValue && result.Value)

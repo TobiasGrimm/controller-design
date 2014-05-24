@@ -23,7 +23,6 @@ namespace Basics
             LinkedList<string> result = new LinkedList<string> { };
             foreach (Isavable savableobj in x)
                 result.AddLast(savableobj.parameters2string());
-            Console.WriteLine(result);
             File.WriteAllLines(path, result);
         }
         public static void load_from_file(string path, IEnumerable<Isavable> x)
