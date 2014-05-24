@@ -4,8 +4,8 @@
         xmlns:Base_Slider="clr-namespace:Base_Slider;assembly=Base_Slider" xmlns:Control_Tools="clr-namespace:Control_Tools;assembly=Base_Slider" xmlns:Plott_o_mat="clr-namespace:Plott_o_mat;assembly=Plott_o_mat" x:Class="controller_design.WPF.MainWindow"
         Title="MainWindow" Height="755" Width="1140">
     <Grid x:Name="grid_parant" Margin="0,0,2,2">
-        <TabControl x:Name="TabControl_Strecke" Margin="10,32,0,0" ScrollViewer.CanContentScroll="True" HorizontalAlignment="Left" VerticalAlignment="Top" Height="216" Width="494">
-            <TabItem x:Name="tab_Strecke_PT1" Header="PT1" Margin="-2,-2,-5,-1" MouseLeftButtonUp="tab_Strecke_PT1_MouseLeftButtonUp">
+        <TabControl x:Name="TabControl_Strecke" Margin="10,32,0,0" ScrollViewer.CanContentScroll="True" HorizontalAlignment="Left" VerticalAlignment="Top" Height="216" Width="494" SelectionChanged="TabControl_Strecke_SelectionChanged">
+            <TabItem x:Name="tab_Strecke_PT1" Header="PT1" Margin="-2,-2,-5,-1">
                 <Grid HorizontalAlignment="Left" Height="191" VerticalAlignment="Top" Width="489" Margin="0,0,-5,0">
                     <Control_Tools:Base_Slider x:Name="Base_Slider_PT1_Vs" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="35" Width="486" value_changed="Base_Slider_PT1_Vs_value_changed"/>
                     <Control_Tools:Base_Slider x:Name="Base_Slider_PT1_T1" HorizontalAlignment="Left" Margin="10,59,0,0" VerticalAlignment="Top" Height="35" Width="486" value_changed="Base_Slider_PT1_T1_value_changed" Label="T1 ="/>
@@ -16,7 +16,7 @@
                     <TextBlock HorizontalAlignment="Left" Margin="10,59,0,0" TextWrapping="Wrap" VerticalAlignment="Top" ToolTip="Zeitkonstante T1" Height="35" Width="17"><Run Language="de-de" Text="   "/></TextBlock>
                 </Grid>
             </TabItem>
-            <TabItem x:Name="tab_Strecke_IT1" Header="IT1" Margin="-2,-2,-5,-1" MouseLeftButtonUp="tab_Strecke_IT1_MouseLeftButtonUp">
+            <TabItem x:Name="tab_Strecke_IT1" Header="IT1" Margin="-2,-2,-5,-1">
                 <Grid HorizontalAlignment="Left" Height="191" VerticalAlignment="Top" Width="489">
                     <Control_Tools:Base_Slider x:Name="Base_Slider_IT1_Ti" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="35" Width="486" Label="Ti =" value_changed="Base_Slider_IT1_Ti_value_changed"/>
                     <Control_Tools:Base_Slider x:Name="Base_Slider_IT1_T2" HorizontalAlignment="Left" Margin="10,59,0,0" VerticalAlignment="Top" Height="35" Width="486" Label="T2 =" value_changed="Base_Slider_IT1_T2_value_changed"/>
@@ -27,7 +27,7 @@
                     <TextBlock HorizontalAlignment="Left" Margin="10,59,0,0" TextWrapping="Wrap" VerticalAlignment="Top" ToolTip="Zeitkonstante T2" Height="35" Width="17"><Run Language="de-de" Text="   "/></TextBlock>
                 </Grid>
             </TabItem>
-            <TabItem x:Name="tab_Strecke_PT2_wdb1" Header="PT2 d&gt;1" Margin="-2,-2,-5,-1" MouseLeftButtonUp="tab_Strecke_PT2_wdb1_MouseLeftButtonUp">
+            <TabItem x:Name="tab_Strecke_PT2_wdb1" Header="PT2 d&gt;1" Margin="-2,-2,-5,-1">
                 <Grid HorizontalAlignment="Left" Height="191" VerticalAlignment="Top" Width="489">
                     <Control_Tools:Base_Slider x:Name="Base_Slider_PT2_wdb1_Vs" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="35" Width="486" Label="Vs =" value_changed="Base_Slider_PT2_wdb1_Vs_value_changed"/>
                     <Control_Tools:Base_Slider x:Name="Base_Slider_PT2_wdb1_T1" HorizontalAlignment="Left" Margin="10,59,0,0" VerticalAlignment="Top" Height="35" Width="486" Label="T1 =" value_changed="Base_Slider_PT2_wdb1_T1_value_changed"/>
@@ -40,7 +40,7 @@
                     <TextBlock HorizontalAlignment="Left" Margin="10,108,0,0" TextWrapping="Wrap" VerticalAlignment="Top" ToolTip="Zeitkonstante T2" Height="35" Width="17"><Run Language="de-de" Text="   "/></TextBlock>
                 </Grid>
             </TabItem>
-            <TabItem x:Name="tab_Strecke_PT2_wdse1" Header="PT2 dkg1" Margin="-2,-2,-5,-1" MouseLeftButtonUp="tab_Strecke_PT2_wdse1_MouseLeftButtonUp">
+            <TabItem x:Name="tab_Strecke_PT2_wdse1" Header="PT2 dkg1" Margin="-2,-2,-5,-1">
                 <Grid HorizontalAlignment="Left" Height="191" VerticalAlignment="Top" Width="489">
                     <Control_Tools:Base_Slider x:Name="Base_Slider_PT2_wdse1_Vs" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="35" Width="486" Label="Vs =" value_changed="Base_Slider_PT2_wdse1_Vs_value_changed"/>
                     <Control_Tools:Base_Slider x:Name="Base_Slider_PT2_wdse1_d" HorizontalAlignment="Left" Margin="10,59,0,0" VerticalAlignment="Top" Height="35" Width="486" Label="d  =" value_changed="Base_Slider_PT2_wdse1_d_value_changed"/>
@@ -55,7 +55,7 @@
                     <TextBlock HorizontalAlignment="Left" Margin="111,168,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="8"><Run Language="de-de" Text="2"/></TextBlock>
                 </Grid>
             </TabItem>
-            <TabItem x:Name="tab_Strecke_Beliebig" Header="Beliebig" Margin="-2,-2,-5,-1" MouseLeftButtonUp="tab_Strecke_Beliebig_MouseLeftButtonUp">
+            <TabItem x:Name="tab_Strecke_Beliebig" Header="Beliebig" Margin="-2,-2,-5,-1">
                 <Grid HorizontalAlignment="Left" Height="191" VerticalAlignment="Top" Width="489">
                     <TextBlock HorizontalAlignment="Left" Margin="13,157,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="172" ToolTip="Laplace Übertragungsfunktion"><Run Language="de-de" Text="Fs = ------------------------"/></TextBlock>
                     <TextBlock HorizontalAlignment="Left" Margin="40,148,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="169" Height="20" ToolTip="Nichtrekursive Filter Koeffizienten"><Run Language="de-de" Text="b"/><Run FontSize="8" Language="de-de" Text="0"/><Run Language="de-de" Text="+b"/><Run FontSize="8" Language="de-de" Text="1*"/><Run Language="de-de" Text="p   +b"/><Run FontSize="8" Language="de-de" Text="2*"/><Run Language="de-de" Text="p   + ..."/></TextBlock>
@@ -79,8 +79,8 @@
             </TabItem>
         </TabControl>
         <Label Content="Strecke" HorizontalAlignment="Left" Margin="10,6,0,0" VerticalAlignment="Top" Width="89" FontStyle="Italic"/>
-        <TabControl x:Name="TabControl_Regler" Margin="10,306,0,0" ScrollViewer.CanContentScroll="True" HorizontalAlignment="Left" VerticalAlignment="Top" Height="167" Width="494">
-            <TabItem x:Name="tab_Regler_I" Header=" I " Margin="-2,-2,-5,-1" MouseLeftButtonUp="tab_Regler_I_MouseLeftButtonUp">
+        <TabControl x:Name="TabControl_Regler" Margin="10,306,0,0" ScrollViewer.CanContentScroll="True" HorizontalAlignment="Left" VerticalAlignment="Top" Height="167" Width="494" SelectionChanged="TabControl_Regler_SelectionChanged">
+            <TabItem x:Name="tab_Regler_I" Header=" I " Margin="-2,-2,-5,-1">
                 <Grid HorizontalAlignment="Left" Height="142" VerticalAlignment="Top" Width="489" Margin="0,0,-5,0">
                     <Control_Tools:Base_Slider x:Name="Base_Slider_I_Ti" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="35" Width="486" Label="Ti =" value_changed="Base_Slider_I_Ti_value_changed"/>
                     <Button x:Name="butten_auslegen_I" Content="Auslegen" HorizontalAlignment="Left" Margin="404,108,0,0" VerticalAlignment="Top" Width="75" Click="butten_auslegen_I_Click"/>
@@ -90,7 +90,7 @@
                     <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" ToolTip="Integrationszeitkonstante" Height="35" Width="17"><Run Language="de-de" Text="   "/></TextBlock>
                 </Grid>
             </TabItem>
-            <TabItem x:Name="tab_Regler_P" Header=" P " Margin="-2,-2,-5,-1" MouseLeftButtonUp="tab_Regler_P_MouseLeftButtonUp">
+            <TabItem x:Name="tab_Regler_P" Header=" P " Margin="-2,-2,-5,-1">
                 <Grid HorizontalAlignment="Left" Height="191" VerticalAlignment="Top" Width="489">
                     <Control_Tools:Base_Slider x:Name="Base_Slider_P_Vr" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="35" Width="486" Label="Vr =" value_changed="Base_Slider_P_Vr_value_changed"/>
                     <Button x:Name="butten_auslegen_P" Content="Auslegen" HorizontalAlignment="Left" Margin="404,108,0,0" VerticalAlignment="Top" Width="75" Click="butten_auslegen_P_Click"/>
@@ -98,7 +98,7 @@
                     <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" ToolTip="Proportional Verstärkung" Height="35" Width="17"><Run Language="de-de" Text="   "/></TextBlock>
                 </Grid>
             </TabItem>
-            <TabItem x:Name="tab_Regler_PI" Header=" PI " Margin="-2,-2,-5,-1" MouseLeftButtonUp="tab_Regler_PI_MouseLeftButtonUp">
+            <TabItem x:Name="tab_Regler_PI" Header=" PI " Margin="-2,-2,-5,-1">
                 <Grid HorizontalAlignment="Left" Height="140" VerticalAlignment="Top" Width="489" Margin="0,0,-5,0">
                     <Control_Tools:Base_Slider x:Name="Base_Slider_PI_Vr" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="35" Width="486" Label="Vr =" value_changed="Base_Slider_PI_Vr_value_changed"/>
                     <Control_Tools:Base_Slider x:Name="Base_Slider_PI_Tn" HorizontalAlignment="Left" Margin="10,59,0,0" VerticalAlignment="Top" Height="35" Width="486" Label="Tn =" value_changed="Base_Slider_PI_Tn_value_changed"/>

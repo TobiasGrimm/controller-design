@@ -906,62 +906,6 @@
             </summary>
             <param name="output">The new Tz-Value for the Jamming</param>
         </member>
-        <member name="M:controller_design.WPF.MainWindow.tab_Strecke_PT1_MouseLeftButtonUp(System.Object,System.Windows.Input.MouseButtonEventArgs)">
-            <summary>
-            Hide all Controllers who are bad for this Loop. Select this Loop and plot the graph;
-            </summary>
-            <param name="sender">sender</param>
-            <param name="e">arguments</param>
-        </member>
-        <member name="M:controller_design.WPF.MainWindow.tab_Strecke_IT1_MouseLeftButtonUp(System.Object,System.Windows.Input.MouseButtonEventArgs)">
-            <summary>
-            Hide all Controllers who are bad for this Loop. Select this Loop and plot the graph;
-            </summary>
-            <param name="sender">sender</param>
-            <param name="e">arguments</param>
-        </member>
-        <member name="M:controller_design.WPF.MainWindow.tab_Strecke_PT2_wdse1_MouseLeftButtonUp(System.Object,System.Windows.Input.MouseButtonEventArgs)">
-            <summary>
-            Hide all Controllers who are bad for this Loop. Select this Loop and plot the graph;
-            </summary>
-            <param name="sender">sender</param>
-            <param name="e">arguments</param>
-        </member>
-        <member name="M:controller_design.WPF.MainWindow.tab_Strecke_PT2_wdb1_MouseLeftButtonUp(System.Object,System.Windows.Input.MouseButtonEventArgs)">
-            <summary>
-            Hide all Controllers who are bad for this Loop. Select this Loop and plot the graph;
-            </summary>
-            <param name="sender">sender</param>
-            <param name="e">arguments</param>
-        </member>
-        <member name="M:controller_design.WPF.MainWindow.tab_Strecke_Beliebig_MouseLeftButtonUp(System.Object,System.Windows.Input.MouseButtonEventArgs)">
-            <summary>
-            Hide all Controllers who are bad for this Loop. Select this Loop and plot the graph;
-            </summary>
-            <param name="sender">sender</param>
-            <param name="e">arguments</param>
-        </member>
-        <member name="M:controller_design.WPF.MainWindow.tab_Regler_I_MouseLeftButtonUp(System.Object,System.Windows.Input.MouseButtonEventArgs)">
-            <summary>
-            Select this Controller and plot the graph.
-            </summary>
-            <param name="sender">sender</param>
-            <param name="e">arguments</param>
-        </member>
-        <member name="M:controller_design.WPF.MainWindow.tab_Regler_P_MouseLeftButtonUp(System.Object,System.Windows.Input.MouseButtonEventArgs)">
-            <summary>
-            Select this Controller and plot the graph.
-            </summary>
-            <param name="sender">sender</param>
-            <param name="e">arguments</param>
-        </member>
-        <member name="M:controller_design.WPF.MainWindow.tab_Regler_PI_MouseLeftButtonUp(System.Object,System.Windows.Input.MouseButtonEventArgs)">
-            <summary>
-            Select this Controller and plot the graph.
-            </summary>
-            <param name="sender">sender</param>
-            <param name="e">arguments</param>
-        </member>
         <member name="M:controller_design.WPF.MainWindow.plot_graph">
             <summary>
             Start the simulation and plot the graph
@@ -984,6 +928,21 @@
         <member name="M:controller_design.WPF.MainWindow.butten_auslegen_PI_Click(System.Object,System.Windows.RoutedEventArgs)">
             <summary>
             Optimize Controller-PI and plot the graph
+            </summary>
+            <param name="sender">sender</param>
+            <param name="e">arguments</param>
+        </member>
+        <member name="M:controller_design.WPF.MainWindow.TabControl_Strecke_SelectionChanged(System.Object,System.Windows.Controls.SelectionChangedEventArgs)">
+            <summary>
+            When the Selection Changed, it will calculate the new possible loops.
+            Ans replace the loop in the Schematic
+            </summary>
+            <param name="sender">sender</param>
+            <param name="e">Arguments</param>
+        </member>
+        <member name="M:controller_design.WPF.MainWindow.TabControl_Regler_SelectionChanged(System.Object,System.Windows.Controls.SelectionChangedEventArgs)">
+            <summary>
+            It will replace the Controler in the Schematic
             </summary>
             <param name="sender">sender</param>
             <param name="e">arguments</param>

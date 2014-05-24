@@ -80,7 +80,7 @@ namespace controller_design.WPF
         public MainWindow()
         {
             InitializeComponent();
-            Savable_WPF_Obj _savable_WPF_objects = new Savable_WPF_Obj(new List<ComboBox>() { combmBox_Zeit, combmBox_Zeit_Tend }, new List<TextBox>() { textBox_Ts, textBox_Tend, textbox_b, textbox_a, textBox_plot_count }, new List<TabControl>() { }, new List<CheckBox>() { CheckBox_LivePlotOn });
+            Savable_WPF_Obj _savable_WPF_objects = new Savable_WPF_Obj(new List<ComboBox>() { combmBox_Zeit, combmBox_Zeit_Tend }, new List<TextBox>() { textBox_Ts, textBox_Tend, textbox_b, textbox_a, textBox_plot_count }, new List<TabControl>() { TabControl_Strecke, TabControl_Regler, TabControl_Infos }, new List<CheckBox>() { CheckBox_LivePlotOn });
             _savable_array = new List<Isavable>() { Base_Slider_PT1_Vs, Base_Slider_PT1_T1, Base_Slider_IT1_Ti, Base_Slider_IT1_T2, Base_Slider_PT2_wdb1_Vs, Base_Slider_PT2_wdb1_T1, Base_Slider_PT2_wdb1_T2, Base_Slider_PT2_wdse1_Vs, Base_Slider_PT2_wdb1_T1, Base_Slider_PT2_wdb1_T2, Base_Slider_PT2_wdse1_Vs, Base_Slider_PT2_wdse1_d, Base_Slider_PT2_wdse1_T, Base_Slider_P_Vr, Base_Slider_PI_Vr, Base_Slider_PI_Tn, Base_Slider_I_Ti, Base_Slider_St_Vz, Base_Slider_St_Tz, _savable_WPF_objects };
 
             //Set default Controller
@@ -114,7 +114,6 @@ namespace controller_design.WPF
             _Simulator = new Simulator (_I,_Jamming,_PT1);
             _plot_on = true;
             plot_graph();
-            
         }
         #region Slider
         /// <summary>
@@ -307,139 +306,6 @@ namespace controller_design.WPF
         }
         #endregion
         #region select_Controller_and_Loop
-        /// <summary>
-        /// Hide all Controllers who are bad for this Loop. Select this Loop and plot the graph;
-        /// </summary>
-        /// <param name="sender">sender</param>
-        /// <param name="e">arguments</param>
-        private void tab_Strecke_PT1_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
-        {
-            tab_Regler_P.IsEnabled = false;
-            tab_Regler_I.IsEnabled = true;
-            tab_Regler_PI.IsEnabled = false;
-            tab_Regler_PID.IsEnabled = false;
-            tab_Regler_I.Focus();
-            enable_all_optimizations();
-
-            _Simulator.replace_in_Schematic_at_pos(1, _I);
-            _Simulator.replace_in_Schematic_at_pos(3, _PT1);
-            plot_graph();
-        }
-        /// <summary>
-        /// Hide all Controllers who are bad for this Loop. Select this Loop and plot the graph;
-        /// </summary>
-        /// <param name="sender">sender</param>
-        /// <param name="e">arguments</param>
-        private void tab_Strecke_IT1_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
-        {
-            tab_Regler_P.IsEnabled = true;
-            tab_Regler_I.IsEnabled = false;
-            tab_Regler_PI.IsEnabled = true;
-            tab_Regler_PID.IsEnabled = false;
-            enable_all_optimizations();
-            check_optimization_for_IT1();
-
-            if (tab_Regler_PI.IsSelected == false)
-            {
-                tab_Regler_P.Focus();
-                _Simulator.replace_in_Schematic_at_pos(1, _P);
-            }
-            _Simulator.replace_in_Schematic_at_pos(3, _IT1);
-            plot_graph();
-        }
-        /// <summary>
-        /// Hide all Controllers who are bad for this Loop. Select this Loop and plot the graph;
-        /// </summary>
-        /// <param name="sender">sender</param>
-        /// <param name="e">arguments</param>
-        private void tab_Strecke_PT2_wdse1_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
-        {
-            tab_Regler_P.IsEnabled = false;
-            tab_Regler_I.IsEnabled = true;
-            tab_Regler_PI.IsEnabled = true;
-            tab_Regler_PID.IsEnabled = false;
-            enable_all_optimizations();
-            check_optimization_for_PT2_wdse1();
-
-            if (tab_Regler_PI.IsSelected == false)
-            {
-                tab_Regler_I.Focus();
-                _Simulator.replace_in_Schematic_at_pos(1, _I);
-            }
-            _Simulator.replace_in_Schematic_at_pos(3, _PT2_wdse1);
-            plot_graph();
-        }
-        /// <summary>
-        /// Hide all Controllers who are bad for this Loop. Select this Loop and plot the graph;
-        /// </summary>
-        /// <param name="sender">sender</param>
-        /// <param name="e">arguments</param>
-        private void tab_Strecke_PT2_wdb1_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
-        {
-            tab_Regler_P.IsEnabled = true;
-            tab_Regler_I.IsEnabled = false;
-            tab_Regler_PI.IsEnabled = true;
-            tab_Regler_PID.IsEnabled = false;
-            enable_all_optimizations();
-            check_optimization_for_PT2_wdb1();
-
-            if (tab_Regler_PI.IsSelected == false)
-            {
-                tab_Regler_P.Focus();
-                _Simulator.replace_in_Schematic_at_pos(1, _P);
-            }
-            _Simulator.replace_in_Schematic_at_pos(3, _PT2_wdb1);
-            plot_graph();
-        }
-        /// <summary>
-        /// Hide all Controllers who are bad for this Loop. Select this Loop and plot the graph;
-        /// </summary>
-        /// <param name="sender">sender</param>
-        /// <param name="e">arguments</param>
-        private void tab_Strecke_Beliebig_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
-        {
-            tab_Regler_P.IsEnabled = true;
-            tab_Regler_I.IsEnabled = true;
-            tab_Regler_PI.IsEnabled = true;
-            tab_Regler_PID.IsEnabled = true;
-            butten_auslegen_I.IsEnabled = false;
-            butten_auslegen_P.IsEnabled = false;
-            butten_auslegen_PI.IsEnabled = false;
-
-            Transferfunction _Tf = new Transferfunction(_a,_b);
-            _Simulator.replace_in_Schematic_at_pos(3, _Tf);
-            plot_graph();
-        }
-        /// <summary>
-        /// Select this Controller and plot the graph.
-        /// </summary>
-        /// <param name="sender">sender</param>
-        /// <param name="e">arguments</param>
-        private void tab_Regler_I_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
-        {
-            _Simulator.replace_in_Schematic_at_pos(1, _I);
-            plot_graph();
-        }
-        /// <summary>
-        /// Select this Controller and plot the graph.
-        /// </summary>
-        /// <param name="sender">sender</param>
-        /// <param name="e">arguments</param>
-        private void tab_Regler_P_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
-        {
-            _Simulator.replace_in_Schematic_at_pos(1, _P);
-            plot_graph();
-        }
-        /// <summary>
-        /// Select this Controller and plot the graph.
-        /// </summary>
-        /// <param name="sender">sender</param>
-        /// <param name="e">arguments</param>
-        private void tab_Regler_PI_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
-        {
-            _Simulator.replace_in_Schematic_at_pos(1, _PI);
-            plot_graph();
-        }
         #endregion
         #region Plot
         /// <summary>
@@ -485,7 +351,7 @@ namespace controller_design.WPF
                 }
         }
         #endregion
-        #region Optimize_Controller
+        #region Optimize_and_select_Controller
         /// <summary>
         /// Optimize Controller-I and plot the graph
         /// </summary>
@@ -566,6 +432,112 @@ namespace controller_design.WPF
                 butten_auslegen_PI.IsEnabled = true;
             else
                 butten_auslegen_PI.IsEnabled = false;
+        }
+        /// <summary>
+        /// When the Selection Changed, it will calculate the new possible loops.
+        /// Ans replace the loop in the Schematic
+        /// </summary>
+        /// <param name="sender">sender</param>
+        /// <param name="e">Arguments</param>
+        private void TabControl_Strecke_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            TabItem lbi = ((sender as TabControl).SelectedItem as TabItem);
+            if (lbi.Name == "tab_Strecke_PT1")
+            {
+                tab_Regler_P.IsEnabled = false;
+                tab_Regler_I.IsEnabled = true;
+                tab_Regler_PI.IsEnabled = false;
+                tab_Regler_PID.IsEnabled = false;
+                TabControl_Regler.SelectedIndex = 0;
+                enable_all_optimizations();
+
+                _Simulator.replace_in_Schematic_at_pos(1, _I);
+                _Simulator.replace_in_Schematic_at_pos(3, _PT1);
+            }
+            else if (lbi.Name == "tab_Strecke_IT1")
+            {
+                tab_Regler_P.IsEnabled = true;
+                tab_Regler_I.IsEnabled = false;
+                tab_Regler_PI.IsEnabled = true;
+                tab_Regler_PID.IsEnabled = false;
+                enable_all_optimizations();
+                check_optimization_for_IT1();
+
+                if (tab_Regler_PI.IsSelected == false)
+                {
+                    TabControl_Regler.SelectedIndex = 1;
+                    _Simulator.replace_in_Schematic_at_pos(1, _P);
+                }
+                _Simulator.replace_in_Schematic_at_pos(3, _IT1);
+            }
+            else if (lbi.Name == "tab_Strecke_PT2_wdb1")
+            {
+                tab_Regler_P.IsEnabled = true;
+                tab_Regler_I.IsEnabled = false;
+                tab_Regler_PI.IsEnabled = true;
+                tab_Regler_PID.IsEnabled = false;
+                enable_all_optimizations();
+                check_optimization_for_PT2_wdb1();
+
+                if (tab_Regler_PI.IsSelected == false)
+                {
+                    TabControl_Regler.SelectedIndex = 1;
+                    _Simulator.replace_in_Schematic_at_pos(1, _P);
+                }
+                _Simulator.replace_in_Schematic_at_pos(3, _PT2_wdb1);
+            }
+            else if (lbi.Name == "tab_Strecke_PT2_wdse1")
+            {
+                tab_Regler_P.IsEnabled = false;
+                tab_Regler_I.IsEnabled = true;
+                tab_Regler_PI.IsEnabled = true;
+                tab_Regler_PID.IsEnabled = false;
+                enable_all_optimizations();
+                check_optimization_for_PT2_wdse1();
+
+                if (tab_Regler_PI.IsSelected == false)
+                {
+                    TabControl_Regler.SelectedIndex = 0;
+                    _Simulator.replace_in_Schematic_at_pos(1, _I);
+                }
+                _Simulator.replace_in_Schematic_at_pos(3, _PT2_wdse1);
+            }
+            else if (lbi.Name == "tab_Strecke_Beliebig")
+            {
+                tab_Regler_P.IsEnabled = true;
+                tab_Regler_I.IsEnabled = true;
+                tab_Regler_PI.IsEnabled = true;
+                tab_Regler_PID.IsEnabled = true;
+                butten_auslegen_I.IsEnabled = false;
+                butten_auslegen_P.IsEnabled = false;
+                butten_auslegen_PI.IsEnabled = false;
+
+                Transferfunction _Tf = new Transferfunction(_a, _b);
+                _Simulator.replace_in_Schematic_at_pos(3, _Tf);
+            }
+            plot_graph();
+        }
+        /// <summary>
+        /// It will replace the Controler in the Schematic
+        /// </summary>
+        /// <param name="sender">sender</param>
+        /// <param name="e">arguments</param>
+        private void TabControl_Regler_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            TabItem lbi = ((sender as TabControl).SelectedItem as TabItem);
+            if (lbi.Name == "tab_Regler_I")
+            {
+                _Simulator.replace_in_Schematic_at_pos(1, _I);
+            }
+            else if (lbi.Name == "tab_Regler_P")
+            {
+                _Simulator.replace_in_Schematic_at_pos(1, _P);
+            }
+            else if (lbi.Name == "tab_Regler_PI")
+            {
+                _Simulator.replace_in_Schematic_at_pos(1, _PI);
+            }
+            plot_graph();
         }
         #endregion
         #region Time
@@ -747,6 +719,5 @@ namespace controller_design.WPF
             plot_graph();
         }
         #endregion
-
     }
 }
