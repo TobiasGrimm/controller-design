@@ -142,7 +142,11 @@ namespace controller_design.Integrators_and_Registers
         public void reset()
         {
             for (int i = 0; i < _Register.Count(); ++i)
+            {
                 _Register[i] = 0;
+                _Register_old[i] = 0;
+            }
+
         }
         /// <summary>
         /// Gives an information about each Register Value.

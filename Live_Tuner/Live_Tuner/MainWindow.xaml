@@ -47,10 +47,12 @@
                     <Control_Tools:Base_Slider x:Name="Base_Slider_PT2_wdse1_T" HorizontalAlignment="Left" Margin="10,108,0,0" VerticalAlignment="Top" Height="35" Width="486" Label="T  =" value_changed="Base_Slider_PT2_wdse1_T_value_changed"/>
                     <TextBlock HorizontalAlignment="Left" Margin="13,157,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="133" ToolTip="Laplace Übertragungsfunktion"><Run Language="de-de" Text="Fs = --------------------"/></TextBlock>
                     <TextBlock HorizontalAlignment="Left" Margin="78,148,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="20" Height="13"><Run Language="de-de" Text="Vs"/></TextBlock>
-                    <TextBlock HorizontalAlignment="Left" Margin="40,168,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="106" Height="23"><Run Language="de-de" Text="1+p2dT+p^2T^2"/></TextBlock>
+                    <TextBlock HorizontalAlignment="Left" Margin="40,168,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="106" Height="23"><Run Language="de-de" Text="1+p2dT+p  T"/></TextBlock>
                     <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" ToolTip="Streckenverstärkung" Height="35" Width="17"><Run Language="de-de" Text="   "/></TextBlock>
                     <TextBlock HorizontalAlignment="Left" Margin="10,59,0,0" TextWrapping="Wrap" VerticalAlignment="Top" ToolTip="Dämpfung" Height="35" Width="17"><Run Language="de-de" Text="   "/></TextBlock>
                     <TextBlock HorizontalAlignment="Left" Margin="10,108,0,0" TextWrapping="Wrap" VerticalAlignment="Top" ToolTip="Zeitkonstante" Height="35" Width="17"><Run Language="de-de" Text="   "/></TextBlock>
+                    <TextBlock HorizontalAlignment="Left" Margin="97,168,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="8"><Run Language="de-de" Text="2"/></TextBlock>
+                    <TextBlock HorizontalAlignment="Left" Margin="111,168,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="8"><Run Language="de-de" Text="2"/></TextBlock>
                 </Grid>
             </TabItem>
             <TabItem x:Name="tab_Strecke_Beliebig" Header="Beliebig" Margin="-2,-2,-5,-1" MouseLeftButtonUp="tab_Strecke_Beliebig_MouseLeftButtonUp">

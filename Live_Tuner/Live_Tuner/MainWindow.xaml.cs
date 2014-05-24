@@ -709,15 +709,14 @@ namespace controller_design.WPF
         bool split_text2float(string input, ref float[] output)
         {
             string[] help_split;
-            float temp;
+            float temp = 0.0f;
             bool all_ok = true;
             LinkedList<float> result = new LinkedList<float>();
             help_split = (input.Trim()).Split(';');
             foreach (string s in help_split)
             {
-                if (!float.TryParse(s, out temp))
+                if(!trimtext2float(s, ref temp))
                     all_ok = false;
-
                 result.AddLast(temp);
             }
             output = result.ToArray();
