@@ -64,3 +64,6 @@ C:\Users\Tobias\Documents\GitHub\controller-design\Live_Tuner\Live_Tuner\bin\Deb
 C:\Users\Tobias\Documents\GitHub\controller-design\Live_Tuner\Live_Tuner\bin\Debug\Save_Manager.dll
 C:\Users\Tobias\Documents\GitHub\controller-design\Live_Tuner\Live_Tuner\bin\Debug\Save_Manager.pdb
 C:\Users\Tobias\Documents\GitHub\controller-design\Live_Tuner\Live_Tuner\bin\Debug\Save_Manager.xml
+C:\Users\Alex\Documents\GitHub\controller-design\Live_Tuner\Live_Tuner\bin\Debug\Save_Manager.dll
+C:\Users\Alex\Documents\GitHub\controller-design\Live_Tuner\Live_Tuner\bin\Debug\Save_Manager.pdb
+C:\Users\Alex\Documents\GitHub\controller-design\Live_Tuner\Live_Tuner\bin\Debug\Save_Manager.xml

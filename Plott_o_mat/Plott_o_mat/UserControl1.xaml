@@ -29,6 +29,23 @@
                 </DVC:LineSeries>
                 
             </DVC:Chart.Series>
+            <DVC:Chart.Axes>
+                <DVC:LinearAxis Orientation="Y" ShowGridLines="True" HorizontalAlignment="Left">
+                    <DVC:LinearAxis.AxisLabelStyle>
+                        <Style TargetType="DVC:AxisLabel">
+                            <Setter Property="StringFormat" Value="{}{0:#.##e+0}"/>
+                        </Style>
+                    </DVC:LinearAxis.AxisLabelStyle>
+                </DVC:LinearAxis>
+                <DVC:LinearAxis Orientation="X" ShowGridLines="True" VerticalAlignment="Bottom">
+                    <DVC:LinearAxis.AxisLabelStyle>
+                        <Style TargetType="DVC:AxisLabel">
+                            <Setter Property="StringFormat" Value="{}{0:#.##e+0}"/>
+                        </Style>
+                    </DVC:LinearAxis.AxisLabelStyle>
+                </DVC:LinearAxis>
+            </DVC:Chart.Axes>
+            
         </DVC:Chart>
     </Grid>
 </UserControl>
