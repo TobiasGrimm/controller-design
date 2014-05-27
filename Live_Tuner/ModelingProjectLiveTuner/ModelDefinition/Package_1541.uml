@@ -1,0 +1,1101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="a826d30d-dcd4-4db5-8528-c6e1c005a295"
+  name="Speichern und Laden" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="e2db295a-2707-4fd8-aaa9-9260ef5eccda"
+        name="File_Manager"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="c3631f98-a51c-47ae-9000-3e296d0b8483"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FTobias%2FDocuments%2FGitHub%2Fcontroller-design%2FSave_Manager%2FSave_Manager%2Fbin%2FDebug%2FSave_Manager.dll Namespace%3Dcontroller_design.Save_and_load Type%3DFile_Manager"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="67ff3f8c-af5e-4945-880d-859a7d11407b"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="cdfe59c9-1619-459e-877a-bd4084ba1983">
+                <propertyInstance
+                  Id="2e82f035-ae65-4ea4-b622-61224c2b07b1"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="f7247701-a1de-436b-bf41-2d3e655b43e2">
+                <propertyInstance
+                  Id="10cc4752-b12a-4c7b-b862-be3f9955ccd2"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="0c45659f-f0b2-4e50-9e3b-c379edadb156">
+                <propertyInstance
+                  Id="96ea5aed-6607-4a94-b6c4-0e161d7ab015"
+                  name="IsStatic"
+                  value="True" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="1ffabfcc-06e2-4ff7-946e-1ad8dec24ac0">
+                <propertyInstance
+                  Id="656f7bc0-2e48-47e6-81a5-82b29087c79d"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="d04de37e-cd6b-470f-bc37-03ef33140a91">
+                <propertyInstance
+                  Id="d3749667-f735-40a1-bbf8-20b21bab0d10"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="bbe590a5-0abc-4de0-9885-a2de368f37ca"
+            name="load_from_file"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="b6163ed9-71d7-486b-ae9b-dbc44bdc4806"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FTobias%2FDocuments%2FGitHub%2Fcontroller-design%2FSave_Manager%2FSave_Manager%2Fbin%2FDebug%2FSave_Manager.dll Namespace%3Dcontroller_design.Save_and_load Type%3DFile_Manager Member%3D(Name%3Dload_from_file OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DIEnumerable GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FTobias%2FDocuments%2FGitHub%2Fcontroller-design%2FSave_Manager%2FSave_Manager%2Fbin%2FDebug%2FSave_Manager.dll Namespace%3Dcontroller_design.Save_and_load Type%3DIsavable)]))])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="6610d6b5-73dd-430e-98aa-2f692afa60de"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0ff90e99-ebf7-4c44-b787-32a089649a7d">
+                    <propertyInstance
+                      Id="77074f44-f544-4b4f-9926-6170d31f3340"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b8f0b090-f452-4793-9125-6d1eb6386ab8">
+                    <propertyInstance
+                      Id="3e6c2f4b-a465-414c-8335-e21692adafb8"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8ca2ba90-3519-4c3f-8ff6-a796a03d82d5">
+                    <propertyInstance
+                      Id="d0f43664-e449-49b3-ac63-ace770e6e973"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f90a745d-5c58-470c-bf75-fcea9cb07415">
+                    <propertyInstance
+                      Id="0591dec0-84d1-4e36-99a4-24d1c5a6756f"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5d870532-d962-4e32-bb61-ae7378f89ff9">
+                    <propertyInstance
+                      Id="89bfaf6f-0d4e-4644-99d5-7177a30a9cf0"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c4c520a5-2d97-4b76-8127-6ecff5421faf">
+                    <propertyInstance
+                      Id="0424e83c-9bf6-47a3-a195-58c8a4a0fc04"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="18830b92-ce19-4b91-939f-587b4cf6ac3c"
+                  name="path"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="5a9ac1c2-967f-415d-9fec-631bee2737f2"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FTobias%2FDocuments%2FGitHub%2Fcontroller-design%2FSave_Manager%2FSave_Manager%2Fbin%2FDebug%2FSave_Manager.dll Namespace%3Dcontroller_design.Save_and_load Type%3DFile_Manager Member%3D(Name%3Dload_from_file OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DIEnumerable GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FTobias%2FDocuments%2FGitHub%2Fcontroller-design%2FSave_Manager%2FSave_Manager%2Fbin%2FDebug%2FSave_Manager.dll Namespace%3Dcontroller_design.Save_and_load Type%3DIsavable)]))]) ParameterIdentifier%3Dpath"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="ModelingProjectLiveTuner.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="5e6c7804-7f88-47cd-a751-fadfc4c29516"
+                  name="x"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="0055baa5-0f3b-40f3-9d86-bf94dacd475c"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FTobias%2FDocuments%2FGitHub%2Fcontroller-design%2FSave_Manager%2FSave_Manager%2Fbin%2FDebug%2FSave_Manager.dll Namespace%3Dcontroller_design.Save_and_load Type%3DFile_Manager Member%3D(Name%3Dload_from_file OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DIEnumerable GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FTobias%2FDocuments%2FGitHub%2Fcontroller-design%2FSave_Manager%2FSave_Manager%2Fbin%2FDebug%2FSave_Manager.dll Namespace%3Dcontroller_design.Save_and_load Type%3DIsavable)]))]) ParameterIdentifier%3Dx"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <interfaceMoniker
+                      Id="266f8190-75de-437b-9bb7-dc0e8bb6316d"
+                      LastKnownName="IEnumerable&lt;Isavable‎&gt;"
+                      LastKnownLocation="Package2_1542.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="2dfeb56d-62f3-4a7e-9063-9642a2a6552b"
+            name="save2file"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="0fd7d0d8-5701-47d5-b16b-69431147f446"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FTobias%2FDocuments%2FGitHub%2Fcontroller-design%2FSave_Manager%2FSave_Manager%2Fbin%2FDebug%2FSave_Manager.dll Namespace%3Dcontroller_design.Save_and_load Type%3DFile_Manager Member%3D(Name%3Dsave2file OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DIEnumerable GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FTobias%2FDocuments%2FGitHub%2Fcontroller-design%2FSave_Manager%2FSave_Manager%2Fbin%2FDebug%2FSave_Manager.dll Namespace%3Dcontroller_design.Save_and_load Type%3DIsavable)]))])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="b91b0c55-b6ff-406d-87bd-bfefa70b541e"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6ea2617a-fd6e-4351-a5fe-b10802277299">
+                    <propertyInstance
+                      Id="4a784e5e-78c3-4842-9000-df4742e86ca0"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9b098cf8-ece7-4bc1-850a-315d91ca5923">
+                    <propertyInstance
+                      Id="c5151d81-e986-45c3-9eb0-27029be597cd"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="386445ee-cdeb-40e7-8828-014905d29985">
+                    <propertyInstance
+                      Id="e26d6087-e551-49cb-a990-89773a850ad1"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b5f940e6-f481-43bf-9cdb-b769f6824d34">
+                    <propertyInstance
+                      Id="712ac9a2-a621-4ee3-b4a2-57bfd82bb615"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3892c924-281c-4e2c-851a-1cc7bb590ea8">
+                    <propertyInstance
+                      Id="82202a49-fd76-49a7-8958-451a93165355"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8e574503-d9cb-483b-b7e2-718dd77b03b8">
+                    <propertyInstance
+                      Id="698df40c-c7a3-490b-9c21-9f198656ad28"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="0a8fce35-3840-4fd3-ae97-eb542986bb96"
+                  name="path"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="360554b8-6aee-4879-aed7-e3af49bd2c21"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FTobias%2FDocuments%2FGitHub%2Fcontroller-design%2FSave_Manager%2FSave_Manager%2Fbin%2FDebug%2FSave_Manager.dll Namespace%3Dcontroller_design.Save_and_load Type%3DFile_Manager Member%3D(Name%3Dsave2file OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DIEnumerable GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FTobias%2FDocuments%2FGitHub%2Fcontroller-design%2FSave_Manager%2FSave_Manager%2Fbin%2FDebug%2FSave_Manager.dll Namespace%3Dcontroller_design.Save_and_load Type%3DIsavable)]))]) ParameterIdentifier%3Dpath"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="ModelingProjectLiveTuner.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="77bf724b-f58c-457b-8b87-f5c67aca2460"
+                  name="x"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="3eefd5d0-1d31-4646-a69b-dcf39e165ca9"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FTobias%2FDocuments%2FGitHub%2Fcontroller-design%2FSave_Manager%2FSave_Manager%2Fbin%2FDebug%2FSave_Manager.dll Namespace%3Dcontroller_design.Save_and_load Type%3DFile_Manager Member%3D(Name%3Dsave2file OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DIEnumerable GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FTobias%2FDocuments%2FGitHub%2Fcontroller-design%2FSave_Manager%2FSave_Manager%2Fbin%2FDebug%2FSave_Manager.dll Namespace%3Dcontroller_design.Save_and_load Type%3DIsavable)]))]) ParameterIdentifier%3Dx"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <interfaceMoniker
+                      Id="266f8190-75de-437b-9bb7-dc0e8bb6316d"
+                      LastKnownName="IEnumerable&lt;Isavable‎&gt;"
+                      LastKnownLocation="Package2_1542.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="81cdc4cd-4a9b-4374-b511-67aa756401f7"
+        name="Savable_WPF_Obj"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="b0bc9976-f076-49ea-b066-5c3b912826cf"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FTobias%2FDocuments%2FGitHub%2Fcontroller-design%2FSave_Manager%2FSave_Manager%2Fbin%2FDebug%2FSave_Manager.dll Namespace%3Dcontroller_design.Save_and_load Type%3DSavable_WPF_Obj"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="bd2a05a3-8b8d-4817-81d1-d4318622941b"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="5248c021-b48f-4901-a623-bbddc4ca70f6">
+                <propertyInstance
+                  Id="a19553f5-2453-4673-8b12-c31d14ee6ad4"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="b825b042-04fe-41ff-befc-63ce04edb884">
+                <propertyInstance
+                  Id="f299c4a6-e9c6-4b05-b66c-5ce54eacc835"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="22e612a7-34aa-4c69-b1e4-3e07ac6b4072">
+                <propertyInstance
+                  Id="784a0989-203f-4bb8-8312-518239b12c21"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="950c65dc-55b8-49a7-9301-f5552a933f98">
+                <propertyInstance
+                  Id="d0af3649-a9be-48b8-b61f-538b400d213d"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="9cecd844-2936-4a49-93f8-ab9518174ebc">
+                <propertyInstance
+                  Id="e53b5e00-edaa-4c24-a5af-fd11c909973c"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <suppliersInternal>
+          <interfaceRealization
+            Id="76ebd9ba-4cca-458c-8fc7-d4d0fde4619d">
+            <interfaceMoniker
+              Id="e9d09a7c-bfb8-4071-90fd-cc3b72385038"
+              LastKnownName="Isavable"
+              LastKnownLocation="Package_1541.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="fb12cf36-b471-46ad-b13c-db17b7a66f2f"
+            name="Savable_WPF_Obj"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="28c30ed8-2476-4c76-8833-f965c7d339e7"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FTobias%2FDocuments%2FGitHub%2Fcontroller-design%2FSave_Manager%2FSave_Manager%2Fbin%2FDebug%2FSave_Manager.dll Namespace%3Dcontroller_design.Save_and_load Type%3DSavable_WPF_Obj Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DList GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FPresentationFramework.dll&quot; Namespace%3DSystem.Windows.Controls Type%3DComboBox)]))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DList GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FPresentationFramework.dll&quot; Namespace%3DSystem.Windows.Controls Type%3DTextBox)]))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DList GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FPresentationFramework.dll&quot; Namespace%3DSystem.Windows.Controls Type%3DTabControl)]))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DList GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FPresentationFramework.dll&quot; Namespace%3DSystem.Windows.Controls Type%3DCheckBox)]))])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="1b1336f9-744b-44be-a993-a235fe9e85cf"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="45bf1851-e586-49c7-8863-d55746d0cebc">
+                    <propertyInstance
+                      Id="d933b513-74f6-4930-9b01-b2984cce8167"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b1c91c66-e5a0-4f21-ab45-bb8b145f2835">
+                    <propertyInstance
+                      Id="bb56c7a6-c216-4577-98c1-12b11faeff56"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="40c649fe-73f6-4df3-9ac7-e444ac390397">
+                    <propertyInstance
+                      Id="c70a91f0-ceea-4a4a-a381-c9da71b5439a"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="203072c5-482e-4828-bfa1-b5c1810a7bbc">
+                    <propertyInstance
+                      Id="8e8cb3d1-522e-429d-a910-e682b3cdaca8"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c9e2e6ca-f4ff-4a47-9f56-4d26249359dd">
+                    <propertyInstance
+                      Id="44dc033d-7c00-4813-be70-0fdbe2700d26"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="040790af-61ab-4dcb-acb4-22a7fc8d0c3d">
+                    <propertyInstance
+                      Id="8661f0a6-d8eb-464f-90f3-42a4fa298f96"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="cad29866-05dd-4134-aa67-2516a71d7a26"
+                  name="cb_list"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="57ebeade-b4ce-478b-91ed-dbf924bd422d"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FTobias%2FDocuments%2FGitHub%2Fcontroller-design%2FSave_Manager%2FSave_Manager%2Fbin%2FDebug%2FSave_Manager.dll Namespace%3Dcontroller_design.Save_and_load Type%3DSavable_WPF_Obj Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DList GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FPresentationFramework.dll&quot; Namespace%3DSystem.Windows.Controls Type%3DComboBox)]))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DList GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FPresentationFramework.dll&quot; Namespace%3DSystem.Windows.Controls Type%3DTextBox)]))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DList GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FPresentationFramework.dll&quot; Namespace%3DSystem.Windows.Controls Type%3DTabControl)]))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DList GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FPresentationFramework.dll&quot; Namespace%3DSystem.Windows.Controls Type%3DCheckBox)]))]) ParameterIdentifier%3Dcb_list"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="a84f2900-aa06-4b8a-beac-baaee603ca99"
+                      LastKnownName="List&lt;ComboBox‎&gt;"
+                      LastKnownLocation="Package2_1542.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="477675b8-9504-4ff7-89fe-b1455f8bda5d"
+                  name="tb_list"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="96a3a7e5-c674-49a8-add4-847236f1b9e6"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FTobias%2FDocuments%2FGitHub%2Fcontroller-design%2FSave_Manager%2FSave_Manager%2Fbin%2FDebug%2FSave_Manager.dll Namespace%3Dcontroller_design.Save_and_load Type%3DSavable_WPF_Obj Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DList GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FPresentationFramework.dll&quot; Namespace%3DSystem.Windows.Controls Type%3DComboBox)]))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DList GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FPresentationFramework.dll&quot; Namespace%3DSystem.Windows.Controls Type%3DTextBox)]))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DList GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FPresentationFramework.dll&quot; Namespace%3DSystem.Windows.Controls Type%3DTabControl)]))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DList GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FPresentationFramework.dll&quot; Namespace%3DSystem.Windows.Controls Type%3DCheckBox)]))]) ParameterIdentifier%3Dtb_list"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="9da74f55-d532-491b-94e1-0ed1d7396b5b"
+                      LastKnownName="List&lt;TextBox‎&gt;"
+                      LastKnownLocation="Package2_1542.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="f756ee23-eb47-475f-acef-2c4244d1506b"
+                  name="tc_list"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="38d7d8cc-03ca-4306-a911-37031017c771"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FTobias%2FDocuments%2FGitHub%2Fcontroller-design%2FSave_Manager%2FSave_Manager%2Fbin%2FDebug%2FSave_Manager.dll Namespace%3Dcontroller_design.Save_and_load Type%3DSavable_WPF_Obj Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DList GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FPresentationFramework.dll&quot; Namespace%3DSystem.Windows.Controls Type%3DComboBox)]))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DList GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FPresentationFramework.dll&quot; Namespace%3DSystem.Windows.Controls Type%3DTextBox)]))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DList GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FPresentationFramework.dll&quot; Namespace%3DSystem.Windows.Controls Type%3DTabControl)]))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DList GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FPresentationFramework.dll&quot; Namespace%3DSystem.Windows.Controls Type%3DCheckBox)]))]) ParameterIdentifier%3Dtc_list"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="aa85a1ca-f955-419c-bd58-c92ec074383b"
+                      LastKnownName="List&lt;TabControl‎&gt;"
+                      LastKnownLocation="Package2_1542.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="1d1a2dd3-476e-4eef-b22d-6a63163e0b1c"
+                  name="checkb_list"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="d9329955-5b11-472d-b8bf-65aa1da8e2b4"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FTobias%2FDocuments%2FGitHub%2Fcontroller-design%2FSave_Manager%2FSave_Manager%2Fbin%2FDebug%2FSave_Manager.dll Namespace%3Dcontroller_design.Save_and_load Type%3DSavable_WPF_Obj Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DList GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FPresentationFramework.dll&quot; Namespace%3DSystem.Windows.Controls Type%3DComboBox)]))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DList GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FPresentationFramework.dll&quot; Namespace%3DSystem.Windows.Controls Type%3DTextBox)]))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DList GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FPresentationFramework.dll&quot; Namespace%3DSystem.Windows.Controls Type%3DTabControl)]))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DList GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FPresentationFramework.dll&quot; Namespace%3DSystem.Windows.Controls Type%3DCheckBox)]))]) ParameterIdentifier%3Dcheckb_list"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="11309c3c-d7a8-4df0-aef5-c2bb244946fc"
+                      LastKnownName="List&lt;CheckBox‎&gt;"
+                      LastKnownLocation="Package2_1542.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="7dcac6d2-bca2-4abe-a011-3fe5c28db215"
+            name="Savable_WPF_Obj"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="64e6d3ac-90d9-4708-aebc-8eb518b86fbd"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FTobias%2FDocuments%2FGitHub%2Fcontroller-design%2FSave_Manager%2FSave_Manager%2Fbin%2FDebug%2FSave_Manager.dll Namespace%3Dcontroller_design.Save_and_load Type%3DSavable_WPF_Obj Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DList GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FPresentationFramework.dll&quot; Namespace%3DSystem.Windows.Controls Type%3DComboBox)]))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DList GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FPresentationFramework.dll&quot; Namespace%3DSystem.Windows.Controls Type%3DTextBox)]))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DList GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FPresentationFramework.dll&quot; Namespace%3DSystem.Windows.Controls Type%3DTabControl)]))])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="34e0bfdd-4113-4d6f-9ff3-2c73da1a2fdc"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c69b9fd5-788c-4afa-9400-caf815f403b8">
+                    <propertyInstance
+                      Id="0fb0e434-482b-4b66-a597-97efb06ea0df"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f10e90e8-3809-4763-b7d4-8ff347fb5eb5">
+                    <propertyInstance
+                      Id="5a694265-e919-462d-adc7-76f23167fdba"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="16d3236e-107a-4186-b34b-4e6c40d71b5f">
+                    <propertyInstance
+                      Id="4dc3f0a2-d8d8-451f-989e-8a81e320ce97"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f24d09c9-fc02-4c42-97fd-f169fd98b310">
+                    <propertyInstance
+                      Id="d91f3459-4144-4ba1-9e9b-550e49b34acc"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="efc181f0-cee6-4e53-9e20-ff68402b9427">
+                    <propertyInstance
+                      Id="eb8a106d-464a-4439-b26c-9de96a104898"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b13c67a4-8ffa-4f11-8576-ecc8f9e934ba">
+                    <propertyInstance
+                      Id="99864324-b5a7-4e97-be7f-3bb404019788"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="345cae3e-b1fe-441a-8b8b-f331ddee016a"
+                  name="cb_list"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="05cb6ff1-984b-4b84-9c8a-1a70716ad756"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FTobias%2FDocuments%2FGitHub%2Fcontroller-design%2FSave_Manager%2FSave_Manager%2Fbin%2FDebug%2FSave_Manager.dll Namespace%3Dcontroller_design.Save_and_load Type%3DSavable_WPF_Obj Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DList GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FPresentationFramework.dll&quot; Namespace%3DSystem.Windows.Controls Type%3DComboBox)]))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DList GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FPresentationFramework.dll&quot; Namespace%3DSystem.Windows.Controls Type%3DTextBox)]))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DList GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FPresentationFramework.dll&quot; Namespace%3DSystem.Windows.Controls Type%3DTabControl)]))]) ParameterIdentifier%3Dcb_list"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="a84f2900-aa06-4b8a-beac-baaee603ca99"
+                      LastKnownName="List&lt;ComboBox‎&gt;"
+                      LastKnownLocation="Package2_1542.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="55c50c50-47b2-49bd-ac91-bc99926d8dab"
+                  name="tb_list"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="68a2aa7d-9e54-4dbe-95fc-3ca9776dd9f8"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FTobias%2FDocuments%2FGitHub%2Fcontroller-design%2FSave_Manager%2FSave_Manager%2Fbin%2FDebug%2FSave_Manager.dll Namespace%3Dcontroller_design.Save_and_load Type%3DSavable_WPF_Obj Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DList GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FPresentationFramework.dll&quot; Namespace%3DSystem.Windows.Controls Type%3DComboBox)]))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DList GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FPresentationFramework.dll&quot; Namespace%3DSystem.Windows.Controls Type%3DTextBox)]))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DList GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FPresentationFramework.dll&quot; Namespace%3DSystem.Windows.Controls Type%3DTabControl)]))]) ParameterIdentifier%3Dtb_list"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="9da74f55-d532-491b-94e1-0ed1d7396b5b"
+                      LastKnownName="List&lt;TextBox‎&gt;"
+                      LastKnownLocation="Package2_1542.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="6008a119-7181-40f6-baac-7eefd72b87d2"
+                  name="tc_list"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="7236ff97-e5d9-4f9f-997a-508f37697a33"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FTobias%2FDocuments%2FGitHub%2Fcontroller-design%2FSave_Manager%2FSave_Manager%2Fbin%2FDebug%2FSave_Manager.dll Namespace%3Dcontroller_design.Save_and_load Type%3DSavable_WPF_Obj Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DList GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FPresentationFramework.dll&quot; Namespace%3DSystem.Windows.Controls Type%3DComboBox)]))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DList GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FPresentationFramework.dll&quot; Namespace%3DSystem.Windows.Controls Type%3DTextBox)]))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DList GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FPresentationFramework.dll&quot; Namespace%3DSystem.Windows.Controls Type%3DTabControl)]))]) ParameterIdentifier%3Dtc_list"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="aa85a1ca-f955-419c-bd58-c92ec074383b"
+                      LastKnownName="List&lt;TabControl‎&gt;"
+                      LastKnownLocation="Package2_1542.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="99e40e4c-fbf9-4e46-bac6-8803e00edbda"
+            name="Savable_WPF_Obj"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="7c211543-3b91-4c42-843f-49caea8702a8"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FTobias%2FDocuments%2FGitHub%2Fcontroller-design%2FSave_Manager%2FSave_Manager%2Fbin%2FDebug%2FSave_Manager.dll Namespace%3Dcontroller_design.Save_and_load Type%3DSavable_WPF_Obj Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DList GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FPresentationFramework.dll&quot; Namespace%3DSystem.Windows.Controls Type%3DComboBox)]))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DList GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FPresentationFramework.dll&quot; Namespace%3DSystem.Windows.Controls Type%3DTextBox)]))])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="667fd7b6-a47f-45bd-8953-cac5079c01ac"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="247c3a45-efb1-4f4b-a0c6-765ea2d5e08b">
+                    <propertyInstance
+                      Id="c18a1f67-e47b-4b59-a168-0c7762b7a7af"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0afcc1ff-7af6-4d45-a71b-2798b09db9ab">
+                    <propertyInstance
+                      Id="150ba619-4892-4e6d-9716-b55f2462a6ac"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e2cf0844-b1c0-4d27-8d7f-328fda1cd288">
+                    <propertyInstance
+                      Id="0ad80208-56cc-414b-8e12-30c22b0e4460"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3d4de264-1845-4ba1-9832-fc7487347b82">
+                    <propertyInstance
+                      Id="0f6fabcb-c08a-4906-9057-30db87c2fff5"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1398f1b1-1a2c-48d9-9709-0eb43b7d18e2">
+                    <propertyInstance
+                      Id="3aa6c626-a556-4339-bf87-aa1b63c73aab"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9f226a13-2c9c-4c83-914f-aaa2de768432">
+                    <propertyInstance
+                      Id="a076b393-1c8a-47c3-919d-eef67526032a"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="850c5e38-d2c7-4e9f-90a1-3eba9517a2b4"
+                  name="cb_list"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="b950cb53-1527-4802-a7c7-b85733a46bae"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FTobias%2FDocuments%2FGitHub%2Fcontroller-design%2FSave_Manager%2FSave_Manager%2Fbin%2FDebug%2FSave_Manager.dll Namespace%3Dcontroller_design.Save_and_load Type%3DSavable_WPF_Obj Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DList GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FPresentationFramework.dll&quot; Namespace%3DSystem.Windows.Controls Type%3DComboBox)]))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DList GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FPresentationFramework.dll&quot; Namespace%3DSystem.Windows.Controls Type%3DTextBox)]))]) ParameterIdentifier%3Dcb_list"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="a84f2900-aa06-4b8a-beac-baaee603ca99"
+                      LastKnownName="List&lt;ComboBox‎&gt;"
+                      LastKnownLocation="Package2_1542.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="412e9591-c13d-4c40-9197-9507789ea3ee"
+                  name="tb_list"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="c84fb1a9-91ec-4d7f-b39f-b0329329d7b0"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FTobias%2FDocuments%2FGitHub%2Fcontroller-design%2FSave_Manager%2FSave_Manager%2Fbin%2FDebug%2FSave_Manager.dll Namespace%3Dcontroller_design.Save_and_load Type%3DSavable_WPF_Obj Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DList GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FPresentationFramework.dll&quot; Namespace%3DSystem.Windows.Controls Type%3DComboBox)]))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DList GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FPresentationFramework.dll&quot; Namespace%3DSystem.Windows.Controls Type%3DTextBox)]))]) ParameterIdentifier%3Dtb_list"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="9da74f55-d532-491b-94e1-0ed1d7396b5b"
+                      LastKnownName="List&lt;TextBox‎&gt;"
+                      LastKnownLocation="Package2_1542.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="62924959-abc1-480b-965a-9f86df9d8547"
+            name="restorefromstring"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="3c93f625-f827-427a-b72a-f2c03782a20d"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FTobias%2FDocuments%2FGitHub%2Fcontroller-design%2FSave_Manager%2FSave_Manager%2Fbin%2FDebug%2FSave_Manager.dll Namespace%3Dcontroller_design.Save_and_load Type%3DSavable_WPF_Obj Member%3D(Name%3Drestorefromstring OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="53e15bd0-a71c-4356-893c-4d4f136eae3f"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bf1f3d63-a33e-4a36-9c7b-22670e8a061c">
+                    <propertyInstance
+                      Id="31a563a2-a74b-4eb2-8179-6de6bb259320"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a4989e28-ed15-4000-b2f8-0639f7d1a552">
+                    <propertyInstance
+                      Id="983675f3-1d9d-45b4-a4fa-643888d3febc"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3a5d2864-1f50-4f5e-8b4c-643906e0be50">
+                    <propertyInstance
+                      Id="91cbe899-9734-447b-b8e4-6a47a0f65e61"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="66cebec3-c9e7-4901-85cf-405745d96d41">
+                    <propertyInstance
+                      Id="a7886802-d89a-44dd-a5be-c5b31bb3f615"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f1f27a43-c4ad-4ce6-af7c-93e2d87a74f2">
+                    <propertyInstance
+                      Id="4172d641-4f87-4272-8d40-4d2d33052f0a"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="503cb894-93d1-455e-8a43-8fa4d8a5b763">
+                    <propertyInstance
+                      Id="e3c9a26b-b123-414e-9278-91f741387d46"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="bb1e296d-35c8-4e81-9f90-fe7a18efecb9"
+                  name="s"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="64ae902b-d1f9-40ff-b960-c0997256f006"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FTobias%2FDocuments%2FGitHub%2Fcontroller-design%2FSave_Manager%2FSave_Manager%2Fbin%2FDebug%2FSave_Manager.dll Namespace%3Dcontroller_design.Save_and_load Type%3DSavable_WPF_Obj Member%3D(Name%3Drestorefromstring OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)]) ParameterIdentifier%3Ds"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="ModelingProjectLiveTuner.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="8ba76883-9403-45cc-9cc7-bff378c90336"
+            name="parameters2string"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="627d566f-274f-4a16-bcb3-69540368d974"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FTobias%2FDocuments%2FGitHub%2Fcontroller-design%2FSave_Manager%2FSave_Manager%2Fbin%2FDebug%2FSave_Manager.dll Namespace%3Dcontroller_design.Save_and_load Type%3DSavable_WPF_Obj Member%3Dparameters2string"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="41361c8a-bc57-45fb-a173-40c1a4b0de69"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1e582e5b-ac43-447c-ac04-238d6b0f93b2">
+                    <propertyInstance
+                      Id="5f3ec0f1-e9a7-4ebf-ad96-a359ff4ea1bb"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7d4ba838-1c82-497d-81ac-2436f601f6b3">
+                    <propertyInstance
+                      Id="7774b2d5-9436-4d68-9710-7d4a1e32b060"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="05049d40-117b-475d-beeb-8c3ed02e374b">
+                    <propertyInstance
+                      Id="fe4e301e-efd9-4a27-a918-5cd95ff6e46a"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e55abf5a-9617-4b6e-98a9-7168754fabae">
+                    <propertyInstance
+                      Id="d8d68b97-4318-4634-b1b2-1d86351d4f34"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3f79e00a-dddb-4c57-b913-018776bbc169">
+                    <propertyInstance
+                      Id="a4e00b3f-188d-41dc-8023-b673a4d694f7"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="846e1e43-86ee-4b72-9e2d-4570cb99d4a5">
+                    <propertyInstance
+                      Id="77106f29-f1ad-41ee-9ee9-b38426187b2e"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="bf51987e-7c80-426a-859a-0c5afe0cb8ee"
+                  direction="Return">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="ModelingProjectLiveTuner.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="e9d09a7c-bfb8-4071-90fd-cc3b72385038"
+        name="Isavable"
+        isAbstract="false"
+        isLeaf="false">
+        <referencesInternal>
+          <reference
+            Id="08155944-0add-4ae3-8d44-822cf9b60073"
+            handle="viewcode://./CodeSchema_Interface?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FTobias%2FDocuments%2FGitHub%2Fcontroller-design%2FSave_Manager%2FSave_Manager%2Fbin%2FDebug%2FSave_Manager.dll Namespace%3Dcontroller_design.Save_and_load Type%3DIsavable"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="c5340e93-5634-47cb-bf06-0ad125a53a48"
+            name="interface"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="9ba89d42-ae3b-4c54-9318-30cc7a9baf52">
+                <propertyInstance
+                  Id="6f7fd3eb-2e4f-41cf-bd09-c9d3c644b5f5"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="16512d39-57b6-4ef5-86f3-9c8bd8cd95f3">
+                <propertyInstance
+                  Id="62f41b78-c154-477d-b32e-ec818a9aa150"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="9a26bfe9-4360-44b0-ba1c-1530e47304c3">
+                <propertyInstance
+                  Id="db9ed23d-1ef1-4372-b461-e51e239855e2"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="bb3a6c39-3429-4788-9722-6e7347959bf3">
+                <propertyInstance
+                  Id="9ebef56c-a0a1-4c19-83c1-263fe5eec834"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <ownedOperations>
+          <operation
+            Id="d67d3c36-1a53-4a41-876f-b9c9c0340673"
+            name="restorefromstring"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="c9d3181b-ab10-45c1-a360-bc121c2bb27e"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FTobias%2FDocuments%2FGitHub%2Fcontroller-design%2FSave_Manager%2FSave_Manager%2Fbin%2FDebug%2FSave_Manager.dll Namespace%3Dcontroller_design.Save_and_load Type%3DIsavable Member%3D(Name%3Drestorefromstring OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="ba729e19-656e-45cb-b3d1-e1b4d80fec21"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0960bcf3-b056-4ee5-87a1-09e318b4e1a0">
+                    <propertyInstance
+                      Id="c7067b73-40e3-4903-9ad1-e52829d6b8de"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2a8cc5ac-2185-4d32-999f-879cb31fea53">
+                    <propertyInstance
+                      Id="0fe477df-dc35-4d8e-b68f-5b9f703c6823"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1d35835b-1825-4b12-a187-7ad2589d53bf">
+                    <propertyInstance
+                      Id="3d94a1b8-7b4a-4805-b8ae-6034cc38deae"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a792f67d-aae8-4606-a457-0ed5fdda9bb9">
+                    <propertyInstance
+                      Id="9cd136f0-a923-4e89-99e7-c7843d326184"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9e8ee292-2043-4074-b18c-fe1d8b1c4b90">
+                    <propertyInstance
+                      Id="b14857f9-6381-4cc7-94bf-da2c589676ec"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f020ca31-3534-48a3-ba5a-a483be5e45eb">
+                    <propertyInstance
+                      Id="8f1dce92-c3dd-4eed-982a-299f1dc4720f"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="124d8868-4efd-4243-b0e2-be77ac232325"
+                  name="s"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="40f73b86-4e24-4c62-995b-02df5434122b"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FTobias%2FDocuments%2FGitHub%2Fcontroller-design%2FSave_Manager%2FSave_Manager%2Fbin%2FDebug%2FSave_Manager.dll Namespace%3Dcontroller_design.Save_and_load Type%3DIsavable Member%3D(Name%3Drestorefromstring OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)]) ParameterIdentifier%3Ds"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="ModelingProjectLiveTuner.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="e5b24508-ed70-4b92-99ca-63cf7add47e2"
+            name="parameters2string"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="378788ea-f18c-491d-a07d-72cf8ed0e990"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FTobias%2FDocuments%2FGitHub%2Fcontroller-design%2FSave_Manager%2FSave_Manager%2Fbin%2FDebug%2FSave_Manager.dll Namespace%3Dcontroller_design.Save_and_load Type%3DIsavable Member%3Dparameters2string"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="bf920b0a-4197-4e37-8629-342d35561a13"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b696dfcf-8ce7-44f2-ac08-ac4587f90090">
+                    <propertyInstance
+                      Id="b22ac35c-e711-43e3-9bbf-4dcfb0bb0622"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1b4a0bee-24c6-41cd-9f71-892971636621">
+                    <propertyInstance
+                      Id="029b3721-75fa-491d-b2bb-c1e18a8bcfe3"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fcf5523b-dc7b-42e1-85f8-dc938c01af48">
+                    <propertyInstance
+                      Id="bbf3254e-d7ff-43cc-9dfa-7f5124dfe136"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3f8f727e-d2b6-4768-961e-d3a314108638">
+                    <propertyInstance
+                      Id="b3307f6c-d9f3-4a4c-acdd-638dea2958ef"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="97991228-88af-4ee4-81e4-afda62e63537">
+                    <propertyInstance
+                      Id="86ae309a-e181-4951-bafe-48d0185e89fa"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bde71a9f-2993-4885-969d-a55fcefde61c">
+                    <propertyInstance
+                      Id="82d881bd-f8b6-43e5-acd9-546edb591e8f"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="1955fb57-4b30-4f27-b3f1-f596c56b9252"
+                  direction="Return">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="ModelingProjectLiveTuner.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperations>
+      </Interface>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

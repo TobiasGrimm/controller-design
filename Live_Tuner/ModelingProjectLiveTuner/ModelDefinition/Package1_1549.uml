@@ -1,0 +1,2869 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="0c11e0c1-bf3a-402c-889d-4e2d240f5852"
+  name="WPF"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="267d5fae-fb14-4eaa-b58a-b02d37c248d5"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3Dcontroller_design.WPF"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="995aa987-61a0-4bf1-9350-b2afa9e72e7f"
+        name="MainWindow"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="7fdf7fae-e050-4f89-820a-894cfd9fd140"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FTobias%2FDocuments%2FGitHub%2Fcontroller-design%2FLive_Tuner%2FLive_Tuner%2Fbin%2FDebug%2FReglerTestWPF.exe Namespace%3Dcontroller_design.WPF Type%3DMainWindow"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="50a28cd8-6bcf-431d-9c38-21c5dfbb6423"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="1b3669b5-68a5-418a-97d1-b6effec4a353">
+                <propertyInstance
+                  Id="9954700d-466c-4854-a903-3f48b70d5354"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="b60f4382-dde3-40c3-aaf3-cd0e7ea52eed">
+                <propertyInstance
+                  Id="5f81caba-4d54-4c4d-b0af-9a304ea4ac94"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="7307407d-031c-4af7-9125-84a89e3318e6">
+                <propertyInstance
+                  Id="07688ac6-cd42-48f2-adbc-fafe029247d0"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="443a703e-e9c8-4101-8a8f-7d66467dd5d7">
+                <propertyInstance
+                  Id="ce142ea8-4595-4eba-94b7-7edf42cfcf09"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="8aa8ca12-7ad4-4c2e-aff1-fa0fc36d8032">
+                <propertyInstance
+                  Id="e6f937dd-dd06-4521-80c7-e3cbc69650cf"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="ded7b67e-7761-40aa-943d-621c22cddd3e"
+            name="Base_Slider_IT1_T2_value_changed"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="252cb09c-249f-4818-89cf-a4520d93d583"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FTobias%2FDocuments%2FGitHub%2Fcontroller-design%2FLive_Tuner%2FLive_Tuner%2Fbin%2FDebug%2FReglerTestWPF.exe Namespace%3Dcontroller_design.WPF Type%3DMainWindow Member%3D(Name%3DBase_Slider_IT1_T2_value_changed OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DSingle)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="60014a1f-4902-44f5-bd76-4feaf2b34f0b"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="99dba156-d24e-4b5d-badb-7cf3c4537948">
+                    <propertyInstance
+                      Id="404834fc-eb92-4df0-8740-e030594ed523"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="33fe15ff-1525-469b-b6cc-1204019ebcea">
+                    <propertyInstance
+                      Id="2b6f1176-6201-4194-bd68-2a73cf270508"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="89f4abb0-9ac6-4451-9934-a5d9a57a151b">
+                    <propertyInstance
+                      Id="ebc4520a-8f15-41c4-b939-8a0247eb1aae"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="72e0fbbe-1e94-47c4-a1b0-76d68a9555ab">
+                    <propertyInstance
+                      Id="ad42fcc1-ddd2-4ec5-8c64-cde866280ba2"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4db27b27-00f7-4880-a69e-0e2074501315">
+                    <propertyInstance
+                      Id="560b4055-9516-4286-a8bf-ff24cfeccfa9"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="69e9fe6a-23e5-4bdb-92e8-2fcb836ead28">
+                    <propertyInstance
+                      Id="27839930-892c-444a-8a3d-be35ad30e423"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="bcbf2656-90d1-4389-a1dc-49b5eed108d1"
+                  name="output"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="97f3db3c-a56d-4e68-a745-eff05690445e"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FTobias%2FDocuments%2FGitHub%2Fcontroller-design%2FLive_Tuner%2FLive_Tuner%2Fbin%2FDebug%2FReglerTestWPF.exe Namespace%3Dcontroller_design.WPF Type%3DMainWindow Member%3D(Name%3DBase_Slider_IT1_T2_value_changed OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DSingle)]) ParameterIdentifier%3Doutput"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="e9a44953-28af-43fe-ad09-1625dced5859"
+                      LastKnownName="Single"
+                      LastKnownLocation="Package2_1441.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="6f0c4c20-a1da-4fbb-96c5-338395ec4772"
+            name="Base_Slider_IT1_Ti_value_changed"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="e64de9f0-82ff-4a9b-97e1-993b6c96f970"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FTobias%2FDocuments%2FGitHub%2Fcontroller-design%2FLive_Tuner%2FLive_Tuner%2Fbin%2FDebug%2FReglerTestWPF.exe Namespace%3Dcontroller_design.WPF Type%3DMainWindow Member%3D(Name%3DBase_Slider_IT1_Ti_value_changed OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DSingle)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="c0b1f326-4cbd-4199-9b3c-6e98149027a7"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c6f8ed96-f6d6-4722-be94-9c128b776f1c">
+                    <propertyInstance
+                      Id="cd277102-27cc-4a40-9df7-48b3c42bed83"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="eea03459-a796-4eea-8d09-90f91fb60384">
+                    <propertyInstance
+                      Id="b8cca33f-3275-4a7b-ba0b-6f9da37b15db"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="32497ce6-8306-4ca7-a021-73ece6666185">
+                    <propertyInstance
+                      Id="009f8b83-cc94-493a-a36d-f10908cfe4b8"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ac2b35e6-7ccd-40d6-a736-bc34ae9ae02d">
+                    <propertyInstance
+                      Id="56dc743f-6586-48ec-8087-608f5ef3fddb"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b6c97c65-5c1b-4525-981a-359b8e414db2">
+                    <propertyInstance
+                      Id="4e38e949-0229-49ce-b060-8e01b1a40aaf"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9ec7c37a-8636-4e17-8e59-86ecde5bfa0b">
+                    <propertyInstance
+                      Id="fbe1677d-d5b9-4445-a812-db5dd2955c1f"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="1cc2bbd1-95a6-4767-8675-33f1b4783b6a"
+                  name="output"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="c1f0fb55-a698-4d7b-9d60-7b8b997e6cd3"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FTobias%2FDocuments%2FGitHub%2Fcontroller-design%2FLive_Tuner%2FLive_Tuner%2Fbin%2FDebug%2FReglerTestWPF.exe Namespace%3Dcontroller_design.WPF Type%3DMainWindow Member%3D(Name%3DBase_Slider_IT1_Ti_value_changed OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DSingle)]) ParameterIdentifier%3Doutput"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="e9a44953-28af-43fe-ad09-1625dced5859"
+                      LastKnownName="Single"
+                      LastKnownLocation="Package2_1441.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="10e7127e-5282-4618-bfc8-dc343f680329"
+            name="Base_Slider_I_Ti_value_changed"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="ab655158-004f-4274-b90d-94bcc12a68cc"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FTobias%2FDocuments%2FGitHub%2Fcontroller-design%2FLive_Tuner%2FLive_Tuner%2Fbin%2FDebug%2FReglerTestWPF.exe Namespace%3Dcontroller_design.WPF Type%3DMainWindow Member%3D(Name%3DBase_Slider_I_Ti_value_changed OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DSingle)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="d28d1c87-4f7b-460a-9d10-9e6422e6aa16"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="456483f3-3a4d-40fa-9657-a4a74cec25a0">
+                    <propertyInstance
+                      Id="3a1cd916-4875-4488-95cf-8522f7160840"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="10039093-c58a-4382-a892-5d0d0b47d09d">
+                    <propertyInstance
+                      Id="97e33e91-55ae-40b6-bb01-334f93bfa0d4"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bf8fef6d-e117-4e0f-a8a7-6f5c2436cdef">
+                    <propertyInstance
+                      Id="cf1ffa46-6a7a-4bfc-be52-67bd7eed4ece"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e2b07c59-8f5b-4926-b505-b2a4c06395ee">
+                    <propertyInstance
+                      Id="7c030c35-dff3-4081-b0c2-f35da0b2f027"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="aab444a3-57f1-45d6-92d3-0db1be1633f4">
+                    <propertyInstance
+                      Id="15db8db1-58c1-4c28-bb71-c13b677c32be"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2db7295d-3070-4d7c-aef3-41f91085067f">
+                    <propertyInstance
+                      Id="0253ff03-1233-4de3-9f00-4b6b0179d08e"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="175f338c-19f4-4bad-a91a-7e32a8c41c8c"
+                  name="output"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="4b518dab-fd1a-4b39-bf10-cc0a4bdddbde"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FTobias%2FDocuments%2FGitHub%2Fcontroller-design%2FLive_Tuner%2FLive_Tuner%2Fbin%2FDebug%2FReglerTestWPF.exe Namespace%3Dcontroller_design.WPF Type%3DMainWindow Member%3D(Name%3DBase_Slider_I_Ti_value_changed OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DSingle)]) ParameterIdentifier%3Doutput"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="e9a44953-28af-43fe-ad09-1625dced5859"
+                      LastKnownName="Single"
+                      LastKnownLocation="Package2_1441.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="bfa80e29-d4cb-42ab-8730-584f7f91b170"
+            name="Base_Slider_PI_Tn_value_changed"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="b4d9ff32-af22-44ba-96be-6751129e56f8"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FTobias%2FDocuments%2FGitHub%2Fcontroller-design%2FLive_Tuner%2FLive_Tuner%2Fbin%2FDebug%2FReglerTestWPF.exe Namespace%3Dcontroller_design.WPF Type%3DMainWindow Member%3D(Name%3DBase_Slider_PI_Tn_value_changed OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DSingle)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="6e377802-8db7-44b6-9793-cd6bcb089fd6"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="793a64e5-d104-4b00-82ed-8036db8f400a">
+                    <propertyInstance
+                      Id="0e248e81-fe14-49dc-9510-58fd36ff20ea"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="74d339f9-6a0a-4e65-815f-5895d4f2331e">
+                    <propertyInstance
+                      Id="77605d01-c27e-47da-9f73-2ebeb7779f27"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2f8c912a-450a-46a1-9868-5bfe1a86738a">
+                    <propertyInstance
+                      Id="23d65c0d-dea0-469c-92a9-2240bf6e7ea4"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a24f8b0d-f64c-40cf-8959-cbfd7045203e">
+                    <propertyInstance
+                      Id="072b4b2e-8060-4d4c-aae0-f0e62945b4ed"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2db50846-9142-4b77-925c-7153ddf61bfe">
+                    <propertyInstance
+                      Id="348dbbf0-2631-4414-8f40-942a29ea5654"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5c3faacb-dc52-418b-8675-7e08eb8705b5">
+                    <propertyInstance
+                      Id="16446ccb-41fd-4475-bbe2-5651c981feac"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="d9adddee-28af-4154-bac8-439d2ee22329"
+                  name="output"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="393e2a5d-b7a1-441f-ac54-bb2d1e0051d4"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FTobias%2FDocuments%2FGitHub%2Fcontroller-design%2FLive_Tuner%2FLive_Tuner%2Fbin%2FDebug%2FReglerTestWPF.exe Namespace%3Dcontroller_design.WPF Type%3DMainWindow Member%3D(Name%3DBase_Slider_PI_Tn_value_changed OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DSingle)]) ParameterIdentifier%3Doutput"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="e9a44953-28af-43fe-ad09-1625dced5859"
+                      LastKnownName="Single"
+                      LastKnownLocation="Package2_1441.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="6230b76f-9d4f-476d-8e43-811623a55e1b"
+            name="Base_Slider_PI_Vr_value_changed"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="a31110f5-ceb6-4901-b349-de4fbe99cd0f"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FTobias%2FDocuments%2FGitHub%2Fcontroller-design%2FLive_Tuner%2FLive_Tuner%2Fbin%2FDebug%2FReglerTestWPF.exe Namespace%3Dcontroller_design.WPF Type%3DMainWindow Member%3D(Name%3DBase_Slider_PI_Vr_value_changed OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DSingle)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="f270883a-fd0a-4859-9e71-189e47071a78"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="33e730f7-53e9-4fea-8672-cc9858587c22">
+                    <propertyInstance
+                      Id="a0f9a1af-cf3a-4b4d-a1ad-b607efa96b40"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9ce17aea-5fcd-4c0a-95fa-6ae9783221a2">
+                    <propertyInstance
+                      Id="ac3a3146-b387-4ee3-a23b-00435634d2e3"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f8eb56ef-c387-422f-9aad-4ae25454c1f8">
+                    <propertyInstance
+                      Id="d0ed0239-ada1-45af-8aeb-37007f6bd7e1"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c360aaf4-475b-43bb-9f27-16bd04e3676c">
+                    <propertyInstance
+                      Id="3333c668-528f-45bb-8795-0661b05caaa9"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c9d71a4d-2581-4f3c-a197-a122549d2703">
+                    <propertyInstance
+                      Id="b7d543b2-3101-4e16-ba40-f226d6814e5e"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bb699f3b-9887-4d72-a22d-e147c78ec2de">
+                    <propertyInstance
+                      Id="3458403e-47b8-4a54-9b48-39c71449605c"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="d4104698-f862-419a-9d07-3cb4d1d784fb"
+                  name="output"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="66e735f3-54df-44ea-a1a5-c82be47ad4bb"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FTobias%2FDocuments%2FGitHub%2Fcontroller-design%2FLive_Tuner%2FLive_Tuner%2Fbin%2FDebug%2FReglerTestWPF.exe Namespace%3Dcontroller_design.WPF Type%3DMainWindow Member%3D(Name%3DBase_Slider_PI_Vr_value_changed OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DSingle)]) ParameterIdentifier%3Doutput"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="e9a44953-28af-43fe-ad09-1625dced5859"
+                      LastKnownName="Single"
+                      LastKnownLocation="Package2_1441.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="451f27e3-00eb-42a5-b25e-34e63d711eab"
+            name="Base_Slider_PT1_T1_value_changed"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="0a67429e-e169-4898-a292-2e585094c8a7"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FTobias%2FDocuments%2FGitHub%2Fcontroller-design%2FLive_Tuner%2FLive_Tuner%2Fbin%2FDebug%2FReglerTestWPF.exe Namespace%3Dcontroller_design.WPF Type%3DMainWindow Member%3D(Name%3DBase_Slider_PT1_T1_value_changed OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DSingle)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="696c7ec8-1df8-496d-a770-0a244969766a"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f7b3a499-2824-4fad-a53e-75e5886b4279">
+                    <propertyInstance
+                      Id="e9f69a23-9772-41f9-af07-c582c65e47e8"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e6d909a5-07e7-4991-9131-9853e7b3c8e8">
+                    <propertyInstance
+                      Id="a13ee15b-7355-44b2-aaa8-18d6bfaa152d"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3a1a54c5-cbd2-4f79-9ccd-b424ce142725">
+                    <propertyInstance
+                      Id="3e217866-34df-4d71-bf02-a64c1ecf196f"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="19e3b106-85ef-4424-a24f-984afa111e8d">
+                    <propertyInstance
+                      Id="fb58bd07-b520-47e1-b0e8-a50cce21323c"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="54b8055d-c103-459d-858b-e54b39ed0efd">
+                    <propertyInstance
+                      Id="9c2bb8da-f1a3-4cde-a00e-d4d8bcc40676"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="925297a9-0073-4829-b5e1-58892cd030db">
+                    <propertyInstance
+                      Id="2eaddc47-bde9-48ee-b588-5af59188386e"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="c364906e-85f9-4688-ad90-59fc7b692e85"
+                  name="output"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="291e9d36-0e07-4b35-ac1f-0dc7ccccbdb9"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FTobias%2FDocuments%2FGitHub%2Fcontroller-design%2FLive_Tuner%2FLive_Tuner%2Fbin%2FDebug%2FReglerTestWPF.exe Namespace%3Dcontroller_design.WPF Type%3DMainWindow Member%3D(Name%3DBase_Slider_PT1_T1_value_changed OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DSingle)]) ParameterIdentifier%3Doutput"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="e9a44953-28af-43fe-ad09-1625dced5859"
+                      LastKnownName="Single"
+                      LastKnownLocation="Package2_1441.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="945f36f9-986e-4e53-8827-4f7500d69291"
+            name="Base_Slider_PT1_Vs_value_changed"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="c0c62df4-f1b1-446d-959e-02e3d86d0fea"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FTobias%2FDocuments%2FGitHub%2Fcontroller-design%2FLive_Tuner%2FLive_Tuner%2Fbin%2FDebug%2FReglerTestWPF.exe Namespace%3Dcontroller_design.WPF Type%3DMainWindow Member%3D(Name%3DBase_Slider_PT1_Vs_value_changed OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DSingle)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="5db70df2-74fa-439f-998c-93318b849e61"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a620d83e-bc3c-447d-8f5c-a64978891c85">
+                    <propertyInstance
+                      Id="3251c526-e90e-4f3b-83fa-9bbb2f2f703e"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6c833ade-28d4-4993-9817-29cae101bc67">
+                    <propertyInstance
+                      Id="3cd25023-2790-4865-9b08-ea897cd3e7b9"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d744be86-533c-47b5-b53d-47b441bd5323">
+                    <propertyInstance
+                      Id="4cd46232-bb04-4d91-893a-4e77f3b4f2dd"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5cf0edb2-8178-4982-bd68-a0c1c72d72a6">
+                    <propertyInstance
+                      Id="a3fb7595-b515-4d2a-bd47-dea2a7d407dc"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e758b941-1587-40f8-9043-2b4a5b9b38f0">
+                    <propertyInstance
+                      Id="70a495be-9361-44c5-a00f-4f4f952dea29"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0dca078a-ad3d-4c2c-89e9-afee1c5b7bcd">
+                    <propertyInstance
+                      Id="a93bf405-900c-46ee-9881-2c885a8ef47d"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="f7468c29-1eab-41bc-997b-946593b2d36b"
+                  name="output"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="095f0781-fb86-4016-b7a0-e340d65e0b64"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FTobias%2FDocuments%2FGitHub%2Fcontroller-design%2FLive_Tuner%2FLive_Tuner%2Fbin%2FDebug%2FReglerTestWPF.exe Namespace%3Dcontroller_design.WPF Type%3DMainWindow Member%3D(Name%3DBase_Slider_PT1_Vs_value_changed OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DSingle)]) ParameterIdentifier%3Doutput"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="e9a44953-28af-43fe-ad09-1625dced5859"
+                      LastKnownName="Single"
+                      LastKnownLocation="Package2_1441.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="540c8eaf-ab3c-4027-abb4-a0983e3c173d"
+            name="Base_Slider_PT2_wdb1_T1_value_changed"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="fe29ecd4-6a6c-4c73-b253-7e4243a93449"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FTobias%2FDocuments%2FGitHub%2Fcontroller-design%2FLive_Tuner%2FLive_Tuner%2Fbin%2FDebug%2FReglerTestWPF.exe Namespace%3Dcontroller_design.WPF Type%3DMainWindow Member%3D(Name%3DBase_Slider_PT2_wdb1_T1_value_changed OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DSingle)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="d2e5adc7-6328-4954-9f9c-8a70fd80535c"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="57a521da-9305-4ee2-b244-51eed32c1215">
+                    <propertyInstance
+                      Id="fa5fe720-1076-49ee-b176-1faf3f33cda4"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5a560be0-bef6-4a0a-95f0-08c782375eaa">
+                    <propertyInstance
+                      Id="3532007f-9032-4843-9577-38d505423c99"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0ea5420d-4dc4-4a77-a4cf-9fb81e1ed39f">
+                    <propertyInstance
+                      Id="59b50123-551c-4ddc-ab22-ac8baf6c84d6"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="16192344-7523-47e3-a2a2-6dfd9a71a1bb">
+                    <propertyInstance
+                      Id="79479fbd-d706-4e66-9009-c11a612628f5"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f2081af8-80dc-44db-ae2d-7b7ddd464f6d">
+                    <propertyInstance
+                      Id="74a4087c-1d32-4ea9-9c2b-5a36238f3ed4"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c7373cfb-9d8d-4dcd-97e7-d6e8489052d4">
+                    <propertyInstance
+                      Id="e9f0b06d-d26c-45b3-b343-f2ffda3e6191"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="6c23e433-34ac-4b68-a627-b6c75c70a9db"
+                  name="output"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="29e2a75c-ae1c-4a6c-aa89-8aaff8d8a210"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FTobias%2FDocuments%2FGitHub%2Fcontroller-design%2FLive_Tuner%2FLive_Tuner%2Fbin%2FDebug%2FReglerTestWPF.exe Namespace%3Dcontroller_design.WPF Type%3DMainWindow Member%3D(Name%3DBase_Slider_PT2_wdb1_T1_value_changed OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DSingle)]) ParameterIdentifier%3Doutput"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="e9a44953-28af-43fe-ad09-1625dced5859"
+                      LastKnownName="Single"
+                      LastKnownLocation="Package2_1441.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="6e3c6884-d5d5-44f3-9b1c-f816693c9462"
+            name="Base_Slider_PT2_wdb1_T2_value_changed"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="f5dd8599-31cd-4441-81a9-a91e99918db6"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FTobias%2FDocuments%2FGitHub%2Fcontroller-design%2FLive_Tuner%2FLive_Tuner%2Fbin%2FDebug%2FReglerTestWPF.exe Namespace%3Dcontroller_design.WPF Type%3DMainWindow Member%3D(Name%3DBase_Slider_PT2_wdb1_T2_value_changed OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DSingle)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="b3b018e1-0125-464b-b442-c69481e1682c"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d70f59e5-e07a-4ba3-a3c9-cff31aa52cb4">
+                    <propertyInstance
+                      Id="0625ee2c-1e55-457b-b50f-141876fb9704"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8c23793a-868f-4c46-9af8-333047dbc79b">
+                    <propertyInstance
+                      Id="ff828a36-d6ce-40b8-bdd3-b437707a9b2a"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5778a354-e823-444f-a737-b1a88d212548">
+                    <propertyInstance
+                      Id="e298cef6-a92c-44ee-a60d-d1a8efd02f4b"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="44cc284e-c035-41f4-b0c1-936a56befb4e">
+                    <propertyInstance
+                      Id="fcd6da7a-6928-471f-b171-db75590b31cb"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="42f397c1-0b9a-472c-aaeb-ea80a8f1b658">
+                    <propertyInstance
+                      Id="22c1d33f-c4d4-4406-a729-e2c8f247c359"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f3044677-7353-4aa1-a5ef-330a7bc5081f">
+                    <propertyInstance
+                      Id="be92450b-6d36-49c7-9a98-2ece057e48aa"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="67d67fdc-e035-46dd-9896-6699163b1f21"
+                  name="output"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="039e4fad-65fb-42ba-9856-f81463953c3c"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FTobias%2FDocuments%2FGitHub%2Fcontroller-design%2FLive_Tuner%2FLive_Tuner%2Fbin%2FDebug%2FReglerTestWPF.exe Namespace%3Dcontroller_design.WPF Type%3DMainWindow Member%3D(Name%3DBase_Slider_PT2_wdb1_T2_value_changed OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DSingle)]) ParameterIdentifier%3Doutput"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="e9a44953-28af-43fe-ad09-1625dced5859"
+                      LastKnownName="Single"
+                      LastKnownLocation="Package2_1441.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="ee35f9c3-cce5-4fa4-9ce1-2e9c27fb87d0"
+            name="Base_Slider_PT2_wdb1_Vs_value_changed"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="0b80068f-2856-4696-ab8e-e9dee67de345"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FTobias%2FDocuments%2FGitHub%2Fcontroller-design%2FLive_Tuner%2FLive_Tuner%2Fbin%2FDebug%2FReglerTestWPF.exe Namespace%3Dcontroller_design.WPF Type%3DMainWindow Member%3D(Name%3DBase_Slider_PT2_wdb1_Vs_value_changed OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DSingle)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="5e367095-4326-45e6-b42e-2ca048081efb"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4a89df3f-8b54-4a86-98ad-98f5e75d616e">
+                    <propertyInstance
+                      Id="ede48ed1-c4b9-45f7-90f9-a0f19cd1ac63"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="cd5b975d-43bf-40aa-86d2-324f1ff98b0c">
+                    <propertyInstance
+                      Id="8999b119-b7f9-417c-a3de-c12798f0bc7a"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1b2c3ede-ce71-4ace-9393-99eeaf153c5b">
+                    <propertyInstance
+                      Id="6b88fd9d-c3c7-43a9-8a61-da300e2c9d8e"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d053b950-aec5-475b-97fc-eded30ffec4d">
+                    <propertyInstance
+                      Id="458e1083-d673-4615-82a1-1470bd963c7c"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="568cc125-9510-463c-a407-24353074df9b">
+                    <propertyInstance
+                      Id="b5a77f4f-f661-4f9a-98a5-adba0f495c9f"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="86e2fd8a-889b-49c9-93f0-5de8266e51a0">
+                    <propertyInstance
+                      Id="7146f897-0059-4072-8bdb-ba354bc1e5c9"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="8abc68c5-40c1-4569-b5f6-102f97e3b2c3"
+                  name="output"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="a09cc905-60e4-4cac-bec9-d1a405ff21a6"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FTobias%2FDocuments%2FGitHub%2Fcontroller-design%2FLive_Tuner%2FLive_Tuner%2Fbin%2FDebug%2FReglerTestWPF.exe Namespace%3Dcontroller_design.WPF Type%3DMainWindow Member%3D(Name%3DBase_Slider_PT2_wdb1_Vs_value_changed OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DSingle)]) ParameterIdentifier%3Doutput"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="e9a44953-28af-43fe-ad09-1625dced5859"
+                      LastKnownName="Single"
+                      LastKnownLocation="Package2_1441.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="f79ed925-403b-4fa7-b9e8-4ceca04f46e9"
+            name="Base_Slider_PT2_wdse1_T_value_changed"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="b79cac43-3e76-4305-b861-69982c3b4dea"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FTobias%2FDocuments%2FGitHub%2Fcontroller-design%2FLive_Tuner%2FLive_Tuner%2Fbin%2FDebug%2FReglerTestWPF.exe Namespace%3Dcontroller_design.WPF Type%3DMainWindow Member%3D(Name%3DBase_Slider_PT2_wdse1_T_value_changed OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DSingle)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="a7669a66-9a56-4192-8fd3-48482a5328d2"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d8250429-051d-4889-aeb5-d94ccb878262">
+                    <propertyInstance
+                      Id="63ab19de-a2c8-4d01-b3a8-36bc62dc07f6"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8daf526a-b219-4612-b920-737938676974">
+                    <propertyInstance
+                      Id="b6fbad20-ae1b-4067-b9f8-0dc0c2efa50a"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="41687423-97da-4e3f-ac4c-43561f6bcf9d">
+                    <propertyInstance
+                      Id="aa7520ce-c931-47e2-a4a3-d9e1488a0254"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="979e8851-fcaa-427d-b0de-d3aa72a38944">
+                    <propertyInstance
+                      Id="cf2bac95-908f-47e2-9f0e-db08566a0afc"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="36da530a-0f91-4017-a92d-32fd04497068">
+                    <propertyInstance
+                      Id="c0349d37-adf3-43dd-a31c-7f0da4972350"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6e8b9764-25aa-46b9-80df-a74a5e35cd5a">
+                    <propertyInstance
+                      Id="1ad78ade-3d6d-449b-81e0-4719dd0178a3"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="69389338-ba63-4b08-88d6-fc31a317ec16"
+                  name="output"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="d4cf4142-74a6-48ed-b12b-a64ec40b31d0"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FTobias%2FDocuments%2FGitHub%2Fcontroller-design%2FLive_Tuner%2FLive_Tuner%2Fbin%2FDebug%2FReglerTestWPF.exe Namespace%3Dcontroller_design.WPF Type%3DMainWindow Member%3D(Name%3DBase_Slider_PT2_wdse1_T_value_changed OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DSingle)]) ParameterIdentifier%3Doutput"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="e9a44953-28af-43fe-ad09-1625dced5859"
+                      LastKnownName="Single"
+                      LastKnownLocation="Package2_1441.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="819b0a05-2896-41c3-a672-6b4de8a811e0"
+            name="Base_Slider_PT2_wdse1_Vs_value_changed"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="bbc134ce-32b9-4a9f-b4ca-893aab711d51"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FTobias%2FDocuments%2FGitHub%2Fcontroller-design%2FLive_Tuner%2FLive_Tuner%2Fbin%2FDebug%2FReglerTestWPF.exe Namespace%3Dcontroller_design.WPF Type%3DMainWindow Member%3D(Name%3DBase_Slider_PT2_wdse1_Vs_value_changed OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DSingle)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="7b2629f3-17e3-476c-8695-0bcef98581e1"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0951d514-2288-4fb0-8b8c-708c70c1cada">
+                    <propertyInstance
+                      Id="b6e23393-29b0-4cfa-a5d4-9e7c1be494b3"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="de087ccb-9e06-4fbd-ada0-9c1a6a10421f">
+                    <propertyInstance
+                      Id="80d28cf8-c31b-4cf2-a928-11dbb74430d1"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e72804ec-d920-40ab-8840-90d745f6afc3">
+                    <propertyInstance
+                      Id="b3eda968-c71f-4482-971b-58d905a7b495"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="111ebb88-0cd2-4a1d-89a1-1e87a2cc2730">
+                    <propertyInstance
+                      Id="34592ce8-4540-4531-9b78-8479697c9e72"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fd217066-0fe0-40ec-b17a-a15763608000">
+                    <propertyInstance
+                      Id="07e6c054-bef6-4a96-9981-e29bc10d6d7c"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ac42b3d4-5439-421a-8f9f-2e3706875fac">
+                    <propertyInstance
+                      Id="41339913-fbab-45e6-9d60-fb03e63e5e96"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="d95dfb94-7390-4c2c-9944-72414a9a4c5c"
+                  name="output"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="22a66d18-3283-41ff-89bd-50180686aefd"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FTobias%2FDocuments%2FGitHub%2Fcontroller-design%2FLive_Tuner%2FLive_Tuner%2Fbin%2FDebug%2FReglerTestWPF.exe Namespace%3Dcontroller_design.WPF Type%3DMainWindow Member%3D(Name%3DBase_Slider_PT2_wdse1_Vs_value_changed OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DSingle)]) ParameterIdentifier%3Doutput"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="e9a44953-28af-43fe-ad09-1625dced5859"
+                      LastKnownName="Single"
+                      LastKnownLocation="Package2_1441.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="bdeb2e77-921b-4b9d-9a52-a54f04e9983b"
+            name="Base_Slider_PT2_wdse1_d_value_changed"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="a9793962-3733-4c3d-a5ba-25687bba09c2"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FTobias%2FDocuments%2FGitHub%2Fcontroller-design%2FLive_Tuner%2FLive_Tuner%2Fbin%2FDebug%2FReglerTestWPF.exe Namespace%3Dcontroller_design.WPF Type%3DMainWindow Member%3D(Name%3DBase_Slider_PT2_wdse1_d_value_changed OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DSingle)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="47207385-2f48-44bb-b93f-903bce203be7"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="074b22a0-faff-45f8-a0ca-aae47a02f029">
+                    <propertyInstance
+                      Id="8b7b4018-9377-41cb-99ee-fb96b4f28e22"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="acab5d1f-4f32-40cf-a1a0-abcc5854e346">
+                    <propertyInstance
+                      Id="911b0991-5177-48d6-b07d-cf07251f2316"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e2ca1674-8118-462f-adca-1fc35723d478">
+                    <propertyInstance
+                      Id="01ba374c-ebb2-43a5-a0ef-4df6d83153ef"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4854c487-6cfd-4521-b489-8499f87aa44d">
+                    <propertyInstance
+                      Id="f2a96c43-35f9-4a96-afe4-eccd76a2e56e"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="215c9017-0b1b-45a8-a777-f895b00e3373">
+                    <propertyInstance
+                      Id="01c7c8f4-678c-41d5-b773-1a7c47e6bfa0"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c144c127-44e8-449d-b5de-3afa6a06f377">
+                    <propertyInstance
+                      Id="fb742102-2f6e-40ae-8833-f9ec31189a18"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="72769201-6b22-4de4-914a-4adc8d1136b6"
+                  name="output"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="5011b7a8-3ddd-4341-8d68-154df688812e"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FTobias%2FDocuments%2FGitHub%2Fcontroller-design%2FLive_Tuner%2FLive_Tuner%2Fbin%2FDebug%2FReglerTestWPF.exe Namespace%3Dcontroller_design.WPF Type%3DMainWindow Member%3D(Name%3DBase_Slider_PT2_wdse1_d_value_changed OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DSingle)]) ParameterIdentifier%3Doutput"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="e9a44953-28af-43fe-ad09-1625dced5859"
+                      LastKnownName="Single"
+                      LastKnownLocation="Package2_1441.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="e6de5127-dce8-4a5b-8265-4462f16a16de"
+            name="Base_Slider_P_Vr_value_changed"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="3244378f-68df-40d4-896e-1f4df2057fb0"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FTobias%2FDocuments%2FGitHub%2Fcontroller-design%2FLive_Tuner%2FLive_Tuner%2Fbin%2FDebug%2FReglerTestWPF.exe Namespace%3Dcontroller_design.WPF Type%3DMainWindow Member%3D(Name%3DBase_Slider_P_Vr_value_changed OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DSingle)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="1fee675a-b272-45b8-b4b8-7313637c299e"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2315e58b-4de7-42c8-b5bc-5d52736a06a1">
+                    <propertyInstance
+                      Id="bafc5e73-d42e-43ae-b2be-2184bd788188"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4edc8e9e-e49b-42ad-a0cd-329a41a82353">
+                    <propertyInstance
+                      Id="0f148dff-da1b-49e0-a754-267d33e6ea2b"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d74be7e0-636f-4635-837e-a4aac74be169">
+                    <propertyInstance
+                      Id="d29fad00-3bbc-4799-873e-64c67e165f30"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5e2bc8de-d460-4b66-99b9-74df6cb8ed29">
+                    <propertyInstance
+                      Id="4cf88f13-28ab-47ec-89d1-ba2973a8ac20"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="60f046b7-d4ea-49bb-883e-c3407086a4c5">
+                    <propertyInstance
+                      Id="e7d5a66a-bbcf-42c9-b8c0-422a0d202b76"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="036255a2-801a-4ccd-9f4b-d70bb3c042a5">
+                    <propertyInstance
+                      Id="6553812b-a746-473e-a2d5-99da465c3a60"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="5044deac-bdff-407a-93c9-254c834b4bb2"
+                  name="output"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="31855fd3-3c81-4d8a-9786-07ad5f36c8d0"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FTobias%2FDocuments%2FGitHub%2Fcontroller-design%2FLive_Tuner%2FLive_Tuner%2Fbin%2FDebug%2FReglerTestWPF.exe Namespace%3Dcontroller_design.WPF Type%3DMainWindow Member%3D(Name%3DBase_Slider_P_Vr_value_changed OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DSingle)]) ParameterIdentifier%3Doutput"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="e9a44953-28af-43fe-ad09-1625dced5859"
+                      LastKnownName="Single"
+                      LastKnownLocation="Package2_1441.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="d75fb9aa-e9f4-466e-aed7-d5df575cd86a"
+            name="Base_Slider_St_Tz_value_changed"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="02e9ffce-d008-4543-9282-3e2c4e56a1eb"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FTobias%2FDocuments%2FGitHub%2Fcontroller-design%2FLive_Tuner%2FLive_Tuner%2Fbin%2FDebug%2FReglerTestWPF.exe Namespace%3Dcontroller_design.WPF Type%3DMainWindow Member%3D(Name%3DBase_Slider_St_Tz_value_changed OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DSingle)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="e9264b7f-780c-482a-a98f-d79199a111c6"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="68912bd2-84ad-4551-9112-5568ec861bd2">
+                    <propertyInstance
+                      Id="a08e8098-180e-4e6e-9bc3-4e430254cfd3"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9ed25402-6245-4b77-aa12-85f5b0b71b7c">
+                    <propertyInstance
+                      Id="593d7300-474c-4b74-aac6-763e91337856"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="df3a71c5-fa4a-455c-9512-50af60dcf13d">
+                    <propertyInstance
+                      Id="c756c895-c8ef-4921-8ee9-056a29830e42"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="cd45a9fa-d22d-46a4-a6fe-4d2a84b6760f">
+                    <propertyInstance
+                      Id="56a544c8-d647-4341-ba85-2c0cee40c100"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="34fcd80b-ca35-47a1-b1bc-7ac6fc69ae42">
+                    <propertyInstance
+                      Id="924a8f5b-556a-491d-9cfe-b116a65f9f70"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="80fc1267-2e54-4a3b-be21-e33dc864628b">
+                    <propertyInstance
+                      Id="3aa101a2-c4f3-4b02-aa07-e671ca328ebf"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="ec9b031b-36f2-416f-97e3-279cd31926bd"
+                  name="output"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="5779b673-2ccc-4432-a00c-6452b0abfaa5"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FTobias%2FDocuments%2FGitHub%2Fcontroller-design%2FLive_Tuner%2FLive_Tuner%2Fbin%2FDebug%2FReglerTestWPF.exe Namespace%3Dcontroller_design.WPF Type%3DMainWindow Member%3D(Name%3DBase_Slider_St_Tz_value_changed OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DSingle)]) ParameterIdentifier%3Doutput"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="e9a44953-28af-43fe-ad09-1625dced5859"
+                      LastKnownName="Single"
+                      LastKnownLocation="Package2_1441.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="07882584-dff7-43f2-9dab-1d800b5f64a4"
+            name="Base_Slider_St_Vz_value_changed"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="4c475e4a-9976-45b6-b47b-bc6c4f8b3179"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FTobias%2FDocuments%2FGitHub%2Fcontroller-design%2FLive_Tuner%2FLive_Tuner%2Fbin%2FDebug%2FReglerTestWPF.exe Namespace%3Dcontroller_design.WPF Type%3DMainWindow Member%3D(Name%3DBase_Slider_St_Vz_value_changed OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DSingle)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="28de5033-a2ca-4958-9db5-f103b837c2a2"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c21a9f2c-d7e6-488e-bbf8-1ccc15ffb8c2">
+                    <propertyInstance
+                      Id="86db536e-c930-43ca-95e5-870e3d99b389"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d58335c3-a874-4246-afb2-ade1fa174dfd">
+                    <propertyInstance
+                      Id="637dd096-3b40-48d8-971a-36997eb7240e"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a5669082-77eb-4b67-8ece-80c4257025c0">
+                    <propertyInstance
+                      Id="4da4ec07-439f-40b6-beef-6f817e25b6db"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="aad3530d-b181-497a-92bc-6ff98d95cc55">
+                    <propertyInstance
+                      Id="255e5ed9-c70a-4c9f-af5f-6234549f8b1d"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6b970125-aa2b-4241-a043-93a149fdf2c1">
+                    <propertyInstance
+                      Id="34ac5498-d642-451f-b909-b86b3512bc06"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="206babeb-2146-4ca2-b076-b94577cd3576">
+                    <propertyInstance
+                      Id="83be645b-1376-47d0-aeff-0fb3bd281372"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="3238a2f2-a004-4d68-b212-6ec06a2e3956"
+                  name="output"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="08128413-a34d-4122-a147-68f64521a448"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FTobias%2FDocuments%2FGitHub%2Fcontroller-design%2FLive_Tuner%2FLive_Tuner%2Fbin%2FDebug%2FReglerTestWPF.exe Namespace%3Dcontroller_design.WPF Type%3DMainWindow Member%3D(Name%3DBase_Slider_St_Vz_value_changed OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DSingle)]) ParameterIdentifier%3Doutput"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="e9a44953-28af-43fe-ad09-1625dced5859"
+                      LastKnownName="Single"
+                      LastKnownLocation="Package2_1441.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="42220b29-5a15-494c-bb71-4744a4f06f4d"
+            name="CheckBox_LivePlotOn_Checked"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="d77aaf9d-392c-468a-8a7b-b26d67e22c0b"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FTobias%2FDocuments%2FGitHub%2Fcontroller-design%2FLive_Tuner%2FLive_Tuner%2Fbin%2FDebug%2FReglerTestWPF.exe Namespace%3Dcontroller_design.WPF Type%3DMainWindow Member%3D(Name%3DCheckBox_LivePlotOn_Checked OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FPresentationCore.dll&quot; Namespace%3DSystem.Windows Type%3DRoutedEventArgs)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="17d5ac3a-8911-449d-84ed-211965da38a5"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3803b55d-1232-4c63-8046-a633150635cb">
+                    <propertyInstance
+                      Id="acce4616-4e71-4945-a00a-1d52cd3aa280"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b8989d5b-cedf-4061-ae00-dc15882197a2">
+                    <propertyInstance
+                      Id="1d50190f-e66c-4e81-8f60-12015dd37a9d"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4fa56ba6-fa44-4cb7-b1ef-581c2a67a592">
+                    <propertyInstance
+                      Id="30b9667a-d3fa-4813-83ab-aeb6e5329232"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fffcd45c-0e09-4d12-a49d-ddcf849382a8">
+                    <propertyInstance
+                      Id="8c7c5252-4322-49ed-bf60-8cc5be07b89e"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0682fc00-35ac-4c6b-afb8-e882d14b6da5">
+                    <propertyInstance
+                      Id="301c52b2-edea-41ab-bab5-9cc3cf5d34fd"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7769702a-28a8-4971-9ecf-0ffb4f9a1506">
+                    <propertyInstance
+                      Id="74632b5f-8a6d-4c9a-aeb8-2468196feb41"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="050973b3-3564-4542-bab5-03b226ec9755"
+                  name="sender"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="ddf5c97a-3c13-4f85-846f-774286e28a94"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FTobias%2FDocuments%2FGitHub%2Fcontroller-design%2FLive_Tuner%2FLive_Tuner%2Fbin%2FDebug%2FReglerTestWPF.exe Namespace%3Dcontroller_design.WPF Type%3DMainWindow Member%3D(Name%3DCheckBox_LivePlotOn_Checked OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FPresentationCore.dll&quot; Namespace%3DSystem.Windows Type%3DRoutedEventArgs)]) ParameterIdentifier%3Dsender"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="7736305b-1a70-4664-91a7-b6571d1bbf07"
+                      LastKnownName="Object"
+                      LastKnownLocation="Package2_1441.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="4d9d92a3-c477-4279-9e0a-dc54deb13e85"
+                  name="e"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="93dff741-a1b8-4ebc-b70c-721dfedbdd5b"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FTobias%2FDocuments%2FGitHub%2Fcontroller-design%2FLive_Tuner%2FLive_Tuner%2Fbin%2FDebug%2FReglerTestWPF.exe Namespace%3Dcontroller_design.WPF Type%3DMainWindow Member%3D(Name%3DCheckBox_LivePlotOn_Checked OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FPresentationCore.dll&quot; Namespace%3DSystem.Windows Type%3DRoutedEventArgs)]) ParameterIdentifier%3De"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="2cf142ea-9b66-4e94-a778-ef3b2cf017f8"
+                      LastKnownName="RoutedEventArgs"
+                      LastKnownLocation="Package3_1542.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="752a06b5-351b-4f19-97b6-00f120607e84"
+            name="CheckBox_LivePlotOn_Unchecked"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="a4357be0-bd32-4b86-8282-25af4b3e8dee"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FTobias%2FDocuments%2FGitHub%2Fcontroller-design%2FLive_Tuner%2FLive_Tuner%2Fbin%2FDebug%2FReglerTestWPF.exe Namespace%3Dcontroller_design.WPF Type%3DMainWindow Member%3D(Name%3DCheckBox_LivePlotOn_Unchecked OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FPresentationCore.dll&quot; Namespace%3DSystem.Windows Type%3DRoutedEventArgs)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="f7d23810-78b4-41ea-8463-3acbd5dedd28"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a0868f44-1743-46c1-9c62-a649c85fa1aa">
+                    <propertyInstance
+                      Id="93515d9b-3473-4f89-97e2-b0a660595c5f"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fb30e796-8df4-4bff-8b0e-d78553098b2f">
+                    <propertyInstance
+                      Id="3a741c48-9ca6-47db-8b41-924e98c3de36"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="152e9e19-0cdc-4f91-878b-5e4b98aa9bf6">
+                    <propertyInstance
+                      Id="6c0f9114-dc0e-4068-a1b4-af090a02803f"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5f0d3e5d-d860-44db-8741-c25ded5872ae">
+                    <propertyInstance
+                      Id="022381b5-c125-40d1-996c-d1fc57ed1b9a"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a5371cd4-d9f0-4e53-9f23-d17d9b6a1b7b">
+                    <propertyInstance
+                      Id="c0633955-91c6-4ac7-8ea6-55beedb512d3"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6dcacf36-5995-444e-9134-1aa658b7de41">
+                    <propertyInstance
+                      Id="88857a73-04ea-48e9-b78f-d7281ac4ff31"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="7983d63c-761f-4caa-ab32-95151f555cd5"
+                  name="sender"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="467fa764-ed19-43d9-a8c7-b34b14dbff07"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FTobias%2FDocuments%2FGitHub%2Fcontroller-design%2FLive_Tuner%2FLive_Tuner%2Fbin%2FDebug%2FReglerTestWPF.exe Namespace%3Dcontroller_design.WPF Type%3DMainWindow Member%3D(Name%3DCheckBox_LivePlotOn_Unchecked OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FPresentationCore.dll&quot; Namespace%3DSystem.Windows Type%3DRoutedEventArgs)]) ParameterIdentifier%3Dsender"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="7736305b-1a70-4664-91a7-b6571d1bbf07"
+                      LastKnownName="Object"
+                      LastKnownLocation="Package2_1441.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="ed1a9525-9672-4c3d-92a6-0c757bcd76a9"
+                  name="e"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="d4d7a999-a887-455e-ae91-c94c1ed1a16d"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FTobias%2FDocuments%2FGitHub%2Fcontroller-design%2FLive_Tuner%2FLive_Tuner%2Fbin%2FDebug%2FReglerTestWPF.exe Namespace%3Dcontroller_design.WPF Type%3DMainWindow Member%3D(Name%3DCheckBox_LivePlotOn_Unchecked OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FPresentationCore.dll&quot; Namespace%3DSystem.Windows Type%3DRoutedEventArgs)]) ParameterIdentifier%3De"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="2cf142ea-9b66-4e94-a778-ef3b2cf017f8"
+                      LastKnownName="RoutedEventArgs"
+                      LastKnownLocation="Package3_1542.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="322f961a-ced2-4b4a-8dbf-6daa6845ddb3"
+            name="System‎.Windows‎.Markup‎.IComponentConnector‎.Connect"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="6df0dc46-7532-4d8d-ac8a-ccd32ded9654"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FTobias%2FDocuments%2FGitHub%2Fcontroller-design%2FLive_Tuner%2FLive_Tuner%2Fbin%2FDebug%2FReglerTestWPF.exe Namespace%3Dcontroller_design.WPF Type%3DMainWindow Member%3D(Name%3DSystem.Windows.Markup.IComponentConnector.Connect OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="a4942c8b-afae-4181-a231-3760561b2649"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="11f7994f-e3d6-4636-a827-3354481a151c">
+                    <propertyInstance
+                      Id="d5b15008-e9f7-488e-a27a-10ed00481c8b"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c86179fd-858a-4c0e-98db-aaf877fc6f80">
+                    <propertyInstance
+                      Id="e7bf3cc7-24d1-4a5b-958e-fefad7ef0e93"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="606aaa01-1c28-4b2e-856c-d17e69c43b0d">
+                    <propertyInstance
+                      Id="7478dd89-da81-4db2-b1e6-06752679b4ac"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="862e4e4b-34a6-4dda-a6b6-3d34739e387b">
+                    <propertyInstance
+                      Id="a2b844ea-7b09-4d7a-9a68-6f0aac5a25b4"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="208ddbe7-b441-4458-a8ab-9c092b9b4b5b">
+                    <propertyInstance
+                      Id="e1f1d6a0-d37a-4743-bd19-b9fa3e7ef135"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b059be3f-5099-4777-b401-a1d954b6b544">
+                    <propertyInstance
+                      Id="c9daab1d-a827-4722-b761-b166d7e83c21"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="dc3c599f-8b1a-4ba2-aa10-5855411d1b1c"
+                  name="connectionId"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="255f04ba-15a3-4467-8e72-1eca0fa08aa0"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FTobias%2FDocuments%2FGitHub%2Fcontroller-design%2FLive_Tuner%2FLive_Tuner%2Fbin%2FDebug%2FReglerTestWPF.exe Namespace%3Dcontroller_design.WPF Type%3DMainWindow Member%3D(Name%3DSystem.Windows.Markup.IComponentConnector.Connect OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)]) ParameterIdentifier%3DconnectionId"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                      LastKnownName="Integer"
+                      LastKnownLocation="ModelingProjectLiveTuner.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="a46f5502-c601-4da2-bfdd-700c95e3d206"
+                  name="target"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="6d32a6e0-ce85-4d1b-b839-96633e1259d7"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FTobias%2FDocuments%2FGitHub%2Fcontroller-design%2FLive_Tuner%2FLive_Tuner%2Fbin%2FDebug%2FReglerTestWPF.exe Namespace%3Dcontroller_design.WPF Type%3DMainWindow Member%3D(Name%3DSystem.Windows.Markup.IComponentConnector.Connect OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)]) ParameterIdentifier%3Dtarget"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="7736305b-1a70-4664-91a7-b6571d1bbf07"
+                      LastKnownName="Object"
+                      LastKnownLocation="Package2_1441.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="d54cd2e8-f03d-49c4-9a37-791ccca11275"
+            name="TabControl_Regler_SelectionChanged"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="3508c1f7-0b3b-4ee0-8d76-d21f04a60011"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FTobias%2FDocuments%2FGitHub%2Fcontroller-design%2FLive_Tuner%2FLive_Tuner%2Fbin%2FDebug%2FReglerTestWPF.exe Namespace%3Dcontroller_design.WPF Type%3DMainWindow Member%3D(Name%3DTabControl_Regler_SelectionChanged OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FPresentationFramework.dll&quot; Namespace%3DSystem.Windows.Controls Type%3DSelectionChangedEventArgs)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="9c2726ef-6484-4026-b17b-10799a496bb2"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f92725de-a6aa-4a98-9c07-683ee4228f7b">
+                    <propertyInstance
+                      Id="0106098b-ae72-4184-af49-9e222b336854"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fa3cee59-8125-49b3-8f2a-cfa72f03fa90">
+                    <propertyInstance
+                      Id="1206f2ad-32b8-4476-9403-39519c91efb6"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0b2a0602-7ea2-4cbb-ab79-e2ea2f14797a">
+                    <propertyInstance
+                      Id="afda01e3-4c73-43a2-961e-9f1f5a2b6fc4"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="62d5f5dd-e9d2-4522-99c1-4c5b94622fc0">
+                    <propertyInstance
+                      Id="6fc034d7-7cb8-470f-95dc-b89cf48513a3"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="109e6a74-a792-411c-9987-cc0acaefeacf">
+                    <propertyInstance
+                      Id="6f526ca6-f5be-4bf8-b03b-6d4cfc575faa"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e616625d-90eb-4a04-a04c-c526278e8dbc">
+                    <propertyInstance
+                      Id="2d0f9585-0c51-4040-825c-d65ea52a9928"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="04eb772b-cd50-438e-8255-aa3dc5c59b37"
+                  name="sender"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="4eb1c6b8-1bf8-4cb6-9b5f-0e419be12469"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FTobias%2FDocuments%2FGitHub%2Fcontroller-design%2FLive_Tuner%2FLive_Tuner%2Fbin%2FDebug%2FReglerTestWPF.exe Namespace%3Dcontroller_design.WPF Type%3DMainWindow Member%3D(Name%3DTabControl_Regler_SelectionChanged OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FPresentationFramework.dll&quot; Namespace%3DSystem.Windows.Controls Type%3DSelectionChangedEventArgs)]) ParameterIdentifier%3Dsender"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="7736305b-1a70-4664-91a7-b6571d1bbf07"
+                      LastKnownName="Object"
+                      LastKnownLocation="Package2_1441.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="23ac0a60-7aae-4c5b-9cab-98439f948b66"
+                  name="e"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="2880bf71-4a7e-43bc-bc3c-b768d5e1508c"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FTobias%2FDocuments%2FGitHub%2Fcontroller-design%2FLive_Tuner%2FLive_Tuner%2Fbin%2FDebug%2FReglerTestWPF.exe Namespace%3Dcontroller_design.WPF Type%3DMainWindow Member%3D(Name%3DTabControl_Regler_SelectionChanged OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FPresentationFramework.dll&quot; Namespace%3DSystem.Windows.Controls Type%3DSelectionChangedEventArgs)]) ParameterIdentifier%3De"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="bab28fef-b95e-486c-92b0-a06ea55d6a8e"
+                      LastKnownName="SelectionChangedEventArgs"
+                      LastKnownLocation="Package4_1542.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="af627e49-7ab8-43b7-9889-f2a3544067ce"
+            name="TabControl_Strecke_SelectionChanged"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="043e041a-b773-4c52-9672-c32192ab4ea5"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FTobias%2FDocuments%2FGitHub%2Fcontroller-design%2FLive_Tuner%2FLive_Tuner%2Fbin%2FDebug%2FReglerTestWPF.exe Namespace%3Dcontroller_design.WPF Type%3DMainWindow Member%3D(Name%3DTabControl_Strecke_SelectionChanged OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FPresentationFramework.dll&quot; Namespace%3DSystem.Windows.Controls Type%3DSelectionChangedEventArgs)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="5caec648-806f-4659-a328-ddfbf67b48fe"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d23d632b-b786-46c6-947d-6bd7ec2016ae">
+                    <propertyInstance
+                      Id="c7d2e3be-3161-42b4-92d5-a28824bbc987"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="300eaadf-2e31-43c5-b2d7-18c43d3adb47">
+                    <propertyInstance
+                      Id="dd1ba37b-28ea-46b7-8ff7-e185665f841a"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3544dfda-7e14-4bcf-868c-bb9640373ea8">
+                    <propertyInstance
+                      Id="ae67dd44-0555-459e-8207-d1f1dd9fe0f3"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3ff35ee2-8c45-404b-b9b3-32952264de5d">
+                    <propertyInstance
+                      Id="c81f7351-d7e9-4a3e-b944-7110a0dd18ba"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="43b19efb-34b0-4393-81e3-ced35ab8d02d">
+                    <propertyInstance
+                      Id="905887d3-e07d-4da9-a9c0-3e99b52da258"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="114f831a-7f93-4495-8274-f0223c0e646d">
+                    <propertyInstance
+                      Id="6b2cc75b-a0f4-4ac6-ac4d-010558a33fea"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="65f7a66a-d0f6-4d8d-9003-570e5b14d742"
+                  name="sender"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="c2aada2b-8f67-4f76-8ef8-532ee03cb94c"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FTobias%2FDocuments%2FGitHub%2Fcontroller-design%2FLive_Tuner%2FLive_Tuner%2Fbin%2FDebug%2FReglerTestWPF.exe Namespace%3Dcontroller_design.WPF Type%3DMainWindow Member%3D(Name%3DTabControl_Strecke_SelectionChanged OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FPresentationFramework.dll&quot; Namespace%3DSystem.Windows.Controls Type%3DSelectionChangedEventArgs)]) ParameterIdentifier%3Dsender"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="7736305b-1a70-4664-91a7-b6571d1bbf07"
+                      LastKnownName="Object"
+                      LastKnownLocation="Package2_1441.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="082c7882-ee60-4d88-abf9-bf6b70280630"
+                  name="e"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="d441abb4-5695-47a1-8c9f-d9bbf35f338d"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FTobias%2FDocuments%2FGitHub%2Fcontroller-design%2FLive_Tuner%2FLive_Tuner%2Fbin%2FDebug%2FReglerTestWPF.exe Namespace%3Dcontroller_design.WPF Type%3DMainWindow Member%3D(Name%3DTabControl_Strecke_SelectionChanged OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FPresentationFramework.dll&quot; Namespace%3DSystem.Windows.Controls Type%3DSelectionChangedEventArgs)]) ParameterIdentifier%3De"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="bab28fef-b95e-486c-92b0-a06ea55d6a8e"
+                      LastKnownName="SelectionChangedEventArgs"
+                      LastKnownLocation="Package4_1542.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="755dff64-c58e-41e4-a4e5-ad933641bd76"
+            name="butten_auslegen_I_Click"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="9c9dc1b9-9163-4e48-a320-52d099d7b9c3"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FTobias%2FDocuments%2FGitHub%2Fcontroller-design%2FLive_Tuner%2FLive_Tuner%2Fbin%2FDebug%2FReglerTestWPF.exe Namespace%3Dcontroller_design.WPF Type%3DMainWindow Member%3D(Name%3Dbutten_auslegen_I_Click OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FPresentationCore.dll&quot; Namespace%3DSystem.Windows Type%3DRoutedEventArgs)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="e8292312-7436-42e4-8609-ea5a56740379"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d02f3e72-4449-4597-9587-b023c5207989">
+                    <propertyInstance
+                      Id="b377b22a-8814-485d-9e83-9513b4cbfd04"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3ee139f0-214a-48a3-b656-c4bc712d999f">
+                    <propertyInstance
+                      Id="854d3d0b-0fe7-4014-8314-ec45f1064cf8"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b130004c-8061-4fda-a2db-363783338330">
+                    <propertyInstance
+                      Id="03dde047-1570-45ff-81b4-49c2c263003b"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d8b59d86-9e87-4461-a42c-852018021463">
+                    <propertyInstance
+                      Id="f34b31cc-c339-4362-945e-ab5714bd2028"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3afd4eae-86da-480f-90b5-e891f118977f">
+                    <propertyInstance
+                      Id="20454097-43c6-43b5-8b18-3b9cca526a8a"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f9877f27-0a55-4d5b-b30f-36bcaca69f68">
+                    <propertyInstance
+                      Id="ed57f2b0-7df8-4d2d-ad1a-068f1d59087e"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="2189517b-1277-4c2c-8b76-018ee6518b06"
+                  name="sender"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="3fb176c6-8427-43c4-919c-005098b497aa"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FTobias%2FDocuments%2FGitHub%2Fcontroller-design%2FLive_Tuner%2FLive_Tuner%2Fbin%2FDebug%2FReglerTestWPF.exe Namespace%3Dcontroller_design.WPF Type%3DMainWindow Member%3D(Name%3Dbutten_auslegen_I_Click OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FPresentationCore.dll&quot; Namespace%3DSystem.Windows Type%3DRoutedEventArgs)]) ParameterIdentifier%3Dsender"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="7736305b-1a70-4664-91a7-b6571d1bbf07"
+                      LastKnownName="Object"
+                      LastKnownLocation="Package2_1441.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="55127811-e476-48ba-9ae8-c314cf8a544e"
+                  name="e"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="49679049-564e-4ca2-a39f-d479a9ec9afe"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FTobias%2FDocuments%2FGitHub%2Fcontroller-design%2FLive_Tuner%2FLive_Tuner%2Fbin%2FDebug%2FReglerTestWPF.exe Namespace%3Dcontroller_design.WPF Type%3DMainWindow Member%3D(Name%3Dbutten_auslegen_I_Click OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FPresentationCore.dll&quot; Namespace%3DSystem.Windows Type%3DRoutedEventArgs)]) ParameterIdentifier%3De"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="2cf142ea-9b66-4e94-a778-ef3b2cf017f8"
+                      LastKnownName="RoutedEventArgs"
+                      LastKnownLocation="Package3_1542.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="4402f3db-6ef2-43a0-815d-2dd327e18e97"
+            name="butten_auslegen_PI_Click"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="e6c12042-bab4-480e-b40f-71a6e5f67516"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FTobias%2FDocuments%2FGitHub%2Fcontroller-design%2FLive_Tuner%2FLive_Tuner%2Fbin%2FDebug%2FReglerTestWPF.exe Namespace%3Dcontroller_design.WPF Type%3DMainWindow Member%3D(Name%3Dbutten_auslegen_PI_Click OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FPresentationCore.dll&quot; Namespace%3DSystem.Windows Type%3DRoutedEventArgs)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="395a7826-1275-4cf4-913e-ab4476962119"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="30e29500-6090-4c8b-8315-f7b8f2d34dc6">
+                    <propertyInstance
+                      Id="6e27c50b-b874-4d2b-9374-7b105f00d266"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="23758417-8528-412b-8402-88d1ce28a510">
+                    <propertyInstance
+                      Id="ecc177e8-5a5f-4fdc-8a38-900f22170f57"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4eedcaf8-0bd7-4b1c-aea7-29314bc4ef3d">
+                    <propertyInstance
+                      Id="0744c0c4-fb0f-4140-be60-de8de6a64b7c"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="12d3cf2e-8019-479c-92b6-f19fe923bfe0">
+                    <propertyInstance
+                      Id="456ed932-a5c3-42e1-8c04-790daeee8994"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0cc83140-a498-4651-b5c6-56740d989722">
+                    <propertyInstance
+                      Id="1abfe09d-e5dd-4141-bf78-2b45239c9ba8"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9dbb9dca-d5ef-4701-b588-62925a42f26d">
+                    <propertyInstance
+                      Id="9c8e2a07-28ca-48cd-91bc-991af148cbcb"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="d2ca049e-7e7a-460e-b6d5-7340461fc043"
+                  name="sender"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="ef76b4bb-2c4a-449c-9f15-326385d633d2"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FTobias%2FDocuments%2FGitHub%2Fcontroller-design%2FLive_Tuner%2FLive_Tuner%2Fbin%2FDebug%2FReglerTestWPF.exe Namespace%3Dcontroller_design.WPF Type%3DMainWindow Member%3D(Name%3Dbutten_auslegen_PI_Click OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FPresentationCore.dll&quot; Namespace%3DSystem.Windows Type%3DRoutedEventArgs)]) ParameterIdentifier%3Dsender"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="7736305b-1a70-4664-91a7-b6571d1bbf07"
+                      LastKnownName="Object"
+                      LastKnownLocation="Package2_1441.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="18dce589-a164-4d4c-91c7-4adb648e5bfa"
+                  name="e"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="d51897ab-2e47-47e1-b430-9e4fe496a362"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FTobias%2FDocuments%2FGitHub%2Fcontroller-design%2FLive_Tuner%2FLive_Tuner%2Fbin%2FDebug%2FReglerTestWPF.exe Namespace%3Dcontroller_design.WPF Type%3DMainWindow Member%3D(Name%3Dbutten_auslegen_PI_Click OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FPresentationCore.dll&quot; Namespace%3DSystem.Windows Type%3DRoutedEventArgs)]) ParameterIdentifier%3De"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="2cf142ea-9b66-4e94-a778-ef3b2cf017f8"
+                      LastKnownName="RoutedEventArgs"
+                      LastKnownLocation="Package3_1542.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="9193ab47-00fb-4c51-a711-a18d51faf4b3"
+            name="butten_auslegen_P_Click"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="d789858e-987e-4ef4-af41-9bf6cab2cd75"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FTobias%2FDocuments%2FGitHub%2Fcontroller-design%2FLive_Tuner%2FLive_Tuner%2Fbin%2FDebug%2FReglerTestWPF.exe Namespace%3Dcontroller_design.WPF Type%3DMainWindow Member%3D(Name%3Dbutten_auslegen_P_Click OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FPresentationCore.dll&quot; Namespace%3DSystem.Windows Type%3DRoutedEventArgs)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="296782a7-45de-437f-afc9-3cc8bc85be58"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="32cbd242-013a-44b5-be37-a4c51d845599">
+                    <propertyInstance
+                      Id="60f40126-2602-4972-80b9-9c93993e05ff"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e469897a-153a-4dd5-b778-6473f2f8d8ac">
+                    <propertyInstance
+                      Id="0074316b-f699-492c-8cce-2700bc08bd46"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="cb6691b9-c4d1-4691-a98d-f7c611c30d39">
+                    <propertyInstance
+                      Id="bf0730db-62f0-45fc-971c-dc2db2fc6317"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2a7f68c0-7454-4f9c-9dc5-25a49ad0e0a5">
+                    <propertyInstance
+                      Id="e67e3e63-38f0-4fad-8a92-5768f48c2f51"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="578e5b7a-888c-48fd-9247-a170a1c53c00">
+                    <propertyInstance
+                      Id="5218850e-91ee-4a65-a88d-bede5937b5c2"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f7fc0413-cbeb-4e24-bbff-6c1af02611bd">
+                    <propertyInstance
+                      Id="6dc90caa-ed69-4e1e-a54a-8f9d37d7f634"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="3a28d785-1a46-437c-ae6c-6e2c5c4d5ff7"
+                  name="sender"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="e23fd947-7344-466d-8ff7-67b3b46b6174"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FTobias%2FDocuments%2FGitHub%2Fcontroller-design%2FLive_Tuner%2FLive_Tuner%2Fbin%2FDebug%2FReglerTestWPF.exe Namespace%3Dcontroller_design.WPF Type%3DMainWindow Member%3D(Name%3Dbutten_auslegen_P_Click OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FPresentationCore.dll&quot; Namespace%3DSystem.Windows Type%3DRoutedEventArgs)]) ParameterIdentifier%3Dsender"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="7736305b-1a70-4664-91a7-b6571d1bbf07"
+                      LastKnownName="Object"
+                      LastKnownLocation="Package2_1441.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="3cfc1baa-f824-4e0b-b9d7-3ee50dad5992"
+                  name="e"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="0f054dc2-7dfd-452f-9c04-ffb5349e9101"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FTobias%2FDocuments%2FGitHub%2Fcontroller-design%2FLive_Tuner%2FLive_Tuner%2Fbin%2FDebug%2FReglerTestWPF.exe Namespace%3Dcontroller_design.WPF Type%3DMainWindow Member%3D(Name%3Dbutten_auslegen_P_Click OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FPresentationCore.dll&quot; Namespace%3DSystem.Windows Type%3DRoutedEventArgs)]) ParameterIdentifier%3De"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="2cf142ea-9b66-4e94-a778-ef3b2cf017f8"
+                      LastKnownName="RoutedEventArgs"
+                      LastKnownLocation="Package3_1542.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="828ec9bf-24e5-4ac1-b84d-b5319a8dec9b"
+            name="butten_load_Click"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="b12b1b9d-7c47-4ea7-bd67-5de4a5c22531"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FTobias%2FDocuments%2FGitHub%2Fcontroller-design%2FLive_Tuner%2FLive_Tuner%2Fbin%2FDebug%2FReglerTestWPF.exe Namespace%3Dcontroller_design.WPF Type%3DMainWindow Member%3D(Name%3Dbutten_load_Click OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FPresentationCore.dll&quot; Namespace%3DSystem.Windows Type%3DRoutedEventArgs)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="436e33a7-1ae6-4903-a6a6-b7a14a81164d"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8fc923de-1224-467a-be7b-071564bda42d">
+                    <propertyInstance
+                      Id="43bb6745-eec8-4290-8a09-6c723b453aa2"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="52b96886-2807-41cd-81c4-23f869550872">
+                    <propertyInstance
+                      Id="7b9b2510-4d51-4d96-8347-c06a3a671493"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e56cede9-0a7d-4256-aad6-833f5a2cc7c6">
+                    <propertyInstance
+                      Id="f2f86ded-e4f4-42a0-8d68-52804174d9d2"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c0110a4c-143f-458d-98d6-1df702e8b16d">
+                    <propertyInstance
+                      Id="e516a5f7-285b-4858-8c7a-a37c991eaf8c"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bc87e06a-b08c-410e-89a5-cef2d1fa15f2">
+                    <propertyInstance
+                      Id="d70d6467-099e-4ca4-96c0-f5403e330c4c"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d0db79ba-e323-444f-b548-f1aa3596acc6">
+                    <propertyInstance
+                      Id="03e16059-cb87-44fc-8caf-97f7497e59a1"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="df39562f-d6a9-4bb2-a277-56e5e46b6140"
+                  name="sender"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="f541a543-dcd0-4277-9806-21475c348439"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FTobias%2FDocuments%2FGitHub%2Fcontroller-design%2FLive_Tuner%2FLive_Tuner%2Fbin%2FDebug%2FReglerTestWPF.exe Namespace%3Dcontroller_design.WPF Type%3DMainWindow Member%3D(Name%3Dbutten_load_Click OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FPresentationCore.dll&quot; Namespace%3DSystem.Windows Type%3DRoutedEventArgs)]) ParameterIdentifier%3Dsender"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="7736305b-1a70-4664-91a7-b6571d1bbf07"
+                      LastKnownName="Object"
+                      LastKnownLocation="Package2_1441.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="05affa46-506b-4d27-8222-725e5c29bbe2"
+                  name="e"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="92645667-e23d-4c69-b284-18a4adeddd80"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FTobias%2FDocuments%2FGitHub%2Fcontroller-design%2FLive_Tuner%2FLive_Tuner%2Fbin%2FDebug%2FReglerTestWPF.exe Namespace%3Dcontroller_design.WPF Type%3DMainWindow Member%3D(Name%3Dbutten_load_Click OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FPresentationCore.dll&quot; Namespace%3DSystem.Windows Type%3DRoutedEventArgs)]) ParameterIdentifier%3De"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="2cf142ea-9b66-4e94-a778-ef3b2cf017f8"
+                      LastKnownName="RoutedEventArgs"
+                      LastKnownLocation="Package3_1542.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="90bff238-0fa0-4731-af10-83478013501f"
+            name="butten_save_Click"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="e0d6d448-4ed1-4bc0-9670-57c7534852dc"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FTobias%2FDocuments%2FGitHub%2Fcontroller-design%2FLive_Tuner%2FLive_Tuner%2Fbin%2FDebug%2FReglerTestWPF.exe Namespace%3Dcontroller_design.WPF Type%3DMainWindow Member%3D(Name%3Dbutten_save_Click OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FPresentationCore.dll&quot; Namespace%3DSystem.Windows Type%3DRoutedEventArgs)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="32edf78b-8d09-4d04-9761-b6332a5d71bb"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9cb710de-63f6-4cf8-906b-aad89f8ac129">
+                    <propertyInstance
+                      Id="59f672f6-d966-40aa-a80c-187abb7350d7"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ce81f3a7-8532-4130-9d2f-0d3ded64e1c4">
+                    <propertyInstance
+                      Id="2e133ad4-4103-4bc8-bc3b-bf1d54cb8ef9"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f618072e-89ea-4cc2-8ce7-3edb7bd37fd7">
+                    <propertyInstance
+                      Id="dc9b6ced-9c9a-4ca6-9964-ab8f8c7a42d0"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2f3ace15-5623-4a33-b636-247529406bcf">
+                    <propertyInstance
+                      Id="622f2f52-5587-4510-b4fe-eef336e0f9d6"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="82a4641c-1437-4521-bd50-bd4aa86b02ec">
+                    <propertyInstance
+                      Id="44844c1a-6654-496a-bb74-0f621b7f28b9"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8ed6ee70-1e2f-49be-b8f5-b2f8b2d5b44a">
+                    <propertyInstance
+                      Id="9bb7fa7c-d7c0-4b20-bb1f-5c89fad1e983"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="94cdaa42-0987-4735-b643-6a2d6a88362a"
+                  name="sender"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="6851a7a9-eb27-445f-8fbe-edd56cc90e83"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FTobias%2FDocuments%2FGitHub%2Fcontroller-design%2FLive_Tuner%2FLive_Tuner%2Fbin%2FDebug%2FReglerTestWPF.exe Namespace%3Dcontroller_design.WPF Type%3DMainWindow Member%3D(Name%3Dbutten_save_Click OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FPresentationCore.dll&quot; Namespace%3DSystem.Windows Type%3DRoutedEventArgs)]) ParameterIdentifier%3Dsender"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="7736305b-1a70-4664-91a7-b6571d1bbf07"
+                      LastKnownName="Object"
+                      LastKnownLocation="Package2_1441.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="cefbb126-07e6-4fe5-9c58-6d2c4ef0f1ab"
+                  name="e"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="12e0d0f0-2620-4f81-839a-26d3d707dd5b"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FTobias%2FDocuments%2FGitHub%2Fcontroller-design%2FLive_Tuner%2FLive_Tuner%2Fbin%2FDebug%2FReglerTestWPF.exe Namespace%3Dcontroller_design.WPF Type%3DMainWindow Member%3D(Name%3Dbutten_save_Click OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FPresentationCore.dll&quot; Namespace%3DSystem.Windows Type%3DRoutedEventArgs)]) ParameterIdentifier%3De"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="2cf142ea-9b66-4e94-a778-ef3b2cf017f8"
+                      LastKnownName="RoutedEventArgs"
+                      LastKnownLocation="Package3_1542.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="78348b96-2bca-44a1-af21-247d2207f9e4"
+            name="comboBox_Tend_ms_Selected"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="a69f0b5a-6f39-4b1c-aa9b-8ed94448cfff"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FTobias%2FDocuments%2FGitHub%2Fcontroller-design%2FLive_Tuner%2FLive_Tuner%2Fbin%2FDebug%2FReglerTestWPF.exe Namespace%3Dcontroller_design.WPF Type%3DMainWindow Member%3D(Name%3DcomboBox_Tend_ms_Selected OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FPresentationCore.dll&quot; Namespace%3DSystem.Windows Type%3DRoutedEventArgs)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="2396070e-b68a-4d6d-b0ef-e74a448c9505"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="09285de9-314c-4cf8-a648-a9ba92a06225">
+                    <propertyInstance
+                      Id="388d0752-6982-40ab-9a55-0257655df089"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6519a271-c9be-4fcc-a5ee-c771891ff23e">
+                    <propertyInstance
+                      Id="042823d4-f90b-450a-91b2-be422fa0a73a"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ca1ae29b-64a7-4885-8af5-e86a87f36a1e">
+                    <propertyInstance
+                      Id="e9b2f4e5-2a83-457d-a53b-df855471fa1f"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5f52b44b-ed9c-4cd1-8b94-0063a53418ab">
+                    <propertyInstance
+                      Id="3f2bbfb4-f64c-41c0-a49f-dd1e5c2c8fb1"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="847a60f2-9181-4da9-bbd9-c3633ca8843c">
+                    <propertyInstance
+                      Id="d085d0c4-9e0e-4fcb-9f0c-721980ad5569"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7c5024a9-06bb-4c75-8d8b-f0acb9071b54">
+                    <propertyInstance
+                      Id="17f85c9f-d642-4681-8811-c699e2d81a88"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="ef879f44-f619-42f6-8823-f14856f3cd42"
+                  name="sender"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="be3cf454-8651-4c2f-99dd-f0ec2a4cebf3"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FTobias%2FDocuments%2FGitHub%2Fcontroller-design%2FLive_Tuner%2FLive_Tuner%2Fbin%2FDebug%2FReglerTestWPF.exe Namespace%3Dcontroller_design.WPF Type%3DMainWindow Member%3D(Name%3DcomboBox_Tend_ms_Selected OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FPresentationCore.dll&quot; Namespace%3DSystem.Windows Type%3DRoutedEventArgs)]) ParameterIdentifier%3Dsender"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="7736305b-1a70-4664-91a7-b6571d1bbf07"
+                      LastKnownName="Object"
+                      LastKnownLocation="Package2_1441.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="8f51d239-010f-47e9-9d56-ba38139f0e22"
+                  name="e"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="59f6a105-5135-4550-be2d-3f6555214044"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FTobias%2FDocuments%2FGitHub%2Fcontroller-design%2FLive_Tuner%2FLive_Tuner%2Fbin%2FDebug%2FReglerTestWPF.exe Namespace%3Dcontroller_design.WPF Type%3DMainWindow Member%3D(Name%3DcomboBox_Tend_ms_Selected OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FPresentationCore.dll&quot; Namespace%3DSystem.Windows Type%3DRoutedEventArgs)]) ParameterIdentifier%3De"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="2cf142ea-9b66-4e94-a778-ef3b2cf017f8"
+                      LastKnownName="RoutedEventArgs"
+                      LastKnownLocation="Package3_1542.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="bd28d5b1-74b6-48a3-a6eb-3f621afd3879"
+            name="comboBox_Tend_ns_Selected"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="73fc05a6-1632-49fb-bb84-5989be987e16"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FTobias%2FDocuments%2FGitHub%2Fcontroller-design%2FLive_Tuner%2FLive_Tuner%2Fbin%2FDebug%2FReglerTestWPF.exe Namespace%3Dcontroller_design.WPF Type%3DMainWindow Member%3D(Name%3DcomboBox_Tend_ns_Selected OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FPresentationCore.dll&quot; Namespace%3DSystem.Windows Type%3DRoutedEventArgs)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="c8f06aa6-eafa-4ef6-8092-7da2add37589"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e6168c35-4c6f-4f10-98e0-b589adce06d5">
+                    <propertyInstance
+                      Id="8e275ad8-726e-4dcb-85b8-e902d700e01c"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="23ce5c2e-662d-4047-9c61-cbe66c870368">
+                    <propertyInstance
+                      Id="105a7c55-db7f-4803-ba20-ee6109863b09"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="94ebe974-9813-4580-9bf9-d02c6ffb9d7f">
+                    <propertyInstance
+                      Id="478de770-04a3-4051-b49f-c76e8639614d"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8bc24e89-fbce-41fb-8504-b00444de5ec6">
+                    <propertyInstance
+                      Id="13a1ac0e-38e2-49d1-b585-d1a649efacf6"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="af2cc126-e425-4c82-940b-59266ee2429b">
+                    <propertyInstance
+                      Id="df366858-7bdc-48cf-a1eb-e0d4240eb47f"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="be4430b4-994c-4f0f-a06a-88dd9fe4e529">
+                    <propertyInstance
+                      Id="d02740b7-9a30-4f95-8011-024d87227173"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="357263e1-e956-4322-ba64-d513119ef488"
+                  name="sender"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="007bebe8-4086-4906-8e52-93d89604a3f6"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FTobias%2FDocuments%2FGitHub%2Fcontroller-design%2FLive_Tuner%2FLive_Tuner%2Fbin%2FDebug%2FReglerTestWPF.exe Namespace%3Dcontroller_design.WPF Type%3DMainWindow Member%3D(Name%3DcomboBox_Tend_ns_Selected OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FPresentationCore.dll&quot; Namespace%3DSystem.Windows Type%3DRoutedEventArgs)]) ParameterIdentifier%3Dsender"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="7736305b-1a70-4664-91a7-b6571d1bbf07"
+                      LastKnownName="Object"
+                      LastKnownLocation="Package2_1441.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="3d7cafd8-609c-48eb-bd12-b1c10caa60f9"
+                  name="e"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="240d3a8c-02bd-4ce9-9f15-1ec3e26b9828"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FTobias%2FDocuments%2FGitHub%2Fcontroller-design%2FLive_Tuner%2FLive_Tuner%2Fbin%2FDebug%2FReglerTestWPF.exe Namespace%3Dcontroller_design.WPF Type%3DMainWindow Member%3D(Name%3DcomboBox_Tend_ns_Selected OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FPresentationCore.dll&quot; Namespace%3DSystem.Windows Type%3DRoutedEventArgs)]) ParameterIdentifier%3De"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="2cf142ea-9b66-4e94-a778-ef3b2cf017f8"
+                      LastKnownName="RoutedEventArgs"
+                      LastKnownLocation="Package3_1542.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="1e4a3e78-b7cb-4038-8ceb-b3e673905606"
+            name="comboBox_Tend_s_Selected"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="3cd60577-6ca6-4034-b6b1-8f5a2bbf6cfe"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FTobias%2FDocuments%2FGitHub%2Fcontroller-design%2FLive_Tuner%2FLive_Tuner%2Fbin%2FDebug%2FReglerTestWPF.exe Namespace%3Dcontroller_design.WPF Type%3DMainWindow Member%3D(Name%3DcomboBox_Tend_s_Selected OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FPresentationCore.dll&quot; Namespace%3DSystem.Windows Type%3DRoutedEventArgs)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="fbf4a206-265a-49bc-917a-d55514117652"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="124225f2-1e1c-4e9c-b979-9b84d1134997">
+                    <propertyInstance
+                      Id="6249399a-c024-4530-983a-81b2e8933dea"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d18da87c-2913-44c3-908f-c558df43c267">
+                    <propertyInstance
+                      Id="c68b7ee6-7a0e-4267-9dc2-590d57391d17"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5aac6eec-54b9-4bea-a575-bc9a2827ac02">
+                    <propertyInstance
+                      Id="759ddab9-2820-4cfa-b61a-bb71fe91b672"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e47c9f46-e833-4d8f-af10-bbe58fe7f565">
+                    <propertyInstance
+                      Id="dc99a782-17ad-4575-8459-709ced5753d4"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7a99d6d7-c5b2-4138-994a-fdf469efe581">
+                    <propertyInstance
+                      Id="e1e4d311-1685-465d-9734-48c79d3a013d"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c75c253f-9254-4db1-a6dc-84ede08de115">
+                    <propertyInstance
+                      Id="5a4562b2-1170-4a92-a70e-7f3ef481e8de"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="56403f92-5a54-4c7f-b051-f7dcde2b5b7b"
+                  name="sender"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="aec44738-3f9e-4922-b210-95c78fc0a32d"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FTobias%2FDocuments%2FGitHub%2Fcontroller-design%2FLive_Tuner%2FLive_Tuner%2Fbin%2FDebug%2FReglerTestWPF.exe Namespace%3Dcontroller_design.WPF Type%3DMainWindow Member%3D(Name%3DcomboBox_Tend_s_Selected OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FPresentationCore.dll&quot; Namespace%3DSystem.Windows Type%3DRoutedEventArgs)]) ParameterIdentifier%3Dsender"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="7736305b-1a70-4664-91a7-b6571d1bbf07"
+                      LastKnownName="Object"
+                      LastKnownLocation="Package2_1441.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="97109624-3245-4327-bcec-8bb4d302da6e"
+                  name="e"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="a28fe562-8fb3-4b3e-b971-23597a66e352"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FTobias%2FDocuments%2FGitHub%2Fcontroller-design%2FLive_Tuner%2FLive_Tuner%2Fbin%2FDebug%2FReglerTestWPF.exe Namespace%3Dcontroller_design.WPF Type%3DMainWindow Member%3D(Name%3DcomboBox_Tend_s_Selected OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FPresentationCore.dll&quot; Namespace%3DSystem.Windows Type%3DRoutedEventArgs)]) ParameterIdentifier%3De"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="2cf142ea-9b66-4e94-a778-ef3b2cf017f8"
+                      LastKnownName="RoutedEventArgs"
+                      LastKnownLocation="Package3_1542.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="266b3b49-f0c3-4da7-9080-9b150ac67601"
+            name="Operation1"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="aa62d0a5-0717-4c01-b36a-0cb456ec6b3f"
+            name="Operation2"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="11bac1f6-f114-4351-be66-dba1d5e82fec"
+            name="Operation3"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

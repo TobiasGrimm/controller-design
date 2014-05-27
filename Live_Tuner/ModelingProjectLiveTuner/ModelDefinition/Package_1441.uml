@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="edface21-22a5-442d-ba53-53709b24408d"
+  name="controller_design"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="798eec9c-6319-43b3-bae2-114471d1f2d9"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3Dcontroller_design"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="83215104-8025-4bb1-8d8f-b1a7e5e86789"
+        LastKnownName="Integrators_and_Registers"
+        LastKnownLocation="Package3_1441.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="4244f57e-496b-4ee6-8f9b-1df29429c374"
+        LastKnownName="Schematic"
+        LastKnownLocation="Package_1451.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="1bb562a5-0cb9-493a-b144-fbb9d80f3252"
+        LastKnownName="Save_and_load"
+        LastKnownLocation="Package_1542.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="0c11e0c1-bf3a-402c-889d-4e2d240f5852"
+        LastKnownName="WPF"
+        LastKnownLocation="Package1_1549.uml" />
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

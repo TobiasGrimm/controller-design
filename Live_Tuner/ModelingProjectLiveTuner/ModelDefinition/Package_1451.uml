@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="4244f57e-496b-4ee6-8f9b-1df29429c374"
+  name="Schematic"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="eea72d83-bf81-4b86-961f-762bcbe5d029"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3Dcontroller_design.Schematic"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="a98fc833-8f23-4cd6-b697-a06b7ced3d5b"
+        name="ISimulatable"
+        visibility="Private"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="1a37ff61-684c-4cd3-af3a-bdca20bea056"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FTobias%2FDocuments%2FGitHub%2Fcontroller-design%2FLive_Tuner%2FLive_Tuner%2Fbin%2FDebug%2FReglerTestWPF.exe Namespace%3Dcontroller_design.Schematic Type%3D(Name%3DISimulatable ArrayRank%3D1 ParentType%3DISimulatable)"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="4d849197-6968-4751-9ec1-86059b0c7d1d"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="484bda53-f45b-4cd3-9221-47e093fd2ab7">
+                <propertyInstance
+                  Id="d5eecac5-624b-4961-956a-30b69ece73da"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="89df9ffe-7c9b-430f-8dfb-1ad6766cbdb6">
+                <propertyInstance
+                  Id="6b9d6139-48b3-4443-a422-b0f3f131f8b0"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="f03d00b6-9d9b-4fba-8efa-68e5234298c2">
+                <propertyInstance
+                  Id="e81cea35-076e-4772-a73c-ba37772d6d09"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="e953e22c-f0d5-4763-bf06-c7b67ac011dd">
+                <propertyInstance
+                  Id="eeead429-9b1c-401e-af59-b98e79d6b333"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="de6bffa3-0632-4ddd-8371-d7ee1a89a3e5">
+                <propertyInstance
+                  Id="902a6167-1238-478d-9a97-285b99233147"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

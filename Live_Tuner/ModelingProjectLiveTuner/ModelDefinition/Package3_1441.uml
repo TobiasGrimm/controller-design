@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="83215104-8025-4bb1-8d8f-b1a7e5e86789"
+  name="Integrators_and_Registers"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="478cd21b-8b69-4039-a523-7e26cca00751"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3Dcontroller_design.Integrators_and_Registers"
+      tag="ViewCode" />
+  </referencesInternal>
+  <profileInstances>
+    <packageHasProfileInstances
+      Id="839537c3-87df-42da-a046-02f1a16f07d6">
+      <profileInstance
+        Id="23ede2dd-e94d-4672-ab47-a5453f6a7115"
+        name="CSharpProfile" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="d9d50ca2-cea1-4610-8f6e-7ac992a5b21c"
+        name="Integrator_Register"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="76b6970b-7e41-43a5-9d4f-f6c5e11e3128"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FTobias%2FDocuments%2FGitHub%2Fcontroller-design%2FLive_Tuner%2FLive_Tuner%2Fbin%2FDebug%2FReglerTestWPF.exe Namespace%3Dcontroller_design.Integrators_and_Registers Type%3DIntegrator_Register"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="249afbec-4150-42e5-9ceb-747a0eb3388b"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="37fae888-a32c-4998-9fa7-3cc9307f71a1">
+                <propertyInstance
+                  Id="8d7b98d8-1c3e-4b5b-a8e8-6cd8975fbb01"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="7e43f3a1-b3c0-4ac4-82d6-c5067390be90">
+                <propertyInstance
+                  Id="99ba7260-d527-4a75-a76c-73c4a9f295b1"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="b029f75c-e7e8-4902-8e38-c2b623a074d5">
+                <propertyInstance
+                  Id="b8db1241-33fb-47e8-8944-1dfd2d391849"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="4a16a49d-0e26-41de-9cc0-8cfcc2cc7e0f">
+                <propertyInstance
+                  Id="5923772a-0012-430e-9ad7-35f118052ef8"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="19216899-9fda-484b-b846-e076377211e1">
+                <propertyInstance
+                  Id="7dd2e5dd-f09e-4db3-93f2-e337a110e815"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

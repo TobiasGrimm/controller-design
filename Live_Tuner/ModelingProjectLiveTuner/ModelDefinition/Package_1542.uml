@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="1bb562a5-0cb9-493a-b144-fbb9d80f3252"
+  name="Save_and_load"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="a8e6dba7-d75c-4834-8abf-8f68ebc39f54"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3Dcontroller_design.Save_and_load"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <Interface
+        Id="f5d00a5d-c68e-45d4-8c64-5cc65233f1b5"
+        name="Isavable"
+        isAbstract="false"
+        isLeaf="false">
+        <referencesInternal>
+          <reference
+            Id="c4b3dea6-cc6a-46bc-bd05-22c5019aa112"
+            handle="viewcode://./CodeSchema_Interface?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FTobias%2FDocuments%2FGitHub%2Fcontroller-design%2FSave_Manager%2FSave_Manager%2Fbin%2FDebug%2FSave_Manager.dll Namespace%3Dcontroller_design.Save_and_load Type%3DIsavable"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="ae330219-d3cf-402b-9dd7-752d314d6cf0"
+            name="interface"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="94ea4f58-356c-45c6-9a0d-f65015c7d17a">
+                <propertyInstance
+                  Id="ea7ad4db-c24c-4faf-a17b-885083c5d319"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="44c1334c-4e9b-4583-9d29-a19f112f2b76">
+                <propertyInstance
+                  Id="fab60346-a33d-41f2-bd7a-5db841e058a6"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="1bbaad23-b0bf-4071-afc2-07a724dd67e8">
+                <propertyInstance
+                  Id="d5e128a4-fe14-4960-994c-4e0c9ed36e0c"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="8bff2420-d4ca-4562-8104-5cbe517deaef">
+                <propertyInstance
+                  Id="6eb5dcbc-751f-483f-99c0-9de4ac462192"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </Interface>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>
