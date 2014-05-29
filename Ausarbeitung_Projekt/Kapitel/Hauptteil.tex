@@ -1,0 +1,236 @@
+\chapter{Aufbau des Live Tuners}
+\label {Aufbau des Live Tuners}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%Aufbau des Live Tuners%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+In diesem Kapitel wird der eigentliche Aufbau der Software des Live Tuners näher beschrieben. Eine erste Übersicht bietet hier das UML-Klassendiagramm\vref{UML Klassendiagramm}.
+
+\begin{figure}[H]
+	\centering
+  \includegraphics[width=1.1\textwidth]{Bilder3/UMLClassDiagram1.pdf}
+	\caption{UML-Klassendiagramm}
+	\label{UML Klassendiagramm}
+\end{figure}
+
+Wie leicht zu erkennen ist, baut sich der Live Tuner aus drei großen Komponenten auf:
+
+\begin{itemize}
+	\item \textit{Graphische Oberfläche} \vref{Graphische Oberfläche}
+	\item \textit{Simulation} \vref{Simulation}
+	\item \textit{Speichern und Laden} \vref{Speichern und Laden}
+\end{itemize}
+
+Diese drei Komponenten werden nun in diesem Kapitel näher beleuchtet.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%Graphische Oberfläche%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Graphische Oberfläche}
+\label {Graphische Oberfläche}
+
+
+\begin{description}
+	 
+		\item \textbf{Das Ziel}
+		
+Blablabla Benutzerfreundlich blablabla ... WPF der Hammer blablabla
+
+\begin{figure}[H]
+	\centering
+  \includegraphics[width=1\textwidth]{Bilder3/Live_Tuner.png}
+	\caption{Graphische Oberfläche des Live Tuners}
+	\label{Graphische Oberfläche des Live Tuners}
+\end{figure}
+
+		\item \textbf{Live Plot}
+
+Blablablablub
+
+		\item \textbf{Strecke und Regler}		
+				
+Blablabla Verschiedene Strecken -> der passende Regler wird vorgeschlagen blablabla Auslegen geht nur wenn Strecke passt blablabla
+
+		\item \textbf{Base Slider}	
+		
+Beschreiben warum er Base Slider heißt + wie ist er aufgebaut (basis + slider*mult) + warum es so cool ist blablalba
+
+		\item \textbf{Infos \& Einstellungen}
+			
+Beschreiben was man hier sieht bzw. machen kann ... verlinkung bei Solver zu Simulation ....				
+			
+\end{description}
+
+\newpage 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%Simulation%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Simulation}
+\label {Simulation}
+
+Durch die komplette Simulation eines Regelkreises soll dem Benutzer graphisch gezeigt werden, wie gut sein aktueller Regler ausgelegt ist.
+Ein allgemeiner Regelkreis besteht aus folgenden Komponenten:
+
+\begin{figure}[H]
+	\centering
+  \includegraphics[width=1\textwidth]{Bilder3/Regelkreis.pdf}
+	\caption{Allgemeiner Aufbau eines Regelkreises}
+	\label{fig:Aufgabe11}
+\end{figure}
+
+\begin{itemize}
+	\item \textit{Soll-Wert}
+	
+	Gewünschter Wert, welcher erreicht werden soll.
+	\item \textit{Vergleich Soll-Ist}
+	
+	Durch die Addition(+/-) wird ein Soll-Ist Vergleich gemacht, welcher zum Regler geht.
+	\item \textit{Regler}
+	
+	Der Regler ist eine Übertragungsfunktion, und je nach Bedarf ein P-, I-, oder PI-Regler.
+	\item \textit{Störung}
+	
+	Durch die Störung sollen mögliche Störfaktoren mit Simuliert werden.
+	\item \textit{Strecke}	
+	
+	Die Strecke ist die Übertragungsfunktion des Physikalischen Systems (Motor, elektrische Schaltung,...)
+	\item \textit{Plot}
+	
+	Der Plot beobachtet quasi die einzelnen Simulationsschritte und gibt diese graphisch aus.
+\end{itemize}
+
+Die Idee für die softwaretechnische Umsetzung einer Simulation besteht nun darin, dass jede einzelne Komponente des Regelkreises durch eine einzelne Klasse beschrieben wird.
+Bei einer Simulation berechnet nun jeder Teilnehmer einen kleinen Zeitschritt und gibt das Ergebnis an den nächsten Teilnehmer im Regelkreis weiter. Dies wird so oft wie erwünscht wiederholt und am Schluss als Gesamtergebnis zurückgegeben.
+
+\begin{description}
+
+		\item \textbf{Die Problematik}
+
+\begin{itemize}
+	\item Die ganzen Berechnungen der Simulation eines Regelkreises sind sehr kompliziert, wie kann man es nach außen vereinfachen, sodass man sich nicht hinein denken muss, wenn man dieses verwenden will?
+	\item Die einzelnen Klassen im Regelkreis für Regler und Strecke können je nach Anwenderbedarf unterschiedlich sein! Wie können nun diese Klassen mit einander Kommunizieren, ohne sich direkt kennen zu müssen? 
+\end{itemize}
+
+				
+		\item \textbf{Lösungsansatz}
+		
+Einen sehr guten Lösungsansatz bieten hier die Schablonen der Entwurfsmuster (Design Patterns). Hierbei handelt es sich um bewährte Lösungsschablonen für wiederkehrende Entwurfsprobleme in der Softwareentwicklung.
+
+Um diese zwei Probleme zu behandeln wurden folgende zwei Entwurfsmuster ausgewählt:
+
+\newpage				
+\subsection{Fassade Entwurfsmuster}%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\label{Fassade Entwurfsmuster}	
+
+		\item \textbf{Beschreibung des Entwurfsmusters \cite{FDP:01}}
+		
+\textit{Wenn ein Subsystem viele technisch orientierte Klassen enthält, die selten von außen verwendet werden, hilft es, eine Fassade zu verwenden. Die Fassade ist eine Klasse mit ausgewählten Methoden, die eine häufig benötigte Untermenge an Funktionalität des Subsystems umfasst. Sie delegiert die Funktionalität an andere Klassen des Subsystems und vereinfacht dadurch den Umgang mit dem Subsystem.}
+
+
+		\item \textbf{Verwendung der Fassade}
+
+Wie im Ausschnitt des UML-Diagramms\vref{UML Klassendiagramm2} gut zu erkennen ist, bildet die Klasse \textit{Simulator} eine Fassade in diesem Projekt. 
+	
+\begin{figure}[H]
+	\centering
+  \includegraphics[width=1.1\textwidth]{Bilder3/UMLClassDiagram2.pdf}
+	\caption{Klasse "`Simulator"' als Fassade}
+	\label{UML Klassendiagramm2}
+\end{figure}
+
+Der \textit{Simulator} kümmert sich um die komplette Verwaltung der einzelnen Klassen einer Simulation, vernetzt sie miteinander und leitet die einzelnen Berechnungen. Er merkt sich in einem Array von Objekten, welche das Interface ISimulatable implementieren, in welcher Reihenfolge die einzelnen Objekte bei einer Simulation aufgerufen werden müssen.
+
+Durch diesen Einsatz wird die komplexität einer Simulation auf ein Minimum von zwei Funktionen herunter gebrochen:
+
+\begin{itemize}
+	\item \textit{simulate(Ts : Single, Tend : Single) : Single[*]}
+	
+	Simuliere den aktuellen Regelkreis mit den festen kleinen Zeitschritten Ts bis zur Endzeit Tend. Gebe das Ergebnis zurück.
+	
+	\item \textit{bool replace\_in\_Schematic\_at\_pos(int position, ISimulatable x)}
+	
+	Ersetze im Array an der Stelle \textit{position} das Objekt mit diesem. Löse die alten Vernetzungen und setze neue. (hierdurch können die Objete im Regelkreis vertauscht werden)
+\end{itemize}
+ 
+\subsection{Beobachter Entwurfsmuster}%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\label{Beobachter Entwurfsmuster}	
+		
+		\item \textbf{Beschreibung des Entwurfsmusters \cite{BDP:01}}
+		
+\textit{Allgemein finden Beobachter-Muster Anwendung, wenn eine Abstraktion mehrere Aspekte hat, die von einem anderen Aspekt derselben Abstraktion abhängen, die Änderung eines Objekts Änderungen an anderen Objekten nach sich zieht oder ein Objekt andere Objekte benachrichtigen soll, ohne diese im Detail zu kennen.}	
+
+		\item \textbf{Verwendung des Beobachter-Musters}
+
+Dieses Muster bietet sich ideal für das zweite Problem an, da sich die einzelnen Objekte in einem Regelkreis nicht direkt kennen müssen, um sich gegenseitig benachrichtigen zu können.
+Diese Benachrichtigungen sind immer dann erforderlich, wenn ein Objekt im Regelkreis einen Zeitschritt für sich berechnet hat. Ist die Berechnung fertig, so wird das Ergebnis an das Beobachtende Objekt weitergegeben.
+Anschaulich bedeutet dies, dass alle Verbindungen im Regelkreis\vref{Benachrichtigungen in einem Regelkreis} solche Benachrichtigungen (events) sind.
+
+\begin{figure}[H]
+	\centering
+  \includegraphics[width=1\textwidth]{Bilder3/Regelkreis.pdf}
+	\caption{Benachrichtigungen in einem Regelkreis}
+	\label{Benachrichtigungen in einem Regelkreis}
+\end{figure}
+
+\newpage
+
+Hierdurch ist nun klar, wie das Interface aussehen muss, welches eine Klasse implementieren muss, um simulierbar zu sein:
+
+\begin{figure}[H]
+	\centering
+  \includegraphics[width=0.5\textwidth]{Bilder3/Interface_IS.pdf}
+	\caption{Interface für Simulation}
+	\label{Interface für Simulation}
+\end{figure}
+
+
+
+\begin{itemize}
+	\item \textit{event OutputEventHandler I\_am\_finish}
+	
+	Dieses event wird gefeuert, wenn eine Berechnung fertig ist.
+	\item \textit{void set\_input(float x\_in)}
+		
+	Setze den Eingangswert für die Berechnung des nächsten Zeitschrittes.
+	\item \textit{float do\_one\_step(float Ts)}
+		
+	Berechne den Ausgangswert aus dem Eingangswert und feuere das Event I\_am\_finish.
+	\item \textit{void reset()}	
+	
+	Leere den Speicher der Vergangenheit.
+	
+	\item \textit{void connect\_this\_Input\_with(ISimulatable Target\_output)}
+
+	Beobachte den Ausgang des anderen Objektes, indem du deinen Eingang mit diesem Ausgang verbindest.
+	\item \textit{void disconnect\_this\_Input\_from(ISimulatable Target\_output)}
+	
+	Löse die Beobachtung auf.
+\end{itemize}
+
+Durch dieses Interface und die verwendung des Simulators kann nun der Regelkreis simuliert werden.
+Im UML-Sequenzdiagramm\vref{UML Sequenzdiagramm} ist eine Benutzeranfrage an eine Simulation skizziert.
+		
+\begin{figure}[H]
+	\centering
+  \includegraphics[width=1\textwidth]{Bilder3/UMLSequenceDiagram1.pdf}
+	\caption{UML-Sequenzdiagramm für eine Simulationsanfrage}
+	\label{UML Sequenzdiagramm}
+\end{figure}
+
+Wie deutlich zu erkennen ist, benutzt die Graphische Oberfläche die Fassade des Simulators um eine Simulation zu starten.
+Dieser ruft nach und nach die einzelnen Komponenten des Regelkreises dazu auf einen Zeitschritt zu berechnen. 
+Wie klar zu erkennen ist, kennen sich die einzelnen Komponenten des Regelkreises nicht, sondern beobachten sich nur gegenseitig, um Informationen zu erhalten.
+
+Haben alle Komponenten einen Zeitschritt berechnet, so wird die Schleife erneut durchlaufen bis die gewünschte Anzahl an Simulationsschritten erreicht ist, und das gesamt Ergebnis an die Graphische Oberfläche zurück gegeben wird.
+				
+\end{description}
+
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%Speichern und Laden%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Speichern und Laden}
+\label {Speichern und Laden}
+\begin{description}
+		
+		\item \textbf{Die Motivation}
+		
+blablablub viel Zeit investiert alles weg. ..... Anderen Leuten Schicken .... Archivieren ....
+				
+		\item \textbf{Umsetzung}
+
+Interfave beschreiben eklären ,.....
+Fale Manager beschreiben ... warum ist er so vielseitig einsetzbar ...
+		
+\end{description}

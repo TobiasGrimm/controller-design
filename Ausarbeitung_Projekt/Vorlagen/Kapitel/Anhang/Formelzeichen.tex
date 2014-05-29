@@ -1,0 +1,109 @@
+%\renewcommand\arraystretch{1.5}  % Multiplikationsfaktor für die
+                                 % Zeilenumbrüche in der Tabelle
+\begin{longtable}[t]{p{4cm} p{11.5cm}<{\raggedright}}
+\multicolumn{2}{l}{\textbf{Mengen und Intervalle}}\\
+  $\mn, \Nnull$               & Menge der natürlichen Zahlen, $\Nnull = \nz\cap\{0\}$ \\
+  $\mz$                       & Menge der ganzen Zahlen \\
+  $\mq$                       & Menge der rationalen Zahlen \\
+  $\mr$                       & Menge der reellen Zahlen \\
+  $\mc$                       & Menge der komplexen Zahlen \\
+  $\ma$                       & Signalvorrat, Menge der Amplitudenkoeffizienten \\
+  $L^2(\rz)$                  & Raum der quadratisch integrablen Funktionen über
+                                \mbox{ $L^2(\rz) = \left\{ f:\rz \rightarrow \rz\ \ |\quad \int\limits_{\rz} |f(t)|^2 < \infty \right\}$}\\
+  $l^2(\zz)$                  & Raum der quadratisch summierbaren Folgen über
+                                 \mbox{ $l^2(\zz) = \left\{ c:\zz \rightarrow \rz\ \ |\quad \sum\limits_{k\, \in\, \zz} |c(k)|^2 < \infty \right\}$}\\
+
+\multicolumn{2}{l}{\textbf{Konstante Größen}}\\
+  $e$                         & Eulersche Zahl, $e \approx 2,71828183$\\
+  $j$                         & imaginäre Einheit, $j^2 = -1$\\
+  $\pi$                       & Kreiszahl, $\pi \approx 3,141526535$\\
+  $\infty$                    & Unendlich\\
+
+\multicolumn{2}{l}{\textbf{Transformationen und Operatoren}}\\
+  $\four{\cdot}$              & Fourier--Transformation \\
+  $\invfour{\cdot}$           & inverse Fourier--Transformation \\
+  $x(t) \korresp X(f)$        & Korrespondenz der Fourier--Transformation\\
+  $x(t) \korresp \four{x(t)}$ & Korrespondenz der Fourier--Transformation\\
+  $\four{x(k)}$               & Fourier--Transformierte der Folge $x(k)$\\
+  $X(\domega)$                & Fourier--Transformierte der Folge $x(k)$\\
+  $\ztrafo{\cdot}$            & $z$--Transformation \\
+  $\invztrafo{\cdot}$         & inverse $z$--Transformation \\
+  $\ztrafo{x(k)}$             & $z$--Transformierte der Folge $x(k)$\\
+  $X(z)$                      & $z$--Transformierte der Folge $x(k)$\\
+  $\erw{\cdot}$               & Erwartungswertoperator\\
+  $\real{\cdot}$              & Realteil einer komplexen Größe\\
+  $\imag{\cdot}$              & Imaginärteil einer komplexen Größe\\
+  $\min\{\cdot\}$             & Minimum einer Größe\\
+  $\max\{\cdot\}$             & Maximum einer Größe\\
+  $\spur{\cdot}$              & Spur, Summe der Diagonalelemente einer Matrix\\
+  $\diag{\cdot}$              & Diagonalmatrix\\
+  $\cdot^*$                   & konjugiert komplex \\
+  $\cdot^T$                   & transponiert\\
+  $\cdot^H$                   & hermitisch, $\mat{A}^H = (\mat{A}^*)^T$\\
+  $|\cdot|$                   & Betrag einer Zahl \\
+  $\skalar{\cdot}{\cdot}$     & Skalarprodukt \\
+  $\Lskalar{\cdot}{\cdot}$    & Skalarprodukt des Raumes  $L^2(\mr)$,\\
+                              & \mbox{$\Lskalar{x}{y} :=\intl_{\mr} x(t)\ y^*(t) dt$} \quad
+                                mit $x, y \in L^2(\mr)$\\[3mm]
+  $\lskalar{\cdot}{\cdot}$    & Skalarprodukt des Raumes  $l^2(\zz)$,\\
+                              & \mbox{$\lskalar{x}{y} :=\sum\limits_{k\, \in\, \zz} (x(k)\ y^*(k))$} \quad
+                                mit $x, y \in l^2(\zz)$\\[3mm]
+  $\norm{\cdot}$              & Norm \\
+  $\lnorm{\cdot}$             & Norm des Raumes $l^2(\mz)$,\\
+                              & \mbox{$\lnorm{x} := \sqrt{\lskalar{x}{x}}$} \quad
+                                mit $x \in l^2(\mz)$\\[3mm]
+  $\Lnorm{\cdot}$             & Norm des Raumes $L^2(\mr)$,\\
+                              & \mbox{$\Lnorm{x} := \sqrt{\Lskalar{x}{x}}$} \quad
+                                mit $x \in L^2(\mr)$\\[3mm]
+\multicolumn{2}{l}{\textbf{Skalare}}\\
+  $t$                         & kontinuierliche Zeit, $t \in \mr$, kontinuierliche Zeitparameter \\
+  $E_b$                       & Energie pro Bit\\
+  $E_s$                       & Energie pro Symbol\\
+  $f_A$                       & Abtastfrequenz\\
+  $T_A$                       & Abtastintervall\\
+  $N_A$                       & Anzahl der Abtastwerte\\
+  $k$                         & ganzzahlige Variable, $k \in \mz$, diskreter Zeitparameter \\
+  $N_s$                       & Anzahl der Unterträger\\
+  $N_g$                       & Anzahl der Abtastwerte des Guard--Intervalls\\
+  $N  $                       & Anzahl aller Abtastwerte ($N = N_s + N_g$)\\
+  $N_h$                       & Anzahl der Abtastwerte des Kanals\\
+  $P_{e}$                     & Fehlerwahrscheinlichkeit\\
+  $N_0$                       & konstante Rauschleistungsdichte\\
+    \\
+\multicolumn{2}{l}{\textbf{Funktionen}}\\
+  $x(t)$                      & Zeitsignal, $x(t) \in L^2(\mr)$\\
+  $s_{tx}(t)$                 & Sendesignal\\
+  $s_{rx}(t)$                 & Empfangssignal\\
+  $H_{rx}(f)$                 & Übertragungsfunktion des Empfangsfilters\\
+  $H(z)$                      & $z$-Transformierte der Folge $h(k)$\\
+  $H(e^{j 2 \pi f T})$        & periodische Übertragungsfunktion der zeitdiskreten
+                                Impulsantwort $h(k)$ des Gesamtsystems  \\
+  $S_{nn}(f)$                 & Leistungsdichtespektrum der Rauschgröße $n(t)$\\
+  $S_{nn}(\domega)$           & periodisches Leistungsdichtespektrum der zeitdiskreten Rauschgröße $n(k)$\\
+  $\rect(t)$                  & Rechteckimpuls der Höhe 1 und Dauer $T$\\
+  $\erf(x)$                   & Error-Funktion\\
+  $\erfc(x)$                  & Komplementäre Error-Funktion\\
+  \\
+\multicolumn{2}{l}{\textbf{Folgen}}\\
+  $x[k]$                      & diskrete Zeitfolge, $x[k] \in l^2(\mz)$\\
+  $s_{tx}[k]$                 & Kanalsymbole \\
+  $n[k]$                      & zeitdiskretes Rauschsignal\\
+    \\
+\multicolumn{2}{l}{\textbf{Vektoren}}\\
+  $\vec{e}$                   & Fehlervektor\\
+  $\vec{s}$                   & Sendesymbolvektor\\
+  $\vec{\hat{s}}$             & Schätzvektor der Sendesymbole\\
+  $\vec{s}_{tx}$              & Sendevektor\\
+  $\vec{s}_{rx}$              & Empfangsvektor\\
+  $\vec{r}$                   & Empfangssymbolvektor\\
+  $\vec{h}$                   & Vektor mit den Abtastwerten der Kanalimpulsantwort\\
+  $\vec{n}$                   & Rauschvektor für farbiges Rauschen\\
+  $\vec{w}$                   & Rauschvektor für gaußsches weißes Rauschen\\
+  \\
+\multicolumn{2}{l}{\textbf{Matrizen}}\\
+  $\mat{D}_{\{\cdot\}}$       & Diagonalmarix\\
+  $\mat{R}_{\{\cdot \cdot\}}$ & Kreuz-- oder Autokorrelationsmatrix\\
+  $\mat{I}$                   & Einheitsmatrix\\
+  $\mat{W}$                   & Fouriermatrix\\
+\makebox[4cm]{   } &  \\
+\end{longtable}

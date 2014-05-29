@@ -79,6 +79,9 @@
     <Content Include="ModelDefinition\Package_1549.uml">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="ModelDefinition\Package_1704.uml">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="Schleife.sequencediagram">
       <SubType>Content</SubType>
     </Content>

@@ -1,0 +1,206 @@
+%
+% Einige nützliche Makros für die Verwendung in Texten
+%------------------------------------------------------
+%
+% Autor:   Dirk Benyoucef
+% Version: V1.6
+% Letzte Änderung : 55.02.2008
+%
+
+% Classe KOMA
+%\renewcommand*{\capfont}{\captionfont}
+%\renewcommand*{\caplabelfont}{\captionlabelfont}
+\renewcommand{\figurename}{Bild}
+\renewcommand{\tablename}{Tabelle}
+
+
+% Umdefinition der Symbole für item
+\renewcommand{\labelitemiii}{\FilledSmallSquare}
+\renewcommand{\labelitemi}{\FilledSmallTriangleRight}
+\renewcommand{\labelitemii}{\FilledSmallDiamondshape}
+
+% Laborname
+\newcommand{\DCSP}{\emph{Digital Communications \& Signal Processing }}
+
+% Boxen definieren
+\theoremheaderfont{\normalfont\bfseries}
+\theoremstyle{break}
+\theorembodyfont{\slshape}
+
+\newtheorem{satzenv}{Anforderungen}[chapter]
+
+\definecolor{boxgray}{gray}{0.9}
+
+\newenvironment{graubox}{%
+  \setlength{\fboxsep}{10pt}%
+  \def\FrameCommand{\fcolorbox{black}{boxgray}}%
+  \MakeFramed {\advance\hsize-30pt \FrameRestore}}%
+ {\endMakeFramed}
+
+\newenvironment{inhalt}%
+{%
+  \begin{graubox}
+  \begin{satzenv}
+}{%
+  \end{satzenv}
+  \end{graubox}
+}
+
+\newenvironment{grau_verbatim}%
+{%
+  \begin{graubox}
+  \begin{verbatim}
+}{%
+  \end{verbatim}
+  \end{graubox}
+}
+
+
+% Real- Imaginärteil
+\newcommand{\real}[1]{\operatorname{Re}{\left\{ #1 \right\}}}
+\newcommand{\imag}[1]{\operatorname{Im}{\left\{ #1 \right\}}}
+
+% Spezielle Befehle für OFDM
+\newcommand{\Comment}[1]{}
+\newcommand{\complex}[1]{\underline{#1}}
+\newcommand{\dft}[1]{\operatorname{DFT}\left\{ #1 \right\}}
+\newcommand{\idft}[1]{\operatorname{IDFT}\left\{ #1 \right\}}
+
+\newcommand{\domega}{e^{j 2 \pi f T}}
+\newcommand{\aOmega}{e^{j \Omega}}
+\newcommand{\vOmega}{\Omega}
+
+%
+% STANDARDISIERUNG einiger SYMBOLE
+%
+
+% Mengenbuchstaben
+%
+\newcommand{\mm}[1]{\ensuremath{\mathbb{#1}}}
+\newcommand{\mc}{\mm{C}}            % komplexe Zahlen
+\newcommand{\mn}{\mm{N}}            % natürliche Zahlen
+\newcommand{\mg}{\mm{G}}
+\newcommand{\mi}{\mm{I}}
+\newcommand{\mq}{\mm{Q}}
+\newcommand{\mr}{\mm{R}}            % reelle Zahlen
+\newcommand{\mw}{\mm{W}}
+\newcommand{\mz}{\mm{Z}}            % ganze Zahlen
+\newcommand{\rz}{{\mathbb R}}       % reelle Zahlen
+\newcommand{\cz}{{\mathbb C}}       % komplexe Zahlen
+\newcommand{\zz}{{\mathbb Z}}       % ganze Zahlen
+\newcommand{\nz}{{\mathbb N}}       % natürliche Zahlen
+\newcommand{\Nnull}{{\mathbb N}_0}  % natürliche Zahlen ohne die Null
+
+\newcommand{\ma}{\mathcal{A}}            % Menge von A
+\newcommand{\mb}{\mathcal{B}}            % Menge von B
+\newcommand{\mt}{\mathcal{T}}
+\newcommand{\mx}{\mathcal{X}}
+
+% Einige Normen
+\newcommand{\norm} [1]{\left\| #1 \right\|}
+\newcommand{\lnorm}[1]{\left\| #1 \right\|_{l^2}}
+\newcommand{\Lnorm}[1]{\left\| #1 \right\|_{L^2}}
+\newcommand{\wnorm}[1]{\left\| #1 \right\|_{\mathrm W}}
+
+% Skalarprodukte
+\newcommand{\skalar} [2]{\left\langle #1, #2\right\rangle}
+\newcommand{\lskalar}[2]{\left\langle #1, #2\right\rangle_{l^2}}
+\newcommand{\Lskalar}[2]{\left\langle #1, #2\right\rangle_{L^2}}
+
+% Erwartungswert
+\newcommand{\erw}[1]{\mathcal{E}{\left\{#1\right\}}}
+\newcommand{\var}[1]{\operatorname{var}\left\{#1\right\}}
+
+% Vektoralebra
+\newcommand{\rot}{\operatorname{rot}}
+\newcommand{\divergenz}{\operatorname{div}}
+\newcommand{\grad}{\operatorname{grad}}
+
+% Neue Signale oder Operatoren
+\newcommand{\dif}{\operatorname{d \!}}
+\newcommand{\rect}{\operatorname{rect}}
+\newcommand{\erfc}{\operatorname{erfc}}
+\newcommand{\erf}{\operatorname{erf}}
+\newcommand{\si}{\operatorname{si}}
+\newcommand{\Si}{\operatorname{Si}}
+\newcommand{\adj}{\operatorname{adj}}
+\newcommand{\sign}[1]{\operatorname{sign}\left\{ #1 \right\}}
+\newcommand{\spur}[1]{\operatorname{spur}\left\{ #1 \right\}}
+\newcommand{\diag}[1]{\operatorname{diag}\left\{ #1 \right\}}
+\newcommand{\Per}{\operatorname{Per}}
+\newcommand{\Min}{\operatorname{Min}}
+
+
+% Transformationen
+\newcommand{\trafo}[1]{\mathcal{T}{\left\{#1\right\}}}
+\newcommand{\four}[1]{\mathcal{F}{\left\{#1\right\}}}
+\newcommand{\fourdft}[1]{\mathcal{F}_{DFT}{\left\{#1\right\}}}
+\newcommand{\invfour}[1]{\mathcal{F}^{-1}{\left\{#1\right\}}}
+\newcommand{\invfourdft}[1]{\mathcal{F}^{-1}_{DFT}{\left\{#1\right\}}}
+\newcommand{\stft}[1]{\mathcal{F}{_{STFT}\left\{#1\right\}}}
+\newcommand{\ztrafo}[1]{\mathcal{Z}{\left\{#1\right\}}}
+\newcommand{\invztrafo}[1]{\mathcal{Z}^{-1}{\left\{#1\right\}}}
+\newcommand{\hilbert}[1]{\mathcal{H}\left\{ #1 \right\}}
+\newcommand{\hilbertinv}[1]{\mathcal{H}^{-1}\left\{#1 \right\}}
+\newcommand{\stftmert}[1]{\mathcal{F}_{#1}^\gamma(\omega,\tau)}
+\newcommand{\fourmert}[1]{\mathcal{F}_{#1}(\omega,\tau)}
+\newcommand{\wave}[1]{\mathcal{W}{\left\{#1\right\}}}
+\newcommand{\wavep}[1]{\mathcal{W}{_{WP}\left\{#1\right\}}}
+\newcommand{\spec}[1]{S_{#1}(\omega,\tau)}
+
+
+% Korrespondenzzeichen
+\newcommand{\korresp}{\mbox{\setlength{\unitlength}{0.1em}%
+                            \begin{picture}(34,10)%
+                              \put(10,3){\circle{4}}%
+                              \put(12,3){\line(1,0){11}}%
+                              \put(24,3){\circle*{4}}%
+                            \end{picture}%
+                           }%
+                     }%
+\newcommand{\invkorresp}{\mbox{\setlength{\unitlength}{0.1em}%
+                            \begin{picture}(34,10)%
+                              \put(10,3){\circle*{4}}%
+                              \put(11,3){\line(1,0){11}}%
+                              \put(24,3){\circle{4}}%
+                            \end{picture}%
+                           }%
+                     }%
+\newcommand{\rotkorresp}{\mbox{\setlength{\unitlength}{0.1em}%
+                            \begin{picture}(10,30)%
+                              \put(6,8){\circle{4}}%
+                              \put(6,10){\line(0,1){11}}%
+                              \put(6,22){\circle*{4}}%
+                            \end{picture}%
+                           }%
+                     }%
+\newcommand{\rotinvkorresp}{\mbox{\setlength{\unitlength}{0.1em}%
+                            \begin{picture}(10,30)%
+                              \put(6,8){\circle*{4}}%
+                              \put(6,9){\line(0,1){11}}%
+                              \put(6,22){\circle{4}}%
+                            \end{picture}%
+                           }%
+                     }%
+
+% Matrix
+\newcommand{\mat}[1]{{\mathbf{#1}}}
+\newcommand{\dimension}[1]{\operatorname{dim}\left\{ #1 \right\}}
+
+
+% Integral- und Summengrenzen ober- und unterhalb setzen
+\newcommand{\intl}{\int\limits}
+\newcommand{\suml}{\sum\limits}
+\newcommand{\prodl}{\prod\limits}
+
+
+
+% Darstellung eines Bruch mit einem Schrägstrich
+% Makro \nicefrac
+%\newcommand{\nicefrac}[2]{\leavevmode\kern.1em\raise.5ex
+%                          \hbox{\the \scriptfont0 #1}\kern
+%                          -.1em / \kern-.15em\lower.25ex
+%                          \hbox{\the \scriptfont0 #2} }
+
+% Rahmen von Formeln
+\newcommand{\rahmen}[1]{\boxed{\hspace{0.5cm}\begin{array}{c}#1\end{array}\hspace{0.5cm}}}

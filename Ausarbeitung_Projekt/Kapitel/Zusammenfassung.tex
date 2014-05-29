@@ -1,0 +1,14 @@
+\chapter{Zusammenfassung (Tobias Mutter)}
+
+%---------------------------------------------------------
+\section{Ausblick}
+
+Für weitere Gruppen oder Interessierte, die an diesem Projekt weiter arbeiten, könnten folgende Punkte weiter ausgearbeitet oder neu eingebracht werden. Auf jeden Fall sollte das Ethernet und die damit verbundene SD-Karte in Betrieb genommen werden, oder sogar ein W-Lan Modul verbaut werden. Diese Schnittstellen können dann für eine Verbindung zu einem Webserver, welchen man ebenfalls noch programmieren könnte, genutzt werden. Weiterhin könnte man dann versuchen über diesen Webserver eine Nachricht zu übermitteln, welche dann ausgegeben werden kann. Eine Internetanbindung bietet noch viel mehr interessante Punkte, die sinnvoll für die Stroboskopuhr wären, wenn man diese realisiert. Da das DCF77-Modul für den Zeitempfang sehr langsam und auch sehr empfangsempfindlich ist, wäre es besser die Zeit über das Internet abzurufen und man könnte sich dadurch auch unnötige Hardware sparen. SMS könnten ebenfalls über einen Webserver weitergeleitet werden oder man verbaut noch ein GSM-Modul um SMS direkt zu empfangen. Zusätzlich könnte man eine Soundausgabe realisieren und MP3s über den Webserver streamen und diese dann zur Weckfunktion nutzen anstatt nur einen Summer piepsen zu lassen.
+   
+%---------------------------------------------------------
+
+\section{Fehlerliste}
+
+Auf der Hauptplatine sollte man sich einen anderen Ansatz überlegen, um von den 12V auf 5V zu kommen, da der aktuelle Wandler eine Dauerbelastung benötigt, um stabile 5V zu erzeugen, was die Leistungsbilanz negativ beeinflusst. Die Motorsteuerung, welche ebenfalls auf der Hauptplatine ist, funktioniert nicht, siehe in Kapitel \vref{sec:AnsteuerungDesMotors (Adam Visy)}. Diese musste deswegen extern angebracht werden. 
+
+Das DCF77-Modul ist sehr langsam (ca. 10 min. zum Einlesen der Zeit) und der Empfang wird sehr leicht gestört, wodurch momentan das DCF77-Modul zwar funktioniert, allerdings nicht angeschlossen ist. Man könnte die Zeit auch über das Internet abrufen, wenn das Ethernet, die dafür benötigte SD-Karte und der Webserver eingerichtet sind. Diese konnten aus zeitlichen Gründen nicht mehr realisiert werden, ebenso die Alarmfunktion, welche über die RTCC generiert werden könnte.

@@ -1,0 +1,15 @@
+\section{Systemkonzept (Adam Visy)}
+
+In diesem Kapitel wird das Konzept erklärt, mit dem  das Problem aus der Aufgabenstellung gelöst wurde.
+Die Abbildung \vref{fig:syskonzept} dient zur Veranschaulichung des Lösungswegs der gegebenen Aufgabenstellung. Der Kern des eingebetteten Systems besteht aus demPIC32MX795F512L der Firma Microchip, sowie aus einer auf das DCSP11 Board basierten Platine.
+
+Bei der Betätigung des Tasters wechselt das System vom Ruhezustand in den normalen Betrieb. Hier können nun verschiedene Ausgaben über die Stroboskopuhr dargestellt werden. Die vom DCF77-Empfangsmodul ermittelte Uhrzeit wird bei Bedarf mit der internen Uhrzeit durch den RTCC synchronisiert und gegebenenfalls über die RGB LEDs ausgegeben. Die RGB LEDs werden über drei TLCs, die über einen I2C-Bus mit dem PIC kommunizieren, angesprochen. Eine weitere Ausgabemöglichkeit, für Wartungszwecke, stellt das Display dar. Der Summer ermöglicht eine akustische Ausgabe für zum Beispiel die Weckfunktion. Das Pendel wird von einem Gleichstrommotor der Firma Dunkermotoren bewegt. Die Drehzahl wird  analog vom Mikrocontroller vorgegeben. Die Position des Zeigers wird mithilfe eines, auf dem Pendel befindenden, Hallsensors festgestellt. Über einen Photowiderstand wird die Umgebungslichtstärke gemessen. So kann die Lichtstärke der RGB-LEDs angepasst werden. Der Webserver soll über die Ethernetschnittstelle von außen angesprochen werden. Der Webserver wird auf einer mit ebenfalls SPI-Bus angebundenen SD-Karte hinterlegt.
+
+\begin{figure}[htbp]
+	\centering
+		\includegraphics[width=0.8\textwidth]{Bilder/syskonzept3.pdf}
+	\caption{Blockschaltbild des Sysemkonzepts}
+	\label{fig:syskonzept}
+\end{figure}
+
+

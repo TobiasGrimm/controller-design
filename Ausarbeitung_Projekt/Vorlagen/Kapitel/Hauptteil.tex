@@ -1,0 +1,64 @@
+\chapter{Hauptteil}
+Der Hauptteil enthält die zentralen Kapitel der Arbeit. In diesen wird die spezielle Fragestellung der Arbeit dargestellt. Es findet die Erläuterung von Vorgehensweisen und durch sie erzielter Ergebnisse statt. Herleitung der Ergebnisse durch eine logische Gedankenkette. Im Falle einer Informatik orientierten Arbeit zusätzlich sind Erläuterung der Implementation durchzuführen.
+
+Die Arbeit kann sehr unterschiedliche gegliedert werden. Was sich in den Projekten der Sicherheitstechnologie bewährt hat ist die Erläuterung der einzelnen funktionalen Blöcke. Dabei wird nicht im groben zwischen Hard- und Software unterschieden, sonder es wird der Block beschrieben und darin der Hardwareaufbau und die entsprechende Art der Implementierung. Also Beispielsweise
+%---------------------------------------------------------
+\begin{lstlisting}[caption={Beispielstruktur}]
+    \section{Eingangssensoren}
+    	\subsection{Taster}
+    	\subsection{Temperatursensor}
+    	\subsection{Implementierung der Eingangssensoren}
+    \section{Mikrocontrollereinheit}
+    	\subsection{Controller}
+    	\subsection{Energieversorgung}
+    	\subsection{Elektronik des Netzwerk}
+    	\subsection{Implementierung des TCP/IP Stack}
+    	\subsection{Testen der Implementierung}
+    \section{Leistungsbedarf der Elektronik}
+    \section{Kosten der Hardware}
+    \section{Inbetriebnahme der Eingageeinheit}   
+\end{lstlisting}
+
+
+Anbei sind einige Abschnitte exemplarisch in Abhängigkeit Ihrer Themenstellung angegeben.
+
+%---------------------------------------------------------
+\section{Hardware-Design}
+In diesem Kapitel ist die Hardware zu beschreiben. Zu Beginn sind die Anforderungen der Hardware anzugeben. Hieraus ist die Struktur zu entwickeln die durch ein Blockschaltbild zu visualisieren ist. Anhand der Struktur kann das Kapitel in Abschnitte unterteilt werden.
+
+Beim Beschreiben der Hardware ist ein detailliertes Blockschaltbild zu entwerfen, hieraus ist der Schaltplan und das Layout zu entwickeln. Die Hardware ist durch Tests und Messungen auf ihre Korrektheit, bezugnehmend auf die Spezifikation, zu untersuchen. Eventuell sind Spezifikationsdaten durch Messungen zu verifizieren. Zum Abschluss sind Fotos der Platine zu erstellen und einzufügen. Bilder der Hardware und des Aufbaus sind mit einer Digitalkamera abzulichten und in die Ausarbeitung mit aufzunehmen. Platinen lassen sich am besten fotografieren, wenn Sie auf ein weißes Blatt Papier gelegt werden.
+
+Die Bauteilauswahl ist anhand der Anforderungen und Verfügbarkeit genau zu begründen. Alternative zu den Bauteilen sollten angegeben werden.
+
+Beispielhaft wären folgende Abschnitte:
+%---------------------------------------------------------
+\begin{lstlisting}[caption={Beispielstruktur Hardware}]
+    \subsection{Planung}
+    \subsection{Blockschaltbild}
+    \subsection{Schaltung}
+    \subsection{Layout}
+    \subsection{Tests/Messungen}
+\end{lstlisting}
+
+
+%---------------------------------------------------------
+\section{Software-Design}
+In diesem Kapitel ist die Software zu beschreiben. Zu Beginn sind die Anforderungen der Software anzugeben. Hieraus ist die Struktur zu entwickeln, die durch Zeichnungen (Programmablaufplan, Struktogramm, Zustandsgraph, ...) zu visualisieren ist. Anhand der Struktur kann das Kapitel in Abschnitte unterteilt werden. Eine Top-Down Vorgehensweise hat sich bewährt.
+
+Beispielhaft wären folgende Abschnitte:
+%---------------------------------------------------------
+\begin{lstlisting}[caption={Beispielstruktur Software}]
+    \subsection{Gesamtstruktur}
+    \subsection{Betriebssystem}
+    \subsection{Mikrocomputersystems}
+    \subsection{Algorithmus zur Ansteuerung der LED's}
+\end{lstlisting}
+
+%---------------------------------------------------------
+\section{Diskussion der Ergebnisse}
+\textquote[{\cite{Hertel:05}}]{In diesem Abschnitt erörtern Sie, was die Messergebnisse \emph{bedeuten}. Dabei greifen Sie auf vorsorglich bereitgestellte Theorien zurück. Beispielsweise können Sie die Parameter eines vorher beschriebenen Modells anpassen. Manchmal lässt sich auf Grund der Messdaten zwischen Alternativen entscheiden, die man zuvor formuliert haben sollte.}
+
+%---------------------------------------------------------
+\section{Leistungsbewertung}
+\textquote[{\cite{dresden:08}}]{Aus diesem Kapitel sollte hervorgehen, welche Methoden angewendet wurden um, die Leistungsfähigkeit zu bewerten und welche Ergebnisse dabei erzielt wurden. Wichtig ist es, dem Leser nicht nur ein paar Zahlen hinzustellen, sondern auch eine Diskussion der Ergebnisse vorzunehmen. Sehr gut ist, wenn man zunächst diskutiert und plausibel macht, welche Ergebnisse man erwartet, und dann eventuelle Abweichungen diskutiert.}
+

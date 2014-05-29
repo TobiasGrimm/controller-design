@@ -1,0 +1,175 @@
+% ----------------------------------------------------------------
+% Haupt-Dokument  ************************************************
+%-----------------------------------------------------------------
+%
+% Autor:   Prof. Dr.-Ing. Dirk Benyoucef
+% Version: V3.1
+% Letzte Änderung : 28.09.2011
+%
+%-----------------------------------------------------------------
+% Optionen des KOMA-Script Paket
+%---------------------------------
+\documentclass[11pt,                        % Schriftgröße
+               fleqn,                       % Gleichungen linksbündig
+               halfparskip,                 %
+               a4paper,                     % Papierformat A4
+               headsepline,                 % einzeichnen einer Linie unter die Kopfzeile
+               idxtotoc,                    % Aufnahme des Indexverzeichnis in das Inhaltsverzeichnis
+               bibtotoc,                    % Aufnahme des Literaturverzeichnis in das Inhaltsverzeichnis
+               liststotoc,
+               bibtotocnumbered,            % Nummerierung des Literaturverzeichnis
+               pointlessnumbers,            % Bei den Abschnittsnummern wird kein
+                                            % Abschließender Punkt gesetzt
+               DIV15,                       % Andere Seitenaufteilung
+               BCOR1.0cm,                   % Rand zum Binden
+               openbib,						% Erzeugt Absätze im Literaturverzeichnis
+               ngerman,
+               ]{scrbook}
+%-----------------------------------------------------------------
+% Einbinden verschiedener nützlicher Pakete
+%---------------------------------
+\usepackage[ansinew]{inputenc}  % Ermöglicht die Verwendung von Umlaute
+                                % und Sonderzeichen: 'ansinew'  für Windows
+                                % 'latin1' für Linux
+\usepackage[T1]{fontenc}        % 8-Bit-Fonts erleichtern die Trennung bei Umlauten
+\usepackage[ngerman]{babel}     % deutschsprachige Anpassung; deutsche Trennmuster
+\usepackage{varioref}
+\usepackage{xcolor}             % Farbige Darstellung von Wörtern
+\usepackage{framed}
+\usepackage{graphicx}           % ermöglicht das Einbinden von Grafikdateien
+\usepackage[sf,bf,SF,hang]{subfigure}   % Mehere Bilden in ein Abbildung
+\usepackage[sf]{caption}        % Unterschrift in ein Abbildung
+\usepackage{here}               % Bilder sollen beim Argument H an Ort und Stelle erscheinen
+\usepackage{array}              % Für komplexe Tabellen
+%\usepackage{tabularx}           % Tabellen mit automatischer Berechnung der Spaltenbreite
+\usepackage{booktabs}           % Tabellen
+\usepackage{longtable}          % Erlaubt Tabellen über mehrere Seiten
+\usepackage{multirow}           % Für die Tabellen um mehrere Spalten zusammenzufassen
+\usepackage{eurosym}            % Eurosymbol
+\usepackage{url}                % Verwenden von URLs
+\urlstyle{tt}
+\usepackage[geometry]{ifsym}    % Für Symbole
+\usepackage[intlimits,sumlimits]{amsmath} % erweiterte Formeln, Optionen
+                                % ermöglichen die Grenzen oberhalb und
+                                % unterhalb zu setzen
+\usepackage{amssymb}            % blackboard Buchstaben (z.B. Symbol für komplexe Zahlen IC)
+\usepackage{theorem}            % Emöglicht die Definition von eigenen Umgebungen
+\usepackage[amssymb,thickqspace]{SIunits}   % Vereinfacht den Umgang mit Einheiten
+\usepackage{icomma}           % setzt das Komma bei Zahlen richtig (besonders bei mathematische Formeln)
+\usepackage[pdfpagelabels,
+            bookmarksnumbered=true,
+            bookmarksopen=true,
+            bookmarksopenlevel=1,
+			pdftitle={ xxx},
+			pdfauthor={ xxx },
+			pdfsubject={Anleitung},
+            pdfstartview=FitV,
+			plainpages=false]{hyperref}
+\usepackage{pdfpages}            % Mehrseitige PDFs einbinden
+\usepackage[babel]{csquotes}
+\usepackage{listings}
+\usepackage{makeidx}
+\usepackage{fancybox} 	% Boxen definieren und verorten
+\usepackage{svn-multi}
+
+\svnid{$Id: Ausarbeitung.tex 169 2011-09-28 14:22:43Z dbenyoucef $}
+
+
+% Auswahl einer Schrift
+\usepackage{cmbright}
+%-----------------------------------------------------------------
+% Einbinden einiger selbst definierten Makros
+%---------------------------------
+\input{Einstellungen.tex}               % Sammlung von Abkürzungen für Mathematiksymbolen
+                                % (benötigt die Pakete amssymb und theorem)
+\lstset{basicstyle=\sffamily,language=[Latex]Tex,frame=tb,numbers=left, numberstyle=\tiny, emphstyle=\color{red}, columns=fullflexible, backgroundcolor=\color{boxgray}}
+
+\renewcommand{\labelitemiii}{\FilledSmallSquare}
+\renewcommand{\labelitemi}{\FilledSmallTriangleRight}
+\renewcommand{\labelitemii}{\FilledSmallDiamondshape}
+
+
+% Auszufuehrende Befehle  ------------------------------------------------
+\makeindex
+
+% TITEL
+\newcommand{\SEAT}{
+\emph{Smart Metering: Disaggregation von Endverbrauchern }}
+\newcommand{\SEA}{\emph{SmartMeter }}
+
+
+%#################################################################
+% Titelseite
+% ----------------------------------------------------------------
+% Einen Titel auswählen
+%\include{Titel_Master}
+%\include{Titel_Bachelor}
+\include{Titel_Projekt}
+
+%#################################################################
+% Begin des Document
+% ----------------------------------------------------------------
+\begin{document}
+ 
+    \fancyput*(-1.8cm,-26cm){			 % Titelzeile auf allen Seiten
+    	\rotatebox{90}{
+    		\color{gray}
+    		\footnotesize
+    		\sf{}
+    	}
+    }
+
+    \pagenumbering{roman}
+    \maketitle                        % Erzeugen der Titelseite und der Widmung
+    \tableofcontents                  % Erzeugen des Inhaltsverzeichnisses
+
+    \frontmatter
+%    \include{Kapitel/Kurzfassung}
+%    \include{Kapitel/Kurzfassung2}		
+    \include{Kapitel/Personen}
+    \cleardoublepage                  % zum Beenden der roman Seitennummerierung! \clearpage
+    \pagenumbering{arabic}            % Seitennummerierung Hauptteil
+
+    \cleardoublepage
+
+    % Hauptteil
+    \mainmatter
+
+    %#################################################################
+    % Kapitel
+    % ----------------------------------------------------------------
+    \include{Kapitel/Einleitung}
+%    \include{Kapitel/Stand_der_Technik_Systemkonzept}
+    \include{Kapitel/Hauptteil}
+%    \include{Kapitel/Zusammenfassung}
+    \include{Kapitel/Zusammenfassung2}
+
+    %#################################################################
+    % Anhang
+    % ----------------------------------------------------------------
+    \appendix
+ %  \include{Kapitel/Anhang/Anhang_DA}
+ %   \include{Kapitel/Anhang/Erklaerung_DA}
+
+ %   \chapter{Nomenklatur}
+ %   \section{Abkürzungen}
+ %       \input{Kapitel/Anhang/Abkuerzungen.tex}
+ %   \section{Symbole und Formelzeichen}
+ %       \input{Kapitel/Anhang/Formelzeichen.tex}
+
+    \bibliographystyle{Alphadin}    % Alphabetisch sortiertes Literaturverzeichnis mit
+                                    % Einordnungsmarken aus Verfasser und
+                                    % Erscheinungsjahrkürzeln
+    \bibliography{Literaturstellen} % erzeuge Literaturverzeichnis
+                                    % benutze Literaturdatenbank
+                                    % Literaturstellen d.h. die Dateien diplom.bib
+
+    % Abbildungs- und Tabellenverzeichnis
+    \listoffigures
+%    \listoftables
+%    \renewcommand{\lstlistlistingname}{Listingverzeichnis}
+%    \lstlistoflistings
+
+    \printindex
+
+\end{document} 
