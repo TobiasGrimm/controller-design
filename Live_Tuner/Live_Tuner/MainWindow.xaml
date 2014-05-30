@@ -162,7 +162,7 @@
             </TabItem>
             <TabItem Header="Quellen" Margin="-2,-2,-5,-1">
                 <Grid HorizontalAlignment="Left" Height="142" VerticalAlignment="Top" Width="489">
-                    <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="58" Width="438"><Run Language="de-de" Text="- Regelungstechnik Skript      Prof. Dr. Konstantin Meyl"/><LineBreak/><Run Language="de-de" Text="- Systemtheorie Skript           Prof. Dr. Peter Strobach"/></TextBlock>
+                    <TextBlock HorizontalAlignment="Left" Margin="10,4,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="132" Width="438"><Run Language="de-de" Text="Skripte:" TextDecorations="Underline"/><LineBreak/><Run Language="de-de" Text="- Regelungstechnik Skript      Prof. Dr. Konstantin Meyl"/><LineBreak/><Run Language="de-de" Text="- Systemtheorie Skript           Prof. Dr. Peter Strobach"/><LineBreak/><Run Language="de-de"/><LineBreak/><Run Language="de-de" Text="Fachliteratur:" TextDecorations="Underline"/><LineBreak/><Run Language="de-de" Text="- Auf der Fährte von C#         Springer"/><LineBreak/><Run Language="de-de" Text="- C# Quick Reference             Apress"/><LineBreak/><Run Language="de-de" Text="- C# 3.0 Design Patterns        O'Reilly "/></TextBlock>
                 </Grid>
             </TabItem>
         </TabControl>

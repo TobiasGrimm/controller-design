@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.1.7)  29 MAY 2014 19:52
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.1.7)  30 MAY 2014 16:05
 entering extended mode
 **Ausarbeitung.tex
 (C:\Users\Tobias\Documents\GitHub\controller-design\Ausarbeitung_Projekt\Ausarbeitung.tex
@@ -790,7 +790,8 @@ Package csquotes Info: ... found 'babel' package.
 (C:\Users\Tobias\Documents\GitHub\controller-design\Ausarbeitung_Projekt\Kapitel/Personen.aux)
 (C:\Users\Tobias\Documents\GitHub\controller-design\Ausarbeitung_Projekt\Kapitel/Einleitung.aux)
 (C:\Users\Tobias\Documents\GitHub\controller-design\Ausarbeitung_Projekt\Kapitel/Hauptteil.aux)
-(C:\Users\Tobias\Documents\GitHub\controller-design\Ausarbeitung_Projekt\Kapitel/Zusammenfassung2.aux))
+(C:\Users\Tobias\Documents\GitHub\controller-design\Ausarbeitung_Projekt\Kapitel/Zusammenfassung2.aux)
+(C:\Users\Tobias\Documents\GitHub\controller-design\Ausarbeitung_Projekt\Kapitel/Anhang/Quellenverzeichnis.aux))
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 112.
 LaTeX Font Info:    ... okay on input line 112.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 112.
@@ -1189,7 +1190,7 @@ Class scrbook Warning: Usage of deprecated font command `\sf'!
 (scrbook)              by `\normalfont \sffamily ' on input line 59.
 
 [6 <C:/Users/Tobias/Documents/GitHub/controller-design/Ausarbeitung_Projekt/Bilder3/Live_Tuner.png>]
-<Bilder3/Regelkreis.pdf, id=204, 370.38374pt x 169.63374pt>
+<Bilder3/Regelkreis.pdf, id=206, 370.38374pt x 169.63374pt>
 File: Bilder3/Regelkreis.pdf Graphic file (type pdf)
  <use Bilder3/Regelkreis.pdf>
 Package pdftex.def Info: Bilder3/Regelkreis.pdf used on input line 69.
@@ -1224,7 +1225,7 @@ Class scrbook Warning: Usage of deprecated font command `\sf'!
 (scrbook)              But for now, KOMA-Script will replace deprecated `\sf'
 (scrbook)              by `\normalfont \sffamily ' on input line 114.
 
-[8] <Bilder3/UMLClassDiagram2.pdf, id=225, 304.13625pt x 212.795pt>
+[8] <Bilder3/UMLClassDiagram2.pdf, id=226, 304.13625pt x 212.795pt>
 File: Bilder3/UMLClassDiagram2.pdf Graphic file (type pdf)
  <use Bilder3/UMLClassDiagram2.pdf>
 Package pdftex.def Info: Bilder3/UMLClassDiagram2.pdf used on input line 129.
@@ -1269,13 +1270,13 @@ Class scrbook Warning: Usage of deprecated font command `\sf'!
 (scrbook)              But for now, KOMA-Script will replace deprecated `\sf'
 (scrbook)              by `\normalfont \sffamily ' on input line 168.
 
-[10] <Bilder3/Interface_IS.pdf, id=288, 115.43124pt x 71.26625pt>
+[10] <Bilder3/Interface_IS.pdf, id=286, 115.43124pt x 71.26625pt>
 File: Bilder3/Interface_IS.pdf Graphic file (type pdf)
  <use Bilder3/Interface_IS.pdf>
 Package pdftex.def Info: Bilder3/Interface_IS.pdf used on input line 174.
 (pdftex.def)             Requested size: 227.62207pt x 140.5421pt.
 
-<Bilder3/UMLSequenceDiagram1.pdf, id=290, 476.78125pt x 395.4775pt>
+<Bilder3/UMLSequenceDiagram1.pdf, id=288, 476.78125pt x 395.4775pt>
 File: Bilder3/UMLSequenceDiagram1.pdf Graphic file (type pdf)
  <use Bilder3/UMLSequenceDiagram1.pdf>
 Package pdftex.def Info: Bilder3/UMLSequenceDiagram1.pdf used on input line 208.
@@ -1310,7 +1311,28 @@ Class scrbook Warning: Usage of deprecated font command `\sf'!
 (scrbook)              But for now, KOMA-Script will replace deprecated `\sf'
 (scrbook)              by `\normalfont \sffamily ' on input line 221.
 
-[12 <C:/Users/Tobias/Documents/GitHub/controller-design/Ausarbeitung_Projekt/Bilder3/UMLSequenceDiagram1.pdf>])
+[12 <C:/Users/Tobias/Documents/GitHub/controller-design/Ausarbeitung_Projekt/Bilder3/UMLSequenceDiagram1.pdf>]
+<Bilder3/UMLClassDiagram3.pdf, id=372, 210.7875pt x 98.3675pt>
+File: Bilder3/UMLClassDiagram3.pdf Graphic file (type pdf)
+ <use Bilder3/UMLClassDiagram3.pdf>
+Package pdftex.def Info: Bilder3/UMLClassDiagram3.pdf used on input line 241.
+(pdftex.def)             Requested size: 455.24416pt x 212.45256pt.
+
+
+Class scrbook Warning: Usage of deprecated font command `\sf'!
+(scrbook)              You should note, that in 1994 font command `\sf' has
+(scrbook)              been defined for compatiblitiy to Script 2.0 only.
+(scrbook)              Now, after two decades of LaTeX2e and NFSS2, you
+(scrbook)              shouldn't use such commands any longer and within
+(scrbook)              KOMA-Script usage of `\sf' is definitely deprecated.
+(scrbook)              See `fntguide.pdf' for more information about
+(scrbook)              recommended font commands.
+(scrbook)              Note also, that KOMA-Script will remove the definition
+(scrbook)              of `\sf' anytime until release of about version 3.20.
+(scrbook)              But for now, KOMA-Script will replace deprecated `\sf'
+(scrbook)              by `\normalfont \sffamily ' on input line 261.
+
+[13 <C:/Users/Tobias/Documents/GitHub/controller-design/Ausarbeitung_Projekt/Bilder3/UMLClassDiagram3.pdf>])
 
 Class scrbook Warning: Usage of deprecated font command `\sf'!
 (scrbook)              You should note, that in 1994 font command `\sf' has
@@ -1325,26 +1347,7 @@ Class scrbook Warning: Usage of deprecated font command `\sf'!
 (scrbook)              But for now, KOMA-Script will replace deprecated `\sf'
 (scrbook)              by `\normalfont \sffamily ' on input line 143.
 
-[13] (C:\Users\Tobias\Documents\GitHub\controller-design\Ausarbeitung_Projekt\Kapitel/Zusammenfassung2.tex
-
-Class scrbook Warning: Usage of deprecated font command `\sf'!
-(scrbook)              You should note, that in 1994 font command `\sf' has
-(scrbook)              been defined for compatiblitiy to Script 2.0 only.
-(scrbook)              Now, after two decades of LaTeX2e and NFSS2, you
-(scrbook)              shouldn't use such commands any longer and within
-(scrbook)              KOMA-Script usage of `\sf' is definitely deprecated.
-(scrbook)              See `fntguide.pdf' for more information about
-(scrbook)              recommended font commands.
-(scrbook)              Note also, that KOMA-Script will remove the definition
-(scrbook)              of `\sf' anytime until release of about version 3.20.
-(scrbook)              But for now, KOMA-Script will replace deprecated `\sf'
-(scrbook)              by `\normalfont \sffamily ' on input line 1.
-
-[14
-
-
-
-]
+[14] (C:\Users\Tobias\Documents\GitHub\controller-design\Ausarbeitung_Projekt\Kapitel/Zusammenfassung2.tex
 Kapitel 3.
 )
 
@@ -1361,7 +1364,11 @@ Class scrbook Warning: Usage of deprecated font command `\sf'!
 (scrbook)              But for now, KOMA-Script will replace deprecated `\sf'
 (scrbook)              by `\normalfont \sffamily ' on input line 145.
 
-[15] (C:\Users\Tobias\Documents\GitHub\controller-design\Ausarbeitung_Projekt\Ausarbeitung.bbl
+[15
+
+
+
+] (C:\Users\Tobias\Documents\GitHub\controller-design\Ausarbeitung_Projekt\Kapitel/Anhang/Quellenverzeichnis.tex
 
 Class scrbook Warning: Usage of deprecated font command `\sf'!
 (scrbook)              You should note, that in 1994 font command `\sf' has
@@ -1379,44 +1386,9 @@ Class scrbook Warning: Usage of deprecated font command `\sf'!
 [16
 
 
+
 ]
-Anhang A.
-
-Class scrbook Warning: Usage of deprecated font command `\sc'!
-(scrbook)              You should note, that in 1994 font command `\sc' has
-(scrbook)              been defined for compatiblitiy to Script 2.0 only.
-(scrbook)              Now, after two decades of LaTeX2e and NFSS2, you
-(scrbook)              shouldn't use such commands any longer and within
-(scrbook)              KOMA-Script usage of `\sc' is definitely deprecated.
-(scrbook)              See `fntguide.pdf' for more information about
-(scrbook)              recommended font commands.
-(scrbook)              Note also, that KOMA-Script will remove the definition
-(scrbook)              of `\sc' anytime until release of about version 3.20.
-(scrbook)              But for now, KOMA-Script will replace deprecated `\sc'
-(scrbook)              by `\normalfont \scshape ' on input line 4.
-
-
-LaTeX Font Warning: Font shape `T1/cmbr/m/sc' undefined
-(Font)              using `T1/cmbr/m/n' instead on input line 4.
-
-LaTeX Font Info:    Try loading font information for T1+cmtl on input line 6.
-(C:\Users\Tobias\AppData\Roaming\MiKTeX\2.9\tex\latex\cmbright\t1cmtl.fd
-File: t1cmtl.fd 2005/04/13 v8.1 (WaS)
-)
-
-Class scrbook Warning: Usage of deprecated font command `\sc'!
-(scrbook)              You should note, that in 1994 font command `\sc' has
-(scrbook)              been defined for compatiblitiy to Script 2.0 only.
-(scrbook)              Now, after two decades of LaTeX2e and NFSS2, you
-(scrbook)              shouldn't use such commands any longer and within
-(scrbook)              KOMA-Script usage of `\sc' is definitely deprecated.
-(scrbook)              See `fntguide.pdf' for more information about
-(scrbook)              recommended font commands.
-(scrbook)              Note also, that KOMA-Script will remove the definition
-(scrbook)              of `\sc' anytime until release of about version 3.20.
-(scrbook)              But for now, KOMA-Script will replace deprecated `\sc'
-(scrbook)              by `\normalfont \scshape ' on input line 10.
-
+Kapitel 4.
 )
 
 Class scrbook Warning: Usage of deprecated font command `\sf'!
@@ -1430,7 +1402,7 @@ Class scrbook Warning: Usage of deprecated font command `\sf'!
 (scrbook)              Note also, that KOMA-Script will remove the definition
 (scrbook)              of `\sf' anytime until release of about version 3.20.
 (scrbook)              But for now, KOMA-Script will replace deprecated `\sf'
-(scrbook)              by `\normalfont \sffamily ' on input line 168.
+(scrbook)              by `\normalfont \sffamily ' on input line 151.
 
 [17]
 
@@ -1448,6 +1420,7 @@ Class scrbook Warning: Usage of deprecated font command `\sf'!
 (scrbook)              by `\normalfont \sffamily ' on input line 168.
 
 [18
+
 
 ] (C:\Users\Tobias\Documents\GitHub\controller-design\Ausarbeitung_Projekt\Ausarbeitung.lof)
 \tf@lof=\write7
@@ -1475,36 +1448,32 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 175.
 (C:\Users\Tobias\Documents\GitHub\controller-design\Ausarbeitung_Projekt\Kapitel/Personen.aux)
 (C:\Users\Tobias\Documents\GitHub\controller-design\Ausarbeitung_Projekt\Kapitel/Einleitung.aux)
 (C:\Users\Tobias\Documents\GitHub\controller-design\Ausarbeitung_Projekt\Kapitel/Hauptteil.aux)
-(C:\Users\Tobias\Documents\GitHub\controller-design\Ausarbeitung_Projekt\Kapitel/Zusammenfassung2.aux))
+(C:\Users\Tobias\Documents\GitHub\controller-design\Ausarbeitung_Projekt\Kapitel/Zusammenfassung2.aux)
+(C:\Users\Tobias\Documents\GitHub\controller-design\Ausarbeitung_Projekt\Kapitel/Anhang/Quellenverzeichnis.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 175.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 175.
 Package rerunfilecheck Info: File `Ausarbeitung.out' has not changed.
-(rerunfilecheck)             Checksum: 7B9C855B9E6ADF7C4A2908D990564DA2;799.
-
-
-LaTeX Font Warning: Some font shapes were not available, defaults substituted.
-
+(rerunfilecheck)             Checksum: 53CAC343EC12787ECD8EDC8D7284C552;795.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 175.
  ) 
 Here is how much of TeX's memory you used:
- 14635 strings out of 493921
- 224063 string characters out of 3144874
+ 14631 strings out of 493921
+ 224619 string characters out of 3144874
  410118 words of memory out of 3000000
- 17554 multiletter control sequences out of 15000+200000
- 24478 words of font info for 75 fonts, out of 3000000 for 9000
+ 17548 multiletter control sequences out of 15000+200000
+ 24164 words of font info for 74 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  41i,15n,67p,938b,528s stack positions out of 5000i,500n,10000p,200000b,50000s
- <C:\Users\Tobias\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\public\cmbright\dpi657\ebtl10.pk> <C:\Users\Tobias\AppData\
-Local\MiKTeX\2.9\fonts\pk\ljfour\public\cmbright\dpi720\ebbx10.pk> <C:\Users\Tobias\AppData\Local\MiKTeX\2.9\fonts\pk\lj
-four\public\ifsym\dpi657\ifgeo10.pk> <C:\Users\Tobias\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\public\cmbright\dpi657\eb
-mo10.pk> <C:\Users\Tobias\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\public\cmbright\dpi600\ebmr10.pk> <C:\Users\Tobias\Ap
-pData\Local\MiKTeX\2.9\fonts\pk\ljfour\public\cmbright\dpi657\ebmr10.pk> <C:\Users\Tobias\AppData\Local\MiKTeX\2.9\fonts
-\pk\ljfour\public\cmbright\dpi657\ebbx10.pk> <C:\Users\Tobias\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\public\cmbright\d
-pi864\ebmr10.pk> <C:\Users\Tobias\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\public\cmbright\dpi1244\ebbx10.pk> <C:\Users\
-Tobias\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\public\cmbright\dpi864\ebbx10.pk>
-Output written on Ausarbeitung.pdf (25 pages, 1300093 bytes).
+ <C:\Users\Tobias\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\public\cmbright\dpi720\ebbx10.pk> <C:\Users\Tobias\AppData\
+Local\MiKTeX\2.9\fonts\pk\ljfour\public\ifsym\dpi657\ifgeo10.pk> <C:\Users\Tobias\AppData\Local\MiKTeX\2.9\fonts\pk\ljfo
+ur\public\cmbright\dpi657\ebmo10.pk> <C:\Users\Tobias\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\public\cmbright\dpi600\eb
+mr10.pk> <C:\Users\Tobias\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\public\cmbright\dpi657\ebmr10.pk> <C:\Users\Tobias\Ap
+pData\Local\MiKTeX\2.9\fonts\pk\ljfour\public\cmbright\dpi657\ebbx10.pk> <C:\Users\Tobias\AppData\Local\MiKTeX\2.9\fonts
+\pk\ljfour\public\cmbright\dpi864\ebmr10.pk> <C:\Users\Tobias\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\public\cmbright\d
+pi1244\ebbx10.pk> <C:\Users\Tobias\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\public\cmbright\dpi864\ebbx10.pk>
+Output written on Ausarbeitung.pdf (25 pages, 1355069 bytes).
 PDF statistics:
- 849 PDF objects out of 1000 (max. 8388607)
- 49 named destinations out of 1000 (max. 500000)
- 157 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 879 PDF objects out of 1000 (max. 8388607)
+ 48 named destinations out of 1000 (max. 500000)
+ 162 words of extra memory for PDF output out of 10000 (max. 10000000)
 

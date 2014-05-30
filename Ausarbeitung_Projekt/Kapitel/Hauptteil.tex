@@ -18,7 +18,7 @@ Wie leicht zu erkennen ist, baut sich der Live Tuner aus drei großen Komponenten
 	\item \textit{Speichern und Laden} \vref{Speichern und Laden}
 \end{itemize}
 
-Diese drei Komponenten werden nun in diesem Kapitel näher beleuchtet.
+Diese drei Komponenten werden nun in den folgenden Kapiteln näher beleuchtet.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%Graphische Oberfläche%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Graphische Oberfläche}
@@ -52,7 +52,7 @@ Beschreiben warum er Base Slider heißt + wie ist er aufgebaut (basis + slider*mu
 
 		\item \textbf{Infos \& Einstellungen}
 			
-Beschreiben was man hier sieht bzw. machen kann ... verlinkung bei Solver zu Simulation ....				
+Beschreiben was man hier sieht bzw. machen kann ... verlinkung bei Solver zu Simulation \vref{Simulation}....				
 			
 \end{description}
 
@@ -100,7 +100,7 @@ Bei einer Simulation berechnet nun jeder Teilnehmer einen kleinen Zeitschritt un
 		\item \textbf{Die Problematik}
 
 \begin{itemize}
-	\item Die ganzen Berechnungen der Simulation eines Regelkreises sind sehr kompliziert, wie kann man es nach außen vereinfachen, sodass man sich nicht hinein denken muss, wenn man dieses verwenden will?
+	\item Die ganzen Berechnungen zur Simulation eines Regelkreises sind sehr kompliziert, wie kann man es nach außen vereinfachen, sodass man sich nicht hinein denken muss, wenn man dieses verwenden will?
 	\item Die einzelnen Klassen im Regelkreis für Regler und Strecke können je nach Anwenderbedarf unterschiedlich sein! Wie können nun diese Klassen mit einander Kommunizieren, ohne sich direkt kennen zu müssen? 
 \end{itemize}
 
@@ -115,7 +115,7 @@ Um diese zwei Probleme zu behandeln wurden folgende zwei Entwurfsmuster ausgewäh
 \subsection{Fassade Entwurfsmuster}%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \label{Fassade Entwurfsmuster}	
 
-		\item \textbf{Beschreibung des Entwurfsmusters \cite{FDP:01}}
+		\item \textbf{Beschreibung des Entwurfsmusters}
 		
 \textit{Wenn ein Subsystem viele technisch orientierte Klassen enthält, die selten von außen verwendet werden, hilft es, eine Fassade zu verwenden. Die Fassade ist eine Klasse mit ausgewählten Methoden, die eine häufig benötigte Untermenge an Funktionalität des Subsystems umfasst. Sie delegiert die Funktionalität an andere Klassen des Subsystems und vereinfacht dadurch den Umgang mit dem Subsystem.}
 
@@ -133,10 +133,10 @@ Wie im Ausschnitt des UML-Diagramms\vref{UML Klassendiagramm2} gut zu erkennen i
 
 Der \textit{Simulator} kümmert sich um die komplette Verwaltung der einzelnen Klassen einer Simulation, vernetzt sie miteinander und leitet die einzelnen Berechnungen. Er merkt sich in einem Array von Objekten, welche das Interface ISimulatable implementieren, in welcher Reihenfolge die einzelnen Objekte bei einer Simulation aufgerufen werden müssen.
 
-Durch diesen Einsatz wird die komplexität einer Simulation auf ein Minimum von zwei Funktionen herunter gebrochen:
+Durch diesen Einsatz wird die Komplexität einer Simulation auf ein Minimum von zwei Funktionen herunter gebrochen:
 
 \begin{itemize}
-	\item \textit{simulate(Ts : Single, Tend : Single) : Single[*]}
+	\item \textit{float[,] simulate(float Ts, float Tend)}
 	
 	Simuliere den aktuellen Regelkreis mit den festen kleinen Zeitschritten Ts bis zur Endzeit Tend. Gebe das Ergebnis zurück.
 	
@@ -148,7 +148,7 @@ Durch diesen Einsatz wird die komplexität einer Simulation auf ein Minimum von z
 \subsection{Beobachter Entwurfsmuster}%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \label{Beobachter Entwurfsmuster}	
 		
-		\item \textbf{Beschreibung des Entwurfsmusters \cite{BDP:01}}
+		\item \textbf{Beschreibung des Entwurfsmusters}
 		
 \textit{Allgemein finden Beobachter-Muster Anwendung, wenn eine Abstraktion mehrere Aspekte hat, die von einem anderen Aspekt derselben Abstraktion abhängen, die Änderung eines Objekts Änderungen an anderen Objekten nach sich zieht oder ein Objekt andere Objekte benachrichtigen soll, ohne diese im Detail zu kennen.}	
 
@@ -167,7 +167,7 @@ Anschaulich bedeutet dies, dass alle Verbindungen im Regelkreis\vref{Benachricht
 
 \newpage
 
-Hierdurch ist nun klar, wie das Interface aussehen muss, welches eine Klasse implementieren muss, um simulierbar zu sein:
+Hierdurch ist nun klar, wie das Interface aufgebaut sein muss, welches eine Klasse implementiert, um simulierbar zu sein:
 
 \begin{figure}[H]
 	\centering
@@ -225,12 +225,46 @@ Haben alle Komponenten einen Zeitschritt berechnet, so wird die Schleife erneut 
 \begin{description}
 		
 		\item \textbf{Die Motivation}
-		
-blablablub viel Zeit investiert alles weg. ..... Anderen Leuten Schicken .... Archivieren ....
+
+Ein entscheidendes Feature eines Software-Tools ist selbst verständlich die Möglichkeit seine Arbeit speichern zu können. 
+Damit die Möglichkeit besteht diese zu Archivieren und zu einem späteren Zeitpunkten auf den alten Stand zurück zu greifen.
+Ein weiterer großer Vorteil besteht darin, dass man die gespeicherte Datei ganz einfach an Arbeitskollegen verteilen kann, damit diese sich die Auslegung anschauen können.
+
+Aus diesem Gedanken heraus ist es eine Notwendigkeit ein solches Feature für den Live-Tuner bereit zu stellen.
 				
 		\item \textbf{Umsetzung}
 
-Interfave beschreiben eklären ,.....
-Fale Manager beschreiben ... warum ist er so vielseitig einsetzbar ...
+Im UML-Klassendiagramm\vref{UML Klassendiagramm für das Speichern und Laden} sehen Sie das Lösungskonzept für dieses Feature.
+		
+\begin{figure}[H]
+	\centering
+  \includegraphics[width=1\textwidth]{Bilder3/UMLClassDiagram3.pdf}
+	\caption{UML-Klassendiagramm für das Speichern und Laden}
+	\label{UML Klassendiagramm für das Speichern und Laden}
+\end{figure}
+
+Die eigentliche Idee ist ganz einfach, jedes Objekt welches gespeichert werden soll, muss genau zwei Methoden zur Verfügung stellen, welche im Interface ISavable definiert sind:
+
+\begin{itemize}
+	\item \textit{string parameters2string()}
+	
+	Baue alle Informationen, die du dir merken willst zu einem String zusammen.	
+	\item \textit{void restorefromstring(string s)}	
+	
+	Stelle dich aus dem gebauten String wieder her.
+\end{itemize}
+
+Durch dieses Interface ist es dem \textit{File\_Manager} möglich alle Objekte dieses Interfaces speichern zu können. 
+Er baut alle Informationen der Teilnehmer zu einem großen String zusammen, und kann diesen dann als Text-Datei abspeichern, und selbstverständlich auch wieder herstellen.
+
+Dieser Ansatz zum Speichern von Informationen kann nun selbstverständlich für beliebige Klassen eingesetzt werden.
+
+		\item \textbf{Wie können nun bereits bestehende Klassen gespeichert werden?}
+
+Nun kann man sich vorstellen, dass es bereits sehr viele Standard Klassen gibt, welche dieses Interface nicht implementieren. Im Falle des Live Tuners war es z.B. erforderlich Informationen über die WPF-Oberfläche wie TextBox, CheckBox, ComboBox, ... zu speichern.
+
+Um hier Abhilfe zu schaffen, wurde die Klasse \textit{Savable\_WPF\_Obj} geschaffen, welche ganz genau weiß, wie eine TextBox, eine CheckBox, eine ComboBox, ... zu einem String gebaut wird, und auch wieder hergestellt wird.
+
+Durch diesen kleinen Trick ist es nur noch erforderlich diesem Objekt zu sagen, welche WPF Objekte gespeichert werden sollen, und dann mittels des \textit{File\_Manager} zu speichern.
 		
 \end{description}

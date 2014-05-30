@@ -3,5 +3,8 @@ A level-1 auxiliary file: Kapitel/Personen.aux
 A level-1 auxiliary file: Kapitel/Einleitung.aux
 A level-1 auxiliary file: Kapitel/Hauptteil.aux
 A level-1 auxiliary file: Kapitel/Zusammenfassung2.aux
+A level-1 auxiliary file: Kapitel/Anhang/Quellenverzeichnis.aux
 The style file: Alphadin.bst
-Database file #1: Literaturstellen.bib
+I found no \citation commands---while reading file Ausarbeitung.aux
+I found no \bibdata command---while reading file Ausarbeitung.aux
+(There were 2 error messages)

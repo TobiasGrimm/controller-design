@@ -1,15 +1,3 @@
-\begin{thebibliography}{Wik14}
-
-\bibitem[Wik13]{FDP:01}
-{\sc Wikipedia}.
-\newblock Fassade-Entwurfsmuster.
-\newblock \url{http://de.wikipedia.org/wiki/Fassade_(Entwurfsmuster)}.
-\newblock 2013
-
-\bibitem[Wik14]{BDP:01}
-{\sc Wikipedia}.
-\newblock Beobachter-Entwurfsmuster.
-\newblock \url{http://de.wikipedia.org/wiki/Beobachter_(Entwurfsmuster)}.
-\newblock 2014
+\begin{thebibliography}{}
 
 \end{thebibliography}
