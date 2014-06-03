@@ -20,16 +20,18 @@ Wie leicht zu erkennen ist, baut sich der Live Tuner aus drei großen Komponenten
 
 Diese drei Komponenten werden nun in den folgenden Kapiteln näher beleuchtet.
 
+\newpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%Graphische Oberfläche%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Graphische Oberfläche}
 \label {Graphische Oberfläche}
-
 
 \begin{description}
 	 
 		\item \textbf{Das Ziel}
 		
-Blablabla Benutzerfreundlich blablabla ... WPF der Hammer blablabla
+		Das Hauptziel der Oberfläche ist es, diese so zu konzipieren, dass eine Veränderung an einem der einstellbaren Parametern sofort zu einer Veränderung am Plot führt, also sozusagen "Live". So ist es leichter, ein Gespür für die verschiedenen einstellbaren Werte zu erlangen. Des Weiteren soll dem Nutzer viel Komfort entgegengebracht werden, z.B. gibt das Programm selber vor welche Regler zu welcher Regelstrecke sinnvoll sind und welche nicht. \newline
+		
+		Von der Aufgabestellung war vorgegeben, die Oberfläche mit der Windows Presentation Foundation (WPF) zu erstellen. In dieser ist es zwar noch möglich, die Oberfläche in C\# zu konfigurieren, jedoch nicht mehr so wie es in der älteren Windows-Forms Anwendungen der Fall war. Die Einstellungen für die Oberfläche werden nun in einem XML Dokument vorgenommen. 
 
 \begin{figure}[H]
 	\centering
@@ -40,20 +42,50 @@ Blablabla Benutzerfreundlich blablabla ... WPF der Hammer blablabla
 
 		\item \textbf{Live Plot}
 
-Blablablablub
+		Der Live Plot hat die Aufgabe die ihm übergebenen Werte als einen Graph darzustellen. Da die Oberfläche mit dem Windows Presentation Foundation (WPF) Oberflächendesigner erstellt wurde, wurde für die Darstellung des Graphen das WPF-Toolkit verwendet. Dieses enthält alle rudimentären Darstellungsformen und -einstellungen für verschiedene Graphentypen. Für den Graph wurde der Graphentyp "LineSeries" verwendet. Diese plottet anhand von x und y Werten den Graphen. \newline
+		Eine der Vorteile des WPF-Toolkits ist, dass der Graph sich je nach den übergebenen Werten automatisch skaliert. Die Größenordnung der Werte werden aber nicht angepasst. Dies muss in den Einstellungen separat durchgeführt werden. Die Ausgabe der Werte wurde nun so angepasst, dass diese vorher in eine Exponentialschreibweise umgeformt werden. So können nun extrem große, aber auch extrem kleine Werte ausgegeben werden.   		   
 
 		\item \textbf{Strecke und Regler}		
-				
-Blablabla Verschiedene Strecken -> der passende Regler wird vorgeschlagen blablabla Auslegen geht nur wenn Strecke passt blablabla
+
+		Unter diesen Punkten kann die Regelstrecke und der dazu passende Regler eingestellt werden. Die Oberfläche gibt automatisch je nach gewählter Regelstrecke den passenden Regler vor. Auch hier werden die Werte der verschiedenen Parameter in Exponentialschreibweise dargestellt. Die Einstellungen für die einzelnen Parameter werden mit Hilfe der Base Slider 
+		vorgenommen.
 
 		\item \textbf{Base Slider}	
 		
-Beschreiben warum er Base Slider heißt + wie ist er aufgebaut (basis + slider*mult) + warum es so cool ist blablalba
+		Die Einstellungsmöglichkeiten für die Regler bzw. Strecke sind alle gleich. Deshalb wurde ein separates Oberflächenobjekt erstellt, der sogenannte Base Slider. Dieser besteht im wesentlichen aus einem Anfangswert zudem dann noch ein zweiter Wert hinzuaddiert wird. Dabei wird der zweite Wert per Slider zwischen den Werten 1 und -1 eingestellt und mit einem Faktor multipliziert. Dies hat den Vorteil, dass selbst kleine Werte so schnell eingestellt werden können.  
 
 		\item \textbf{Infos \& Einstellungen}
-			
-Beschreiben was man hier sieht bzw. machen kann ... verlinkung bei Solver zu Simulation \vref{Simulation}....				
-			
+		
+		Unter dem Punkt Infos \& Einstellungen befinden sich folgende Punkte:
+		\begin{itemize}
+		\item \textit{Regelkreis} \newline
+		Ein Bild des verwendeten Regelkreis. 
+		\item \textit{Störung} \newline
+		Hier lassen sich Störungen in den Regelkreis einspeisen.
+		\item \textit{Solver} \newline
+		Unter dem Punkt Solver lässt sich die Schrittweite der Simulation, sowie der Endzeitpunkt der Simulation bestimmen. Darüber hinaus gibt es hier die Möglichkeit für den Plot weniger Werte zu verwenden, als die Simulation berechnet. Dieses Feature ermöglicht es einem die aufzuwendende Rechenleistung zu verringern, da die Berechnung für die Simulation sehr viel geringer ist, als die Berechnung des Plots.
+		\item \textit{Quellen} \newline
+		Das Programm wurde mithilfe der angegebenen Quellen entwickelt und erstellt.
+		\item \textit{Save \& Load}
+		
+		Alle Einstellungen lassen sich mit dem Save Befehl in einer Datei speichern. Mit dem Load Befehl kann so zu einem
+		späterem Zeitpunkt auf die Einstellungen zurückgegriffen werden.
+		\item \textit{Live Plot} \newline
+		Wenn das Häckchen bei Live Plot gesetzt wird, werden die berechneten Werte direkt geplottet. Bei vielen Werten
+		empfiehlt es sich, das Häckchen rauszunehmen um eine Performancesteigerung zu erzielen.
+		\end{itemize}				
+
+		\item \textbf{Warnings}	
+
+Bei den Solver-Einstellungen ist es dem Benutzer frei gestellt diese an seine Bedürfnisse anzupassen. Jedoch gibt es Einstellungskombinationen, die sehr rechenintensiv sind. Dies ist erstens nicht notwendig, und kann zweitens zu sehr langen Simulationsdauern führen. Aus diesem Grund wird dem Benutzer bei kritischen Eingaben eine Warning ausgegeben, welche Sie in Abbildung\vref{Warnung für rechenintensive Solver Einstellungen} sehen können.
+							
+\begin{figure}[H]
+	\centering
+  \includegraphics[width=1\textwidth]{Bilder3/warning.png}
+	\caption{Warnung für rechenintensive Solver Einstellungen}
+	\label{Warnung für rechenintensive Solver Einstellungen}
+\end{figure}
+							
 \end{description}
 
 \newpage 
@@ -101,7 +133,7 @@ Bei einer Simulation berechnet nun jeder Teilnehmer einen kleinen Zeitschritt un
 
 \begin{itemize}
 	\item Die ganzen Berechnungen zur Simulation eines Regelkreises sind sehr kompliziert, wie kann man es nach außen vereinfachen, sodass man sich nicht hinein denken muss, wenn man dieses verwenden will?
-	\item Die einzelnen Klassen im Regelkreis für Regler und Strecke können je nach Anwenderbedarf unterschiedlich sein! Wie können nun diese Klassen mit einander Kommunizieren, ohne sich direkt kennen zu müssen? 
+	\item Die einzelnen Klassen im Regelkreis für Regler und Strecke können je nach Anwenderbedarf unterschiedlich sein! Wie können nun diese Klassen miteinander kommunizieren, ohne sich direkt kennen zu müssen? 
 \end{itemize}
 
 				
@@ -115,7 +147,7 @@ Um diese zwei Probleme zu behandeln wurden folgende zwei Entwurfsmuster ausgewäh
 \subsection{Fassade Entwurfsmuster}%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \label{Fassade Entwurfsmuster}	
 
-		\item \textbf{Beschreibung des Entwurfsmusters}
+		\item \textbf{Beschreibung des Entwurfsmusters (wiki)}
 		
 \textit{Wenn ein Subsystem viele technisch orientierte Klassen enthält, die selten von außen verwendet werden, hilft es, eine Fassade zu verwenden. Die Fassade ist eine Klasse mit ausgewählten Methoden, die eine häufig benötigte Untermenge an Funktionalität des Subsystems umfasst. Sie delegiert die Funktionalität an andere Klassen des Subsystems und vereinfacht dadurch den Umgang mit dem Subsystem.}
 
@@ -126,7 +158,7 @@ Wie im Ausschnitt des UML-Diagramms\vref{UML Klassendiagramm2} gut zu erkennen i
 	
 \begin{figure}[H]
 	\centering
-  \includegraphics[width=1.1\textwidth]{Bilder3/UMLClassDiagram2.pdf}
+  \includegraphics[width=0.9\textwidth]{Bilder3/UMLClassDiagram2.pdf}
 	\caption{Klasse "`Simulator"' als Fassade}
 	\label{UML Klassendiagramm2}
 \end{figure}
@@ -138,7 +170,7 @@ Durch diesen Einsatz wird die Komplexität einer Simulation auf ein Minimum von z
 \begin{itemize}
 	\item \textit{float[,] simulate(float Ts, float Tend)}
 	
-	Simuliere den aktuellen Regelkreis mit den festen kleinen Zeitschritten Ts bis zur Endzeit Tend. Gebe das Ergebnis zurück.
+	Simuliere den aktuellen Regelkreis mit den festen kleinen Zeitschritten $T_{s}$ bis zur Endzeit $T_{end}$. Gebe das Ergebnis zurück.
 	
 	\item \textit{bool replace\_in\_Schematic\_at\_pos(int position, ISimulatable x)}
 	
@@ -148,7 +180,7 @@ Durch diesen Einsatz wird die Komplexität einer Simulation auf ein Minimum von z
 \subsection{Beobachter Entwurfsmuster}%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \label{Beobachter Entwurfsmuster}	
 		
-		\item \textbf{Beschreibung des Entwurfsmusters}
+		\item \textbf{Beschreibung des Entwurfsmusters (wiki)}
 		
 \textit{Allgemein finden Beobachter-Muster Anwendung, wenn eine Abstraktion mehrere Aspekte hat, die von einem anderen Aspekt derselben Abstraktion abhängen, die Änderung eines Objekts Änderungen an anderen Objekten nach sich zieht oder ein Objekt andere Objekte benachrichtigen soll, ohne diese im Detail zu kennen.}	
 
@@ -187,7 +219,7 @@ Hierdurch ist nun klar, wie das Interface aufgebaut sein muss, welches eine Klas
 	Setze den Eingangswert für die Berechnung des nächsten Zeitschrittes.
 	\item \textit{float do\_one\_step(float Ts)}
 		
-	Berechne den Ausgangswert aus dem Eingangswert und feuere das Event I\_am\_finish.
+	Berechne den Ausgangswert aus dem Eingangswert und feuere das Event \textit{I\_am\_finish}.
 	\item \textit{void reset()}	
 	
 	Leere den Speicher der Vergangenheit.
@@ -226,8 +258,8 @@ Haben alle Komponenten einen Zeitschritt berechnet, so wird die Schleife erneut 
 		
 		\item \textbf{Die Motivation}
 
-Ein entscheidendes Feature eines Software-Tools ist selbst verständlich die Möglichkeit seine Arbeit speichern zu können. 
-Damit die Möglichkeit besteht diese zu Archivieren und zu einem späteren Zeitpunkten auf den alten Stand zurück zu greifen.
+Ein entscheidendes Feature eines Software-Tools ist selbst verständlich die Möglichkeit seine Arbeit speichern zu können, 
+damit die Möglichkeit besteht diese zu Archivieren und zu einem späteren Zeitpunkten auf den alten Stand zurück zu greifen.
 Ein weiterer großer Vorteil besteht darin, dass man die gespeicherte Datei ganz einfach an Arbeitskollegen verteilen kann, damit diese sich die Auslegung anschauen können.
 
 Aus diesem Gedanken heraus ist es eine Notwendigkeit ein solches Feature für den Live-Tuner bereit zu stellen.
@@ -257,7 +289,7 @@ Die eigentliche Idee ist ganz einfach, jedes Objekt welches gespeichert werden s
 Durch dieses Interface ist es dem \textit{File\_Manager} möglich alle Objekte dieses Interfaces speichern zu können. 
 Er baut alle Informationen der Teilnehmer zu einem großen String zusammen, und kann diesen dann als Text-Datei abspeichern, und selbstverständlich auch wieder herstellen.
 
-Dieser Ansatz zum Speichern von Informationen kann nun selbstverständlich für beliebige Klassen eingesetzt werden.
+Dieser Ansatz zum Speichern von Informationen kann nun auch natürlich für beliebige Klassen eingesetzt werden.
 
 		\item \textbf{Wie können nun bereits bestehende Klassen gespeichert werden?}
 

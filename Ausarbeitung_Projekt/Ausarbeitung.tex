@@ -21,10 +21,10 @@
                pointlessnumbers,            % Bei den Abschnittsnummern wird kein
                                             % Abschließender Punkt gesetzt
                DIV15,                       % Andere Seitenaufteilung
-               BCOR1.0cm,                   % Rand zum Binden
+               BCOR0.0cm,                   % Rand zum Binden
                openbib,						% Erzeugt Absätze im Literaturverzeichnis
                ngerman,
-               ]{scrbook}
+               ]{scrreprt}
 %-----------------------------------------------------------------
 % Einbinden verschiedener nützlicher Pakete
 %---------------------------------
@@ -72,7 +72,7 @@
 \usepackage{fancybox} 	% Boxen definieren und verorten
 \usepackage{svn-multi}
 
-\svnid{$Id: Ausarbeitung.tex 169 2011-09-28 14:22:43Z dbenyoucef $}
+%\svnid{$Id: Ausarbeitung.tex 169 2011-09-28 14:22:43Z dbenyoucef $}
 
 
 % Auswahl einer Schrift
@@ -123,7 +123,7 @@
     \maketitle                        % Erzeugen der Titelseite und der Widmung
     \tableofcontents                  % Erzeugen des Inhaltsverzeichnisses
 
-    \frontmatter
+%    \frontmatter
 %    \include{Kapitel/Kurzfassung}
 %    \include{Kapitel/Kurzfassung2}		
     \include{Kapitel/Personen}
@@ -133,7 +133,7 @@
     \cleardoublepage
 
     % Hauptteil
-    \mainmatter
+%    \mainmatter
 
     %#################################################################
     % Kapitel
