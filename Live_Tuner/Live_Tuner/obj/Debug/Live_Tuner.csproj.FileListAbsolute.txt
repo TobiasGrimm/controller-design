@@ -67,3 +67,8 @@ C:\Users\Tobias\Documents\GitHub\controller-design\Live_Tuner\Live_Tuner\bin\Deb
 C:\Users\Alex\Documents\GitHub\controller-design\Live_Tuner\Live_Tuner\bin\Debug\Save_Manager.dll
 C:\Users\Alex\Documents\GitHub\controller-design\Live_Tuner\Live_Tuner\bin\Debug\Save_Manager.pdb
 C:\Users\Alex\Documents\GitHub\controller-design\Live_Tuner\Live_Tuner\bin\Debug\Save_Manager.xml
+C:\Users\Tobias\Documents\GitHub\controller-design\Live_Tuner\Live_Tuner\bin\Debug\ReglerTestWPF.exe.manifest
+C:\Users\Tobias\Documents\GitHub\controller-design\Live_Tuner\Live_Tuner\bin\Debug\ReglerTestWPF.application
+C:\Users\Tobias\Documents\GitHub\controller-design\Live_Tuner\Live_Tuner\obj\Debug\ReglerTestWPF.TrustInfo.xml
+C:\Users\Tobias\Documents\GitHub\controller-design\Live_Tuner\Live_Tuner\obj\Debug\ReglerTestWPF.exe.manifest
+C:\Users\Tobias\Documents\GitHub\controller-design\Live_Tuner\Live_Tuner\obj\Debug\ReglerTestWPF.application
