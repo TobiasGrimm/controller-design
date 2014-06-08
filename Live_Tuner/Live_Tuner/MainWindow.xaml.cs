@@ -368,7 +368,7 @@ namespace controller_design.WPF
                 {
                     if ((Tend/Ts)/_plot_count >= 1000 && !_ignore_warnings)
                     {
-                        MessageBoxResult mbr1 = MessageBox.Show("ACHTUNG: Für die Erstellung des Plots mit den Aktuellen Solver-Parametern werden " + (int)((Tend / Ts) / _plot_count) + " Werte geplottet. Dies kann sehr Zeitintensiv sein, oder zum Absturz führen! \n Sind Sie sicher, dass sie dies durchführen wollen? \n (wenn nicht -> Live Plot wird abgeschaltet)", "Warnung", b1, i1);
+                        MessageBoxResult mbr1 = MessageBox.Show("ACHTUNG: Für die Erstellung des Plots mit den aktuellen Solver-Parametern werden " + (int)((Tend / Ts) / _plot_count) + " Werte geplottet. Dies kann sehr zeitintensiv sein oder zum Absturz führen! \n Sind Sie sicher, dass Sie dies durchführen wollen? \n (wenn nicht -> Live Plot wird abgeschaltet)", "Warnung", b1, i1);
                         switch(mbr1)
                         {
                             case MessageBoxResult.Yes:

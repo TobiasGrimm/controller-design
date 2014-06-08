@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.1.7)  3 JUN 2014 15:12
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.1.7)  8 JUN 2014 14:42
 entering extended mode
 **Ausarbeitung.tex
-(C:\Users\Tobias\Desktop\Ausarbeitung_Projekt\Ausarbeitung.tex
+(C:\Users\Tobias\Documents\GitHub\controller-design\Ausarbeitung_Projekt\Ausarbeitung.tex
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, arabic, armenian, assamese, basque, bengali
 , bokmal, bulgarian, catalan, coptic, croatian, czech, danish, dutch, esperanto, estonian, farsi, finnish, french, galic
@@ -742,7 +742,7 @@ LaTeX Font Info:    Try loading font information for T1+cmbr on input line 144.
 (C:\Users\Tobias\AppData\Roaming\MiKTeX\2.9\tex\latex\cmbright\t1cmbr.fd
 File: t1cmbr.fd 2005/04/13 v8.1 (WaS)
 ))
-(C:\Users\Tobias\Desktop\Ausarbeitung_Projekt\Einstellungen.tex
+(C:\Users\Tobias\Documents\GitHub\controller-design\Ausarbeitung_Projekt\Einstellungen.tex
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tools\thb.sty"
 File: thb.sty 1995/11/23 v2.2c Theorem extension package (FMi)
 )
@@ -782,16 +782,16 @@ File: lstmisc.sty 2013/08/26 1.5b (Carsten Heinz)
 
 Writing index file Ausarbeitung.idx
 \@input{Titel_Projekt.aux}
-(C:\Users\Tobias\Desktop\Ausarbeitung_Projekt\Titel_Projekt.tex)
+(C:\Users\Tobias\Documents\GitHub\controller-design\Ausarbeitung_Projekt\Titel_Projekt.tex)
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 
-(C:\Users\Tobias\Desktop\Ausarbeitung_Projekt\Ausarbeitung.aux
-(C:\Users\Tobias\Desktop\Ausarbeitung_Projekt\Kapitel/Personen.aux)
-(C:\Users\Tobias\Desktop\Ausarbeitung_Projekt\Kapitel/Einleitung.aux)
-(C:\Users\Tobias\Desktop\Ausarbeitung_Projekt\Kapitel/Hauptteil.aux)
-(C:\Users\Tobias\Desktop\Ausarbeitung_Projekt\Kapitel/Zusammenfassung2.aux)
-(C:\Users\Tobias\Desktop\Ausarbeitung_Projekt\Kapitel/Anhang/Quellenverzeichnis.aux))
+(C:\Users\Tobias\Documents\GitHub\controller-design\Ausarbeitung_Projekt\Ausarbeitung.aux
+(C:\Users\Tobias\Documents\GitHub\controller-design\Ausarbeitung_Projekt\Kapitel/Personen.aux)
+(C:\Users\Tobias\Documents\GitHub\controller-design\Ausarbeitung_Projekt\Kapitel/Einleitung.aux)
+(C:\Users\Tobias\Documents\GitHub\controller-design\Ausarbeitung_Projekt\Kapitel/Hauptteil.aux)
+(C:\Users\Tobias\Documents\GitHub\controller-design\Ausarbeitung_Projekt\Kapitel/Zusammenfassung2.aux)
+(C:\Users\Tobias\Documents\GitHub\controller-design\Ausarbeitung_Projekt\Kapitel/Anhang/Quellenverzeichnis.aux))
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 112.
 LaTeX Font Info:    ... okay on input line 112.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 112.
@@ -855,8 +855,8 @@ LaTeX Info: Redefining \ref on input line 112.
 LaTeX Info: Redefining \pageref on input line 112.
 LaTeX Info: Redefining \nameref on input line 112.
 
-(C:\Users\Tobias\Desktop\Ausarbeitung_Projekt\Ausarbeitung.out)
-(C:\Users\Tobias\Desktop\Ausarbeitung_Projekt\Ausarbeitung.out)
+(C:\Users\Tobias\Documents\GitHub\controller-design\Ausarbeitung_Projekt\Ausarbeitung.out)
+(C:\Users\Tobias\Documents\GitHub\controller-design\Ausarbeitung_Projekt\Ausarbeitung.out)
 \@outlinefile=\write5
 LaTeX Info: Redefining \Ref on input line 112.
 \c@lstlisting=\count157
@@ -914,8 +914,9 @@ Class scrreprt Warning: Usage of deprecated font command `\sf'!
 
 
 
-{C:/Users/Tobias/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <C:/Users/Tobias/Desktop/Ausarbeitung_Projekt/Bilder
-/Logo/Logo_HFU_rz_4c.pdf>] (C:\Users\Tobias\Desktop\Ausarbeitung_Projekt\Ausarbeitung.toc)
+{C:/Users/Tobias/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <C:/Users/Tobias/Documents/GitHub/controller-design/
+Ausarbeitung_Projekt/Bilder/Logo/Logo_HFU_rz_4c.pdf>]
+(C:\Users\Tobias\Documents\GitHub\controller-design\Ausarbeitung_Projekt\Ausarbeitung.toc)
 \tf@toc=\write6
 
 
@@ -934,7 +935,7 @@ Class scrreprt Warning: Usage of deprecated font command `\sf'!
 
 [2
 
-] (C:\Users\Tobias\Desktop\Ausarbeitung_Projekt\Kapitel/Personen.tex
+] (C:\Users\Tobias\Documents\GitHub\controller-design\Ausarbeitung_Projekt\Kapitel/Personen.tex
 <Bilder/Personen/Adam_V.jpg, id=90, 773.89125pt x 993.7125pt>
 File: Bilder/Personen/Adam_V.jpg Graphic file (type jpg)
  <use Bilder/Personen/Adam_V.jpg>
@@ -964,8 +965,9 @@ Class scrreprt Warning: Usage of deprecated font command `\sf'!
 [3
 
 
- <C:/Users/Tobias/Desktop/Ausarbeitung_Projekt/Bilder/Personen/Adam_V.jpg> <C:/Users/Tobias/Desktop/Ausarbeitung_Projekt
-/Bilder/Personen/Tobi_G.jpg>] (C:\Users\Tobias\Desktop\Ausarbeitung_Projekt\Kapitel/Einleitung.tex
+ <C:/Users/Tobias/Documents/GitHub/controller-design/Ausarbeitung_Projekt/Bilder/Personen/Adam_V.jpg> <C:/Users/Tobias/D
+ocuments/GitHub/controller-design/Ausarbeitung_Projekt/Bilder/Personen/Tobi_G.jpg>]
+(C:\Users\Tobias\Documents\GitHub\controller-design\Ausarbeitung_Projekt\Kapitel/Einleitung.tex
 Kapitel 1.
 
 Class scrreprt Warning: \float@addtolists detected!
@@ -1027,7 +1029,7 @@ Class scrreprt Warning: Usage of deprecated font command `\sf'!
 (scrreprt)              But for now, KOMA-Script will replace deprecated `\sf'
 (scrreprt)              by `\normalfont \sffamily ' on input line 56.
 
-[2 <C:/Users/Tobias/Desktop/Ausarbeitung_Projekt/Bilder3/Motor_Regelkreis.pdf>])
+[2 <C:/Users/Tobias/Documents/GitHub/controller-design/Ausarbeitung_Projekt/Bilder3/Motor_Regelkreis.pdf>])
 
 Class scrreprt Warning: Usage of deprecated font command `\sf'!
 (scrreprt)              You should note, that in 1994 font command `\sf' has
@@ -1042,7 +1044,7 @@ Class scrreprt Warning: Usage of deprecated font command `\sf'!
 (scrreprt)              But for now, KOMA-Script will replace deprecated `\sf'
 (scrreprt)              by `\normalfont \sffamily ' on input line 141.
 
-[3] (C:\Users\Tobias\Desktop\Ausarbeitung_Projekt\Kapitel/Hauptteil.tex
+[3] (C:\Users\Tobias\Documents\GitHub\controller-design\Ausarbeitung_Projekt\Kapitel/Hauptteil.tex
 Kapitel 2.
 <Bilder3/UMLClassDiagram1.pdf, id=125, 448.67625pt x 212.795pt>
 File: Bilder3/UMLClassDiagram1.pdf Graphic file (type pdf)
@@ -1072,7 +1074,7 @@ Class scrreprt Warning: Usage of deprecated font command `\sf'!
 
 
 
- <C:/Users/Tobias/Desktop/Ausarbeitung_Projekt/Bilder3/UMLClassDiagram1.pdf>]
+ <C:/Users/Tobias/Documents/GitHub/controller-design/Ausarbeitung_Projekt/Bilder3/UMLClassDiagram1.pdf>]
 Underfull \hbox (badness 10000) in paragraph at lines 32--33
 
  []
@@ -1097,7 +1099,7 @@ Class scrreprt Warning: Usage of deprecated font command `\sf'!
 (scrreprt)              But for now, KOMA-Script will replace deprecated `\sf'
 (scrreprt)              by `\normalfont \sffamily ' on input line 47.
 
-[5 <C:/Users/Tobias/Desktop/Ausarbeitung_Projekt/Bilder3/Live_Tuner.png>]
+[5 <C:/Users/Tobias/Documents/GitHub/controller-design/Ausarbeitung_Projekt/Bilder3/Live_Tuner.png>]
 
 Class scrreprt Warning: Usage of deprecated font command `\sf'!
 (scrreprt)              You should note, that in 1994 font command `\sf' has
@@ -1110,12 +1112,12 @@ Class scrreprt Warning: Usage of deprecated font command `\sf'!
 (scrreprt)              Note also, that KOMA-Script will remove the definition
 (scrreprt)              of `\sf' anytime until release of about version 3.20.
 (scrreprt)              But for now, KOMA-Script will replace deprecated `\sf'
-(scrreprt)              by `\normalfont \sffamily ' on input line 81.
+(scrreprt)              by `\normalfont \sffamily ' on input line 80.
 
 [6] <Bilder3/warning.png, id=193, 499.8675pt x 232.61906pt>
 File: Bilder3/warning.png Graphic file (type png)
  <use Bilder3/warning.png>
-Package pdftex.def Info: Bilder3/warning.png used on input line 84.
+Package pdftex.def Info: Bilder3/warning.png used on input line 83.
 (pdftex.def)             Requested size: 478.00635pt x 222.45277pt.
 
 
@@ -1130,13 +1132,13 @@ Class scrreprt Warning: Usage of deprecated font command `\sf'!
 (scrreprt)              Note also, that KOMA-Script will remove the definition
 (scrreprt)              of `\sf' anytime until release of about version 3.20.
 (scrreprt)              But for now, KOMA-Script will replace deprecated `\sf'
-(scrreprt)              by `\normalfont \sffamily ' on input line 91.
+(scrreprt)              by `\normalfont \sffamily ' on input line 90.
 
-[7 <C:/Users/Tobias/Desktop/Ausarbeitung_Projekt/Bilder3/warning.png>]
+[7 <C:/Users/Tobias/Documents/GitHub/controller-design/Ausarbeitung_Projekt/Bilder3/warning.png>]
 <Bilder3/Regelkreis.pdf, id=199, 370.38374pt x 169.63374pt>
 File: Bilder3/Regelkreis.pdf Graphic file (type pdf)
  <use Bilder3/Regelkreis.pdf>
-Package pdftex.def Info: Bilder3/Regelkreis.pdf used on input line 101.
+Package pdftex.def Info: Bilder3/Regelkreis.pdf used on input line 100.
 (pdftex.def)             Requested size: 478.00635pt x 218.92677pt.
 
 
@@ -1151,9 +1153,9 @@ Class scrreprt Warning: Usage of deprecated font command `\sf'!
 (scrreprt)              Note also, that KOMA-Script will remove the definition
 (scrreprt)              of `\sf' anytime until release of about version 3.20.
 (scrreprt)              But for now, KOMA-Script will replace deprecated `\sf'
-(scrreprt)              by `\normalfont \sffamily ' on input line 132.
+(scrreprt)              by `\normalfont \sffamily ' on input line 131.
 
-[8 <C:/Users/Tobias/Desktop/Ausarbeitung_Projekt/Bilder3/Regelkreis.pdf>]
+[8 <C:/Users/Tobias/Documents/GitHub/controller-design/Ausarbeitung_Projekt/Bilder3/Regelkreis.pdf>]
 
 Class scrreprt Warning: Usage of deprecated font command `\sf'!
 (scrreprt)              You should note, that in 1994 font command `\sf' has
@@ -1166,12 +1168,12 @@ Class scrreprt Warning: Usage of deprecated font command `\sf'!
 (scrreprt)              Note also, that KOMA-Script will remove the definition
 (scrreprt)              of `\sf' anytime until release of about version 3.20.
 (scrreprt)              But for now, KOMA-Script will replace deprecated `\sf'
-(scrreprt)              by `\normalfont \sffamily ' on input line 146.
+(scrreprt)              by `\normalfont \sffamily ' on input line 145.
 
 [9] <Bilder3/UMLClassDiagram2.pdf, id=218, 304.13625pt x 212.795pt>
 File: Bilder3/UMLClassDiagram2.pdf Graphic file (type pdf)
  <use Bilder3/UMLClassDiagram2.pdf>
-Package pdftex.def Info: Bilder3/UMLClassDiagram2.pdf used on input line 161.
+Package pdftex.def Info: Bilder3/UMLClassDiagram2.pdf used on input line 160.
 (pdftex.def)             Requested size: 430.20279pt x 301.00858pt.
 
 
@@ -1186,12 +1188,13 @@ Class scrreprt Warning: Usage of deprecated font command `\sf'!
 (scrreprt)              Note also, that KOMA-Script will remove the definition
 (scrreprt)              of `\sf' anytime until release of about version 3.20.
 (scrreprt)              But for now, KOMA-Script will replace deprecated `\sf'
-(scrreprt)              by `\normalfont \sffamily ' on input line 174.
+(scrreprt)              by `\normalfont \sffamily ' on input line 173.
 
-[10 <C:/Users/Tobias/Desktop/Ausarbeitung_Projekt/Bilder3/UMLClassDiagram2.pdf>]
+[10 <C:/Users/Tobias/Documents/GitHub/controller-design/Ausarbeitung_Projekt/Bilder3/UMLClassDiagram2.pdf>]
 File: Bilder3/Regelkreis.pdf Graphic file (type pdf)
- <use Bilder3/Regelkreis.pdf>
-Package pdftex.def Info: Bilder3/Regelkreis.pdf used on input line 195.
+
+<use Bilder3/Regelkreis.pdf>
+Package pdftex.def Info: Bilder3/Regelkreis.pdf used on input line 194.
 (pdftex.def)             Requested size: 478.00635pt x 218.92677pt.
 
 
@@ -1206,19 +1209,19 @@ Class scrreprt Warning: Usage of deprecated font command `\sf'!
 (scrreprt)              Note also, that KOMA-Script will remove the definition
 (scrreprt)              of `\sf' anytime until release of about version 3.20.
 (scrreprt)              But for now, KOMA-Script will replace deprecated `\sf'
-(scrreprt)              by `\normalfont \sffamily ' on input line 200.
+(scrreprt)              by `\normalfont \sffamily ' on input line 199.
 
 [11] <Bilder3/Interface_IS.pdf, id=281, 115.43124pt x 71.26625pt>
 File: Bilder3/Interface_IS.pdf Graphic file (type pdf)
  <use Bilder3/Interface_IS.pdf>
-Package pdftex.def Info: Bilder3/Interface_IS.pdf used on input line 206.
+Package pdftex.def Info: Bilder3/Interface_IS.pdf used on input line 205.
 (pdftex.def)             Requested size: 239.00317pt x 147.56909pt.
 
-<Bilder3/UMLSequenceDiagram1.pdf, id=283, 476.78125pt x 395.4775pt>
+<Bilder3/UMLSequenceDiagram1.pdf, id=283, 480.79625pt x 401.5pt>
 File: Bilder3/UMLSequenceDiagram1.pdf Graphic file (type pdf)
  <use Bilder3/UMLSequenceDiagram1.pdf>
-Package pdftex.def Info: Bilder3/UMLSequenceDiagram1.pdf used on input line 240.
-(pdftex.def)             Requested size: 478.00635pt x 396.51445pt.
+Package pdftex.def Info: Bilder3/UMLSequenceDiagram1.pdf used on input line 239.
+(pdftex.def)             Requested size: 478.00635pt x 399.1771pt.
 
 
 Class scrreprt Warning: Usage of deprecated font command `\sf'!
@@ -1232,9 +1235,9 @@ Class scrreprt Warning: Usage of deprecated font command `\sf'!
 (scrreprt)              Note also, that KOMA-Script will remove the definition
 (scrreprt)              of `\sf' anytime until release of about version 3.20.
 (scrreprt)              But for now, KOMA-Script will replace deprecated `\sf'
-(scrreprt)              by `\normalfont \sffamily ' on input line 244.
+(scrreprt)              by `\normalfont \sffamily ' on input line 243.
 
-[12 <C:/Users/Tobias/Desktop/Ausarbeitung_Projekt/Bilder3/Interface_IS.pdf>]
+[12 <C:/Users/Tobias/Documents/GitHub/controller-design/Ausarbeitung_Projekt/Bilder3/Interface_IS.pdf>]
 
 Class scrreprt Warning: Usage of deprecated font command `\sf'!
 (scrreprt)              You should note, that in 1994 font command `\sf' has
@@ -1247,13 +1250,13 @@ Class scrreprt Warning: Usage of deprecated font command `\sf'!
 (scrreprt)              Note also, that KOMA-Script will remove the definition
 (scrreprt)              of `\sf' anytime until release of about version 3.20.
 (scrreprt)              But for now, KOMA-Script will replace deprecated `\sf'
-(scrreprt)              by `\normalfont \sffamily ' on input line 253.
+(scrreprt)              by `\normalfont \sffamily ' on input line 252.
 
-[13 <C:/Users/Tobias/Desktop/Ausarbeitung_Projekt/Bilder3/UMLSequenceDiagram1.pdf>]
+[13 <C:/Users/Tobias/Documents/GitHub/controller-design/Ausarbeitung_Projekt/Bilder3/UMLSequenceDiagram1.pdf>]
 <Bilder3/UMLClassDiagram3.pdf, id=367, 210.7875pt x 98.3675pt>
 File: Bilder3/UMLClassDiagram3.pdf Graphic file (type pdf)
  <use Bilder3/UMLClassDiagram3.pdf>
-Package pdftex.def Info: Bilder3/UMLClassDiagram3.pdf used on input line 273.
+Package pdftex.def Info: Bilder3/UMLClassDiagram3.pdf used on input line 272.
 (pdftex.def)             Requested size: 478.00635pt x 223.07489pt.
 
 
@@ -1268,9 +1271,9 @@ Class scrreprt Warning: Usage of deprecated font command `\sf'!
 (scrreprt)              Note also, that KOMA-Script will remove the definition
 (scrreprt)              of `\sf' anytime until release of about version 3.20.
 (scrreprt)              But for now, KOMA-Script will replace deprecated `\sf'
-(scrreprt)              by `\normalfont \sffamily ' on input line 293.
+(scrreprt)              by `\normalfont \sffamily ' on input line 292.
 
-[14 <C:/Users/Tobias/Desktop/Ausarbeitung_Projekt/Bilder3/UMLClassDiagram3.pdf>])
+[14 <C:/Users/Tobias/Documents/GitHub/controller-design/Ausarbeitung_Projekt/Bilder3/UMLClassDiagram3.pdf>])
 
 Class scrreprt Warning: Usage of deprecated font command `\sf'!
 (scrreprt)              You should note, that in 1994 font command `\sf' has
@@ -1285,7 +1288,7 @@ Class scrreprt Warning: Usage of deprecated font command `\sf'!
 (scrreprt)              But for now, KOMA-Script will replace deprecated `\sf'
 (scrreprt)              by `\normalfont \sffamily ' on input line 143.
 
-[15] (C:\Users\Tobias\Desktop\Ausarbeitung_Projekt\Kapitel/Zusammenfassung2.tex
+[15] (C:\Users\Tobias\Documents\GitHub\controller-design\Ausarbeitung_Projekt\Kapitel/Zusammenfassung2.tex
 Kapitel 3.
 )
 
@@ -1306,7 +1309,7 @@ Class scrreprt Warning: Usage of deprecated font command `\sf'!
 
 
 
-] (C:\Users\Tobias\Desktop\Ausarbeitung_Projekt\Kapitel/Anhang/Quellenverzeichnis.tex
+] (C:\Users\Tobias\Documents\GitHub\controller-design\Ausarbeitung_Projekt\Kapitel/Anhang/Quellenverzeichnis.tex
 Kapitel 4.
 )
 
@@ -1327,10 +1330,10 @@ Class scrreprt Warning: Usage of deprecated font command `\sf'!
 
 
 
-] (C:\Users\Tobias\Desktop\Ausarbeitung_Projekt\Ausarbeitung.lof)
+] (C:\Users\Tobias\Documents\GitHub\controller-design\Ausarbeitung_Projekt\Ausarbeitung.lof)
 \tf@lof=\write7
 
-(C:\Users\Tobias\Desktop\Ausarbeitung_Projekt\Ausarbeitung.ind)
+(C:\Users\Tobias\Documents\GitHub\controller-design\Ausarbeitung_Projekt\Ausarbeitung.ind)
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 175.
 
 
@@ -1352,21 +1355,21 @@ Class scrreprt Warning: Usage of deprecated font command `\sf'!
 
 ]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 175.
- (C:\Users\Tobias\Desktop\Ausarbeitung_Projekt\Ausarbeitung.aux
-(C:\Users\Tobias\Desktop\Ausarbeitung_Projekt\Kapitel/Personen.aux)
-(C:\Users\Tobias\Desktop\Ausarbeitung_Projekt\Kapitel/Einleitung.aux)
-(C:\Users\Tobias\Desktop\Ausarbeitung_Projekt\Kapitel/Hauptteil.aux)
-(C:\Users\Tobias\Desktop\Ausarbeitung_Projekt\Kapitel/Zusammenfassung2.aux)
-(C:\Users\Tobias\Desktop\Ausarbeitung_Projekt\Kapitel/Anhang/Quellenverzeichnis.aux))
+ (C:\Users\Tobias\Documents\GitHub\controller-design\Ausarbeitung_Projekt\Ausarbeitung.aux
+(C:\Users\Tobias\Documents\GitHub\controller-design\Ausarbeitung_Projekt\Kapitel/Personen.aux)
+(C:\Users\Tobias\Documents\GitHub\controller-design\Ausarbeitung_Projekt\Kapitel/Einleitung.aux)
+(C:\Users\Tobias\Documents\GitHub\controller-design\Ausarbeitung_Projekt\Kapitel/Hauptteil.aux)
+(C:\Users\Tobias\Documents\GitHub\controller-design\Ausarbeitung_Projekt\Kapitel/Zusammenfassung2.aux)
+(C:\Users\Tobias\Documents\GitHub\controller-design\Ausarbeitung_Projekt\Kapitel/Anhang/Quellenverzeichnis.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 175.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 175.
 Package rerunfilecheck Info: File `Ausarbeitung.out' has not changed.
-(rerunfilecheck)             Checksum: 1B9F08CB3A19452BDAE9270423291621;795.
+(rerunfilecheck)             Checksum: 3E5F7A453AC45B20350DB1C96885C76F;795.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 175.
  ) 
 Here is how much of TeX's memory you used:
  14631 strings out of 493921
- 223235 string characters out of 3144874
+ 224666 string characters out of 3144874
  410893 words of memory out of 3000000
  17550 multiletter control sequences out of 15000+200000
  24164 words of font info for 74 fonts, out of 3000000 for 9000
@@ -1381,7 +1384,7 @@ nts\pk\ljfour\public\cmbright\dpi657\ebmr10.pk> <C:\Users\Tobias\AppData\Local\M
 t\dpi657\ebbx10.pk> <C:\Users\Tobias\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\public\cmbright\dpi864\ebmr10.pk> <C:\User
 s\Tobias\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\public\cmbright\dpi1244\ebbx10.pk> <C:\Users\Tobias\AppData\Local\MiKT
 eX\2.9\fonts\pk\ljfour\public\cmbright\dpi864\ebbx10.pk>
-Output written on Ausarbeitung.pdf (21 pages, 895252 bytes).
+Output written on Ausarbeitung.pdf (21 pages, 895351 bytes).
 PDF statistics:
  872 PDF objects out of 1000 (max. 8388607)
  47 named destinations out of 1000 (max. 500000)

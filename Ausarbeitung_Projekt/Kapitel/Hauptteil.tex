@@ -1,7 +1,7 @@
-\chapter{Aufbau des Live Tuners}
+\chapter{Aufbau des Live-Tuners}
 \label {Aufbau des Live Tuners}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%Aufbau des Live Tuners%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-In diesem Kapitel wird der eigentliche Aufbau der Software des Live Tuners näher beschrieben. Eine erste Übersicht bietet hier das UML-Klassendiagramm\vref{UML Klassendiagramm}.
+In diesem Kapitel wird der eigentliche Aufbau der Software des Live-Tuners näher beschrieben. Eine erste Übersicht bietet hier das UML-Klassendiagramm\vref{UML Klassendiagramm}.
 
 \begin{figure}[H]
 	\centering
@@ -10,7 +10,7 @@ In diesem Kapitel wird der eigentliche Aufbau der Software des Live Tuners näher
 	\label{UML Klassendiagramm}
 \end{figure}
 
-Wie leicht zu erkennen ist, baut sich der Live Tuner aus drei großen Komponenten auf:
+Wie leicht zu erkennen ist, baut sich der Live-Tuner aus drei großen Komponenten auf:
 
 \begin{itemize}
 	\item \textit{Graphische Oberfläche} \vref{Graphische Oberfläche}
@@ -29,21 +29,21 @@ Diese drei Komponenten werden nun in den folgenden Kapiteln näher beleuchtet.
 	 
 		\item \textbf{Das Ziel}
 		
-		Das Hauptziel der Oberfläche ist es, diese so zu konzipieren, dass eine Veränderung an einem der einstellbaren Parametern sofort zu einer Veränderung am Plot führt, also sozusagen "Live". So ist es leichter, ein Gespür für die verschiedenen einstellbaren Werte zu erlangen. Des Weiteren soll dem Nutzer viel Komfort entgegengebracht werden, z.B. gibt das Programm selber vor welche Regler zu welcher Regelstrecke sinnvoll sind und welche nicht. \newline
+		Das Hauptziel der Oberfläche ist es, diese so zu konzipieren, dass eine Veränderung an einem der einstellbaren Parametern sofort zu einer Veränderung am Plot führt, also sozusagen "Live". So ist es leichter, ein Gespür für die verschiedenen einstellbaren Werte zu erlangen. Des Weiteren soll dem Nutzer viel Komfort entgegengebracht werden, z.B. gibt das Programm selbst vor, welche Regler zu welcher Regelstrecke sinnvoll sind und welche eher nicht. \newline
 		
-		Von der Aufgabestellung war vorgegeben, die Oberfläche mit der Windows Presentation Foundation (WPF) zu erstellen. In dieser ist es zwar noch möglich, die Oberfläche in C\# zu konfigurieren, jedoch nicht mehr so wie es in der älteren Windows-Forms Anwendungen der Fall war. Die Einstellungen für die Oberfläche werden nun in einem XML Dokument vorgenommen. 
+		Von der Aufgabestellung war vorgegeben, die Oberfläche mit der Windows Presentation Foundation (WPF) zu erstellen. In dieser ist es zwar noch möglich, die Oberfläche in C\# zu konfigurieren, jedoch nicht mehr so, wie es in den älteren Windows-Forms Anwendungen der Fall war. Die Einstellungen für die Oberfläche werden nun in einem XML-Dokument vorgenommen. 
 
 \begin{figure}[H]
 	\centering
   \includegraphics[width=1\textwidth]{Bilder3/Live_Tuner.png}
-	\caption{Graphische Oberfläche des Live Tuners}
+	\caption{Graphische Oberfläche des Live-Tuners}
 	\label{Graphische Oberfläche des Live Tuners}
 \end{figure}
 
 		\item \textbf{Live Plot}
 
-		Der Live Plot hat die Aufgabe die ihm übergebenen Werte als einen Graph darzustellen. Da die Oberfläche mit dem Windows Presentation Foundation (WPF) Oberflächendesigner erstellt wurde, wurde für die Darstellung des Graphen das WPF-Toolkit verwendet. Dieses enthält alle rudimentären Darstellungsformen und -einstellungen für verschiedene Graphentypen. Für den Graph wurde der Graphentyp "LineSeries" verwendet. Diese plottet anhand von x und y Werten den Graphen. \newline
-		Eine der Vorteile des WPF-Toolkits ist, dass der Graph sich je nach den übergebenen Werten automatisch skaliert. Die Größenordnung der Werte werden aber nicht angepasst. Dies muss in den Einstellungen separat durchgeführt werden. Die Ausgabe der Werte wurde nun so angepasst, dass diese vorher in eine Exponentialschreibweise umgeformt werden. So können nun extrem große, aber auch extrem kleine Werte ausgegeben werden.   		   
+		Der Live Plot hat die Aufgabe die ihm übergebenen Werte in einem Graph darzustellen. Da die Oberfläche mit dem Windows Presentation Foundation (WPF) Oberflächendesigner erstellt wurde, wurde für die Darstellung des Graphen das WPF-Toolkit verwendet. Dieses enthält alle rudimentären Darstellungsformen und -einstellungen für verschiedene Graphentypen. Für den Graph wurde der Graphentyp "LineSeries" verwendet. Diese plottet anhand von x- und y-Werten den Graphen. \newline
+		Einer der Vorteile des WPF-Toolkits ist, dass der Graph sich je nach den übergebenen Werten automatisch skaliert. Die Größenordnung der Werte werden aber nicht angepasst. Dies muss in den Einstellungen separat durchgeführt werden. Die Ausgabe der Werte wurde nun so angepasst, dass diese vorher in eine Exponentialschreibweise umgeformt werden. So können nun extrem große, aber auch extrem kleine Werte ausgegeben werden.   		   
 
 		\item \textbf{Strecke und Regler}		
 
@@ -52,27 +52,26 @@ Diese drei Komponenten werden nun in den folgenden Kapiteln näher beleuchtet.
 
 		\item \textbf{Base Slider}	
 		
-		Die Einstellungsmöglichkeiten für die Regler bzw. Strecke sind alle gleich. Deshalb wurde ein separates Oberflächenobjekt erstellt, der sogenannte Base Slider. Dieser besteht im wesentlichen aus einem Anfangswert zudem dann noch ein zweiter Wert hinzuaddiert wird. Dabei wird der zweite Wert per Slider zwischen den Werten 1 und -1 eingestellt und mit einem Faktor multipliziert. Dies hat den Vorteil, dass selbst kleine Werte so schnell eingestellt werden können.  
+		Die Einstellungsmöglichkeiten für die Regler bzw. Strecke sind alle gleich. Deshalb wurde ein separates Oberflächenobjekt erstellt, der sogenannte Base Slider. Dieser besteht im wesentlichen aus einem Anfangswert, zudem dann noch ein zweiter Wert hinzuaddiert wird. Dabei wird der zweite Wert per Slider zwischen den Werten 1 und -1 eingestellt und mit einem Faktor multipliziert. Durch diesen Trick kann ideal in dem gewünschten Zahlenbereich gearbeitet werden.  
 
 		\item \textbf{Infos \& Einstellungen}
 		
 		Unter dem Punkt Infos \& Einstellungen befinden sich folgende Punkte:
 		\begin{itemize}
 		\item \textit{Regelkreis} \newline
-		Ein Bild des verwendeten Regelkreis. 
+		Ein Bild des verwendeten Regelkreises, welcher simuliert wird. 
 		\item \textit{Störung} \newline
 		Hier lassen sich Störungen in den Regelkreis einspeisen.
 		\item \textit{Solver} \newline
-		Unter dem Punkt Solver lässt sich die Schrittweite der Simulation, sowie der Endzeitpunkt der Simulation bestimmen. Darüber hinaus gibt es hier die Möglichkeit für den Plot weniger Werte zu verwenden, als die Simulation berechnet. Dieses Feature ermöglicht es einem die aufzuwendende Rechenleistung zu verringern, da die Berechnung für die Simulation sehr viel geringer ist, als die Berechnung des Plots.
+		Unter dem Punkt Solver lässt sich die Schrittweite der Simulation, sowie der Endzeitpunkt der Simulation bestimmen. Darüber hinaus gibt es hier die Möglichkeit für den Plot weniger Werte zu verwenden als die Simulation berechnet. Dieses Feature ermöglicht es einem die aufzuwendende Rechenleistung zu verringern, da die Berechnung für die Simulation sehr viel geringer ist als die Berechnung des Plots.
 		\item \textit{Quellen} \newline
 		Das Programm wurde mithilfe der angegebenen Quellen entwickelt und erstellt.
 		\item \textit{Save \& Load}
 		
-		Alle Einstellungen lassen sich mit dem Save Befehl in einer Datei speichern. Mit dem Load Befehl kann so zu einem
+		Alle Einstellungen lassen sich mit dem Save-Befehl in einer Datei speichern. Mit dem Load-Befehl kann so zu einem
 		späterem Zeitpunkt auf die Einstellungen zurückgegriffen werden.
 		\item \textit{Live Plot} \newline
-		Wenn das Häckchen bei Live Plot gesetzt wird, werden die berechneten Werte direkt geplottet. Bei vielen Werten
-		empfiehlt es sich, das Häckchen rauszunehmen um eine Performancesteigerung zu erzielen.
+		Wenn das Häkchen bei Live Plot gesetzt wird, werden die berechneten Werte direkt geplottet. Will man sehr viele Werte auf einmal ändern, so empfiehlt es sich dieses Häkchen zu deaktivieren, um schneller arbeiten zu können.
 		\end{itemize}				
 
 		\item \textbf{Warnings}	
@@ -115,10 +114,10 @@ Ein allgemeiner Regelkreis besteht aus folgenden Komponenten:
 	Der Regler ist eine Übertragungsfunktion, und je nach Bedarf ein P-, I-, oder PI-Regler.
 	\item \textit{Störung}
 	
-	Durch die Störung sollen mögliche Störfaktoren mit Simuliert werden.
+	Durch die Störung sollen mögliche Störfaktoren mitsimuliert werden.
 	\item \textit{Strecke}	
 	
-	Die Strecke ist die Übertragungsfunktion des Physikalischen Systems (Motor, elektrische Schaltung,...)
+	Die Strecke ist die Übertragungsfunktion des physikalischen Systems (Motor, elektrische Schaltung,...)
 	\item \textit{Plot}
 	
 	Der Plot beobachtet quasi die einzelnen Simulationsschritte und gibt diese graphisch aus.
@@ -145,7 +144,7 @@ Um diese zwei Probleme zu behandeln wurden folgende zwei Entwurfsmuster ausgewäh
 
 \newpage				
 \subsection{Fassade Entwurfsmuster}%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\label{Fassade Entwurfsmuster}	
+\label{Fassade-Entwurfsmuster}	
 
 		\item \textbf{Beschreibung des Entwurfsmusters (wiki)}
 		
@@ -165,19 +164,19 @@ Wie im Ausschnitt des UML-Diagramms\vref{UML Klassendiagramm2} gut zu erkennen i
 
 Der \textit{Simulator} kümmert sich um die komplette Verwaltung der einzelnen Klassen einer Simulation, vernetzt sie miteinander und leitet die einzelnen Berechnungen. Er merkt sich in einem Array von Objekten, welche das Interface ISimulatable implementieren, in welcher Reihenfolge die einzelnen Objekte bei einer Simulation aufgerufen werden müssen.
 
-Durch diesen Einsatz wird die Komplexität einer Simulation auf ein Minimum von zwei Funktionen herunter gebrochen:
+Durch diesen Einsatz wird die Komplexität einer Simulation auf ein Minimum von zwei Funktionen heruntergebrochen:
 
 \begin{itemize}
 	\item \textit{float[,] simulate(float Ts, float Tend)}
 	
-	Simuliere den aktuellen Regelkreis mit den festen kleinen Zeitschritten $T_{s}$ bis zur Endzeit $T_{end}$. Gebe das Ergebnis zurück.
+	Simuliere den aktuellen Regelkreis mit den festen kleinen Zeitschritten $T_{s}$ bis zur Endzeit $T_{end}$. Gib das Ergebnis zurück.
 	
 	\item \textit{bool replace\_in\_Schematic\_at\_pos(int position, ISimulatable x)}
 	
-	Ersetze im Array an der Stelle \textit{position} das Objekt mit diesem. Löse die alten Vernetzungen und setze neue. (hierdurch können die Objete im Regelkreis vertauscht werden)
+	Ersetze im Array an der Stelle \textit{position} das Objekt durch x. Löse die alten Vernetzungen und setze neue. (Hierdurch können die Objete im Regelkreis vertauscht werden.)
 \end{itemize}
  
-\subsection{Beobachter Entwurfsmuster}%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Beobachter-Entwurfsmuster}%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \label{Beobachter Entwurfsmuster}	
 		
 		\item \textbf{Beschreibung des Entwurfsmusters (wiki)}
@@ -187,7 +186,7 @@ Durch diesen Einsatz wird die Komplexität einer Simulation auf ein Minimum von z
 		\item \textbf{Verwendung des Beobachter-Musters}
 
 Dieses Muster bietet sich ideal für das zweite Problem an, da sich die einzelnen Objekte in einem Regelkreis nicht direkt kennen müssen, um sich gegenseitig benachrichtigen zu können.
-Diese Benachrichtigungen sind immer dann erforderlich, wenn ein Objekt im Regelkreis einen Zeitschritt für sich berechnet hat. Ist die Berechnung fertig, so wird das Ergebnis an das Beobachtende Objekt weitergegeben.
+Diese Benachrichtigungen sind immer dann erforderlich, wenn ein Objekt im Regelkreis einen Zeitschritt für sich berechnet hat. Ist die Berechnung fertig, so wird das Ergebnis an das beobachtende Objekt weitergegeben.
 Anschaulich bedeutet dies, dass alle Verbindungen im Regelkreis\vref{Benachrichtigungen in einem Regelkreis} solche Benachrichtigungen (events) sind.
 
 \begin{figure}[H]
@@ -232,7 +231,7 @@ Hierdurch ist nun klar, wie das Interface aufgebaut sein muss, welches eine Klas
 	Löse die Beobachtung auf.
 \end{itemize}
 
-Durch dieses Interface und die verwendung des Simulators kann nun der Regelkreis simuliert werden.
+Durch dieses Interface und die Verwendung des Simulators kann nun der Regelkreis simuliert werden.
 Im UML-Sequenzdiagramm\vref{UML Sequenzdiagramm} ist eine Benutzeranfrage an eine Simulation skizziert.
 		
 \begin{figure}[H]
@@ -242,11 +241,11 @@ Im UML-Sequenzdiagramm\vref{UML Sequenzdiagramm} ist eine Benutzeranfrage an ein
 	\label{UML Sequenzdiagramm}
 \end{figure}
 
-Wie deutlich zu erkennen ist, benutzt die Graphische Oberfläche die Fassade des Simulators um eine Simulation zu starten.
+Wie deutlich zu erkennen ist, benutzt die graphische Oberfläche die Fassade des Simulators um eine Simulation zu starten.
 Dieser ruft nach und nach die einzelnen Komponenten des Regelkreises dazu auf einen Zeitschritt zu berechnen. 
 Wie klar zu erkennen ist, kennen sich die einzelnen Komponenten des Regelkreises nicht, sondern beobachten sich nur gegenseitig, um Informationen zu erhalten.
 
-Haben alle Komponenten einen Zeitschritt berechnet, so wird die Schleife erneut durchlaufen bis die gewünschte Anzahl an Simulationsschritten erreicht ist, und das gesamt Ergebnis an die Graphische Oberfläche zurück gegeben wird.
+Haben alle Komponenten einen Zeitschritt berechnet, so wird die Schleife erneut durchlaufen, bis die gewünschte Anzahl an Simulationsschritten erreicht ist, und das Gesamtergebnis an die graphische Oberfläche zurück gegeben wird.
 				
 \end{description}
 
@@ -258,11 +257,11 @@ Haben alle Komponenten einen Zeitschritt berechnet, so wird die Schleife erneut 
 		
 		\item \textbf{Die Motivation}
 
-Ein entscheidendes Feature eines Software-Tools ist selbst verständlich die Möglichkeit seine Arbeit speichern zu können, 
-damit die Möglichkeit besteht diese zu Archivieren und zu einem späteren Zeitpunkten auf den alten Stand zurück zu greifen.
+Ein entscheidendes Feature eines Software-Tools ist selbstverständlich die Möglichkeit seine Arbeit speichern zu können, 
+damit die Möglichkeit besteht diese zu archivieren und zu einem späteren Zeitpunkten auf den alten Stand zurückzugreifen.
 Ein weiterer großer Vorteil besteht darin, dass man die gespeicherte Datei ganz einfach an Arbeitskollegen verteilen kann, damit diese sich die Auslegung anschauen können.
 
-Aus diesem Gedanken heraus ist es eine Notwendigkeit ein solches Feature für den Live-Tuner bereit zu stellen.
+Aus diesem Gedanken heraus ist es eine Notwendigkeit ein solches Feature für den Live-Tuner bereitzustellen.
 				
 		\item \textbf{Umsetzung}
 
@@ -280,20 +279,20 @@ Die eigentliche Idee ist ganz einfach, jedes Objekt welches gespeichert werden s
 \begin{itemize}
 	\item \textit{string parameters2string()}
 	
-	Baue alle Informationen, die du dir merken willst zu einem String zusammen.	
+	Baue alle Informationen, die du dir merken willst, zu einem String zusammen.	
 	\item \textit{void restorefromstring(string s)}	
 	
 	Stelle dich aus dem gebauten String wieder her.
 \end{itemize}
 
 Durch dieses Interface ist es dem \textit{File\_Manager} möglich alle Objekte dieses Interfaces speichern zu können. 
-Er baut alle Informationen der Teilnehmer zu einem großen String zusammen, und kann diesen dann als Text-Datei abspeichern, und selbstverständlich auch wieder herstellen.
+Er baut alle Informationen der Teilnehmer zu einem großen String zusammen, und kann diesen dann als Text-Datei abspeichern und selbstverständlich auch wieder herstellen.
 
 Dieser Ansatz zum Speichern von Informationen kann nun auch natürlich für beliebige Klassen eingesetzt werden.
 
 		\item \textbf{Wie können nun bereits bestehende Klassen gespeichert werden?}
 
-Nun kann man sich vorstellen, dass es bereits sehr viele Standard Klassen gibt, welche dieses Interface nicht implementieren. Im Falle des Live Tuners war es z.B. erforderlich Informationen über die WPF-Oberfläche wie TextBox, CheckBox, ComboBox, ... zu speichern.
+Nun kann man sich vorstellen, dass es bereits sehr viele Standard-Klassen gibt, welche dieses Interface nicht implementieren. Im Falle des Live Tuners war es z.B. erforderlich Informationen über die WPF-Oberfläche wie TextBox, CheckBox, ComboBox, ... zu speichern.
 
 Um hier Abhilfe zu schaffen, wurde die Klasse \textit{Savable\_WPF\_Obj} geschaffen, welche ganz genau weiß, wie eine TextBox, eine CheckBox, eine ComboBox, ... zu einem String gebaut wird, und auch wieder hergestellt wird.
 

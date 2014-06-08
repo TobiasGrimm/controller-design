@@ -2,7 +2,10 @@
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:Base_Slider="clr-namespace:Base_Slider;assembly=Base_Slider" xmlns:Control_Tools="clr-namespace:Control_Tools;assembly=Base_Slider" xmlns:Plott_o_mat="clr-namespace:Plott_o_mat;assembly=Plott_o_mat" x:Class="controller_design.WPF.MainWindow"
-        Title="MainWindow" Height="755" Width="1140">
+        Title="Live Tuner" Height="755" Width="1140">
+    <Window.Icon>
+        <ImageSource>Titel_Bild.png</ImageSource>
+    </Window.Icon>
     <Grid x:Name="grid_parant" Margin="0,0,2,2">
         <TabControl x:Name="TabControl_Strecke" Margin="10,32,0,0" ScrollViewer.CanContentScroll="True" HorizontalAlignment="Left" VerticalAlignment="Top" Height="216" Width="494" SelectionChanged="TabControl_Strecke_SelectionChanged">
             <TabItem x:Name="tab_Strecke_PT1" Header="PT1" Margin="-2,-2,-5,-1">

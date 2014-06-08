@@ -1,0 +1,122 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Base_Slider</name>
+    </assembly>
+    <members>
+        <member name="T:Control_Tools.Base_Slider">
+            <summary>
+            The Base Slider is a GUI Element for maximum precision and coolness
+            </summary>
+            <summary>
+            Base_Slider
+            </summary>
+        </member>
+        <member name="F:Control_Tools.Base_Slider.base_value">
+            <summary>
+            Math components of the Slider
+            </summary>
+        </member>
+        <member name="F:Control_Tools.Base_Slider.slider_value">
+            <summary>
+            Math components of the Slider
+            </summary>
+        </member>
+        <member name="F:Control_Tools.Base_Slider.mult_value">
+            <summary>
+            Math components of the Slider
+            </summary>
+        </member>
+        <member name="M:Control_Tools.Base_Slider.calc_and_fire">
+            <summary>
+            calculate the reult and fire the event "value_changed"
+            </summary>
+        </member>
+        <member name="M:Control_Tools.Base_Slider.set_Base(System.Single)">
+            <summary>
+            Set Base Value, and reset Slider Value.
+            </summary>
+            <param name="base_value">The Value for the new Base</param>
+        </member>
+        <member name="M:Control_Tools.Base_Slider.parameters2string">
+            <summary>
+            Transform all Information you want to save into a String
+            </summary>
+            <returns>The Informations as a string</returns>
+        </member>
+        <member name="M:Control_Tools.Base_Slider.restorefromstring(System.String)">
+            <summary>
+            Restore all Informations from the String you created with "parameters2string()"
+            </summary>
+            <param name="s">The String you created</param>
+        </member>
+        <member name="M:Control_Tools.Base_Slider.#ctor">
+            <summary>
+            Init Base Slider
+            </summary>
+        </member>
+        <member name="M:Control_Tools.Base_Slider.On_value_changed(System.Single)">
+            <summary>
+            Will be fired when a calculation of one step is done.
+            </summary>
+            <param name="output">The result of the calculation of one step</param>
+        </member>
+        <member name="M:Control_Tools.Base_Slider.textBox_Base_TextChanged(System.Object,System.Windows.Controls.TextChangedEventArgs)">
+            <summary>
+            Read Text Box for the Base Value, calc and fire event "value_changed"
+            </summary>
+            <param name="sender">sender</param>
+            <param name="e">arguments</param>
+        </member>
+        <member name="M:Control_Tools.Base_Slider.Slider_Mult_ValueChanged(System.Object,System.Windows.RoutedPropertyChangedEventArgs{System.Double})">
+            <summary>
+            Read Text Box for the Slider Value, calc and fire event "value_changed"
+            </summary>
+            <param name="sender">sender</param>
+            <param name="e">arguments</param>
+        </member>
+        <member name="M:Control_Tools.Base_Slider.textBox_PT1_VS_Skale_TextChanged(System.Object,System.Windows.Controls.TextChangedEventArgs)">
+            <summary>
+            Read Text Box for the Mult Value, calc and fire event "value_changed"
+            </summary>
+            <param name="sender">sender</param>
+            <param name="e">arguments</param>
+        </member>
+        <member name="M:Control_Tools.Base_Slider.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="P:Control_Tools.Base_Slider.Label">
+            <summary>
+            The Name of the Slider, which is represented before it.
+            </summary>
+        </member>
+        <member name="E:Control_Tools.Base_Slider.value_changed">
+            <summary>
+            You can register here, if you want to know when a calculation of one step is done.
+            </summary>
+        </member>
+        <member name="T:Control_Tools.OutputEventHandler">
+            <summary >
+            Delegate for the Output Event when something has changed
+            </summary >
+        </member>
+        <member name="T:Base_Slider.Properties.Resources">
+            <summary>
+              Eine stark typisierte Ressourcenklasse zum Suchen von lokalisierten Zeichenfolgen usw.
+            </summary>
+        </member>
+        <member name="P:Base_Slider.Properties.Resources.ResourceManager">
+            <summary>
+              Gibt die zwischengespeicherte ResourceManager-Instanz zurück, die von dieser Klasse verwendet wird.
+            </summary>
+        </member>
+        <member name="P:Base_Slider.Properties.Resources.Culture">
+            <summary>
+              Überschreibt die CurrentUICulture-Eigenschaft des aktuellen Threads für alle
+              Ressourcenlookups, die diese stark typisierte Ressourcenklasse verwenden.
+            </summary>
+        </member>
+    </members>
+</doc>

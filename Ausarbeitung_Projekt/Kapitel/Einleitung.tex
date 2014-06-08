@@ -1,12 +1,12 @@
 \chapter{Einleitung}
 
-Das 6. Semester der Hochschule Furtwangen beinhaltet für den Studiengang Elektronik und Technische Informatik (ETI) die Möglichkeit durch Wahlpflicht Vorlesungen (WPVs) das gesamt Bild des angehenden Ingenieurs abzurunden.
+Das 6. Semester der Hochschule Furtwangen beinhaltet für den Studiengang Elektronik und Technische Informatik (ETI) die Möglichkeit durch Wahlpflicht-Vorlesungen (WPVs) das Gesamtbild des angehenden Ingenieurs abzurunden.
 
-Gerade für einen Elektrotechniker bietet es sich daher an, nicht nur die elektrotechnische Welt zu kennen, sondern auch die unzähligen Möglichkeiten der Informatik kennen zu lernen, und diese in Kombination zu nutzen.
+Gerade für einen Elektrotechniker bietet es sich daher an, nicht nur die elektrotechnische Welt zu kennen, sondern auch die unzähligen Möglichkeiten der Informatik kennen zu lernen und diese in Kombination zu nutzen.
 
-Aus diesem Gedanken heraus, ist die Idee entstanden ein Programm mit C\# zu entwickeln, welches den Arbeitsalltag eines Elektrotechnikers enorm erleichtern kann, indem regelungstechnische Auslegungen schnell und komfortabel durchgeführt werden können.
+Aus diesem Gedanken heraus ist die Idee entstanden ein Programm mit C\# zu entwickeln, welches den Arbeitsalltag eines Elektrotechnikers enorm erleichtern kann, indem regelungstechnische Auslegungen schnell und komfortabel durchgeführt werden können.
 
-Um beide Welten sauber in Einklang bringen zu können wird auf der elektrotechnischen Seite auf die Regelungstechnik mit der Laplace-Transformation und die Z-Transformation zurück gegriffen und auf der Informatik Seite auf die Vorzüge der Objektorientierten Programmiersprache C\# und die Verwendung von "`Design Patterns"'.
+Um beide Welten sauber in Einklang bringen zu können wird auf der elektrotechnischen Seite auf die Regelungstechnik mit der Laplace-Transformation und die Z-Transformation zurückgegriffen und auf der Informatik Seite auf die Vorzüge der objektorientierten Programmiersprache C\# und die Verwendung von "`Design Patterns"'.
 
 %---------------------------------------------------------
 \section{Wichtiges über die Regelungstechnik}
@@ -14,9 +14,9 @@ Um beide Welten sauber in Einklang bringen zu können wird auf der elektrotechnis
 
 \item \textbf{Warum Regelungstechnik?}
 
-In sehr vielen Anwendungen kommt es vor, dass man einen soll-Wert vorgibt, und diesen mit einem ist-Wert vergleicht und dann entscheidet was gemacht werden soll. Dieser Vorgang wird in der Regelungstechnik behandelt.
+In sehr vielen Anwendungen kommt es vor, dass man einen Soll-Wert vorgibt und diesen mit einem Ist-Wert vergleicht und dann entscheidet, was gemacht werden soll. Dieser Vorgang wird in der Regelungstechnik behandelt.
 
-So kann man sich z.B. vorstellen, dass ein Motor auf eine gewisse soll-Drehzahl beschleunigt werden soll. Da die Drehzahl sich wegen der Trägheit der Masse des Motors nicht direkt auf die gewünschte Drehzahl begibt, wird ein Regler eingesetzt. Dieser schaut sich den Soll-Ist Vergleich an und entscheidet dann, ob entweder \textit{mehr Drehmoment} oder \textit{weniger Drehmoment} aufgebracht werden muss, um den Motor auf die gewünschte Drehzahl zu bringen.
+So kann man sich z.B. vorstellen, dass ein Motor auf eine gewisse Soll-Drehzahl beschleunigt werden soll. Da die Drehzahl sich wegen der Trägheit der Masse des Motors nicht direkt auf die gewünschte Drehzahl erhöht, wird ein Regler eingesetzt. Dieser schaut sich den Soll-Ist-Vergleich an und entscheidet dann, ob entweder \textit{mehr Drehmoment} oder \textit{weniger Drehmoment} aufgebracht werden muss, um den Motor auf die gewünschte Drehzahl zu bringen.
 
 \begin{figure}[H]
 	\centering
@@ -25,15 +25,15 @@ So kann man sich z.B. vorstellen, dass ein Motor auf eine gewisse soll-Drehzahl 
 	\label {Beispiel Regelkreis für einen Motor}
 \end{figure}
 
-In der Regelungstechnik werden nun verfahren untersucht, um diesen Regler ideal einzustellen, damit das zeitlich dynamische Verhalten eines Vorgangs ideal in den Griff gebracht werden kann.
+In der Regelungstechnik werden nun Verfahren untersucht, um diesen Regler ideal einzustellen, damit das zeitlich dynamische Verhalten eines Vorgangs ideal in den Griff gebracht werden kann.
 
 
-\item \textbf{Was sind Übertragungsfunktion?}
+\item \textbf{Was sind Übertragungsfunktionen?}
 
-Um dynamische Vorgänge in der Physikalischen Welt Mathematisch beschreiben zu können werden in der Regel so genannte Differentialgleichungen eingesetzt.
+Um dynamische Vorgänge in der physikalischen Welt mathematisch beschreiben zu können werden in der Regel so genannte Differentialgleichungen eingesetzt.
 Hierdurch kann z.B. das dynamische Verhalten eines Motors, einer elektronischen Schaltung, einer Temperatur, eines mechanischen Vorgangs, ... beschrieben werden.
 
-Das eigentliche Problem besteht nun oft darin, dass das lösen dieser Differentialgleichung sehr schwer ist. 
+Das eigentliche Problem besteht nun oft darin, dass das Lösen dieser Differentialgleichung sehr schwer ist. 
 An dieser Stelle bietet die Laplace-Transformation einen eleganten Weg, um aus einer Differentialgleichung eine Übertragungsfunktion im Laplace-Bereich zu gewinnen.
 
 Diese Übertragungsfunktion (Transferfunktion) bietet für unsere Zwecke entscheidende Vorteile:
@@ -44,23 +44,23 @@ Diese Übertragungsfunktion (Transferfunktion) bietet für unsere Zwecke entscheid
 	Es ist wesentlich einfacher mit einer Übertragungsfunktion zu rechnen.
 	\item \textit{Universell}
 	
-	Die Regelungstechnik ist für alle dynamischen Vorgänge equivalent!
+	Die Regelungstechnik ist für alle dynamischen Vorgänge äquivalent!
 	\item \textit{Simulierbar}
 	
-	Durch Verwendung der Z-Transformation kann eine Übertragungsfunktion "`relativ"' einfach auf einem Computer Simuliert werden.
+	Durch Verwendung der Z-Transformation kann eine Übertragungsfunktion "`relativ"' einfach auf einem Computer simuliert werden.
 	\item \textit{Betrachtung als Block}
 	
 	Die einzelnen Übertragungsfunktionen für Regler, Motor, ... können als Blöcke wie in Bild\vref{Beispiel Regelkreis für einen Motor} betrachtet werden.
 \end{itemize}
 
 \newpage
-\item \textbf{Warum ein extra Software Tool?}
+\item \textbf{Warum ein neues Software-Tool?}
 
 Die gesamte Regelungstechnik besteht zum größten Teil aus Mathematik. Hier kann es sehr schnell passieren, dass man den Überblick verliert, da es einem schwer fällt sich gewisse abstrakte Gebilde vorzustellen. 
 
-Das hier entwickelte Software Tool möchte genau an dieser Stelle ansetzen, dem Benutzer ein Gefühl dafür zu geben, wie die einzelnen abstrakten Gebilde zusammenhängen, und welchen Einfluss die einzelnen Parameter auf das dynamische Verhalten des Systems haben.
+Das hier entwickelte Software-Tool möchte genau an dieser Stelle ansetzen, dem Benutzer ein Gefühl dafür zu geben, wie die einzelnen abstrakten Gebilde zusammenhängen, und welchen Einfluss die einzelnen Parameter auf das dynamische Verhalten des Systems haben.
 
-Darüber hinaus sind bereits verfahren hinterlegt, um einen Regler gut auszulegen, und diesen visuell in Echtzeit an die Bedürfnisse des Ingenieurs nach tu tunen.
-Aus diesem grund hat das neu entstandene Tool den Namen "`Live-Tuner"' erhalten.
+Darüber hinaus sind bereits Verfahren hinterlegt, um einen Regler gut auszulegen und diesen visuell in Echtzeit an die Bedürfnisse des Ingenieurs nach zu tunen.
+Aus diesem Grund hat das neu entstandene Tool den Namen "`Live-Tuner"' erhalten.
 
 \end{description}
