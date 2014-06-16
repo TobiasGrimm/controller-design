@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.1.7)  8 JUN 2014 14:42
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.1.7)  16 JUN 2014 13:34
 entering extended mode
 **Ausarbeitung.tex
 (C:\Users\Tobias\Documents\GitHub\controller-design\Ausarbeitung_Projekt\Ausarbeitung.tex
@@ -936,11 +936,11 @@ Class scrreprt Warning: Usage of deprecated font command `\sf'!
 [2
 
 ] (C:\Users\Tobias\Documents\GitHub\controller-design\Ausarbeitung_Projekt\Kapitel/Personen.tex
-<Bilder/Personen/Adam_V.jpg, id=90, 773.89125pt x 993.7125pt>
-File: Bilder/Personen/Adam_V.jpg Graphic file (type jpg)
- <use Bilder/Personen/Adam_V.jpg>
-Package pdftex.def Info: Bilder/Personen/Adam_V.jpg used on input line 15.
-(pdftex.def)             Requested size: 85.35826pt x 109.5968pt.
+<Bilder/Personen/Alexander_B.jpg, id=90, 266.9975pt x 345.29pt>
+File: Bilder/Personen/Alexander_B.jpg Graphic file (type jpg)
+ <use Bilder/Personen/Alexander_B.jpg>
+Package pdftex.def Info: Bilder/Personen/Alexander_B.jpg used on input line 15.
+(pdftex.def)             Requested size: 85.35826pt x 110.38968pt.
 
 <Bilder/Personen/Tobi_G.jpg, id=91, 638.385pt x 770.88pt>
 File: Bilder/Personen/Tobi_G.jpg Graphic file (type jpg)
@@ -965,8 +965,8 @@ Class scrreprt Warning: Usage of deprecated font command `\sf'!
 [3
 
 
- <C:/Users/Tobias/Documents/GitHub/controller-design/Ausarbeitung_Projekt/Bilder/Personen/Adam_V.jpg> <C:/Users/Tobias/D
-ocuments/GitHub/controller-design/Ausarbeitung_Projekt/Bilder/Personen/Tobi_G.jpg>]
+ <C:/Users/Tobias/Documents/GitHub/controller-design/Ausarbeitung_Projekt/Bilder/Personen/Alexander_B.jpg> <C:/Users/Tob
+ias/Documents/GitHub/controller-design/Ausarbeitung_Projekt/Bilder/Personen/Tobi_G.jpg>]
 (C:\Users\Tobias\Documents\GitHub\controller-design\Ausarbeitung_Projekt\Kapitel/Einleitung.tex
 Kapitel 1.
 
@@ -1369,7 +1369,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 175.
  ) 
 Here is how much of TeX's memory you used:
  14631 strings out of 493921
- 224666 string characters out of 3144874
+ 224691 string characters out of 3144874
  410893 words of memory out of 3000000
  17550 multiletter control sequences out of 15000+200000
  24164 words of font info for 74 fonts, out of 3000000 for 9000
@@ -1384,7 +1384,7 @@ nts\pk\ljfour\public\cmbright\dpi657\ebmr10.pk> <C:\Users\Tobias\AppData\Local\M
 t\dpi657\ebbx10.pk> <C:\Users\Tobias\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\public\cmbright\dpi864\ebmr10.pk> <C:\User
 s\Tobias\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\public\cmbright\dpi1244\ebbx10.pk> <C:\Users\Tobias\AppData\Local\MiKT
 eX\2.9\fonts\pk\ljfour\public\cmbright\dpi864\ebbx10.pk>
-Output written on Ausarbeitung.pdf (21 pages, 895351 bytes).
+Output written on Ausarbeitung.pdf (21 pages, 712733 bytes).
 PDF statistics:
  872 PDF objects out of 1000 (max. 8388607)
  47 named destinations out of 1000 (max. 500000)

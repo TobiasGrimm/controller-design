@@ -11,14 +11,14 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
-NormalPos.right=1356
-NormalPos.bottom=518
+NormalPos.right=1847
+NormalPos.bottom=808
 Class=LaTeXView
 Document=Kapitel\Hauptteil.tex
 
 [Frame0_View0,0]
-TopLine=323
-Cursor=16778
+TopLine=288
+Cursor=13247
 
 [Frame1]
 Flags=0
@@ -29,14 +29,14 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
-NormalPos.right=1356
-NormalPos.bottom=518
+NormalPos.right=1847
+NormalPos.bottom=808
 Class=LaTeXView
 Document=Kapitel\Personen.tex
 
 [Frame1_View0,0]
 TopLine=0
-Cursor=551
+Cursor=390
 
 [Frame2]
 Flags=0
@@ -47,8 +47,8 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
-NormalPos.right=1356
-NormalPos.bottom=518
+NormalPos.right=1847
+NormalPos.bottom=808
 Class=LaTeXView
 Document=Kapitel\Anhang\Quellenverzeichnis.tex
 
@@ -65,8 +65,8 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
-NormalPos.right=1356
-NormalPos.bottom=518
+NormalPos.right=1847
+NormalPos.bottom=808
 Class=LaTeXView
 Document=Ausarbeitung.tex
 
@@ -83,13 +83,13 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
-NormalPos.right=1356
-NormalPos.bottom=518
+NormalPos.right=1847
+NormalPos.bottom=808
 Class=LaTeXView
 Document=Kapitel\Einleitung.tex
 
 [Frame4_View0,0]
-TopLine=58
+TopLine=35
 Cursor=4011
 
 [Frame5]
@@ -101,8 +101,8 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
-NormalPos.right=1356
-NormalPos.bottom=518
+NormalPos.right=1847
+NormalPos.bottom=808
 Class=LaTeXView
 Document=Kapitel\Zusammenfassung2.tex
 
@@ -119,8 +119,8 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
-NormalPos.right=1356
-NormalPos.bottom=518
+NormalPos.right=1847
+NormalPos.bottom=808
 Class=LaTeXView
 Document=Titel_Projekt.tex
 
